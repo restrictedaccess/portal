@@ -1,0 +1,24 @@
+ {
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "moduleResolution": "classic",
+        "target": "ES5"
+    },
+    "exclude": [
+        "views",
+        "templates",
+        "templates_c",
+        "css",
+        "img",
+        "fonts",
+        "font-awesome",
+        "classes",
+        "bower_components",
+        "test"
+        
+    ]
+}

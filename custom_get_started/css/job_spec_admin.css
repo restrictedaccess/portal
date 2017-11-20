@@ -1,0 +1,9 @@
+body{
+	background:url(portal/images/resume_bg.png) repeat!important;
+}
+.panel .panel-heading{
+	font-weight:bold;
+}
+.label{
+	white-space: normal!important;
+}

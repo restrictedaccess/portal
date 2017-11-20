@@ -1,0 +1,94 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content"  style="margin: 0 !important;padding: 7px;">
+
+
+            <div ng-show="dataSummary6 === null" class="ibox-content">
+
+                Please wait...
+
+            </div>
+
+            <div ng-show="dataSummary6.length <= 0" class="ibox-content">
+
+                No result found.
+
+            </div>
+
+            <div ng-show="dataSummary6.length > 0">
+                <table class="table table-responsive table-bordered table-striped">
+
+                    <thead>
+                    <tr>
+                        <th class="text-center" style="width: 10%;">Client</th>
+                        <th class="text-center">Invoice Number</th>
+                        <th class="text-center" ng-click="sortFunc('days_before_suspension')">Suspension Days&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center">Currency</th>
+                        <th class="text-center">Applied GST</th>
+                        <th class="text-center" ng-click="sortFunc('order_date')">Order Date&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" ng-click="sortFunc('due_date')">Due Date&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center">Cover Dates</th>
+                        <th class="text-center" ng-click="sortFunc('total_amount')">Invoice Amount <i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center">Receipt Number</th>
+                        <th class="text-center" >Status </th>
+                        <!--<th class="text-center" ng-click="sortFunc('status')">Status&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>-->
+                        <th class="text-center" ng-click="sortFunc('available_balance')">Available Balance&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center">Payment Advise</th>
+                        <th class="text-center">Comment</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="data in dataSummary6 | filter: query | orderBy: sort">
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/client-account/{{data.client_id}}">{{ data.client_fname }} {{ data.client_lname }}</a></td>
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/details/{{data.order_id}}">{{data.order_id}}</a></td>
+                        <td class="text-center">{{ data.days_before_suspension}}</td>
+                        <td class="text-center">{{ data.currency }}</td>
+                        <td class="text-center">{{data.apply_gst}}</td>
+                        <td class="text-center">{{formatDate(data.order_date)}}</td>
+                        <td class="text-center">{{formatDate(data.due_date)}}</td>
+                        <td class="text-center" ><div ng-show="data.items.start_date">{{formatDate(data.items.start_date)}} <strong>to</strong> {{formatDate(data.items.end_date)}}</div></td>
+                        <td class="text-center">{{data.currency == "AUD" ? "$" : data.currency == "GBP" ? "&pound;" : "$"}} {{getDecimal(data.total_amount)}}</td>
+                        <td class="text-center">{{data.payment_receipt}}</td>
+                        <td class="text-center">{{data.status}}</td>
+                        <td class="text-center">{{data.currency == "AUD" ? "$" : data.currency == "GBP" ? "&pound;" : "$"}} {{getDecimal(data.available_balance)}}</td>
+                        <td class="text-center" ng-if="data.payment_advice === true">Yes</td>
+                        <td class="text-center" ng-if="data.payment_advice === false">No</td>
+                        <td class="text-center" ng-if="data.payment_advice != false && data.payment_advice != true">-</td>
+                        <td class="text-center">
+                            <div style="position:relative;">
+                                <span ng-show="data.comments.length > 0" style="position: absolute;top:-5px;z-index: 999;margin-left:1em;" class="label label-warning pull-right">{{ data.comments.length}}</span>
+                                <span ng-click="openModalForComments(data.index)" class="text-success" style="cursor: pointer;"><i class="fa fa-file"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+                <pagination
+                        ng-model="pagination.currentPage"
+                        max-size="pagination.maxSize"
+                        items-per-page="limitSize"
+                        total-items="TotalNumberofDocs6"
+                        boundary-links="true"
+                        direction-links="true"
+                        ng-change="loadNextPage(pagination.currentPage)">
+                </pagination>
+
+                <!--<div class="text-center" ng-show="dataSummary6.length > 0">-->
+                    <!--<button ng-click="loadMore()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary6.limit < TotalNumberofDocs6">Load More</button>-->
+                    <!--<button ng-click="loadLess()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary6.limit  > TotalNumberofDocs6">Load Less</button>-->
+                <!--</div>-->
+
+                <!--<div class="text-center" ng-show="dataSummary6.length > limitSize">-->
+                    <!--<button ng-click="loadMore()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary6.limit < TotalNumberofDocs6">Load More</button>-->
+                    <!--<button ng-click="loadLess()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary6.limit  > TotalNumberofDocs6">Load Less</button>-->
+                <!--</div>-->
+
+
+            </div>
+        </div>
+    </div>
+</div>

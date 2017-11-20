@@ -1,0 +1,171 @@
+
+<div id="quote-container">
+	<div class="row">
+		<div id="quote-details-result">
+			<div class="row">
+				<div class="col-lg-9">
+					<h3>Description</h3>
+				</div>
+				<div class="col-lg-3">
+					<h3 style="text-align: right !important;margin-right: 100px !important;">Amount</h3>
+				</div>
+				<div class="col-lg-12">
+					<hr style="border-top: 2px solid #8c8b8b;margin-top:0 !important;">
+				</div>
+			</div>
+			<div ng-repeat="quote_details in quote.quote_details">
+				<div class="row">
+					<div class="col-lg-9">
+						<div>
+							<h3 ng-show="quote.status === '' ||  quote.status === 'new' || isAccepted === 'no'">
+								<i style="cursor:pointer;" class="fa fa-pencil" aria-hidden="true" data-toggle="tooltip" title="Update Deatils" ng-click="getQuoteIndex(quote_details.index)"></i>&nbsp;
+								<i style="cursor:pointer;" class="fa fa-trash-o" aria-hidden="true" data-toggle="tooltip" title="Delete Deatils" ng-click="deleteQuoteDetails(quote_details.index)"></i>&nbsp;{{quote_details.work_position}} - {{quote_details.candidate.fname}}</h3>
+							<h3 ng-show="isAccepted === 'yes'">{{quote_details.work_position}} - {{quote_details.candidate.fname}}</h3>
+						</div>
+						<div><strong>Candidate : #{{quote_details.candidate.id}} {{quote_details.candidate.fname}}</strong></div>
+						<div class="text-muted">
+
+							<!-- Staff from {{quote_details.staff_country}}<br> -->
+							<div ng-show="quote_details.work_description != ''">Work Details : {{quote_details.work_description}}</div>
+							<div ng-show="quote_details.work_description == ''">Work Details : {{quote_details.work_status}} {{quote_details.working_hours}}hr(s) {{quote_details.work_status_description}}</div>
+							Client working hours : {{quote_details.client_work_start}} to {{quote_details.client_work_finish}} {{quote_details.client_timezone}} <br>
+							<div ng-show="quote_details.selected_start_work != ''">Start Date : {{formatDate(quote_details.selected_start_work)}}<br></div>
+							Client hourly rate : {{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.client_hr)}}
+							<!-- <div ng-show="quote_details.special_arrangement_approval"><i>Lance Approval: {{quote_details.special_arrangement_approval}}</i></div> -->
+							<!-- Client Timezone : {{quote_details.client_timezone}}<br>
+                            Client Time : {{quote_details.client_start_work_hour_str}} - {{quote_details.client_finish_work_hour_str}}<br>	 -->
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div style="text-align: right !important;margin-right: 100px !important;">
+							<strong>{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.quoted_price)}}</strong>
+
+						</div>
+					</div>
+				</div>
+				<br>
+
+
+
+				<div class="row content-color">
+					<div class="col-lg-9">
+						<div><h3>Currency Fluctuation</h3></div>
+						<!--<hr style="border-bottom:1px dashed #000;margin-top: -20px;margin-left: 290px;">-->
+					</div>
+					<div class="col-lg-3">
+						<div style="text-align: right !important;margin-right: 100px !important;">
+							<strong>{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.currency_adjustment)}}</strong>
+
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row content-color" ng-if="quote_details.service_fee">
+					<div class="col-lg-9">
+						<div ><h3>Service Fee</h3></div>
+						<!--<hr ng-show="quote_details.service_fee" style="border-bottom:1px dashed #000;margin-top: -20px;margin-left: 290px;">-->
+					</div>
+					<div class="col-lg-3">
+						<div style="text-align: right !important;margin-right: 100px !important;">
+							<div ng-show="quote_details.service_fee">
+								<strong ng-if="quote_details.service_fee !== null">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.service_fee)}}</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row content-color" ng-if="quote_details.office_fee">
+					<div class="col-lg-9">
+						<div ><h3>Office Fee</h3></div>
+						<!--<hr ng-show="quote_details.office_fee" style="border-bottom:1px dashed #000;margin-top: -20px;margin-left: 290px;">-->
+					</div>
+					<div class="col-lg-3">
+						<div style="text-align: right !important;margin-right: 100px !important;">
+							<div ng-show="quote_details.office_fee">
+								<strong ng-if="quote_details.office_fee !== null">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.office_fee)}}</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row content-color" ng-if="quote_details.others_description !== null">
+					<div class="col-lg-9">
+						<div ><h3>Office Miscellaneous <label class="text-muted" style="font-size: 13px !important;">({{quote_details.others_description}})</label></h3></div>
+						<!--<hr ng-if="quote_details.others_description !== null" style="border-bottom:1px dashed #000;margin-top: -20px;margin-left: 290px;">-->
+						<!-- <i style="cursor:pointer;" class="fa fa-question-circle" aria-hidden="true" data-toggle="tooltip" data-original-title="{{quote_details.others_description}}"></i> -->
+					</div>
+					<div class="col-lg-3">
+						<div style="text-align: right !important;margin-right: 100px !important;">
+							<div ng-show="quote_details.others">
+								<strong ng-if="quote_details.others !== null || quote_details.others > 0">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(quote_details.others)}}</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<!-- <div class="row">
+                    <div class="col-lg-9">
+                        <div><strong>Currency:</strong> {{quote_details.currency}}</div><br>
+                        <div><strong>GST:</strong> {{leads_currency_setting.currency_gst_apply}}</div><br>
+                    </div>
+                </div> -->
+
+
+				<hr>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-lg-4">
+					<div><strong ng-if="currency!= null">Currency:</strong> {{currency}}</div>
+				</div>
+				<div class="col-lg-5">
+					<strong style="float: right">Sub Total</strong>
+				</div>
+				<div class="col-lg-3">
+					<strong style="float: right;margin-right: 88px !important;">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(totalAmount)}}</strong>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div style="visibility:hidden;"><strong ng-if="apply_gst">GST:</strong> {{apply_gst}}</div>
+				</div>
+				<div class="col-lg-5" ng-show="apply_gst == 'Yes'">
+					<strong style="float: right">Total GST 10%</strong>
+				</div>
+				<div class="col-lg-3" ng-show="apply_gst == 'Yes'">
+					<strong style="float: right;margin-right: 88px !important;">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(gstvalue)}}</strong>
+				</div>
+			</div>
+			<hr style="border-top: 2px solid #8c8b8b;">
+			<div class="currency-rate-label"  ng-show="currency">**Remote Staff Currency Fluctuation is 1{{currency}} = {{currentRate}} PHP and foreign exchange market rate as of {{formatDate(effective_date)}} is 1{{currency}} = {{forexRate}}PHP</div>
+			<div class="currency-rate-label"  ng-show="!currency">**Remote Staff Currency Fluctuation is 1AUD = {{currentRate}} PHP and foreign exchange market rate as of {{formatDate(effective_date)}} is 1AUD = {{forexRate}}PHP</div>
+			<div class="row">
+				<div class="col-lg-9">
+					<strong style="float: right;font-size: 18px;">Total</strong>
+				</div>
+
+
+
+				<div class="col-lg-3" ng-if="apply_gst == null">
+					<strong style="float: right;margin-right: 88px !important;font-size: 18px;">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(totalAmountValue)}}</strong>
+				</div>
+
+				<div class="col-lg-3" ng-if="apply_gst == 'Yes'">
+					<strong style="float: right;margin-right: 88px !important;font-size: 18px;">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(totalAmountValue)}}</strong>
+				</div>
+				<div class="col-lg-3" ng-if="apply_gst == 'No'">
+					<strong style="float: right;margin-right: 88px !important;font-size: 18px;">{{currency == "AUD" ? "$" : currency == "GBP" ? "&pound;" : currency == "USD" ? "$" : ""}} {{getDecimal(totalAmount)}}</strong>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>

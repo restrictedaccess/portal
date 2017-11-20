@@ -1,0 +1,55 @@
+#contract_list{
+	border-collapse: inherit !important;
+	border-spacing:1px !important;
+	background:#666;
+}
+#contract_list th {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	letter-spacing:0px;
+	line-height: 12px;
+	color: #000;
+	background-color:#999;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+#contract_list td{
+	color:#666;
+	font-size:11px;
+	font-family:tahoma;
+	line-height:15px;
+}
+
+#contract_list td img{
+	float:left;
+	margin-right:10px;
+}
+
+#contract_list td pre{
+	background:#FFC;
+	margin: 1px;
+	padding:5px;
+	font-family:tahoma !important;
+	font-size:11px !important;
+}
+
+.staff_name, .client_name{
+
+	font-weight:bold;
+}
+
+.rssc_timerecords tr{
+	border-bottom:#999 solid 1px !important;
+}
+.rssc_timerecords td{
+	font-family:"Courier New", Courier, monospace !important;
+}
+
+.rssc_hours tr{
+	border-bottom:none !important;
+}
+
+#page-wrapper {
+    padding: 17px 5px !important;
+    width: 100%;
+}

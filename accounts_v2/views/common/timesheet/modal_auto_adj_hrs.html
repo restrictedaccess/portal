@@ -1,0 +1,57 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Timesheet Auto <br>Adjust Hours</h4>
+        
+    </div>
+    <div class="modal-body">
+    	<form role="form" name="auto_adjust_form" method="post" novalidate ng-submit="adjustForm()">
+    		
+    		<div class="form-group">
+                <label>Selected Date</label>
+                
+                <input type="text" readonly class="text-center form-control" ng-model="adj_hrs_selected_date_range" style="padding: 1px !important;" >
+                <input type="hidden" class="form-control" name="selected_adj_hrs_start_date" ng-model="selected_adj_hrs_start_date" required>
+                <input type="hidden" class="form-control" name="selected_adj_hrs_end_date" ng-model="selected_adj_hrs_end_date" required>
+                <input type="hidden" class="form-control" name="subcon_id" ng-model="subcon_id" required>
+                <div class="m-t-xs" ng-show="auto_adjust_form.selected_adj_hrs_start_date.$invalid && auto_adjust_form.submitted">
+                    <small class="text-danger" ng-show="auto_adjust_form.selected_adj_hrs_start_date.$error.required">Please select a Date Range</small>   
+                </div>
+                <div class="m-t-xs" ng-show="auto_adjust_form.selected_adj_hrs_end_date.$invalid && auto_adjust_form.submitted">
+                    <small class="text-danger" ng-show="auto_adjust_form.selected_adj_hrs_end_date.$error.required">Please select a Date Range</small>   
+                </div>
+                <div class="m-t-xs" ng-show="auto_adjust_form.subcon_id.$invalid && auto_adjust_form.submitted">
+                    <small class="text-danger" ng-show="auto_adjust_form.subcon_id.$error.required">Please select a staff</small>   
+                </div>
+            </div>
+    		
+    		<div class="form-group">
+                <label>Select Field to Adjust</label>
+                <select ng-model="selected_adjusted_field" name="selected_adjusted_field"  class="form-control" required>
+	        		<option value="adj_hrs">Adjusted Hours</option>
+	        		<option value="hrs_charged_to_client">Hours Charge to Client</option>
+	        		<option value="hrs_to_be_subcon">Hours Pay to Subcon</option>
+	        	</select>
+                <div class="m-t-xs" ng-show="auto_adjust_form.selected_adjusted_field.$invalid && auto_adjust_form.submitted">
+                    <small class="text-danger" ng-show="auto_adjust_form.selected_adjusted_field.$error.required">Please select a field to adjust</small>   
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Select Basis</label>
+                <select ng-model="selected_basis" name="selected_basis" class="form-control" required>
+		     		<option value="regular_rostered">Regular Rostered Hours</option>       		
+	        		<option value="total_hrs">Total Hours</option>
+	        		<option value="adj_hrs">Adjusted Hours</option>
+		        </select>
+                <div class="m-t-xs" ng-show="auto_adjust_form.selected_basis.$invalid && auto_adjust_form.submitted">
+                    <small class="text-danger" ng-show="auto_adjust_form.selected_basis.$error">Please select a basis</small>
+                </div>
+            </div>
+            
+    		<div class="form-group">
+            	<button type="button" class="btn btn-white" ng-click="close_auto_adj_hrs()">Close</button>
+                <button data-style="zoom-in" class="ladda-button btn btn-primary" type="submit" ladda="loading5"><strong>Submit form</strong></button>
+            </div>
+    	</form>	
+    </div>
+</div>

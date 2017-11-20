@@ -1,0 +1,53 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Receive Payment</h4>
+        
+    </div>
+    <div class="modal-body">
+    	<form role="form" name="add_payment_form" method="post" novalidate ng-submit="addPayment()">
+    		
+    		<p><strong>Note</strong><br>This will generate a new transaction on Client’s Running Balance Sheet for Invoice : {{ order_id }} </p>
+    		
+    		<div class="form-group">
+    			<label>Transaction Type</label> 
+    			<input type="text" class="form-control" ng-model="transaction_type" disabled style="background: #fff !important;" >
+    		</div>
+    		
+    		
+    		<div class="form-group">
+    			<label>Date Paid</label> 
+    			<div class="input-group date">
+                <input type="datetime" format="YYYY-MM-DD" min-view="date" auto-close="true" view="date" id="payment_date" ng-model="payment_date" date-time="" class="form-control ng-pristine ng-valid ng-scope ng-touched">
+                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            	</div>
+    		</div>
+    		
+    		<div class="form-group">
+    			<label>Amount</label> 
+    			<input type="text" class="form-control" ng-model="amount" style="background: #fff !important;" placeholder="{{ amount }}" >
+    		</div>
+
+			<div class="form-group">
+    			<label>Account Type</label> 
+    			<input type="text" class="form-control" ng-model="account_type" placeholder="REG" >
+    		</div>
+    		
+    		<div class="form-group">
+    			<label>Particular</label> 
+    			<input type="text" class="form-control" ng-model="particular" >
+    		</div>
+    		
+    		<div class="form-group">
+    			<label>Remarks</label> 
+    			<input type="text" class="form-control" ng-model="remarks" >
+    		</div>    		
+    		
+            
+    		<div class="form-group">
+    			<button data-style="zoom-in" class="ladda-button btn btn-primary" type="submit" ladda="loading5"><strong>Add</strong></button>
+            	<button type="button" class="btn btn-white" ng-click="close_add_payment_form()">Close</button>
+                
+            </div>
+    	</form>	
+    </div>
+</div>

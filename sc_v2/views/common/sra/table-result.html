@@ -1,0 +1,37 @@
+<div class="col-lg-12">
+
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Applied Currency Adjustment</h5>
+		</div>
+
+		<div class="ibox-content">
+			<div class="project-list table-responsive">
+				<table class="table table-hover issue-tracker">
+					<thead>
+						<tr>
+							<th>Transaction Date</th>
+							<th>Type</th>
+							<th width="40%">Particular</th>
+							<th>Remarks</th>
+							<th>Added By</th>
+							<th>Credit</th>
+							<th>Charge</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="record in records">
+							<td>{{record.added_on}}</td>
+							<td>{{record.credit_type}}</td>
+							<td>{{record.particular}}</td>
+							<td>{{record.remarks}}</td>
+							<td>{{record.added_by}}</td>
+							<td>{{record.credit}}</td>
+							<td>{{record.charge}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

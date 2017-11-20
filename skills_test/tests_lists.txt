@@ -1,0 +1,887 @@
+Call Centre	AUS-NZ Call Center Customer Service Survey	72				
+Call Centre	AUS-NZ Call Centre Environment [audio]	27					
+Call Centre	AUS-NZ Call Centre Inbound Sales Skills	39					
+Call Centre	AUS-NZ Call Centre Outbound Sales Skills	52					
+Call Centre	AUS-NZ Call Centre Telephone Etiquette	35					
+Call Centre	AUS-NZ Call Centre World Geography	25					
+Call Centre	Call Center Customer Service Scenarios *	20					
+Call Centre	Call Center Math *	30					
+Call Centre	Call Center Technical Support *	19					
+Call Centre	Call centre Consumer Collections *	42					
+Call Centre	Call centre Customer Service Scenarios (audio) *	20					
+Call Centre	Call centre Customer Service Survey *	72					
+Call Centre	Call centre Data Entry (audio) *	45					
+Call Centre	Call Centre Data Entry [audio] *	45					
+Call Centre	Call centre Environment (audio) *	27					
+Call Centre	Call centre Inbound Sales Skills *	39					
+Call Centre	Call centre Listening Skills (audio) *	28					
+Call Centre	Call centre Outbound Sales Skills *	52					
+Call Centre	Call centre Reference Manual (audio) *	25					
+Call Centre	Call centre Retention (audio) *	25					
+Call Centre	Call centre Spanish-English Bilingual (audio) *	39					
+Call Centre	Call centre Technical Support (audio) *	19					
+Call Centre	Call centre Telephone Etiquette *	35					
+Call Centre	Call centre World Geography	25					
+Call Centre	U.K. Business Writing	22					
+Call Centre	U.K. Call Centre Telephone Etiquette	34					
+Call Centre	U.K. Call Centre Towns Spelling [audio]	40					
+Call Centre	U.K. Vocabulary - Homophone Usage	39					
+Call Centre	UK Call Centre Maths	28					
+Clerical	ACT! 2000 for Users	40					
+Clerical	Advanced Spelling *	50					
+Clerical	Analytical Skills *	35					
+Clerical	AUS-NZ Advanced Spelling	50					
+Clerical	AUS-NZ Analytical Skills	30					
+Clerical	AUS-NZ Basic Computer Terminology	31					
+Clerical	AUS-NZ Basic Office Skills	47					
+Clerical	AUS-NZ Basic Office Skills [No Math]	26					
+Clerical	AUS-NZ Basic Office Skills [No Verbal]	21					
+Clerical	AUS-NZ Basic Reading Comprehension	30					
+Clerical	AUS-NZ Basic Spelling	50					
+Clerical	AUS-NZ Clerical Proofreading	32					
+Clerical	AUS-NZ Computer Literacy	31					
+Clerical	AUS-NZ Customer Service Mindset Survey	72					
+Clerical	AUS-NZ Data Entry 10 Key [Onscreen]	5					
+Clerical	AUS-NZ Data Entry 10 Key Quick Test [Onscreen]	3					
+Clerical	AUS-NZ Data Entry Alpha Numeric [Onscreen]	5					
+Clerical	AUS-NZ English as a Second Language	42					
+Clerical	AUS-NZ Internet Basics	38					
+Clerical	AUS-NZ Numerical Filing	33					
+Clerical	AUS-NZ Office Grammar and Spelling	39					
+Clerical	AUS-NZ Office Maths Skills	34					
+Clerical	AUS-NZ Recruiting Fundamentals	38					
+Clerical	AUS-NZ Shorthand	50					
+Clerical	AUS-NZ Spelling - Basic	50					
+Clerical	AUS-NZ Typing - General [1 Minute Onscreen]	1					
+Clerical	AUS-NZ Typing - General [3 Minutes Onscreen]	1					
+Clerical	AUS-NZ Typing - General [5 Minutes Onscreen]	1					
+Clerical	AUS-NZ Vocabulary	45					
+Clerical	AUS-NZ Vocabulary - Homophone Usage	39					
+Clerical	Basic English - Images *	45					
+Clerical	Basic Numeric Conversion	26					
+Clerical	Basic Office Skills	47					
+Clerical	Basic Office Skills (No Math)	26					
+Clerical	Basic Office Skills (No Verbal)	21					
+Clerical	Basic Reading Comprehension *	30					
+Clerical	Bookkeeping *	36					
+Clerical	Business Etiquette *	37					
+Clerical	Business Systems Analyst *	49					
+Clerical	Canadian Office Grammar and Spelling	40					
+Clerical	Cash Handling *	30					
+Clerical	Clerical Proofreading	37					
+Clerical	Coding	40					
+Clerical	Comparison Skills *	39					
+Clerical	Computer Literacy	31					
+Clerical	Computer Literacy - Advanced	40					
+Clerical	Computer Literacy - Basic	40					
+Clerical	Corrective Proofreading - Independent Films *	20					
+Clerical	Corrective Proofreading - Reply Letter *	15					
+Clerical	Corrective Proofreading - Restaurant Review *	12					
+Clerical	Customer Service Mindset Survey *	72					
+Clerical	Data Entry 10 Key (Hardcopy) *	5					
+Clerical	Data Entry 10 Key (Onscreen) *	5					
+Clerical	Data Entry 10 Key Quick Test (Hardcopy) *	24					
+Clerical	Data Entry 10 Key Quick Test (Onscreen) *	3					
+Clerical	Data Entry 10 Key With Decimals (Hardcopy) *	5					
+Clerical	Data Entry 10 Key With Decimals (Onscreen) *	40					
+Clerical	Data Entry Alpha Numeric (Hardcopy) *	40					
+Clerical	Data Entry Alpha Numeric (Onscreen) *	5					
+Clerical	Data Entry Check Number Database (Hardcopy) *	5					
+Clerical	Data Entry Check Number Database (Onscreen) *	5					
+Clerical	Data Entry Inventory Database (Hardcopy) *	40					
+Clerical	Data Entry Inventory Database (Onscreen) *	40					
+Clerical	Email Etiquette *	40					
+Clerical	English as a Second Language *	42					
+Clerical	Filing by Name *	30					
+Clerical	Following Verbal Instructions (audio) *	20					
+Clerical	Following Written Instructions *	17					
+Clerical	French-English Bilingual	39					
+Clerical	German-English Bilingual	39					
+Clerical	Healthcare Benefits Knowledge *	40					
+Clerical	Human Resources Basics	37					
+Clerical	Human Resources Benefits Knowledge *	40					
+Clerical	Internet Basics	38					
+Clerical	Internet Research Skills	42					
+Clerical	Interviewing and Hiring Concepts *	33					
+Clerical	Italian-English Bilingual	39					
+Clerical	Listening Skills (audio) *	20					
+Clerical	Macintosh Basics OS 9	25					
+Clerical	Mailroom Management Skills *	47					
+Clerical	Marketing Fundamentals *	46					
+Clerical	Matching - Images	20					
+Clerical	Math Word Problems *	28					
+Clerical	Numeric Filing	33					
+Clerical	Numeric Proofreading	30					
+Clerical	Office Abbreviations *	45					
+Clerical	Office Filing Skills *	35					
+Clerical	Office Grammar and Spelling *	40					
+Clerical	Office Management Skills *	47					
+Clerical	Office Math Skills *	36					
+Clerical	Office Telephone Etiquette	37					
+Clerical	PeopleSoft HRMS	40					
+Clerical	Project Management for IT Professionals	51					
+Clerical	Project Management Fundamentals	48					
+Clerical	Proofreader Marks	32					
+Clerical	Punctuation	39					
+Clerical	Reading Comprehension *	35					
+Clerical	Recruiting Fundamentals *	38					
+Clerical	Retention	25					
+Clerical	Sales Concepts	38					
+Clerical	SAS 9 - Data Analyst	42					
+Clerical	Shorthand	50					
+Clerical	Software Quality Assurance *	44					
+Clerical	Software Testing	37					
+Clerical	Spanish-English Bilingual	39					
+Clerical	Technical Terminology	43					
+Clerical	Typing - General (1 Minute Hardcopy) *	1					
+Clerical	Typing - General (1 Minute Onscreen)	1					
+Clerical	Typing - General (3 Minutes Hardcopy)	1					
+Clerical	Typing - General (3 Minutes Onscreen)	1					
+Clerical	Typing - General (5 Minutes Hardcopy) *	1					
+Clerical	Typing - General (5 Minutes Onscreen) *	1					
+Clerical	U.K. Clerical Proofreading	37					
+Clerical	U.K. Data Entry 10 Key Quick Test [Hardcopy]	3					
+Clerical	U.K. Data Entry 10 Key Quick Test [Onscreen]	3					
+Clerical	U.K. Data Entry 10 Key With Decimals [Hardcopy]	5					
+Clerical	U.K. Data Entry 10 Key With Decimals [Onscreen]	5					
+Clerical	U.K. Matching - Images	20					
+Clerical	U.K. Numeric Proofreading	30					
+Clerical	U.K. Sales Concepts	38					
+Clerical	U.K. Shorthand	50					
+Clerical	Vocabulary *	45					
+Clerical	Vocabulary - Homonym Usage *	39					
+Financial	Accounting Terminology - Advanced *	38					
+Financial	Accounting Terminology - Basic *	17					
+Financial	Accounts Payable *	44					
+Financial	Accounts Receivable *	38					
+Financial	ADP - Payroll *	40					
+Financial	Advanced Accounting *	46					
+Financial	Auditing *	40					
+Financial	AUS-NZ Accounts Payable	34					
+Financial	AUS-NZ Accounts Receivable	30					
+Financial	AUS-NZ Advanced Accounting	53					
+Financial	AUS-NZ Bookkeeping	52					
+Financial	AUS-NZ General Accounting	60					
+Financial	AUS-NZ MYOB Accounting Plus	38					
+Financial	AUS-NZ SAP for Users	45					
+Financial	Bank Teller Skills *	40					
+Financial	Basic Bank Teller Skills *	38					
+Financial	Bookkeeping - Professional *	25					
+Financial	Budget Aide Skills *	40					
+Financial	Budget Officer Skills *	41					
+Financial	Business Income Tax *	39					
+Financial	BusinessObjects 5 - Client *	40					
+Financial	Casualty Insurance - Automobile *	39					
+Financial	Commercial Banking Knowledge *	45					
+Financial	Commercial Collections *	36					
+Financial	Commercial Insurance Knowledge *	45					
+Financial	Corporate Tax Accounting *	39					
+Financial	Cost Accounting *	48					
+Financial	Credit Analyst *	38					
+Financial	Credit Management *	50					
+Financial	Financial Analysis *	40					
+Financial	Financial Management *	45					
+Financial	Financial Math *	33					
+Financial	Financial Spelling *	32					
+Financial	Fixed Assets *	34					
+Financial	General Accounting *	55					
+Financial	General Ledger Knowledge *	39					
+Financial	Great Plains	39					
+Financial	International Financial Reporting Standards	36					
+Financial	JD Edwards	36					
+Financial	Loan Officer Skills *	35					
+Financial	Loan Processing *	35					
+Financial	Loan Underwriting Knowledge *	29					
+Financial	MAS 90 - Bookkeeping	40					
+Financial	MYOB Accounting Plus *	38					
+Financial	NZ Accounts Payable	34					
+Financial	NZ Accounts Receivable	30					
+Financial	NZ Advanced Accounting	49					
+Financial	NZ Bookkeeping	50					
+Financial	NZ MYOB Accounting Plus	38					
+Financial	NZ Payroll	31					
+Financial	NZ Payroll Clerk	38					
+Financial	NZ Payroll Management	33					
+Financial	NZ Taxation Advanced	27					
+Financial	NZ Taxation Basic-Intermediate	40					
+Financial	Payroll *	39					
+Financial	Payroll Clerk *	33					
+Financial	Payroll Management *	41					
+Financial	PeopleSoft Financials	37					
+Financial	Property Insurance *	38					
+Financial	Property Management *	40					
+Financial	Purchasing Fundamentals *	50					
+Financial	Reconciliation *	37					
+Financial	Sage Line 50	40					
+Financial	Sage MAS 90/200	38					
+Financial	SAP for Users	45					
+Financial	Title Insurance Knowledge *	40					
+Financial	U.K. Accounts Payable	34					
+Financial	U.K. Accounts Receivable	30					
+Financial	U.K. Advanced Accounting	42					
+Financial	U.K. Bookkeeping	39					
+Financial	U.K. Financial Analysis	40					
+Financial	U.K. Financial Maths	33					
+Financial	U.K. General Accounting	50					
+Healthcare	AUS-NZ Medical Spelling	45					
+Healthcare	AUS-NZ Medical Terminology - General	39					
+Healthcare	AUS-NZ Typing - Medical [1 minute hardcopy]	1					
+Healthcare	AUS-NZ Typing - Medical [1 minute onscreen]	1					
+Healthcare	Bloodborne Pathogens - Infection Control *	40					
+Healthcare	Dental Assistant *	39					
+Healthcare	Dosage Calculation *	40					
+Healthcare	General Pharmaceutical Knowledge *	37					
+Healthcare	Healthcare Industry Terminology *	36					
+Healthcare	HIPAA - Clinical Staff *	35					
+Healthcare	HIPAA Administration *	36					
+Healthcare	JCAHO *	33					
+Healthcare	LPN/LVN *	40					
+Healthcare	Medical Assistant - Advanced *	36					
+Healthcare	Medical Assistant - Basic *	25					
+Healthcare	Medical Billing (UB-04) *	38					
+Healthcare	Medical Billing Knowledge *	40					
+Healthcare	Medical Claims Processing *	40					
+Healthcare	Medical Collections *	31					
+Healthcare	Medical Office Personnel Skills *	37					
+Healthcare	Medical Receptionists *	33					
+Healthcare	Medical Records Coding (CPT) *	30					
+Healthcare	Medical Records Coding (ICD-9) *	40					
+Healthcare	Medical Records Coding [ICD-10] *	46					
+Healthcare	Medical Spelling *	50					
+Healthcare	Medical Terminal Digit Filing *	20					
+Healthcare	Medical Terminology - Cardiovascular System *	20					
+Healthcare	Medical Terminology - Dental *	20					
+Healthcare	Medical Terminology - ER *	40					
+Healthcare	Medical Terminology - Gastrointestinal *	20					
+Healthcare	Medical Terminology - General *	35					
+Healthcare	Medical Terminology - Integumentary System *	20					
+Healthcare	Medical Terminology - Musculoskeletal *	32					
+Healthcare	Medical Terminology - Nervous System *	20					
+Healthcare	Medical Terminology - Oncology *	44					
+Healthcare	Medical Terminology - Ophthalmology *	20					
+Healthcare	Medical Terminology - Pediatrics *	40					
+Healthcare	Medical Terminology - Pharmacology *	10					
+Healthcare	Medical Terminology - Psychiatry *	20					
+Healthcare	Medical Terminology - Radiology *	45					
+Healthcare	Medical Terminology - Reproduction *	20					
+Healthcare	Medical Terminology - Respiratory *	20					
+Healthcare	Medical Terminology - Root Words	43					
+Healthcare	Medisoft	40					
+Healthcare	Nurse Practitioner *	43					
+Healthcare	Nursing Assistant *	38					
+Healthcare	Occupational Therapy *	46					
+Healthcare	Pharmaceutical Terminology *	42					
+Healthcare	Phlebotomy *	30					
+Healthcare	Physical Therapy *	38					
+Healthcare	Physician Assistant *	50					
+Healthcare	Radiologic Technologist *	36					
+Healthcare	Registered Nurse (RN) *	40					
+Healthcare	Respiratory Therapy *	43					
+Healthcare	Typing - Medical (1 Minute Hardcopy) *	1					
+Healthcare	Typing - Medical (1 Minute Onscreen) *	1					
+Healthcare	Typing - Medical (3 Minutes Hardcopy) *	1					
+Healthcare	Typing - Medical (5 Minutes Hardcopy) *	1					
+Healthcare	Typing - Medical (5 Minutes Onscreen) *	1					
+Healthcare	U.K. Medical Spelling	45					
+Healthcare	U.K. Medical Terminology - General	39					
+Healthcare	U.K. Typing - Medical [1 Minute Hardcopy]	1					
+Healthcare	U.K. Typing - Medical [1 Minute Onscreen]	1					
+Healthcare	U.K. Typing - Medical [3 Minutes Hardcopy]	1					
+Healthcare	U.K. Typing - Medical [3 Minutes Onscreen]	1					
+Healthcare	U.K. Typing - Medical [5 Minutes Hardcopy]	1					
+Healthcare	U.K. Typing - Medical [5 Minutes Onscreen]	1					
+Industrial	Arithmetic	40					
+Industrial	Assembly and Matching	40					
+Industrial	AUS-NZ Basic Arithmetic	40					
+Industrial	AUS-NZ Basic Industrial Skills	36					
+Industrial	AUS-NZ Entry Level Industrial Skills	34					
+Industrial	AutoCAD 11	42					
+Industrial	AutoCAD 14	53					
+Industrial	AutoCAD 2000	57					
+Industrial	AutoCAD 2004	40					
+Industrial	AutoCAD 2006	39					
+Industrial	AutoCAD 2007	48					
+Industrial	AutoCAD 2009	50					
+Industrial	AutoCAD 2010	47					
+Industrial	AutoCAD 2013	40					
+Industrial	Basic Arithmetic	40					
+Industrial	Basic CNC	41					
+Industrial	Basic Electronics	30					
+Industrial	Basic Industrial Math *	30					
+Industrial	Basic Injection Molding Skills	30					
+Industrial	Basic Reading Comprehension - Light Industrial *	30					
+Industrial	Basic Ruler Reading *	30					
+Industrial	Basic Warehouse Knowledge	37					
+Industrial	Basic Wireless Communication	39					
+Industrial	Blueprint Reading	40					
+Industrial	Class (A) Automotive Mechanics	30					
+Industrial	Class (B) Automotive Mechanics	52					
+Industrial	Class (C) Automotive Mechanics	34					
+Industrial	Color Identification	40					
+Industrial	Counting	20					
+Industrial	Electrical Engineering: Electronics and Communications	50					
+Industrial	Electrical Engineering: Power and Control	50					
+Industrial	Electricians *	60					
+Industrial	Electronic Schematics	46					
+Industrial	English Ruler Reading	15					
+Industrial	Entry Level Industrial Skills	35					
+Industrial	Finish Carpentry	40					
+Industrial	Flooring Skills	46					
+Industrial	Food Production	40					
+Industrial	Forklift Operation	36					
+Industrial	General Maintenance	46					
+Industrial	Hazardous Material Handling	43					
+Industrial	Home Inspection Skills	35					
+Industrial	HVAC	56					
+Industrial	Lathe Operator	25					
+Industrial	Map Reading Skills *	30					
+Industrial	Matching - Alphanumeric *	60					
+Industrial	Matching - Digit Numeric *	50					
+Industrial	Matching - Industrial Images	30					
+Industrial	Matching - Numeric *	60					
+Industrial	Math and Reasoning Skills *	40					
+Industrial	Mechanical Engineering: Machine and Tool Design *	50					
+Industrial	Mechanical Engineering: Thermodynamics Fundamentals *	25					
+Industrial	Mechanical Reasoning *	25					
+Industrial	Metalworking Skills	54					
+Industrial	Metric Ruler Reading	15					
+Industrial	Micrometers and Calipers *	37					
+Industrial	Milling Machine	20					
+Industrial	Pick/Pack	40					
+Industrial	Plastic Fabrication Skills	43					
+Industrial	PLC Programming	38					
+Industrial	Plumbing Quality	51					
+Industrial	Press Brake Operation	39					
+Industrial	Print Reading - Construction *	50					
+Industrial	Print Reading - Electrical *	39					
+Industrial	Print Reading - Manufacturing *	40					
+Industrial	Product Packaging Skills	30					
+Industrial	Quality Assurance Inspection	40					
+Industrial	Resistor Color Code	45					
+Industrial	Rough Carpentry	38					
+Industrial	Shipping and Receiving Clerk Skills	39					
+Industrial	Shop Math *	40					
+Industrial	Soldering	40					
+Industrial	SolidWorks 2006	46					
+Industrial	SolidWorks 2012	38					
+Industrial	Spatial Reasoning	30					
+Industrial	Tools and Fasteners	40					
+Industrial	U.K. Arithmetic	40					
+Industrial	U.K. Matching - Alphanumeric	60					
+Industrial	U.K. Matching - Digit Numeric	50					
+Industrial	U.K. Matching - Numeric	60					
+Industrial	Unit Conversion *	31					
+Industrial	Warehouse Safety and Inventory Management *	37					
+Industrial	Weights and Measures (Standard and Metric) *	25					
+Industrial	Welding *	35					
+Industrial	Wholesale Distribution Knowledge	40					
+Industrial	Woodworking	40					
+Industrial	Workplace Hazardous Materials Information System (WHMIS)	46					
+Legal	AUS-NZ Legal Assistant	46					
+Legal	AUS-NZ Legal Spelling	60					
+Legal	AUS-NZ Legal Vocabulary	45					
+Legal	Canadian Legal Assistant	31					
+Legal	Canadian Paralegal Skills	41					
+Legal	Patent Prosecution *	41					
+Legal	Typing - Legal (1 Minute Hardcopy) *	1					
+Legal	Typing - Legal (1 Minute Onscreen) *	1					
+Legal	Typing - Legal (3 Minutes Hardcopy) *	1					
+Legal	Typing - Legal (3 Minutes Onscreen) *	1					
+Legal	Typing - Legal (5 Minutes Hardcopy) *	1					
+Legal	Typing - Legal (5 Minutes Onscreen) *	1					
+Legal	U.K. Basic Litigation Knowledge	38					
+Legal	U.K. Legal Spelling	60					
+Legal	U.K. Legal Spelling Short	30					
+Legal	U.K. Legal Staff Skills *	20					
+Legal	U.K. Legal Vocabulary	43					
+Legal	U.K. Paralegal Skills	56					
+Software	ACCPAC Pro Series	40					
+Software	Adobe Acrobat 6.0 Standard	20					
+Software	Adobe Acrobat 7.0 Standard	44					
+Software	Adobe Acrobat 8.0 Standard	39					
+Software	Adobe Acrobat 9.0 Standard	39					
+Software	Adobe Flash CS3 Professional	38					
+Software	Adobe Flex 3	37					
+Software	Adobe Illustrator CS	44					
+Software	Adobe Illustrator CS2	39					
+Software	Adobe Illustrator CS3	49					
+Software	Adobe InDesign CS	50					
+Software	Adobe InDesign CS2	37					
+Software	Adobe InDesign CS3	39					
+Software	Adobe Pagemaker 6.5	30					
+Software	Adobe PageMaker 7	33					
+Software	Adobe Photoshop 5.5	30					
+Software	Adobe Photoshop CS	48					
+Software	Adobe Photoshop CS2	36					
+Software	Adobe Photoshop CS3	50					
+Software	Adobe Photoshop CS4	50					
+Software	Adobe Photoshop CS5	36					
+Software	Corel Presentations 9.0	30					
+Software	Corel Quattro Pro 9.0	30					
+Software	Corel WordPerfect 9.0 - Normal User	30					
+Software	Corel WordPerfect 9.0 - Power User	25					
+Software	Corel WordPerfect 9.0 - Whole Test	55					
+Software	Desktop Publishing Theory Skills	20					
+Software	FileMaker Pro 6	44					
+Software	Legal MacPac 2000	38					
+Software	Lotus 1-2-3 Millennium	30					
+Software	Lotus Freelance Graphics Millennium	30					
+Software	Lotus Notes 4.5 for Users	75					
+Software	Lotus Notes 4.6	30					
+Software	Lotus Notes 5.0 for Users	49					
+Software	Lotus Notes 6.5 for Users	35					
+Software	Lotus Notes 8.5 for Users	37					
+Software	Lotus Notes R5	30					
+Software	Lotus Word Pro Millennium	30					
+Software	Microsoft Access 2000	30					
+Software	Microsoft Access 2002	30					
+Software	Microsoft Access 2003	30					
+Software	Microsoft Access 2007	30					
+Software	Microsoft Access 2010	30					
+Software	Microsoft Access 97	30					
+Software	Microsoft Excel 2000 - Normal User	30					
+Software	Microsoft Excel 2000 - Power User	25					
+Software	Microsoft Excel 2000 - Whole Test	55					
+Software	Microsoft Excel 2002 - Normal User	30					
+Software	Microsoft Excel 2002 - Power User	25					
+Software	Microsoft Excel 2002 - Whole Test	55					
+Software	Microsoft Excel 2003 - Normal User	30					
+Software	Microsoft Excel 2003 - Power User	25					
+Software	Microsoft Excel 2003 - Whole Test	55					
+Software	Microsoft Excel 2007 - Normal User *	30					
+Software	Microsoft Excel 2007 - Power User	25					
+Software	Microsoft Excel 2007 - Whole Test	55					
+Software	Microsoft Excel 2010 - Normal User	30					
+Software	Microsoft Excel 2010 - Power User	25					
+Software	Microsoft Excel 2010 - Whole Test	55					
+Software	Microsoft Excel 97 - Normal User	30					
+Software	Microsoft Excel 97 - Power User	20					
+Software	Microsoft Excel 97 - Whole Test	50					
+Software	Microsoft FrontPage 2003	30					
+Software	Microsoft Internet Explorer 5.0	30					
+Software	Microsoft Internet Explorer 6.0 *	25					
+Software	Microsoft Internet Explorer 8.0	30					
+Software	Microsoft Internet Explorer 9.0	30					
+Software	Microsoft Office 2000 Advanced Knowledge	40					
+Software	Microsoft Office 2000 Integration	30					
+Software	Microsoft Office 2003 Integration	30					
+Software	Microsoft Office 97 Integration	20					
+Software	Microsoft Office Advanced Knowledge	45					
+Software	Microsoft Office XP Integration	30					
+Software	Microsoft Outlook 2000	30					
+Software	Microsoft Outlook 2002	30					
+Software	Microsoft Outlook 2003	30					
+Software	Microsoft Outlook 2007	30					
+Software	Microsoft Outlook 2010	30					
+Software	Microsoft Outlook 98	30					
+Software	Microsoft PowerPoint 2000	30					
+Software	Microsoft PowerPoint 2002 - Normal User	30					
+Software	Microsoft PowerPoint 2002 - Power User	25					
+Software	Microsoft PowerPoint 2002 - Whole Test	55					
+Software	Microsoft PowerPoint 2003 - Normal User	30					
+Software	Microsoft PowerPoint 2003 - Power User	25					
+Software	Microsoft PowerPoint 2003 - Whole Test	55					
+Software	Microsoft PowerPoint 2007 - Normal User	30					
+Software	Microsoft PowerPoint 2007 - Power User	25					
+Software	Microsoft PowerPoint 2007 - Whole Test	55					
+Software	Microsoft Powerpoint 2010 - Normal User	30					
+Software	Microsoft Powerpoint 2010 - Power User	25					
+Software	Microsoft PowerPoint 2010 - Whole Test	55					
+Software	Microsoft PowerPoint 97	30					
+Software	Microsoft Project 2000	43					
+Software	Microsoft Project 2002	30					
+Software	Microsoft Project 2003	48					
+Software	Microsoft Project 2007	36					
+Software	Microsoft Project 2010 Professional	35					
+Software	Microsoft Publisher 2002	55					
+Software	Microsoft Publisher 2010	35					
+Software	Microsoft Visio 2003	36					
+Software	Microsoft Windows 2000	30					
+Software	Microsoft Windows 7	30					
+Software	Microsoft Windows 95	30					
+Software	Microsoft Windows 98	30					
+Software	Microsoft Windows NT 4.0	30					
+Software	Microsoft Windows XP	30					
+Software	Microsoft Word 2000 - Normal User *	30					
+Software	Microsoft Word 2000 - Power User *	25					
+Software	Microsoft Word 2000 - Whole Test *	55					
+Software	Microsoft Word 2002 - Advanced Documents *	25					
+Software	Microsoft Word 2002 - Normal User *	30					
+Software	Microsoft Word 2002 - Power User *	25					
+Software	Microsoft Word 2002 - Whole Test	30					
+Software	Microsoft Word 2003 - Advanced Documents	25					
+Software	Microsoft Word 2003 - Normal User	30					
+Software	Microsoft Word 2003 - Power User	25					
+Software	Microsoft Word 2003 - Whole Test	55					
+Software	Microsoft Word 2007 - Normal User	30					
+Software	Microsoft Word 2007 - Power User	25					
+Software	Microsoft Word 2007 - Whole Test	55					
+Software	Microsoft Word 2010 - Normal User	30					
+Software	Microsoft Word 2010 - Power User	25					
+Software	Microsoft Word 2010 - Whole Test	55					
+Software	Microsoft Word 97 - Normal User	30					
+Software	Microsoft Word 97 - Power User	25					
+Software	Microsoft Word 97 - Whole Test	55					
+Software	Netscape Navigator 4.77	30					
+Software	Peachtree 2007	38					
+Software	Peachtree Accounting 2003	28					
+Software	QuarkXPress 5 Advanced	30					
+Software	QuarkXPress 5 Basics	52					
+Software	QuarkXpress 6	43					
+Software	QuarkXPress 9	42					
+Software	QuickBooks Pro 2000	30					
+Software	QuickBooks Pro 2005	30					
+Software	QuickBooks Pro 2009	40					
+Software	QuickBooks Pro 2010	35					
+Software	QuickBooks Pro 2011	40					
+Software	QuickBooks Pro 2012	38					
+Software	Quicken 2003 Basic	20					
+Software	Quicken 2012	39					
+Software	Sage Peachtree Pro 2012 *	37					
+Software	Simply Accounting 2010 *	37					
+Software	Summation Blaze 5.21	30					
+Software	Summation iBlaze 3.0	32					
+Software	U.K. Microsoft Access 2003	30					
+Software	U.K. Microsoft Access 2010	30					
+Software	U.K. Microsoft Internet Explorer 6.0	25					
+Software	U.K. Microsoft Internet Explorer 8.0	30					
+Software	U.K. Microsoft Internet Explorer 9.0	30					
+Software	U.K. Microsoft Outlook 2010	30					
+Software	U.K. Microsoft Powerpoint 2010 - Normal User	30					
+Software	U.K. Microsoft Powerpoint 2010 - Power User	25					
+Software	U.K. Microsoft Powerpoint 2010 - Whole Test	55					
+Software	U.K. Microsoft Windows 7	30					
+Technical	.NET Framework	39					
+Technical	.NET Framework 3.0	38					
+Technical	.NET Framework 4.0	35					
+Technical	.NET Programming - ASP	41					
+Technical	.NET Programming - ASP 3.5	38					
+Technical	.NET Programming - ASP 4.0	39					
+Technical	.NET Programming - C#	37					
+Technical	.NET Programming - C# 3.0	40					
+Technical	.NET Programming - C# 4.0	40					
+Technical	.NET Programming - C++	39					
+Technical	.NET Programming - Jscript	40					
+Technical	.NET Programming - Visual Basic	36					
+Technical	.NET Programming - Visual J#	38					
+Technical	A+	44					
+Technical	ABAP/4 for SAP	25					
+Technical	Access Basic 2.0	60					
+Technical	ACT! 2000 for Administrators	54					
+Technical	ACT! 2000 for Developers	38					
+Technical	ActionScript 3.0	38					
+Technical	Active Directory Domain Services	40					
+Technical	Active Server Pages	35					
+Technical	ActiveX	45					
+Technical	Adabas DBA	40					
+Technical	Adabas Natural	42					
+Technical	Adabas Programming	40					
+Technical	Adobe Cold Fusion 9	40					
+Technical	Adobe ColdFusion 8	42					
+Technical	AION Programming	60					
+Technical	AJAX	41					
+Technical	ANSI SQL	39					
+Technical	Apache Web Server	49					
+Technical	AppleTalk	50					
+Technical	AppleTalk Networks	38					
+Technical	AS/400 Operations	42					
+Technical	Assembler	40					
+Technical	Assembler for IBM Mainframe	36					
+Technical	AUS-NZ Lotus Notes 5.0 for Developers	55					
+Technical	AUS-NZ Lotus Notes 5.0 for Users	49					
+Technical	BizTalk Server 2006	40					
+Technical	BizTalk Server 2010	42					
+Technical	Borland C++ Builder	50					
+Technical	BroadVision	46					
+Technical	BusinessObjects 5 - Designer	40					
+Technical	BusinessObjects XI Release 2	42					
+Technical	C Programming	40					
+Technical	C++ Programming	41					
+Technical	Cascading Style Sheets	40					
+Technical	Cascading Style Sheets 2.1	39					
+Technical	Cascading Style Sheets 4.0	39					
+Technical	CGI Concepts	40					
+Technical	CICS/COBOL	39					
+Technical	Cisco Networking	35					
+Technical	Cisco Router	45					
+Technical	Citrix for Client Server Applications	41					
+Technical	Citrix MetaFrame	41					
+Technical	Citrix WinFrame	43					
+Technical	Client/Server Fundamentals	40					
+Technical	Clipper	55					
+Technical	COBOL	53					
+Technical	COBOL 400	47					
+Technical	COBOL for Year 2000 Programmers	40					
+Technical	COBOL II	51					
+Technical	Cognos Impromptu Knowledge	36					
+Technical	Cognos PowerPlay	50					
+Technical	Cold Fusion 4	49					
+Technical	Cold Fusion MX 6.1	54					
+Technical	Cold Fusion Scripting and Development	36					
+Technical	ColdFusion MX 7	56					
+Technical	COM/DCOM Development in Delphi	30					
+Technical	COM/DCOM Development in Visual Basic	41					
+Technical	Computer Technician Skills	40					
+Technical	COOL: Gen	57					
+Technical	CORBA	43					
+Technical	Crystal Reports 11.0	46					
+Technical	Crystal Reports 7.0	40					
+Technical	Crystal Reports 8.0	50					
+Technical	Crystal Reports 8.5 for Developers	60					
+Technical	Data Architecture	44					
+Technical	Data Modeling Concepts	40					
+Technical	Data Warehousing Concepts	39					
+Technical	DB2 5.x DBA	60					
+Technical	DB2 Developer	36					
+Technical	DB2 v.8 Mainframe DBA	40					
+Technical	DB2 v.8 UBD DBA	55					
+Technical	dBASE III Plus	50					
+Technical	Delphi 3	35					
+Technical	Delphi 5	53					
+Technical	DHTML	33					
+Technical	DOS 6.x	50					
+Technical	DreamWeaver	46					
+Technical	E Commerce Concepts: Architecture and Design	30					
+Technical	E Commerce Concepts: Deployment	33					
+Technical	EDI (Electronic Data Interchange)	54					
+Technical	Enterprise JavaBeans (EJB)	45					
+Technical	Enterprise JavaBeans [EJB3]	40					
+Technical	Ethernet Networking	30					
+Technical	FORTRAN 77/90	42					
+Technical	GroupWise 5.x	48					
+Technical	Gupta Centura	50					
+Technical	Hardware Troubleshooting	40					
+Technical	HTML 2.0/3.0	35					
+Technical	HTML 4.0	43					
+Technical	HTML Developers	42					
+Technical	HTML Webmaster	50					
+Technical	IBM AIX 5.1 Administrator	39					
+Technical	IMS	40					
+Technical	iNet+	43					
+Technical	Informatica	40					
+Technical	Informix	30					
+Technical	Internet Security	40					
+Technical	J2EE	55					
+Technical	J2SE	40					
+Technical	Java 1.1	38					
+Technical	Java 2	57					
+Technical	Java Applets Development	40					
+Technical	Java Beans Development	30					
+Technical	Java EE 6	39					
+Technical	Java Entry Level	35					
+Technical	Java Hibernate 3.3	36					
+Technical	Java SE 6	40					
+Technical	Java SE 7	43					
+Technical	Java Server Pages	39					
+Technical	Java Servlets	40					
+Technical	Java Swing	38					
+Technical	JavaScript	40					
+Technical	JCL	56					
+Technical	LAN Concepts	39					
+Technical	Linux Administration	52					
+Technical	LoadRunner 9	37					
+Technical	Lotus Domino 6 for Developers	56					
+Technical	Lotus Notes 4.0 for Developers	40					
+Technical	Lotus Notes 4.5 for Developers	38					
+Technical	Lotus Notes 5.0 for Developers	55					
+Technical	Lotus Notes Administration	43					
+Technical	Macintosh Technician OS 9	40					
+Technical	Macintosh Technician OS X	39					
+Technical	Macromedia Director MX 2004	70					
+Technical	Macromedia Flash 5	30					
+Technical	Macromedia Flash MX 2004	42					
+Technical	Microsoft Access 2000 for Developers	41					
+Technical	Microsoft Access 2002 for Developers	40					
+Technical	Microsoft Access 2003 for Developers	36					
+Technical	Microsoft Access 2007 for Developers	44					
+Technical	Microsoft Exchange Server 2000 Administration	38					
+Technical	Microsoft Exchange Server 2003 Administration	45					
+Technical	Microsoft Exchange Server 2007 Administration	40					
+Technical	Microsoft Exchange Server 2010 Administration	39					
+Technical	Microsoft Exchange Server 5.5	50					
+Technical	Microsoft Foundation Class	37					
+Technical	Microsoft Internet Information Server (IIS) 4.0	48					
+Technical	Microsoft Internet Information Services [IIS] 7.0	38					
+Technical	Microsoft Office 2000 Help Desk	37					
+Technical	Microsoft Office 2007 Help Desk	38					
+Technical	Microsoft Office 4.2 Help Desk	24					
+Technical	Microsoft Office 95 Help Desk	34					
+Technical	Microsoft Office 97 Help Desk	30					
+Technical	Microsoft Office SharePoint Server 2007	41					
+Technical	Microsoft Office XP Help Desk	40					
+Technical	Microsoft SharePoint 2010 for Developers	37					
+Technical	Microsoft SharePoint Server 2010 - Administrators	40					
+Technical	Microsoft Site Server 3.0	38					
+Technical	Microsoft Systems Management Server 2.0 (SMS)	51					
+Technical	Microsoft Transaction Server	40					
+Technical	Microsoft Visio 2002	38					
+Technical	Microsoft Visio 2007	35					
+Technical	Microsoft Visio 2010	35					
+Technical	Microsoft Visual Studio	34					
+Technical	Microsoft Windows 2000 Data centre Administration	40					
+Technical	Microsoft Windows 2000 Professional Installation	45					
+Technical	Microsoft Windows 2000 Server Administration	42					
+Technical	Microsoft Windows 2000 Server Installation	48					
+Technical	Microsoft Windows 2000 Server Installation Procedures	47					
+Technical	Microsoft Windows 2000 Technical Skills	40					
+Technical	Microsoft Windows 2000 Troubleshooting	39					
+Technical	Microsoft Windows 2003 Server Administration	50					
+Technical	Microsoft Windows 2003 Server Installation Procedures	59					
+Technical	Microsoft Windows 2008 Server Administration	20					
+Technical	Microsoft Windows 95 Technical Skills	20					
+Technical	Microsoft Windows 95 Troubleshooting	20					
+Technical	Microsoft Windows 98 Technical Skills	23					
+Technical	Microsoft Windows 98 Troubleshooting	23					
+Technical	Microsoft Windows NT 4.0 Server Administration	60					
+Technical	Microsoft Windows NT 4.0 Server Installation	45					
+Technical	Microsoft Windows NT 4.0 Troubleshooting	44					
+Technical	Microsoft Windows NT 4.0 Workstation Installation	45					
+Technical	Microsoft Windows Programming	55					
+Technical	Microsoft Windows Vista Technical Skills	37					
+Technical	Microsoft Windows XP Technical Skills	35					
+Technical	Microsoft Windows XP Troubleshooting	39					
+Technical	MVS	55					
+Technical	MySQL	39					
+Technical	Netscape Webserver	40					
+Technical	Network Administration	43					
+Technical	Network Security	48					
+Technical	Network Virtualization	37					
+Technical	Network-Attached Storage (NAS)	40					
+Technical	Novell Directory Services	44					
+Technical	Novell NetWare 3.12	69					
+Technical	Novell NetWare 4.x	65					
+Technical	Novell NetWare 5.x	35					
+Technical	Object Oriented Programming (OOP)	25					
+Technical	Object PAL 5.0	50					
+Technical	OLAP Concepts	37					
+Technical	Oracle 10g DBA	45					
+Technical	Oracle 10g for Developers	55					
+Technical	Oracle 11g DBA	39					
+Technical	Oracle 11g for Developers	39					
+Technical	Oracle 11g Release 2 DBA	45					
+Technical	Oracle 11g Release 2 for Developers	41					
+Technical	Oracle 11i DBA	39					
+Technical	Oracle 7.3 DBA	30					
+Technical	Oracle 7.3 Developer	48					
+Technical	Oracle 8 DBA	39					
+Technical	Oracle 8 Developer	57					
+Technical	Oracle 8.i	47					
+Technical	Oracle 9i DBA	42					
+Technical	Oracle 9i for Developers	54					
+Technical	Oracle Applications DBA	41					
+Technical	Oracle Designer 2000	45					
+Technical	Oracle Developer 2000	45					
+Technical	Oracle E-Business Suite R12	37					
+Technical	Oracle Essbase 11	38					
+Technical	Oracle Financials 11	60					
+Technical	Oracle Forms 10g	53					
+Technical	OS/2 for Administrators	30					
+Technical	OS/2 for Users	25					
+Technical	Paradox Application Language 4.0	35					
+Technical	Pascal	44					
+Technical	PeopleCode 8.5	40					
+Technical	PeopleSoft	40					
+Technical	PeopleSoft 7 DBA	45					
+Technical	PeopleSoft 7 Developer	40					
+Technical	PeopleSoft 8 DBA	39					
+Technical	PeopleSoft 8 Developer	40					
+Technical	Peoplesoft 9 DBA	39					
+Technical	PeopleSoft 9 Developer	38					
+Technical	Perl 5	30					
+Technical	Perl 6	40					
+Technical	PHP	30					
+Technical	PHP 4	40					
+Technical	PHP 5.3	36					
+Technical	PHP Scripting	40					
+Technical	PL/SQL	40					
+Technical	PowerBuilder 10	50					
+Technical	PowerBuilder 4.0	60					
+Technical	PowerBuilder 5.0	64					
+Technical	PowerBuilder 6.0	37					
+Technical	PowerBuilder 8.0	50					
+Technical	Pro/ENGINEER	45					
+Technical	Programming Concepts	37					
+Technical	QuickTest Professional 9	41					
+Technical	Rational Rose	46					
+Technical	Relational Database Design (RDBMS)	30					
+Technical	RPG III	51					
+Technical	RPG IV (RPG ILE)	39					
+Technical	Ruby 1.8	43					
+Technical	SAP Database	39					
+Technical	SAS 6 - IT Professional	60					
+Technical	SAS 8.2	40					
+Technical	SCO UNIX for Administrators	45					
+Technical	SCO UNIX for Users	50					
+Technical	Siebel 7	38					
+Technical	Smalltalk	56					
+Technical	Solaris 10 Administrator	45					
+Technical	Spring Framework 2.5	38					
+Technical	SPSS	49					
+Technical	SQA Robot	50					
+Technical	SQL Entry Level	36					
+Technical	SQL for Client-Server Applications	40					
+Technical	SQL for Desktop Applications	42					
+Technical	SQL Server 2000 DBA	40					
+Technical	SQL Server 2000 for Developers	38					
+Technical	SQL Server 2005 DBA	47					
+Technical	SQL Server 2005 for Developers	39					
+Technical	SQL Server 2008 DBA	39					
+Technical	SQL Server 2008 for Developers	39					
+Technical	SQL Server 2008 R2 Analysis Services	39					
+Technical	SQL Server 2008 Reporting Services	40					
+Technical	SQL Server 2012 for Developers	44					
+Technical	SQL Server 2012 Integration Services	36					
+Technical	SQL Server 6.5	40					
+Technical	SQL Server 6.5 Developer	40					
+Technical	SQL Server 7.0 DBA	40					
+Technical	SQL Server 7.0 Developer	43					
+Technical	SQL Server Integration Services	39					
+Technical	SQL Server Reporting Services	40					
+Technical	Sybase 11	20					
+Technical	Sybase 12	50					
+Technical	Sybase DBA	38					
+Technical	Sybase Developer	66					
+Technical	TCP/IP	59					
+Technical	Technical Support - IT/Network	33					
+Technical	Technical Support Processes	45					
+Technical	Telecommunications	58					
+Technical	TestDirector 8.0	45					
+Technical	Transact SQL	40					
+Technical	U.K. Logical Reasoning - Deduction	20					
+Technical	U.K. Logical Reasoning - Mathematical	25					
+Technical	UML	39					
+Technical	UNIX Administrator	44					
+Technical	UNIX Programming	54					
+Technical	UNIX Shell Programming	40					
+Technical	UNIX Users	50					
+Technical	VBScript	47					
+Technical	Visual Basic 4.0	54					
+Technical	Visual Basic 5.0	51					
+Technical	Visual Basic 6.0	60					
+Technical	Visual Basic 6.0 for Applications (VBA)	36					
+Technical	Visual Basic 9.0	40					
+Technical	Visual C++ 2010	37					
+Technical	Visual C++ 4.0	52					
+Technical	Visual C++ 6.0	42					
+Technical	Visual FoxPro 3.0	25					
+Technical	Visual FoxPro 6.0	47					
+Technical	Visual FoxPro 8.0	40					
+Technical	Visual Interdev 6.0	53					
+Technical	Visual J++ 1.1	48					
+Technical	Visual J++ 6.0	45					
+Technical	VMware ESX 4.1	49					
+Technical	VMware Workstation 7	36					
+Technical	VSE/DOS	40					
+Technical	WAN Architecture	42					
+Technical	Web Commerce Security	35					
+Technical	Web Design Mastery	40					
+Technical	WebLogic Portal 7.0	40					
+Technical	WebLogic Server 12c	38					
+Technical	WebLogic Server 7.0	50					
+Technical	WebSphere 4.0	45					
+Technical	WebSphere Application Server 7	41					
+Technical	WinRunner 6.02	30					
+Technical	WinRunner 7.6	39					
+Technical	Wireless Networking	38					
+Technical	XML	52					
+Technical	XWindow Systems	40

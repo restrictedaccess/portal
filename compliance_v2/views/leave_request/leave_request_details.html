@@ -1,0 +1,15 @@
+<div ng-controller="LeaveRequestDetailsController as lrd">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Leave Request #{{ leave_request_id }}</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">        
+		<div class="row" ng-include="'views/common/leave_request/details.html'"></div>
+		<div class="row" ng-include="'views/common/leave_request/dates.html'"></div>        
+		<div class="row" ng-include="'views/common/leave_request/history.html'"></div>
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

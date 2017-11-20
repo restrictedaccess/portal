@@ -1,0 +1,55 @@
+.main-content h1 {
+	font-size: 25px;
+	color: #0d4078;
+	margin: 15px 15px 15px 0px;
+	line-height: 26px;
+}
+#asl_list_header{
+	font-size: 18px;
+	color: #34648A;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	margin-top:10px;
+}
+.button_list{
+	text-align:center;
+}
+.button_list .button_item{
+	width:auto;	
+	margin-top: 0px!important;
+	
+	border-bottom-colors: none;
+    border-image: none;
+    border-left-colors: none;
+    border-right-colors: none;
+    border-top-colors: none;
+    box-orient: vertical;
+	
+	/* Mozilla: */
+    background: -moz-linear-gradient(#FFAA00 0px, #FF9912 100%);
+	
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFAA00), to(#FF9912));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#FFAA00', EndColorStr='#FF9912', GradientType=0);
+	
+	border-color: #D98719 #D98719 #D98719;
+    
+	border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 7px;
+	
+	font-family: "Helvetica",Arial,sans-serif;
+    font-size: 12px;
+	
+	padding: 7px 17px;
+    text-shadow: 0 1px 0 rgba(128, 128, 124, 0.1);
+    vertical-align: middle;
+	margin-top:10px !important;
+	cursor:pointer;
+}
+.task-item, .skill-item{
+	margin-bottom:5px;
+}

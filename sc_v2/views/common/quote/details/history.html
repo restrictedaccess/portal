@@ -1,0 +1,41 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<!-- <button data-style="zoom-in" class="ladda-button btn btn-primary btn-sm pull-right" ladda="loading5" ng-click="generateQuote()" ng-disabled="setting === null"><strong>Generate Quote</strong></button> -->
+			<h3>History</h3>
+
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Created By</th>
+						<th>Description</th>
+						<th>Action</th>
+						<th>Date Created</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <div ng-show="quotes === null">
+						Loading ...
+					</div> -->
+					<div>
+					<tr dir-paginate="hist in history|itemsPerPage:maxSize">
+						<td class="text-center">#{{hist.created_by}} - {{hist.admin_fname}} {{hist.admin_lname}}</td>
+						<td style="word-wrap: break-word;width: 500px;" ng-bind-html="hist.description"></td>
+						<td>{{hist.action}}</td>
+						<td>{{formatDate(hist.date_created)}}</td>
+					</tr>
+				</tbody>
+			</table>
+			<center>
+
+				<dir-pagination-controls
+                max-size="maxSize"
+                direction-links="true"
+                boundary-links="true">
+                </dir-pagination-controls>
+
+			</center>
+		</div>
+		</div>
+	</div>
+</div>

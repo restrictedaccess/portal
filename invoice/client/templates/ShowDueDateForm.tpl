@@ -1,0 +1,2 @@
+<input type="text" name="invoice_payment_due_date_edit" id="invoice_payment_due_date_edit" value="{$invoice_payment_due_date}" class="text" readonly="true">&nbsp;
+<img align="absmiddle" src="images/calendar_ico.png" id="invoice_payment_due_date_btn" style="cursor: pointer; "  /> <input type="button" id="update_due_date" invoice_id="{$id}" value="Update" /> <input type="button" value="Close"  onclick="fade('invoice_due_date_box')" />

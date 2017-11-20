@@ -1,0 +1,20 @@
+<div style='float:left;padding-left:12px'>#<?php echo $this->userid.' '.$this->name;?></div>
+<div>
+	<ul>
+		<li><a href="#">Reports</a>
+			<div class='submenu'>
+				<?php if($this->reports_allowed):?><a href='?item=report'>Users Activity</a><?php endif;?>
+				<a href='?item=myactivity'>My Activity</a>
+				<?php if($this->is_client):?>
+				<a href='?item=myactivity&staff=true&status=paused&from_date=&to_date='>Staff Paused Tasks</a>
+				<?php endif;?>
+				<a href='?item=myactivity&status=paused&from_date=&to_date='>My Paused Tasks</a>
+				
+			</div>
+		</li>
+	<li><a href="/portal/aclog/">Logger</a></li>
+	<li><a href="?item=createwf" target="_blank">Create Work Tasks</a></li>
+	<?php if($this->reports_allowed):?><li><a href="?item=tasktypes" id='types'>Task Types</a></li><?php endif;?>
+	<li><a href="?item=portal">Portal Home</a></li>
+	</ul>
+</div>

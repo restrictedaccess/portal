@@ -1,0 +1,244 @@
+#right_panel{
+padding:5px;
+}
+.invoice_list_title {
+background-color:#EEEEEE;
+border:2px outset #EEEEEE;
+color:black;
+font-weight:bold;
+height:18px;
+line-height:18px;
+text-align:center;
+margin:0px;
+}
+
+div.scroll {
+margin:0px;
+height: 200px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+}
+
+
+#invoice_form{
+padding:5px;
+border:#CCCCCC solid 1px;
+margin:10px;
+
+}
+
+#invoice_form p{
+	margin-bottom:5px;
+	margin-top:3px;
+	padding:3px;
+}
+
+
+#invoice_form label{
+float:left;
+display:block;
+padding-right:5px;
+text-align:right;
+width:183px;
+}
+
+#client_invoice{
+	padding:2px; 
+	margin:2px; 
+	border:#003300 solid 1px; 
+	font: 11px Arial; 
+	width:690PX;
+}
+
+#client_invoice p{
+	margin-bottom:3px;
+	margin-top:3px;
+	
+}
+
+#client_invoice label{
+	float:left;
+	display:block;
+	width:100px;
+	font-weight:bold;
+}
+#client_invoice span{
+	font: bold 15px tahoma;
+	color:#0000FF;
+}
+
+
+.invoice_title_wrrapper_hdr{
+	background:#9FFFB8; 
+	height:32PX; 
+	border:#000000 solid 1px; 
+	font-weight:bold;
+}
+
+.invoice_data_wrrapper{
+	background:#FFFFFF; 
+	height:32PX; 
+	border:#000000 solid 1px; 
+	font-weight:normal;
+}
+
+
+.invoice_start_end_date{
+	float:left; 
+	height:28px; 
+	width:132px;  
+	padding-top:5px; 
+	text-align:center;
+}
+
+.invoice_offshore_staff{
+	float:left; 
+	height:28px; 
+	width:290px;  
+	padding-top:5px; 
+	text-align:center; 
+	border-left:#000000 solid 1px; 
+	border-right:#000000 solid 1px;
+}
+
+.invoice_working_days{
+	float:left; 
+	height:28px; 
+	width:60px;  
+	padding-top:5px; 
+	text-align:center;
+}
+
+.invoice_rate{
+	float:left; 
+	height:28px; 
+	width:60px;  
+	padding-top:5px; 
+	text-align:center; 
+	border-left:#000000  1px; 
+	border-right:#000000 solid 1px;
+}
+
+.invoice_amount{
+	float:left; 
+	height:28px; 
+	width:80px;  
+	padding-top:5px; 
+	text-align:center;
+}
+
+.invoice_wrapper{
+	padding:3px; 
+	border-bottom:#000000 solid 1px;
+	font:11px tahoma;
+}
+
+#edit_div{
+	display:none; 
+	position:absolute; 
+	/*z-index:20; */
+	height:170px; 
+	width:430px; 
+	border:#000000 solid 1px; 
+	background:#FFFFFF;
+	padding:20px;
+}
+
+#edit_div p{
+	margin-bottom:5px;
+	margin-top:3px;
+}
+
+#edit_div label{
+	float:left;
+	display:block;
+	width:120px;
+}
+.cal_button{
+	cursor:pointer;
+	color:#666666;
+	font:9px tahoma;
+	margin-left:10PX;
+	
+}
+
+#invoice_details{
+	padding:5px;
+}
+
+#invoice_details p{
+	margin-bottom:3px;
+	margin-top:3px;
+	
+}
+
+#invoice_details label{
+	float:left;
+	display:block;
+	width:135px;
+	font-weight:bold;
+}
+
+#tax_invoice{
+	padding:5px;
+}
+
+#tax_invoice p{
+	margin-bottom:3px;
+	margin-top:3px;
+	
+}
+
+#tax_invoice label{
+	float:left;
+	display:block;
+	width:160px;
+	font-weight:bold;
+}
+
+#total_invoice_payments{
+	padding:5px;
+	border:#999999 solid 1px;
+	background:#FFFFFF;
+	margin:10px;
+	
+}
+
+
+#total_invoice_payments p{
+	margin-bottom:3px;
+	margin-top:3px;
+	padding:5px;
+	border-bottom:#999999 dashed 1px;
+	
+	
+}
+
+#total_invoice_payments label{
+	float:left;
+	display:block;
+	width:120px;
+	font-weight:bold;
+}
+
+#payment_methods{
+	padding:3px;
+	margin:2px;
+}
+
+#payment_methods p{
+	margin-bottom:2px;
+	margin-top:2px;
+	
+}
+#payment_methods label{
+	float:left;
+	display:block;
+	width:150px;
+	
+}
+
+.box_payment{
+	float:left; display:block; width:300px; margin-left:20px; text-align:justify; border:#CCCCCC solid 1px; padding:5px; line-height:18px; 
+}

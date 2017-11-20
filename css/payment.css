@@ -1,0 +1,458 @@
+/* CSS Document 
+Use by editcontract.php
+Created by Normaneil Macutay
+Nov. 14 , 2008
+*/
+#payment_container{
+border:#CCCCCC solid 1px;
+margin:10x;
+padding:10px;
+width:1000px;
+
+
+}
+.subcon_box{
+width:450px;
+/*background:#E6F2F2;
+border:#333333 solid 1px;*/
+padding:10px;
+float:left;
+}
+.picture_box{
+float:left;
+padding:10px;
+background:#EBEBEB;
+}
+.subcon_details2{
+float:left;
+margin-left:5px;
+width:300px;
+
+
+}
+.subcon_details{
+float:left;
+margin-left:5px;
+width:260px;
+
+
+}
+.subcon_name{
+color:#000066;
+margin-top:3px;
+margin-bottom:5px;
+padding:5px;
+font:bold 15px "Lucida Grande", "Arial", Verdana, Helvetica, sans-serif;
+border:#CCCCCC dashed 1px;
+	
+}
+
+.subcon_email ,  .subcon_skype ,.date_contracted,.subcon_client{
+margin-top:3px;
+margin-bottom:5px;
+padding:5px;
+font: 12px "Lucida Grande", "Arial", Verdana, Helvetica, sans-serif;
+border:#CCCCCC dashed 1px;
+
+
+}
+
+.conrtact_details{
+float:left; 
+margin-left:5px; 
+margin-top:10px; 
+width:501px;
+font: 11px "Lucida Grande", "Arial", Verdana, Helvetica, sans-serif;
+background:#E0E9F3; 
+padding:10px;
+
+}
+
+.payment_header{
+margin-top:0px; 
+margin-bottom:3px; 
+background:#C5D6E9;
+padding:5px; 
+/*border:#333333 solid 1px;*/
+font: 15px "Lucida Grande", "Arial", Verdana, Helvetica, sans-serif;
+}
+.pesos_header{
+margin-top:10px;
+font-weight:bold;
+padding:5px;
+border:#666666 solid 1px;
+background:#FFFFFF;
+}
+
+#pesos_details ,   #others{
+border-bottom:#666666 solid 1px; 
+border-left:#666666 solid 1px; 
+border-right:#666666 solid 1px; 
+margin-left:5px; 
+margin-right:5px;
+background:#FFFFFF;
+padding:10px;
+}
+
+
+
+#charge_out_rate_details {
+display:block;
+margin-top:5px;
+}
+#charge_out_rate_details p{
+	margin-bottom:5px;
+	margin-top:5px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+
+}
+#charge_out_rate_details label {
+	float:left;
+	display:block;
+	width:220px;
+	padding-right:5px;
+	font-weight:bold;
+}
+#charge_out_rate_details span {
+	float:float;
+	display:block;
+	margin-left:10px;
+}
+
+
+#pesos_details p ,  , #others p{
+margin-bottom:5px;
+margin-top:5px;
+padding:2px;
+border:#EBEBEB dashed 1px;
+}
+
+.currency_wrapper{
+    border-bottom:#666666 solid 1px; 
+	border-left:#666666 solid 1px; 
+	border-right:#666666 solid 1px; 
+	margin-left:2px; 
+	margin-right:2px;
+	background:#FFFFFF;
+	padding:1px;
+}
+
+.country_box{
+	float:left;
+	width:125px;
+	border:#333333 solid 1px;
+	margin-left:2px;
+	height:140px;
+	
+}
+.country_name{
+	text-align:center;
+	font-weight:bold;
+	color:#B30000;
+	padding:1px;
+	background:#FFFFFF;
+}
+#dollar_details , #us_dollar_details , #uk_pounds_details {
+	background:#FFFFFF;
+	
+}
+ #other_currency_control{
+ 	padding:5px;
+	border:#333333 dashed 1px;
+ }
+#other_currency_control p{
+	margin-bottom:5px;
+	margin-top:2px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+}
+
+
+#dollar_details label , #other_currency_control label{
+	float:left;
+	display:block;
+	width:53px;
+	padding-right:5px;
+	font:bold 10px tahoma;
+	text-align:right;
+}
+#dollar_details span , #other_currency_control span{
+	float:left;
+	margin-left:10px;
+	display:block;
+}
+#us_dollar_details p , #dollar_details p{
+	margin-bottom:5px;
+	margin-top:2px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+	text-align:center;
+}
+#us_dollar_details span{
+ text-align:center;
+ font-weight:bold;
+ font:10px tahoma;
+ color:#666666;
+ display:block;
+}
+
+#uk_pounds_details p{
+	margin-bottom:5px;
+	margin-top:2px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+	text-align:center;
+}
+#uk_pounds_details span{
+ text-align:center;
+ font-weight:bold;
+ font:10px tahoma;
+ color:#666666;
+ display:block;
+}
+
+
+
+#others label{
+	float:left;
+	display:block;
+	width:150px;
+	padding-right:5px;
+	font-weight:bold;
+}
+
+#pesos_details label {
+	float:left;
+	display:block;
+	width:60px;
+	padding-right:5px;
+	font-weight:bold;
+}
+#pesos_details span {
+	float:float;
+	/*display:block;*/
+	margin-left:2px;
+}
+
+#others span{
+	float:float;
+	display:block;
+	margin-left:10px;
+}
+
+
+.configure_setup{
+float:left; width:450px; margin-top:20px;
+font: 15px "Lucida Grande", "Arial", Verdana, Helvetica, sans-serif;
+}
+
+#configure{
+ margin-bottom:5px;
+ padding:5px;
+ border:#999999 solid 1px;
+ font:11px tahoma;
+}
+
+#configure p{
+margin-bottom:10px;
+margin-top:5px;
+}
+
+#configure label{
+	float:left;
+	display:block;
+	width:180px;
+	padding-right:5px;
+	font-weight:bold;
+	
+}
+
+#configure span{
+	float:float;
+	display:block;
+	margin-left:10px;
+	
+	
+}
+
+#total_difference{
+
+color:#000;
+}
+.salary{
+padding:20px;
+background:#FFFFCC;
+	
+}
+
+.salary_label{
+float:left;
+	display:block;
+	width:190px;
+	padding-right:5px;
+	font-weight:bold;
+}
+
+#tax_formula{
+border-top:#000000 dashed 1px;
+	
+}
+
+/*
+New Additional CSS Nov.19 , 2008
+Normaneil Macutay
+
+*/
+.money_currency{
+	background:#FFFFFF;
+}
+
+#australia_rate , #us_rate_box, #uk_rate_box{
+	background:#FFFFFF;
+}
+
+#australia_rate p , #us_rate_box p, #uk_rate_box p{
+	margin-bottom:5px;
+	margin-top:2px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+}
+
+#australia_rate label , #us_rate_box label, #uk_rate_box label{
+	float:left;
+	display:block;
+	width:53px;
+	padding-right:5px;
+	font:bold 10px tahoma;
+	text-align:right;
+}
+
+#australia_rate span , #us_rate_box span, #uk_rate_box span{
+	text-align:center;
+	font-weight:bold;
+	font:10px tahoma;
+ 	color:#666666;
+ 	display:block;
+}
+
+#work_history{
+padding:10px;
+border:#CCCCCC solid 1px;
+}
+
+#work_history p{
+margin-bottom:10px;
+margin-top:5px;
+border:#666666 solid 1px;
+padding:5px;
+font:11px tahoma;
+}
+#work_history label{
+float:left;
+display:block;
+width:180px;
+}
+
+
+#contract_details{
+ padding:10px;
+ border:#CCCCCC solid 1px;
+}
+
+#contract_details p{
+margin-bottom:10px;
+margin-top:5px;
+}
+
+#contract_details label{
+float:left;
+display:block;
+width:100px;
+font-weight:bold;
+}
+
+.hours_tz_box{
+padding:5px; 
+border:#CCCCCC solid 1px;
+}
+
+#company_salay_cost_in_multiple_curreny_rate p {
+margin-bottom:8px;
+margin-top:5px;
+
+}
+
+#company_salay_cost_in_multiple_curreny_rate label {
+float:left;
+margin-left:5px;
+width:20px;
+color:#666666;
+font-weight:bold;
+}
+
+#company_salay_cost_in_multiple_curreny_rate span {
+float:left;
+margin-left:20px;
+color:#666666;
+font:10px tahoma;
+}
+
+#Charge_Out_Rate_Quote_Multiple_Currency{
+display:;
+}
+
+#Charge_Out_Rate_Quote_Multiple_Currency p {
+margin-bottom:8px;
+margin-top:5px;
+
+}
+
+#Charge_Out_Rate_Quote_Multiple_Currency label {
+float:left;
+margin-left:5px;
+width:20px;
+color:#666666;
+font-weight:bold;
+}
+
+#Charge_Out_Rate_Quote_Multiple_Currency span {
+float:left;
+margin-left:20px;
+color:#666666;
+font:10px tahoma;
+}
+
+
+#commission p{
+margin-bottom:8px;
+margin-top:5px;
+}
+
+
+#commission label{
+float:left;
+display:block;
+width:180px;
+font-weight:bold;
+
+}
+
+#choose_currency_rate{
+display:block;
+margin-top:5px;
+}
+#choose_currency_rate p{
+	margin-bottom:5px;
+	margin-top:5px;
+	padding:2px;
+	border:#EBEBEB dashed 1px;
+
+}
+#choose_currency_rate label {
+	float:left;
+	display:block;
+	width:220px;
+	padding-right:5px;
+	font-weight:bold;
+}

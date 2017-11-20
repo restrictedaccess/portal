@@ -1,0 +1,133 @@
+
+/* $Id: styles_global.css 2011-12-16 $ */
+
+
+/* POPUP BOXES FOR SMOOTHBOX */
+html, body {
+min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	font-family: Verdana,Geneva,sans-serif; /*Arial, Helvetica, sans-serif;*/
+	background-color: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+
+div, td {
+	font-family: Verdana,Geneva,sans-serif;
+	padding-bottom:0px;
+	font-size:11px;
+}
+
+#task-status {
+  position:fixed;
+  width:300px;
+  height: auto;
+  top:0;
+  margin-left:-150px; /*200px;*/
+  z-index: 999;
+  font-size:12px;
+  font-weight:bold;
+  background:#ffff00;/*e3e0ac;*/
+  padding-left:5px;
+  text-align:center;
+  display:none;
+  left:50%;
+}
+#task-status span { color:#ff0000;}
+
+/* IE6 
+* html #TB_iframeContent{
+	margin-bottom:1px;
+}*/
+
+
+
+/* TOOL TIPS */
+.tip {
+	color: #000;
+	width: 220px;
+	z-index: 13000;
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	background: #fffeeb;
+	text-align: left;
+	font-size: 11px;
+	padding: 4px 8px 8px;
+}
+.tip-text {
+	display: none;
+}
+.tip-top {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+	color: #9FD4FF;
+	padding: 8px 8px 4px;
+}
+ 
+.tip-bottom {
+
+}
+
+.Tips1 {
+	vertical-align: middle;
+}
+
+
+/* tooltip - msl 1-15-09 */
+.tooltip { position:relative; z-index:24; }
+.tooltip span { display:none;}
+.tooltip:hover {z-index:25;}
+
+.tooltip:hover span {
+display:block;
+position:absolute;
+width:120px;
+top:25px;
+left:20px;
+background-color:#FCFBDC;
+border:1px solid #333333;
+padding:5px;
+font-size:11px;
+color:#000;
+text-decoration:none;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#tooltip {
+    padding: 3px;
+    background: #FF8301;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+span.tip {
+color: #FFFFFF;
+    background-color: #436088;
+    font-weight: bold;
+    font-size: 8pt;
+    padding: 5px;
+    padding-left: 8px;
+    font-family: "Trebuchet MS", verdana, arial, serif;
+}
+td.tip:hover {
+    background-color: #ccc;
+}
+
+.win_close {
+	background-image:url(../images/inside/btn_close.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	width:7px;
+   	height:5px;
+   	float:right;
+   	display:block;
+	margin-right: 20px;
+}
+.win_close:hover {
+	background-position:bottom;
+}

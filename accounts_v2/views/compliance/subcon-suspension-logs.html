@@ -1,0 +1,16 @@
+<div ng-controller="SubconSuspensionLogsController as ss">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Subcontractors Suspension Logs</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">	
+		
+		<div class="row" ng-include="'views/common/compliance/subcon-suspension-logs/search-form.html'"></div>
+		<div class="row" ng-include="'views/common/compliance/subcon-suspension-logs/result.html'"></div>
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

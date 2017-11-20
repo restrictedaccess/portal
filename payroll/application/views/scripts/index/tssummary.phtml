@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+	<link rel="stylesheet" type="text/css" href="/portal/payroll/css/screen3.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/portal/payroll/css/styles.css" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script>
+	<script type="text/javascript" src="/portal/payroll/js/processtime.js"></script>
+	<script type="text/javascript" src="/portal/ticketmgmt/js/jqModal.js"></script>
+	<!--<script type="text/javascript" src="/portal/payroll/index.php?item=daterange"></script>-->
+	<style type="text/css">
+	#timesheet {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 50%;
+		/*margin:0 auto;*/
+		margin-left:-46%; /*-450px;*/
+		width:90%; /*850px;*/
+		
+		background-color: #EEE;
+		color: #333;
+		border: 1px solid black;
+		padding: 12px;
+	}
+	
+	.jqmOverlay { background-color: #000; }
+	
+	* html #timesheet {
+		 position: absolute;
+		 top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+	}
+	</style>
+</head>
+<body>
+
+		
+	<div id="staff" style="float:left;width:100%;padding-right:20px;">
+		
+
+		
+		<div id="tabular">
+			<table summary="StaffListing">
+		
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				
+				<th scope="col">Contract Hours</th>
+				<!--<th scope="col">Total Logged Hours</th>-->
+				<th scope="col">Total Adjusted Hours</th>
+				<th scope="col">Total Regular Hours</th>
+				<th scope="col">Overtime</th>
+				<th scope="col">Undertime</th>
+				<th scope="col">Rest Day Hours</th>
+				<th scope="col">Rest Day OT</th>
+				<th scope="col">NightDiff Hrs</th>
+				<th scope="col">NightDiff Hrs OT</th>
+			  
+			</tr>
+			<?php foreach($this->staff_names as $userid => $details):
+				$total_adj_hrs = $total_reg_hrs = $total_ot = $total_ut = $total_rostered =
+				$ndiff = $ndiff_ot =
+				$total_rest_hrs = $total_rest_ot =
+				$total_reg_pay = $total_ot_pay = $total_ndiff_pay = $total_ndiff_ot_pay =
+				$total_rest_pay = $total_rest_ot_pay = $total_pay = 0;
+				$timedetails = json_decode($this->staff_timedetails[$userid]);
+				
+				$hourly_rate = $details['hourly_rate'];
+			?>
+			<tr>
+				<td class="number"><a href='/portal/payroll/index.php?item=timesheet&uid=<?php echo $userid.'&cid='.$details['contractid'].'&ts=true';?>' class='stafflink'><?php echo $details['fname'].' '.$details['lname'];?></a></td>
+				
+				<?php if( count($timedetails) == 0 || !isset($timedetails) ) continue;
+				foreach( $timedetails as $idx => $timedetail ):
+				$timedetail = (array)$timedetail;
+				//print_r($timedetail);
+					//$alpha = chr(65+$i);
+					//$rowid = chr(65+$i) . $staff['userid'].'-'.$staff['contract_id'];//($cnt+1);
+					$total_adj_hrs += $timedetail['adj_hrs'];
+					$total_reg_hrs += $timedetail['reg_hrs'];
+					$total_ot += $timedetail['ot_hrs'];
+					$total_ut += $timedetail['ut_hrs'];
+					$total_rostered += $timedetail['regular_rostered'];
+					
+					
+					$total_rest_hrs += $timedetail['rest_hrs'];
+					$total_rest_ot += $timedetail['rest_ot_hrs'];
+					
+					if( $timedetail['ndiff'] ) {
+						$nd = $timedetail['ndiff'];
+						$ndiff += $nd;
+						$ndiff_ot += $timedetail['ndiff_ot'];
+						
+						if( $timedetail['dayweek'] > 5 )
+							$total_ndiff_pay += round( ($nd * $hourly_rate) + ( $nd * $hourly_rate * 0.1 * 1.3), 2);
+						else
+							$total_ndiff_pay += round( ($nd * $hourly_rate) + ( $nd * $hourly_rate * 0.1), 2);
+					}
+					
+					
+					
+				endforeach;
+				$total_reg_pay = round($total_reg_hrs * $hourly_rate, 2);
+				$total_ot_pay = round($total_ot * $hourly_rate * 1.25, 2);
+				//$total_ndiff_pay = round( ($ndiff * $hourly_rate) + ( $ndiff * $hourly_rate * 0.1), 2);
+				$total_ndiff_ot_pay = round( (1.25*$hourly_rate) * $ndiff_ot + (0.1*$hourly_rate) * $ndiff_ot, 2);
+				
+				$total_rest_pay = round($total_rest_hrs * $hourly_rate * 1.30, 2);
+				$total_rest_ot_pay = round($total_rest_ot * $hourly_rate * 1.69, 2);
+				
+				$total_pay = round($total_reg_pay + $total_ot_pay + $total_ndiff_pay + $total_ndiff_ot_pay + $total_rest_pay + $total_rest_ot_pay, 2);
+				?>
+				<td><?php echo $total_rostered;?></td>
+				<td><?php echo $total_adj_hrs;?></td>
+				<td><?php echo $total_reg_hrs;?></td>
+				<td><?php echo $total_ot;?></td>
+				<td><?php echo $total_ut;?></td>
+				<td><?php echo $total_rest_hrs;?></td>
+				<td><?php echo $total_rest_ot;?></td>
+				<td><?php echo $ndiff;?></td>
+				<td><?php echo $ndiff_ot;?></td>
+			</tr>
+			
+			<?php
+				//usleep(200000); // debuging purpose
+				//ob_flush();
+			endforeach;?>
+			  </tbody>
+                    
+            </table>
+		</div>
+    </div>
+	
+	<!-- timesheet display -->
+	<div id='timesheet'>Please wait...</div>
+</body>
+</html>

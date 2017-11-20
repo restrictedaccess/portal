@@ -1,0 +1,515 @@
+/* CSS Document */
+
+#close_button{
+    float:right;
+	display:none;
+	cursor:pointer;
+}
+.c_lient{
+    padding:3px;
+	border-bottom:#CCCCCC solid 1px;;
+	font-style:italic;
+	color:#000;
+	line-height:20px;
+	font-weight:bold;
+	text-transform:capitalize;
+}
+.c_lient input{
+    font-size:9px;
+	width:72px;
+	float:right;
+	padding:0;
+}
+
+.show_contract_details{
+    padding:3px 3px 3px 2px;
+    cursor:pointer;
+    color:#0033FF;
+	border-bottom:#CCCCCC solid 1px;
+	font-size:11px;	
+}
+
+.show_contract_details:hover{
+	text-decoration:underline;
+	background:#e3e9ff;
+}
+
+.show_contract_details small{
+    font-size:9px;
+	float:right;
+}
+
+.sl_hdr{
+    text-align:center;
+	background:#333333;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.selected_subcon{
+    background:#0000FF;
+	color:#FFFFFF !important;
+}
+
+
+#tgl_btn{
+     background:#CCCCCC;
+	 display:none;
+	 padding:1px;
+	 margin:0;
+	 text-align:right;
+}
+.drag-handle{ /*CSS for Drag Handle*/
+padding: 1px;
+text-indent: 3px;
+font: bold 14px Arial;
+background-color: #CA0000;
+color: white;
+overflow: hidden;
+width: auto;
+filter:progid:DXImageTransform.Microsoft.alpha(opacity=100);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+#staff_contract_handler{
+	margin:auto;
+	width:99%;
+	background:#FFFFFF;
+	border:#333333 solid 1px;
+	-moz-box-shadow: 3px 5px 15px #333333;
+    -webkit-box-shadow: 3px 5px 15px #333333;
+    box-shadow: 3px 5px 15px #333333;
+}
+#overlay2{
+	/*background-image: url("../images/overlay-bg.png");
+	
+	background:#fff; 
+	filter:alpha(opacity=50);
+	 -moz-opacity:0.5;
+	 -khtml-opacity: 0.5;
+	 opacity: 0.8;
+	*/
+	
+    color:#FF0000;
+    width:96%;
+	margin:0;
+	padding:0;
+	
+    position: absolute;
+    text-align: center;
+	font-size:200px;
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+	background:#fff; 
+	filter:alpha(opacity=30);
+	 -moz-opacity:0.3;
+	 -khtml-opacity: 0.3;
+	 opacity: 0.5;
+	 line-height:1000px;
+	
+}
+
+/**************/
+
+#staff_salary_formula{
+	line-height:20px;
+}
+#staff_salary_formula label{
+	display:block;
+	width:200px;
+	 
+}
+
+/*PAGINATION*/
+.pagination, .filter_count_results{
+    background:#CCCCCC;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.pagination ul{
+margin: 0;
+padding: 0;
+font:10px tahoma;
+
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+text-decoration: none; 
+color: #2e6ab1;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #2b66a5;
+color: #000;
+background-color: #FFFF80;
+}
+
+.pagination a.currentpage{
+background-color: #2e6ab1;
+color: #FFF !important;
+border-color: #2b66a5;
+font-weight: bold;
+cursor: default;
+}
+
+.pagination a.disablelink, .pagination a.disablelink:hover{
+background-color: white;
+cursor: default;
+color: #929292;
+border-color: #929292;
+font-weight: normal !important;
+}
+
+.pagination a.prevnext{
+font-weight: bold;
+}
+
+/*END PAGINATION*/
+.staff_name tr:hover {background-color:#FFFF00;}
+
+.staff_name img{
+	float:left;
+	margin-right:10px;
+}
+
+.staff_name input{
+	float:left;
+	margin-right:5px;
+}
+
+.staff_name a{
+	text-decoration:none;
+}
+.staff_name a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.staff_email{
+	font:10px tahoma;
+}
+#salary_formula2{
+	font-weight:bold;
+	color:#FF0000;
+	padding:5px;
+}
+.h2{
+	color:#000000;
+	margin-top:2px;
+	margin-bottom:5px;
+}
+.h3{
+	color:#0000FF;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+
+#approve_controls{
+	background:#333333;
+	color:#FFFFFF;
+	padding:5px;
+}
+
+#staff_contract_list{
+	margin:auto;
+	width:99%;
+	background:#FFFFFF;
+	border:#333333 solid 1px;
+	-moz-box-shadow: 3px 5px 15px #333333;
+    -webkit-box-shadow: 3px 5px 15px #333333;
+    box-shadow: 3px 5px 15px #333333;
+}
+
+.temp_status_hdr{
+	font-weight:bold; 
+	background:#6699FF; 
+	color:#FFFFFF; 
+	border:#0000FF outset 1px;
+	text-align:center;
+}
+.temp_box_det{
+	border:#6699FF solid 1px; 
+	height:120px; 
+	overflow-y:scroll;
+	background:#FFFFFF;
+
+}
+
+
+.client_box{
+	background:#D9FFD9; 
+	padding:5px; 
+	margin-top:10px; 
+	margin-bottom:15px; 
+	border:#CAE4FF solid 1px;
+}
+.choose_client{
+	color:#0000FF; 
+	font-weight:bold;
+}
+.bold_rate{
+	font-weight:bold;
+}
+.client_charge_out_rate{
+	padding:3px;
+	font:bold 14px Arial;
+	text-align:center;
+	border:#00FF80 outset 1px;
+	background:#D9FFD9;
+	margin-top:30px;
+}
+.client_charge_out_rate_box{
+	border:#00FF80 solid 1px;
+}
+
+.staff_working_hrs_det{
+	padding:3px;
+	font:bold 14px Arial;
+	text-align:center;
+	border:#00FF80 outset 1px;
+	background:#D9FFD9;
+	margin-top:30px;
+}
+
+.option_box{
+	float:left;
+	display:block;
+	width:150px;
+	border-right:#000000 solid 1px;
+	height:50px;
+	
+}
+.select_small {
+	border:1px solid #444444;
+	font-family:Tahoma,Verdana;
+	font-size:12px;
+	width:30px;
+}
+
+.select_time {
+	border:1px solid #444444;
+	font-family:Tahoma,Verdana;
+	font-size:12px;
+	width:100px;
+}
+
+.rate_tr_hdr{
+	background:#62A4D5;
+}
+.rate_td_hdr{
+	color:#FFFFFF;
+	font:bold 12px Arial;
+	border:#FFFFFF solid 1px;
+	text-align:center;
+}
+
+.rate_td_hdr2{
+	color:#FFFFFF;
+	font:bold 12px Arial;
+	border-top:#FFFFFF solid 1px;
+	border-right:#FFFFFF solid 1px;
+	border-bottom:#FFFFFF solid 1px;
+	border-left:#000000 solid 1px;
+	text-align:center;
+}
+
+.rate_td{
+	color:#000;
+	font: 11px Arial;
+	border:#62A4D5 solid 1px;
+	text-align:center;
+}
+
+.rev_td{
+	color:#000;
+	font: 11px Arial;
+	border:#62A4D5 solid 1px;
+	
+}
+
+.rate_td2{
+	color:#000;
+	font: bold 11px Arial;
+	border:#62A4D5 solid 1px;
+	text-align:center;
+
+	
+}
+
+.rate_td3{
+	color:#000;
+	font: 11px Arial;
+	border:#62A4D5 solid 1px;
+	
+}
+
+.rate_td4{
+	color:#000;
+	font:bold 11px Arial;
+	border:#62A4D5 solid 1px;
+	height:50px;
+	text-align:center;
+}
+
+.contract_td{
+	font-weight:bold;
+}
+.contract_td2{
+	font-weight:bold;
+	
+}
+
+#applicant_info {
+    padding:10px;
+	background:#FFFFFF;
+}
+
+#applicant_info p{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#applicant_info label{
+	float:left;
+	width:60px;
+}
+
+
+
+.tb_hdr{
+	background:#333333;
+}
+.tb_td_hdr{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.gray{
+	color:#999999;
+	margin-left:5px;
+}
+.select_box{
+	font:12px Arial;
+}
+#main{
+	border-left:gray solid 1px;
+	border-right:gray solid 1px;
+	border-bottom:gray solid 1px;
+	border-top:#6699FF solid 4px;
+	font:12px Arial;
+	background:#FFFFFF;
+}
+
+.fieldset{
+	background:#FFFFFF; 
+	border: 1px #62A4D5 solid ; 
+	padding:5px;
+	height:auto;
+	
+}
+.legend{
+	padding:5px; 
+	margin-left: 5px;
+}
+.divisions{
+	margin-bottom:20px;
+}
+
+.user_options{
+	float:left;
+	padding:5px;
+}
+
+.search_options{
+	float:left;
+	padding:5px;
+}
+
+.bttn{
+	font:7.5pt Verdana;
+	
+}
+
+#result_options{
+	overflow:auto;
+	background:#CCCCCC;
+	/*overflow-y:scroll;*/
+}
+
+#result_options td{
+	font:11px tahoma;
+}
+#client_ads{
+	overflow:auto;
+	height:80px;
+}
+
+.leads_order tr:hover {background-color:#FFFF00;}
+
+.staff_attendance_summary{
+	font-family:'Courier New', Courier, monospace;
+}
+
+.staff_attendance_summary p{
+	margin-bottom:3px; 
+	margin-top:5px;
+}
+
+.staff_attendance_summary span{
+	float:right; 
+	width:65px;
+}
+
+#running_late_legend{
+	font-size:10px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+
+#running_late_legend label{
+	float:left;
+	width:160px;
+	text-align:center;
+	margin-right:5px;
+}
+
+
+#search_form_subconlist{
+	margin:0;
+	padding:5px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	background:#CCC;
+}
+
+#search_form_subconlist div{
+	float:left;
+	width:150px;
+	margin-right:15px;
+	margin-top:3px;
+	margin-bottom:1px;
+}
+
+#search_form_subconlist input, select{
+    width:100% !important;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+
+#search_form_subconlist select{
+	padding:2px;
+}
+
+.search_filter input, select{
+    width:150px !important;
+}

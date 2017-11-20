@@ -1,0 +1,103 @@
+#headstone1 {
+  position:relative;
+  height:64px;
+  background-color:#4C7C86;
+  background-image:url(../images/magnifying-glass.gif);
+  background-repeat:no-repeat;
+  background-position:top left;
+}
+
+#logo {
+  position: absolute;
+  bottom:   5px;
+  left:     12px;
+}
+
+#mainmenu a {
+  font-size:   70%;
+  font-weight: bold;
+  color:       #E7FFE0;
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+}
+
+#mainmenu a:hover {
+  text-decoration:underline;
+}
+
+#headstonead {
+  position: absolute;
+  right: 15px;
+  top:2px;
+}
+
+
+#headstone2 {
+  font-weight:bold;
+  padding:2px 0px 2px 4px;
+  height:16px;
+  margin:0px;
+  color:#356645;
+  font-size:70%;
+  background-image:url(../images/main-menu-bar-bkg.gif)
+}
+
+.selectedmaincat {
+  margin:0px;
+  padding:1px 0px 3px 0px;
+  text-decoration:none;
+  /* color:#356645; */
+  background-color:#E0EFCD;
+  border-left:solid 1px gray;
+  border-right:solid 1px gray;
+}
+
+#headstone2 a {
+  position:relative;
+  top:1px;
+  margin:0px;
+  padding:0px 15px 0px 15px;
+  text-decoration:none;
+  color:#356645;
+}
+
+#headstone2 a:hover {
+  position:relative;
+  top:1px;
+  color:black;
+  text-decoration:underline;
+}
+
+.submenu {
+  background-color:#6E9966;
+  /*background-color:#A0C770;*/
+  padding:2px 0px 2px 15px;
+  margin:0px;
+  font-size:70%;
+}
+
+.submenu span {
+  margin:0px;
+  padding:0px 7px 0px 5px;
+  color:#333333;
+  text-decoration:none;
+  background-color:#AEC9A6;
+  /* border-right:solid 1px #80B050; */
+  border-right:solid 1px white;
+}
+
+.submenu a {
+  margin:0px;
+  padding:0px 7px 0px 5px;
+  /* color:#356645; */
+  color:white;
+  text-decoration:none;
+  /* border-right:solid 1px #80B050; */
+  border-right:solid 1px white;
+}
+
+.submenu a:hover {
+  color:black;
+  text-decoration:underline;
+}
+

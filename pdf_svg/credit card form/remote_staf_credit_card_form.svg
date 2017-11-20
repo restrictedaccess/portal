@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="remote_staf_credit_card_form.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5604">
+      <stop
+         id="stop5606"
+         offset="0"
+         style="stop-color:#acfa9f;stop-opacity:1;" />
+      <stop
+         id="stop5608"
+         offset="1"
+         style="stop-color:#cccccc;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4503">
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1;"
+         offset="0"
+         id="stop4505" />
+      <stop
+         style="stop-color:#cccccc;stop-opacity:0;"
+         offset="1"
+         id="stop4507" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2657"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2724"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4503"
+       id="linearGradient5455"
+       gradientUnits="userSpaceOnUse"
+       x1="167.68532"
+       y1="290.70715"
+       x2="167.68532"
+       y2="241.16847"
+       gradientTransform="matrix(0.8467083,0,0,1.0005434,390.45198,-1.84777)" />
+    <inkscape:perspective
+       id="perspective2471"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="375.70811"
+     inkscape:cy="349.79284"
+     inkscape:document-units="pt"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="904"
+     inkscape:window-x="0"
+     inkscape:window-y="29" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       y="25.908529"
+       x="98.502686"
+       id="image2659"
+       height="83"
+       width="292"
+       sodipodi:absref="/home/oliver/philippinesatwork.com/pdf_report_generation/remote_staff_logo.png"
+       xlink:href="remote_staff_logo.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="41.657459"
+       y="529.06293"
+       id="text2748"
+       sodipodi:linespacing="100%"
+       transform="scale(0.9771905,1.0233419)"><tspan
+         sodipodi:role="line"
+         id="tspan2760"
+         x="41.657459"
+         y="529.06293">Credit Card Type :          Visa          Master Card            Amex</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:13.32380009px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans"
+       x="47.845203"
+       y="468.81342"
+       id="text5309"
+       sodipodi:linespacing="100%"
+       transform="scale(0.989901,1.010202)"><tspan
+         sodipodi:role="line"
+         id="tspan5311"
+         x="47.845203"
+         y="468.81342">YES. I have read the Service Agreement and would like RemoteStaff to perform automatic Credit Card Debit</tspan><tspan
+         sodipodi:role="line"
+         x="47.845203"
+         y="482.13721"
+         id="tspan2651">on my credit card if and when I don't do a money transfer 5 business days after my receipt of the monthly</tspan><tspan
+         sodipodi:role="line"
+         x="47.845203"
+         y="495.46103"
+         id="tspan2653">RemoteStaff Service Invoice.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+       x="94.954338"
+       y="486.67676"
+       id="text5321"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5323" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14.46290302px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+       x="200.64745"
+       y="117.9137"
+       id="text5497"
+       sodipodi:linespacing="125%"
+       transform="scale(0.8967277,1.1151657)"><tspan
+         sodipodi:role="line"
+         x="200.64745"
+         y="117.9137"
+         id="tspan2648">RemoteStaff Offshore Labour Hire Outsourcing Service</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="153"
+       y="322.36218"
+       id="text2517"><tspan
+         sodipodi:role="line"
+         id="tspan2519"
+         x="153"
+         y="322.36218" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+       x="75"
+       y="305.36218"
+       id="text2521"><tspan
+         sodipodi:role="line"
+         id="tspan2523"
+         x="75"
+         y="305.36218" /><tspan
+         sodipodi:role="line"
+         id="tspan2525" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2493"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><flowRegion
+         id="flowRegion2495"><rect
+           id="rect2497"
+           width="358"
+           height="44"
+           x="390"
+           y="723.36218" /></flowRegion><flowPara
+         id="flowPara2499" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2457"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+       transform="translate(-4.97266,-132.50791)"><flowRegion
+         id="flowRegion2459"><rect
+           id="rect2461"
+           width="150"
+           height="15"
+           x="40"
+           y="305.36218"
+           style="fill:#ff0000" /></flowRegion><flowPara
+         style="fill:#ff0000"
+         id="flowPara2485">Contract Detail:s:</flowPara></flowRoot>    <flowRoot
+       transform="translate(-5.8671875,128.49209)"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Arial Black;-inkscape-font-specification:Arial Black"
+       id="flowRoot2643"
+       xml:space="preserve"><flowRegion
+         id="flowRegion2645"><rect
+           style="fill:#ff0000"
+           y="305.36218"
+           x="40"
+           height="15"
+           width="150"
+           id="rect2647" /></flowRegion><flowPara
+         id="flowPara2649"
+         style="fill:#ff0000">Payment Details:</flowPara></flowRoot>    <text
+       transform="scale(0.9771905,1.0233419)"
+       sodipodi:linespacing="100%"
+       id="text2657"
+       y="562.28699"
+       x="41.342545"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="562.28699"
+         x="41.342545"
+         id="tspan2659"
+         sodipodi:role="line">Name on the Credit Card:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="42.70565"
+       y="596.48859"
+       id="text2661"
+       sodipodi:linespacing="100%"
+       transform="scale(0.9771905,1.0233419)"><tspan
+         sodipodi:role="line"
+         id="tspan2663"
+         x="42.70565"
+         y="596.48859">Credit Card Number:</tspan></text>
+    <text
+       transform="scale(0.9771905,1.0233419)"
+       sodipodi:linespacing="100%"
+       id="text2665"
+       y="631.66736"
+       x="41.359722"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="631.66736"
+         x="41.359722"
+         id="tspan2667"
+         sodipodi:role="line">Expiration Date:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="41.657459"
+       y="669.77771"
+       id="text2669"
+       sodipodi:linespacing="100%"
+       transform="scale(0.9771905,1.0233419)"><tspan
+         sodipodi:role="line"
+         id="tspan2671"
+         x="41.657459"
+         y="669.77771">CVV Code:</tspan></text>
+    <text
+       transform="scale(0.9771905,1.0233419)"
+       sodipodi:linespacing="100%"
+       id="text2675"
+       y="710.8194"
+       x="49.844196"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="710.8194"
+         x="49.844196"
+         id="tspan2677"
+         sodipodi:role="line">Signature Over Written Name</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.39417458px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="27.155859"
+       y="-1769.7128"
+       id="text2679"
+       sodipodi:linespacing="100%"
+       transform="scale(1.805367,-0.553904)"><tspan
+         sodipodi:role="line"
+         id="tspan2681"
+         x="27.155859"
+         y="-1769.7128">_________________________</tspan></text>
+    <text
+       transform="scale(0.989901,1.010202)"
+       sodipodi:linespacing="100%"
+       id="text2683"
+       y="784.59186"
+       x="45.96067"
+       style="font-size:13.32380009px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         id="tspan2689"
+         y="784.59186"
+         x="45.96067"
+         sodipodi:role="line"
+         style="font-style:italic">I authorize Think Innovations RemoteStaff to charge my Credit Card in accordance to the Service Agreement.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="102.03465"
+       y="975.6377"
+       id="text2695"
+       sodipodi:linespacing="100%"
+       transform="scale(0.9771905,1.0233419)"><tspan
+         sodipodi:role="line"
+         id="tspan2697"
+         x="102.03465"
+         y="975.6377"
+         style="fill:#483737">Owned and managed by Think Innovations Pty. Ltd. ABN: 37-094-364-511 Fax Back to: +61 02 8088 7247</tspan></text>
+    <text
+       transform="scale(0.9601193,-1.0415372)"
+       sodipodi:linespacing="100%"
+       id="text2723"
+       y="-688.64667"
+       x="41.371166"
+       style="font-size:13.50497627px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       xml:space="preserve"><tspan
+         y="-688.64667"
+         x="41.371166"
+         id="tspan2725"
+         sodipodi:role="line">_________________________</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.72628593px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans Bold"
+       x="42.212852"
+       y="212.45384"
+       id="text2781"
+       sodipodi:linespacing="200%"
+       transform="scale(0.9771905,1.0233419)"><tspan
+         sodipodi:role="line"
+         id="tspan2783"
+         x="42.212852"
+         y="212.45384"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">First Name:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="235.90642"
+         id="tspan2785"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Surname:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="259.35898"
+         id="tspan2787"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Position:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="282.81155"
+         id="tspan2789"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Company Name:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="306.26413"
+         id="tspan2791"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Address:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="329.71671"
+         id="tspan2793"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Phone:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="353.16928"
+         id="tspan2795"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Fax:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="376.62186"
+         id="tspan2797"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Mobile:</tspan><tspan
+         sodipodi:role="line"
+         x="42.212852"
+         y="400.0744"
+         id="tspan2799"
+         style="text-align:start;line-height:200%;writing-mode:lr-tb;text-anchor:start">Email:</tspan></text>
+    <image
+       y="12.362183"
+       x="437"
+       id="image2473"
+       height="108"
+       width="209"
+       sodipodi:absref="D:\INSTALLERS\pdf\think_innovations_logo.png"
+       xlink:href="think_innovations_logo.png" />
+    <text
+       transform="scale(0.989901,1.010202)"
+       sodipodi:linespacing="100%"
+       id="text2446"
+       y="834.33362"
+       x="79.651115"
+       style="font-size:13.32380009px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Sans"
+       xml:space="preserve"><tspan
+         id="tspan2448"
+         y="834.33362"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic">For Invoices in Australian Dollar a Merchant facility fees apply for the following credit card holders:  </tspan><tspan
+         y="847.65741"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2450"></tspan><tspan
+         y="860.9812"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2452">AMEX : 2%  </tspan><tspan
+         y="874.30499"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2454">Visa / MasterCard : 1%  </tspan><tspan
+         y="887.62885"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2456"></tspan><tspan
+         y="900.95264"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2458">For Invoices in Pounds and USD, 2% Merchant facility fees apply for all credit card payments. </tspan><tspan
+         y="914.27643"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2460"></tspan><tspan
+         y="927.60022"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2462">Note that we prefer payments made via bank transfer or direct debit.</tspan><tspan
+         y="940.92401"
+         x="79.651115"
+         sodipodi:role="line"
+         style="font-style:italic"
+         id="tspan2464">.</tspan></text>
+  </g>
+</svg>

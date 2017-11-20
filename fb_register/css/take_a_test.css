@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'HelveticaFont';
+	src: url('Helvetica_Nueue.ttf');
+}
+
+h1.take_a_test, h2.prove_it{
+	font-family:'HelveticaFont', Arial, sans-serif;
+	font-size:16pt;
+	font-weight:bold;
+	line-height:100%;
+	color:rgb(1,43,151);
+	text-align:left;
+	margin-bottom:0;
+	margin-top:0;
+}
+h2.prove_it{
+	font-weight:normal;
+	color:#1B1B1B;
+	font-size:16pt;
+}
+h1.take_a_test{
+	margin-top:25px;
+}
+.pic{
+	background:url(../images/check.png) no-repeat bottom right transparent;
+	height:154px;
+}

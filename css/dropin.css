@@ -1,0 +1,40 @@
+/* CSS Document */
+#dropin{
+	position:absolute;
+	visibility:hidden;
+	border: 9px solid gray; 
+	background-color:#FFFFFF; 
+	width: 700px; 
+	padding: 8px; 
+	left: 350px; 
+	top: 300px;
+}
+
+.dropin_content{
+	height:400px;
+	overflow-y:scroll;
+	padding:7px;
+	font:12px Arial;
+	border:gray solid 1px;
+	line-height:20px;
+	text-align:justify;
+	
+}
+
+.h{
+	color:#61BBF1;
+}
+
+.h_name{
+	font-weight:bold;
+}
+.payroll_notice{
+	text-align:center;
+	color:#FF0000;
+}
+
+.letter{
+	text-decoration:none;
+	font-weight:bold;
+	color:#FF0000;
+}

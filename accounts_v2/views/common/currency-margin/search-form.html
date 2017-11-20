@@ -1,0 +1,58 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Add New Currency Margin</h5>
+		</div>
+		<div class="ibox-content">
+			<div class="row">
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Currency</label>
+		        	<select class="form-control" ng-model="cm.reference_currency" data-placeHolder="Choose Currency">
+			    		<option ng-repeat="currency in currencies" value="{{ currency.code }}">{{ currency.code }}</option> 	
+			    	</select>
+		      	</div>			    
+			    
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">New Rate</label>
+		        	<input type="text" class="form-control" ng-model="cm.reference_currency_rate" />
+		        	
+		      	</div>
+		      	
+		      	<!--
+		      	<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Work Status</label>
+		        	<select class="form-control" ng-model="cm.work_status" data-placeHolder="Choose Work Status">
+			    		<option ng-repeat="work_status in work_statuses" value="{{ work_status }}">{{ work_status }}</option> 	
+			    	</select>
+		        	
+		      	</div>
+		      	-->
+		      	
+		      	
+		      	
+		      	<div class="col-xs-4 col-sm-4 col-md-4">
+			    	<label class="text-muted">Work Status</label>
+		        	<select class="form-control" ng-model="cm.work_status" data-placeHolder="Choose Work Status">
+		        		 <option ng-repeat="work_status in work_statuses" value="{{ work_status }}">{{ work_status }}</option>			    		 
+			    	</select>
+		        	
+		      	</div>
+		      	<!--
+		      	<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Effective Date</label>			    	
+		        <input type="text" datepicker-popup="yyyy-MM-dd" ng-model="cm.reference_effective_date" is-open="cm.reference_effective_date.open"
+       ng-click = "ca.reference_effective_date.open = true" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" 
+       ng-required="true" close-text="Close"  class="form-control" />
+		      	</div>
+		      	-->
+		      	
+			</div>
+			<br clear="all" />
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2">			    	
+			    	<button ladda="loadingDemo" ng-click="add_new_currency_margin()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left">Save Changes</button>
+		      	</div>
+			</div>
+		</div>
+	</div>
+</div>	

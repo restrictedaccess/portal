@@ -1,0 +1,126 @@
+/* CSS Document */
+#lead {
+font:12px Arial;
+background:#E1E4F0;
+	
+}
+#lead p{
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+#lead label{
+	float:left;
+	display:block;
+	width:220px;
+	font-weight:bold;
+}
+
+#lead span{
+	margin-left:5px;
+}
+#lead input{
+font:10px tahoma; width:80px;
+}
+.right_controls{
+	position:absolute; z-index:20; padding:10px; border:#CCCCCC solid 5px; background:#FFFFFF; left: 922px; top: 235px; width: 284px;
+
+}
+
+#rate_mess{
+	margin-left:200px; background:#FFFF00; font-weight:bold;
+}
+
+.tab_content{
+border:#E1E4F0 solid 5px; padding:5px; background:#FFFFFF; 
+}
+
+#action_wrapper{
+ background:#FFFFFF;
+ font:11px tahoma;
+}
+
+#action_wrapper select{
+ font:11px tahoma;
+}
+
+#action_wrapper p{
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+#action_wrapper label{
+	float:left;
+	display:block;
+	width:100px;
+	font-weight:bold;
+}
+
+div.scroll {
+margin:0px;
+height: 150px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+}
+.action_title{
+	border:#CCCCCC outset 3px; background:#CCCCCC; font-weight:bold; text-align:center;
+}
+#action_history{
+padding:5px;
+}
+.list{
+padding:2px; border-bottom:#CCCCCC solid 1px;
+}
+.new_button{
+font:11px tahoma; width:80px;
+}
+
+#action_form
+{
+	padding:10px;
+	border:#D1D6E9 solid 5px;
+}
+#action_form p{
+margin-bottom:5px;
+margin-top:5px;
+}
+
+#action_form label{
+	float:left;
+	display:block;
+	width:100px;
+	font-weight:bold;
+}
+
+
+#action_form textarea{
+	font:11px tahoma;
+	width:300px;
+}
+#todo_reminders {
+margin:5px;
+}
+#todo_reminders p{
+margin-bottom:8px;
+margin-top:5px;
+}
+
+#todo_reminders label{
+float:left;
+width:100px;
+display:block;
+font-weight:bold;
+}
+#todo_reminders span{
+float:left;
+display:block;
+margin-right:10px;
+}
+
+
+#todo_reminders input , #todo_reminders select{
+font:11px tahoma;
+
+}
+

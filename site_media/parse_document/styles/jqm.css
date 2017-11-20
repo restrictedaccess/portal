@@ -1,0 +1,18 @@
+.show_files {
+	margin-left: -300px;
+	width: 600px;
+	height:450px;
+}
+	
+.show_files {
+	top: 70px;
+	left: 50%;
+	display: none;
+	position: fixed;
+	background-color: #EEE;
+	color: #333;
+	border: 1px solid black;
+	padding: 12px;
+}
+	
+.jqmOverlay { background-color: #000; }

@@ -1,0 +1,251 @@
+.subtab{
+	margin-top:20px;
+	border-bottom: 1px solid gray;
+	overflow: hidden;
+	width: 100%;
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	
+
+}
+
+.subtab ul{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 20px; /*offset of first tab relative to page left edge*/
+	padding: 0;
+}
+
+
+.subtab li{
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.subtab a{
+	float: left;
+	position: relative;
+	margin-right: 5px; /*Spacing between each tab*/
+	text-decoration: none;
+	background:#D8D8D8;
+	color:#999999;
+	font-weight:bold;
+	line-height:30px;
+	height:30px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.subtab a:hover{
+	background:#333333;
+	font-weight:bold;
+	color:#FFFFFF
+}
+
+
+.subtab .selected a{
+	background:#333333;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+
+
+
+
+
+
+
+#glossymenu{
+	 background:url(images/remote-staff-nav-bg.jpg) top left repeat-x; 
+	 height:36px; 
+	 font-family:Arial, Helvetica, sans-serif; 
+	 font-size:12px; 
+	 margin-bottom:4px;
+	
+}
+#glossymenu ul{ list-style:none; }
+#glossymenu ul li{  float:left;  }
+#glossymenu ul li a:link, #glossymenu ul li a:visited{  display:block; padding:14px 7px 10px 7px; text-decoration:none; color:#fff; }
+#glossymenu ul li a:hover{ background:url(./images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+#glossymenu ul li.spacer{ width:10px; }
+a#homenav{ background:url(./images/remote-staff-nav-bg2.jpg) top left repeat-x;  font-weight:bold; }
+
+
+
+
+
+
+
+
+
+
+
+.tablecontent tbody tr:hover {
+  background: #FFFFCC;
+  }
+  
+
+
+/********************************/  
+.class1{
+	position: relative;
+	padding: 0 0 0 34px;
+	margin: 0  0 0 0;
+	height: 46px;
+	list-style: none;
+}
+.class1 ul{
+	list-style-type: none;
+	margin: 0;
+	margin-left: 10px; /*offset of first tab relative to page left edge*/
+	padding: 0;
+}
+
+.class1 li a{
+	float: left;
+	display: block;
+	color:#000;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding:0 0 0 20px; /*Padding to accomodate left tab image. Do not change*/
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	m
+	cursor: pointer;	
+		
+	}
+.class1 A:visited {text-decoration: none}
+.class1 A:active {text-decoration: none;color: red; background:#99FFFF;}
+.class1 A:hover {color: #000; background: #99FF66;	border-color: #227;}
+
+
+
+
+.animatedtabs{
+border-bottom: 1px solid gray;
+overflow: hidden;
+width: 100%;
+font-size: 9px; /*font of menu text*/
+}
+
+
+.animatedtabs ul{
+list-style-type: none;
+margin: 0;
+margin-left: 10px; /*offset of first tab relative to page left edge*/
+padding: 0;
+}
+
+.animatedtabs li{
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.animatedtabs a{
+float: left;
+position: relative;
+top: 5px; /* 1) Number of pixels to protrude up for selected tab. Should equal (3) MINUS (2) below */
+background: url(media/tab-blue-left.gif) no-repeat left top;
+margin: 0;
+margin-right: 3px; /*Spacing between each tab*/
+padding: 0 0 0 9px;
+text-decoration: none;
+
+}
+
+.animatedtabs a span{
+float: left;
+position: relative;
+display: block;
+background: url(media/tab-blue-right.gif) no-repeat right top;
+padding: 5px 14px 3px 5px; /* 2) Padding within each tab. The 3rd value, or 3px, should equal (1) MINUS (3) */
+font-weight: bold;
+color: black;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.animatedtabs a span {float:none;}
+/* End IE5-Mac hack */
+
+
+.animatedtabs .selected a{
+background-position: 0 -125px;
+top: 0;
+}
+
+.animatedtabs .selected a span{
+background-position: 100% -125px;
+color: black;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}
+
+.animatedtabs a:hover{
+background-position: 0% -125px;
+top: 0;
+}
+
+.animatedtabs a:hover span{
+background-position: 100% -125px;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}
+
+#path_links {	
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    width: 100%;
+    font-size: 10px; /*font of menu text*/
+    border-bottom:#999 solid 2px;
+}
+
+#path_links ul{	
+    list-style-type: none;
+    margin: 0;
+	/*margin-left: 10px;*/ /*offset of first tab relative to page left edge*/
+    padding: 0;
+}
+
+#path_links li {
+	float:left;
+	margin-left:1px;
+	background:#999;
+}
+#path_links .divider {
+    color: #999999;
+    padding: 0 5px;
+}
+
+#path_links a {
+    color: #000;
+    text-decoration: none;
+	padding:3px;
+	height:25px;
+	line-height:25px;
+}
+#path_links li:hover {
+	background:#333;
+}
+
+#path_links a:hover {
+	color:#FFF !important;
+    text-decoration: none;
+}
+
+
+
+#path_links .selected a {
+	background:#333 !important;
+    color:#FFF !important;
+    text-decoration: none;
+	background-position: 100% -125px;
+    padding-bottom: 8px; 
+    padding-top:8px;
+    top: 0;	
+}

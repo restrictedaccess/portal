@@ -1,0 +1,181 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000;
+/*font-weight: bold; text-transform: uppercase;*/
+}
+p { margin: 0 0 10px;
+/*line-height: 1.4em;*/
+font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	width: 97%;	
+	max-width: 1080px;
+	margin: auto;
+	padding: 1%;
+} 
+
+#main {
+	width: 77%;
+	/*margin-right: 5%;*/
+	float: right;
+}		
+		
+aside {
+	width: 20%;
+	float: left;
+}
+header {border-bottom:1px solid #000;}
+
+header h1 {
+	width:700px;
+	height:89px;
+	
+	/*height: 70px;
+	width: 160px;*/
+	float: left;
+	display: block;
+	text-indent: -9999px;
+	}
+	
+/* Nav */
+header nav {
+	/*float: right;
+	margin-top: 40px;*/
+	
+	clear:both;
+	background:#eee;
+	border-top:4px solid #000;
+	margin:0;
+	padding:6px 15px !important;
+	text-align:right;
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+		
+	/*header nav ul {
+		clear:left;
+		float:right;
+		list-style:none;
+		margin:0;
+		padding:0;
+		right:15px;
+		position:absolute;
+		z-index:99;
+		line-height:10px;
+	}
+	header ul li {
+		display:inline;
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+	}*/
+	header nav li a {
+		display:block;
+		float:left;
+		margin:0 0 0 1px;
+		padding:3px 10px;
+		text-align:center;
+		background:#eee;
+		color:#000;
+		text-decoration:none;
+		/*position:absolute;*/
+		right:15px;
+		/*line-height:1.3em;*/
+		z-index:999;
+	}
+	header nav li a:hover {
+		background:#369;
+		color:#fff;
+	}
+	header nav li a.active,
+	header nav li a.active:hover {
+		color:#fff;
+		background:#000;
+		font-weight:bold;
+	}
+	
+	header nav li div {
+	display: none;
+	}
+
+#layoutdims {
+	
+}
+
+#loading {
+  position:fixed;
+  width:auto;
+  height: auto;
+  top:0;
+  /*margin-left:-150px;*/
+  z-index: 9999;
+  font-size:14px;
+  font-weight:bold;
+  background:#ffff00;/*e3e0ac;*/
+  padding: 0 14px;
+  text-align:center;
+  display:none;
+  left:40%;
+  right:35%;
+}
+#skipTo {
+	display: none;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+/* Banner */			
+#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+	#skipTo {
+		display: block;
+		}
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #efefef;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}

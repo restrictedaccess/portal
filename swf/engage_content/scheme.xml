@@ -1,0 +1,51 @@
+<scheme name="Blue Cool">
+
+<!-- #1 -->	<bg>0xFFFFFF</bg>
+
+<!-- #2 -->	<topbuttons>0x556489</topbuttons>
+<!-- #2 -->	<topbuttonsb>0x2D3B5B</topbuttonsb>
+<!-- #2 -->	<tophover>0x5D6F8E</tophover>
+<!-- #2 -->	<tophoverb>0x5D6F8E</tophoverb>
+
+<!-- #3 -->	<navbutton>0x556489</navbutton>
+<!-- #3 -->	<navbuttonb>0x2D3B5B</navbuttonb>
+<!-- #3 -->	<navhover>0x5D6F8E</navhover>
+<!-- #3 -->	<navhoverb>0x5D6F8E</navhoverb>
+
+<!-- #4 -->	<activenavbutton>0x272725</activenavbutton>
+<!-- #4 -->	<activenavbuttonb>0x272725</activenavbuttonb>
+
+
+<!-- Changing the items above will have the most impact. Usually there's no need to change the following colors. -->	
+
+<!-- #5 -->	<headerbar>0x000000</headerbar>
+
+<!-- #6 -->	<contentbg>0xF4F4F4</contentbg>
+
+<!-- #7 -->	<footerbar>0xF4F4F4</footerbar>
+
+<!-- #8 -->	<fonta>0xFFFFFF</fonta>
+
+<!-- #9 -->	<fontb>0x000000</fontb>
+
+<!-- #10 -->	<tt_bg>0xffffe1</tt_bg>
+<!-- #10 -->	<tt_border>0x676767</tt_border>
+<!-- #10 -->	<tt_text>0x000000</tt_text>
+
+<!-- #11 -->	<calloutbg>0xFFFFFF</calloutbg>
+<!-- #12 -->	<callouttext>0x000000</callouttext>
+
+<!-- #13 -->	<listselect>0x556489</listselect>
+<!-- #14 -->	<listhover>0xC6D1E8</listhover>
+
+<!-- #15 -->	<timeline_tooltip_hover>0xE7F7FF</timeline_tooltip_hover>
+<!-- #16 -->	<timeline_period_text>0x000000</timeline_period_text>
+<!-- #17 -->	<timeline_selected_period_text>0xffffff</timeline_selected_period_text>
+
+<!-- #18 -->	<lblgrf_calloutbg>0xE4E4E4</lblgrf_calloutbg>
+
+<!-- #19 -->	<tab_contentbg>0xCCCCCC</tab_contentbg>
+<!-- #20 -->	<tab_textbg>0xffffff</tab_textbg>
+
+
+</scheme>

@@ -1,0 +1,150 @@
+/* CSS Document */
+.dragclass{
+	position:absolute;	
+	cursor : move;
+	width:250px; 
+	padding:30px;
+	z-index:502;
+	margin-left:53em;
+	margin-bottom:50em;
+	display:none;
+	left:47px;
+	top:77px;
+	
+}
+
+.message_board{
+	background-color:#FFFFC6; 
+	padding:5px;
+	color:#333333;
+	cursor:auto;
+}
+
+#add_div{
+	display:none;
+	font:12px "Comic Sans MS" ;
+	text-align:center;
+}
+#message_status{
+	text-align:center;
+	font:bold 12px "Courier New" ;
+	color:#FF0000;
+	display:none;
+}
+.date_hdr{
+	font:bold 13px "Comic Sans MS" ;
+	margin-top:5px;
+	
+}
+.notes_content{
+	font:11px "Comic Sans MS" ;
+	cursor:auto;
+}
+
+#notification_messages_bttn{
+	display:none; 
+	text-align:right; 
+	margin-right:5px;
+	cursor:pointer;
+	font:bold 7.5pt Verdana, Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+
+.sticky_control_holder{
+	background:#FFFF00;
+	
+}
+
+.sticky_control_plus{
+	color:#999999;
+	float:left;
+	padding-left:10px;
+	
+}
+
+.sticky_control_minus{
+	color:#999999;
+	float:right;
+	padding-right:10px;
+	
+}
+
+#sticky_wrapper{
+	
+	
+
+}
+
+.sticky_control_holder a{
+	text-decoration:none;
+	color:#999999;
+	font:bold 12px tahoma;
+	line-height:25px;
+}
+
+.sticky_control_holder a:hover{
+	color:#000;
+}
+
+
+#sticky_holder{
+	padding:10px;
+	text-align:left;
+}
+
+#sticky_holder span {
+	color:#0000FF;
+	cursor:pointer;
+
+}
+
+
+
+
+
+div.bak {background: #666}
+div.sektion {background: #FFFFC6 ; cursor:auto;}
+div.bak {padding: 1.5em}
+div.sektion {margin:-2em -1.2em -1.3em -2em}
+div.bak {margin: 2em 1 0 8em}
+div.sektion {border: thin solid #999; padding: 1.5em }
+
+
+
+
+
+
+
+
+
+
+
+.blur{
+	background-color: #ccc; /*shadow color*/
+	color: inherit;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.shadow,
+.content{
+	position: relative;
+	bottom: 2px;
+	right: 2px;
+}
+
+.shadow{
+	background-color: #666; /*shadow color*/
+	color: inherit;
+}
+
+.content{
+	background-color:#FFFFC6; /*background color of content*/
+	color:#333333; /*text color of content*/
+	border: 1px solid #000; /*border color*/
+	
+}
+
+
+

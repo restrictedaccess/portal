@@ -1,0 +1,37 @@
+body {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+.size_10 {
+    font-size: 10px;
+}
+
+.size_12 {
+    font-size: 12px;
+}
+
+.row_odd {
+    background-color: #FFFFEE;
+}
+
+.row_even {
+    background-color: #FFFFCC;
+}
+
+.gwt-DialogBox {
+    border: 2px outset;
+    background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+    background-color: #C3D9FF;
+    padding: 3px;
+    margin: 2px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.gwt-DialogBox .Contents {
+    padding: 10px;
+}
+

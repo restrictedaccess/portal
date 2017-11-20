@@ -1,0 +1,43 @@
+body{
+	text-align:center;
+}
+.fb_app_container{
+	width:760px;
+	margin:auto;
+	text-align:left;
+}
+header{
+	border-bottom:2px solid #B2D232;
+	padding-top:15px;
+	padding-bottom:7px;
+}
+.register_form h3{
+	text-transform:uppercase;
+	font-size:14pt;
+	color:#2B3D65;
+	font-weight:bold;
+	margin-top:7px;
+}
+.pic{
+	height:600px;
+	background:url(../images/remote_staff_fade.png) no-repeat bottom right transparent;
+}
+.footer{
+	height:42px;
+	background-color:#DFE6F7;
+	border-top:1px solid #B1D230;
+}
+button.register{
+	margin-top: 4px;
+	margin-left: 15px;
+	font-size:16px;
+	color:#2B3D65;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.main_form{
+	overflow: hidden;
+}
+.form-group{
+	margin-bottom:5px!important;	
+}

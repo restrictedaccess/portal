@@ -1,0 +1,28 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Date</th>
+						<th>Status</th>
+						<th>Start Time</th>
+						<th>Time Ended</th>
+						<th>Total Hours</th>
+						<th>Added By</th>
+					</tr>
+				</thead>
+                <tbody>
+                	<tr ng-repeat="record in records">
+                		<td>{{ record.date }}</td>
+                		<td>{{ record.status }}</td>
+                		<td>{{ record.start_date_str }}</td>
+                		<td>{{ record.end_date_str }}</td>
+                		<td>{{ record.hours }}</td>
+                		<td>{{ record.added_by }}</td>
+                	</tr>
+                </tbody>
+           </table>
+		</div>
+	</div>
+</div>

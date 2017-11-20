@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+html, body {
+min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	font-family: Verdana,Geneva,sans-serif; /*Arial, Helvetica, sans-serif;*/;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+body, td, div {
+	color: #333333;
+}
+div, td {
+	font-family: Verdana,Geneva,sans-serif;
+	padding-bottom:0px;
+	font-size:11px;
+}
+
+#loading {
+  position:fixed;
+  width:auto;
+  height: auto;
+  top:0;
+  /*margin-left:-150px;*/
+  z-index: 999;
+  font-size:14px;
+  font-weight:bold;
+  background:#ffff00;/*e3e0ac;*/
+  padding: 0 14px;
+  text-align:center;
+  display:none;
+  left:50%;
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+body * {
+	font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+p {
+	margin-bottom: 1.1em;
+	margin-top: 0;
+}
+p.lastNode {
+	font-size:12pt;
+	font-weight:bold;
+	margin-bottom: 0;
+}
+p.lastNode span {padding-right:16px;}
+a:link img, a:visited img {
+	border: none;
+	color:#fff;
+}
+
+div, td {
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+
+div#content{ float:left; width:670px;font-size:10pt;color: #000;
+padding:12px;;margin-bottom:10px;font-family: Arial, Helvetica, sans-serif; line-height:20px; }
+
+div.main-container {
+	float: left;
+	width: 960px;
+	float:none !important; margin:auto;
+	/*border:1px solid #aaa;margin-bottom:40px;*/
+	padding:10px 0 17px 0;
+}
+
+#footer_divider {
+	float:left !important;
+	margin:14px auto 8px;
+	background-color: #D0E2F7;
+    height: 2px;
+    width: 100%;
+	
+}
+
+
+.inputbox {
+	border: 1px solid #aaa;
+	padding: 2px;
+	margin:0;
+	color: #011a39;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.inputbox {width:210px;background-color: #FFF;}
+
+a.testlink{}
+
+table.tlist td.item a:hover{
+	color: #104383;
+    text-decoration: none;}
+	
+span#testname{text-decoration:underline;}
+
+.centeralign{text-align:center;}
+
+div.showingresult{float:left;width:100%;padding:6px;background:#ddddee;}
+
+.jqmWindow {
+    display: none;
+    
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    
+    margin-left: -400px;
+    width: 800px;
+    
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }

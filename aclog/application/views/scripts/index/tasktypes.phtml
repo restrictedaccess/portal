@@ -1,0 +1,98 @@
+<!-- type display -->
+<link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	<strong>TASK TYPES: </strong>(<?php echo count($this->task_types);?>) <a href='#' class='jqmClose' style='float:right'>Close</a><hr>
+				
+		
+	<div id="task-types" style="float:left;width:100%;height:200px;padding:4px;overflow-x:hidden;overflow-y:scroll;">
+		
+		<form id='typeform' method='post' target='ajaxframe' action='?item=savetype'>
+			<input type='hidden' name='leads_id'/>
+			<div id="tabular">
+				
+			<table summary="Tasktypes" id='tbltype'>
+				
+			<tbody>
+           	<tr>
+				<th scope="col" class="data" style='width:15px;'>
+				<span class="hidden">&nbsp;</span>
+				</th>
+				<th scope="col">Type Name (<a href='#' id='addtype'>add new</a>)</th>
+				<th scope="col" style='width:10px;'></th>
+			</tr>
+			<?php
+			if( count($this->task_types)):
+			foreach($this->task_types as $idx => $type):
+			?>
+			<tr>
+				<td class="number"><?php echo $idx+1;?> &nbsp;</td>
+				<td><input type='text' name='ttypes[<?php echo $type['id'];?>]' autocomplete='off' value='<?php echo $type['type_value'];?>'<?php if($type['cnt']>0):?> disabled='disabled' <?php endif;?>style='text-align:left'/>
+				<!--<input type='hidden' name='edit<?php //echo $type['id'];?>' value='false'/>--></td>
+				<td class="number"><?php if($type['cnt']==0):?><span class='asterisk' id='del-<?php echo $type['id'];?>'>x</span><?php endif;?></td>
+			</tr>
+			<?php endforeach;
+			endif;?>
+			
+			  </tbody>
+                    
+            </table>
+			
+			</div>
+		</form>
+    </div>
+	
+	<div style='float:right;padding-top:4px'><button name='submit' id='update'>Update</button></div>
+	
+	<script type='text/javascript'>
+	(function($){
+		tasktype = (function(){
+			return {
+				add_typefield : function() {
+					console.log($('table#tbltype tr:gt(0)'));
+					$('table#tbltype').append($('<tr/>').append( $('<td/>').addClass('number') )
+													  .append($('<td/>')
+															  .append($('<input/>').attr({'type':'text', 'name':'newtype[]', 'autocomplete':'off'})) )
+													  );
+					var divtype = $('div#task-types');
+					divtype.scrollTop(divtype.height()+500);
+					
+				}
+			}
+		}());
+		
+		$(document).ready(function(){
+			
+			/*$('form#typeform input[type=text]').keydown(function(){
+				var inp = $(this);
+				inp.data( inp.attr('name') , inp.val() );
+			});*/
+			
+			/*$('form#rateform input[type=text]').keyup(function(){
+				var inp = $(this);
+				var currentval = inp.val();
+				var rateval = inp.data( inp.attr('name') );
+				if(currentval != rateval) {
+					var uid = inp.attr('name').split('rate')[1];
+					$("input[name=edit"+uid+"]").val(true);
+				}
+			});*/
+			$('a#addtype').click(function(){
+				console.log('add type');
+				tasktype.add_typefield();
+			});
+			$('button#update').click(function(){
+				$(this).attr('disabled', true);
+				$('#loading').show();
+				$('form#typeform').submit();
+			});
+			$('.asterisk').click(function(){
+				var id = $(this).attr('id').split('-')[1];
+				
+				$('form#typeform').append($('<input/>').attr({'type':'hidden', 'name':'deltypes[]'}).val(id));
+				var deltypes = $('form#typeform input[name="deltypes[]"]');
+				//deltypes.push(id);
+				console.log(id+':'+deltypes.val());
+				$(this).closest('tr').remove();
+			}).css({'cursor':'pointer'});
+		});
+	})(jQuery);
+	</script>

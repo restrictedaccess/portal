@@ -1,0 +1,119 @@
+/* CSS Document */
+.working_days{
+	float:left; 
+	margin-left:20px; 
+	display:block; 
+	width:70px;
+	margin-top:10px;
+}
+.staff_working_days_hdr{
+	margin-top:10px; 
+	padding-top:5px; 
+	padding-bottom:5px; 
+	border-top:#62A4D5 solid 1px;
+	font-weight:bold;
+}
+
+#showClientChargeOutRateInMultipleCurrency{
+	color:#000000;
+	padding:5px;
+	
+}
+.rate_formula{
+	font:10px tahoma;
+	color:#CCCCCC;
+}
+.timezone_box{
+	float:left; 
+	width:380px;
+	margin-left:40px;
+	
+}
+.fieldset{
+	background:#FFFFFF; 
+	border: 1px solid #62A4D5 ; 
+	padding:5px;
+	height:170px;
+}
+.legend{
+	padding:3px; 
+	margin-left: 10px;
+	color:#62A4D5;
+	font-weight:bold;
+}
+#staff_contract_details{
+	margin-left:15px; 
+	margin-right:20px; 
+	border:#006699 solid 1px;
+}
+
+#staff_contract_details p {
+	margin-bottom:7px;
+	margin-top:5px;
+}
+
+#staff_contract_details label {
+	width:120px;
+	float:left;
+	display:block;
+}
+
+.spanner {
+	width:190px;
+	float:left;
+	display:block;
+}
+
+.spanner2 {
+	width:50px;
+	float:left;
+	display:block;
+}
+
+
+.section_hdr{
+	background:#006699; 
+	color:#FFFFFF; 
+	padding:4px;
+}
+
+.section_content{
+	padding:10px; 
+	border-bottom:#62A4D5 solid 1px;
+}
+
+.contract_img{
+	float:left; 
+	padding:5px; 
+	border:#CCCCCC solid 1px; 
+	margin-right:10px;
+}
+
+.rates_hdr{
+	color:#FFFFFF;
+	font:bold 11px tahoma;
+	border-right:#FFFFFF solid 1px;
+}
+.rates_hdr_last{
+	color:#FFFFFF;
+	font:bold 11px tahoma;
+}
+
+.rates_content{
+	background:#FFFFFF;
+	color:#62A4D5;
+	font:11px tahoma;
+	height:20px;
+}
+
+.monthly_salary_box{
+	float:left; 
+	text-align:center; 
+	border:#62A4D5 solid 1px; 
+	padding:5px;
+}
+
+.rates_box{
+	float:left; 
+	margin-left:10px;
+}

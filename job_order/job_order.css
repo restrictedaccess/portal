@@ -1,0 +1,90 @@
+/* CSS Document */
+
+
+.bttn{
+	font:11px tahoma;
+	width:90px;
+	
+}
+
+
+.hdr{
+	color:#FFFFFF;
+	font:bold 12px Arial;
+	padding:3px;
+	border:#CCCCCC solid 1px;
+	
+}
+
+.list {
+	font:12px Arial;
+	padding:3px;
+	border:#CCCCCC solid 1px;
+}
+
+
+#manage{
+	background:#CCCCCC;
+	
+}
+
+#manage tr {
+	
+}
+#manage td{
+	font:12px Arial;
+	padding:3px;
+	border:#CCCCCC groove 1.5pt;
+	background:#FFFFFF;
+}
+#date_history {
+	color:#666666;
+}
+#date_history p{
+	margin-bottom:2px;
+	margin-top:2px;
+}
+
+#date_history label{
+	float:left;
+	display:block;
+	width:100px;
+}
+
+
+#manage a {
+	text-decoration:none;
+	color:#000000;
+	display:block;
+	padding:2px;
+}
+
+#manage a:hover {
+	text-decoration:none;
+	color:#FFFFFF;
+	background:#333333
+}
+
+#applicant_list p{
+	margin-bottom:7px;
+	margin-top:5px;
+}
+#applicant_list label{
+	float:left;
+	display:block;
+	width:150px;
+}
+
+#candidates_add_form p {
+	margin-bottom:7px;
+	margin-top:5px;
+	
+}
+
+#candidates_add_form label{
+	float:left;
+	display:block;
+	width:150px;
+	font-weight:bold;
+}
+

@@ -1,0 +1,26 @@
+/* CSS Document */
+#heading{
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:justify;
+	
+}
+
+#heading p{
+	margin-top:0px;
+	margin-bottom:7px;
+	padding-top:0px;
+	padding-bottom:1px;
+	line-height:18px;
+
+}
+
+.res-req{
+	text-align:left;
+	
+}
+
+.res-req li{
+	line-height:18px;
+}
+

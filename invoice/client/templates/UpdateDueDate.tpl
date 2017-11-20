@@ -1,0 +1,1 @@
+{$invoice_payment_due_date|date_format:"%B %e, %Y"}

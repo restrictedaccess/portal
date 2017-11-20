@@ -1,0 +1,209 @@
+<div class="ibox float-e-margins" style="width:113%;">	
+	
+	<div class="ibox-title ">
+		<h5><strong>Financial Details</strong></h5>		
+	</div>
+	
+	<div class="ibox-content">			
+		<p>
+			<span class="text-muted"> Available Balance</span> <br>
+            <h2>
+            	<i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i>
+            	<i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i>
+            	<i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i>
+            	{{ running_balance | number:2 }}
+            </h2>
+		</p>
+		
+		<p>
+			<span class="text-muted"> Client Daily Rate</span> <br>
+            <h3>
+            	<i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i>
+            	<i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i>
+            	<i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i>
+            	{{ daily_rate.daily_rate | number:2 }}
+            </h3>
+		</p>
+		
+		<p>
+			<span class="text-muted"> Default Currency</span> : 
+            <strong>{{ client_settings.currency }}</strong>
+		</p>
+		
+		<p>
+			<span class="text-muted"> Apply GST</span> : 
+            <strong>{{ client_settings.apply_gst }}</strong>
+		</p>
+		
+		
+		
+		
+				
+	</div>
+</div>
+
+
+<div class="ibox float-e-margins" style="width:113%;">	
+	<div class="ibox-title ">
+		<span class="pull-right">
+			<a href="/portal/accounts_v2/#/accounts/client-setting/?client_id={{ client.client_id }}" title="Edit Client Settings">Edit</a>
+		</span>
+		<h3>Invoice Setting</h3>		
+	</div>	
+	<div class="ibox-content border-bottom">
+		<p >
+            <span class="text-muted"><i class="fa fa-gears"></i> Days Before Invoicing</span> : 
+            <strong>{{ client_settings.days_before_invoice }}</strong>
+        </p>
+        
+        <p >
+            <span class="text-muted"><i class="fa fa-gears"></i> Days to Invoice</span> : 
+            <strong>{{ client_settings.days_to_invoice }}</strong> 
+        </p>
+        
+        <p>
+            <span class="text-muted"><i class="fa fa-gears"></i> Days Before Suspension</span> : 
+            <strong>{{ client_settings.days_before_suspension }}</strong>  
+        </p>
+        
+        <p>
+            <span class="text-muted"><i class="fa fa-gears"></i> Auto Debit</span> : 
+            <strong>{{ client_settings.autodebit }}</strong> 
+        </p>
+        
+        <p>
+            <span class="text-muted"><i class="fa fa-gears"></i> Send Invoice Reminder</span> : 
+            <strong>{{ client_settings.send_invoice_reminder }}</strong>
+             
+        </p> 		
+	</div>
+</div>
+
+
+
+<div class="ibox float-e-margins" style="width:113%;">	
+	<div class="ibox-title ">
+		
+		<h3>Client Information</h3>		
+	</div>	
+	<div class="ibox-content border-bottom">
+		
+		<p ng-if="daily_rate.suspended_subcons ===0 && daily_rate.total_active_subcons !==0">
+            <span class="text-muted">Contract Status</span> : 
+            <strong><span class="label label-info">Active</span></strong>
+        </p>
+        
+        <p ng-if="daily_rate.suspended_subcons !==0 && daily_rate.total_active_subcons !==0">
+            <span class="text-muted">Contract Status</span> : 
+            <strong><span class="label label-warning">Suspended</span></strong>
+        </p>
+        
+        <p ng-if="daily_rate.suspended_subcons ===0 && daily_rate.total_active_subcons ===0">
+            <span class="text-muted">Contract Status</span> : 
+            <strong><span class="label label-danger">Inactive</span></strong>
+        </p>
+		
+		<p>
+            <span class="text-muted">Client Id</span> : 
+            <strong>{{ client.client_id }}</strong>
+        </p>
+        
+		<p>
+            <span class="text-muted"><i class="fa fa-user"></i> Contact Person</span><br>
+            <strong>{{ client.fname }} {{ client.lname }}</strong>
+        </p>
+					
+		<p>
+            <span class="text-muted"><i class="fa fa-envelope"></i> Email</span><br>
+            <strong>{{ client.email }}</strong>
+        </p>
+        
+        <p ng-show="client_basic_info.leads_skype_id">
+            <span class="text-muted"><i class="fa fa fa-skype"></i> Skype</span><br>
+            <strong><a class="call" href="skype:remotestaff.com.au?call">
+            	{{ client_basic_info.leads_skype_id }}
+            </a></strong>
+        </p>
+        
+        <p ng-show="client_basic_info.officenumber">
+            <span class="text-muted"><i class="fa fa fa-phone"></i> Office Number</span><br>
+            <strong>
+            	<a href="tel:{{ client_basic_info.officenumber }}">{{ client_basic_info.officenumber }}</a>
+            	
+            </strong>
+        </p>
+        
+        <p ng-show="client_basic_info.mobile">
+            <span class="text-muted"><i class="fa fa-mobile-phone"></i> Mobile</span><br>
+            <strong>
+            	<a href="tel:{{ client_basic_info.mobile }}">{{ client_basic_info.mobile }}</a>
+            	
+            </strong>
+        </p>
+
+        <p>
+            <span class="text-muted"><i class="fa fa-user"></i> Staffing Consultant</span><br>
+            <strong>
+            	{{ staffing_consultant.admin_fname }} {{ staffing_consultant.admin_lname }}<br>
+                {{ staffing_consultant.admin_email }}
+            </strong>
+        </p>                
+
+		
+		<p>
+            <span class="text-muted"><i class="fa fa-child"></i> Active Subcons</span> : 
+            <strong>{{ daily_rate.total_active_subcons }}</strong>
+        </p>
+        
+        <p>
+            <span class="text-muted"><i class="fa fa-exclamation-circle"></i> Suspended Subcons</span> : 
+            <strong>{{ daily_rate.suspended_subcons }}</strong>
+        </p>
+        
+	</div>
+	
+	
+</div>
+
+
+<div class="ibox float-e-margins" style="width:113%;">	
+	<div class="ibox-title ">
+		
+		<h3>Client Contact Persons</h3>		
+	</div>	
+	<div class="ibox-content border-bottom">
+		
+		        
+		<p>
+            <strong>Accounts 1</strong><br>
+            <ul style="padding-left: 20px;">
+            	<li>Name : {{ client_basic_info.acct_dept_name1 }}</li>
+            	<li>Email : {{ client_basic_info.acct_dept_email1 }}</li>
+            	<li>Contact Nos. : {{ client_basic_info.acct_dept_contact1 }}</li>
+            </ul>
+        </p>
+					
+		<p>
+            <strong>Accounts 2</strong><br>
+            <ul style="padding-left: 20px;">
+            	<li>Name : {{ client_basic_info.acct_dept_name2 }}</li>
+            	<li>Email : {{ client_basic_info.acct_dept_email2 }}</li>
+            	<li>Contact Nos. : {{ client_basic_info.acct_dept_contact2 }}</li>
+            </ul>
+        </p>
+        
+        <p>
+            <strong>Supervisor</strong><br>
+            <ul style="padding-left: 20px;">
+            	<li>Name : {{ client_basic_info.supervisor_staff_name }}</li>
+            	<li>Email : {{ client_basic_info.supervisor_email }}</li>
+            	<li>Contact Nos. : {{ client_basic_info.supervisor_contact }}</li>
+            </ul>
+        </p>
+        
+	</div>
+	
+	
+</div>
+
+

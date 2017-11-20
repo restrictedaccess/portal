@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+#dhtmlgoodies_scrolldiv{
+		/* The total width of the scrolling div including scrollbar */
+		width:240px;
+		height:150px;	/* The height of the scrolling div */
+	}
+	#scrolldiv_parentContainer{
+		width:230px;	/* Width of the scrolling text */
+		height:100%;
+		overflow:hidden;
+		float:left;
+		position:relative;
+	}
+	
+	/*
+	CSS for the scrolling content 
+	*/
+	#scrolldiv_content{
+		padding: 0px;
+		position:relative;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size: 11px !important;
+		line-height:16px;
+		color: #333;
+	}
+	
+	#scrolldiv_content p{ font-size: 11px !important; line-height:16px;}
+	/*
+	The scrollbar slider 
+	*/
+	#scrolldiv_slider{
+		width:7px;
+		margin-left:2px;
+		height:150px;
+		float:left;
+	}
+	
+	/*
+	The scrollbar (The bar between the up and down arrow )
+	*/
+	#scrolldiv_scrollbar{
+		width:7px;
+		height:auto;	/* Total height - 40 pixels */
+		position:relative;
+		
+	}
+	/*
+	The scrollbar handle
+	*/
+	#scrolldiv_theScroll{
+		margin:0px;
+		width:7px;
+		height:20px;
+		position:absolute;	
+		top:0px;
+		left:0px;
+		cursor:pointer;
+	}
+	/*
+	Scroll buttons(The up and down arrows)
+	*/
+	#scrolldiv_scrollUp,#scrolldiv_scrollDown{
+		width:7px;
+		height:10px;
+		color: #BC8FBD;
+		text-align:center;
+		font-size:7px;
+		line-height:11px;
+		cursor:pointer;
+		
+	}
+	#scrolldiv_scrollUp{
+		margin-bottom:1px;
+	}
+	#scrolldiv_scrollDown{
+		margin-top:1px;
+	}
+	#scrolldiv_scrollDown span,#scrolldiv_scrollUp span{
+		font-family: Symbol;
+	}
+#content-left h1{
+	text-align:right;font-size:24px; line-height:30px; color:#173d6a; border-bottom:2px solid #ddd; padding-bottom:10px; text-align:center;
+}

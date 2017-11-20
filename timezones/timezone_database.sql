@@ -1,0 +1,94 @@
+-- MySQL dump 8.23
+--
+--Database table and values for the timezone script produced by
+--MySQL dump
+
+CREATE TABLE timezone (
+  timezoneid int(11) NOT NULL default '0',
+  gmt_offset double default '0',
+  dst_offset double default NULL,
+  timezone_code varchar(4) default NULL,
+  PRIMARY KEY  (timezoneid)
+) TYPE=MyISAM;
+
+--
+-- Dumping data for table `timezone`
+--
+
+
+INSERT INTO timezone VALUES (1,-12,0,NULL);
+INSERT INTO timezone VALUES (2,-11,0,NULL);
+INSERT INTO timezone VALUES (3,-10,0,'H');
+INSERT INTO timezone VALUES (4,-9,1,'AK');
+INSERT INTO timezone VALUES (5,-8,1,'P');
+INSERT INTO timezone VALUES (6,-7,0,'M');
+INSERT INTO timezone VALUES (7,-7,1,NULL);
+INSERT INTO timezone VALUES (8,-7,1,'M');
+INSERT INTO timezone VALUES (9,-6,0,NULL);
+INSERT INTO timezone VALUES (10,-6,1,'C');
+INSERT INTO timezone VALUES (11,-6,1,NULL);
+INSERT INTO timezone VALUES (12,-6,0,'C');
+INSERT INTO timezone VALUES (13,-5,0,NULL);
+INSERT INTO timezone VALUES (14,-5,1,'E');
+INSERT INTO timezone VALUES (15,-5,0,'E');
+INSERT INTO timezone VALUES (16,-4,1,'A');
+INSERT INTO timezone VALUES (17,-4,0,NULL);
+INSERT INTO timezone VALUES (18,-4,1,NULL);
+INSERT INTO timezone VALUES (19,-3.5,1,'N');
+INSERT INTO timezone VALUES (20,-3,1,NULL);
+INSERT INTO timezone VALUES (21,-3,0,NULL);
+INSERT INTO timezone VALUES (22,-3,1,NULL);
+INSERT INTO timezone VALUES (23,-2,1,NULL);
+INSERT INTO timezone VALUES (24,-1,1,NULL);
+INSERT INTO timezone VALUES (25,-1,0,NULL);
+INSERT INTO timezone VALUES (26,0,0,NULL);
+INSERT INTO timezone VALUES (27,0,1,NULL);
+INSERT INTO timezone VALUES (28,1,1,NULL);
+INSERT INTO timezone VALUES (29,1,1,NULL);
+INSERT INTO timezone VALUES (30,1,1,NULL);
+INSERT INTO timezone VALUES (31,1,1,NULL);
+INSERT INTO timezone VALUES (32,1,0,NULL);
+INSERT INTO timezone VALUES (33,2,1,NULL);
+INSERT INTO timezone VALUES (34,2,1,NULL);
+INSERT INTO timezone VALUES (35,2,1,NULL);
+INSERT INTO timezone VALUES (36,2,0,NULL);
+INSERT INTO timezone VALUES (37,2,1,NULL);
+INSERT INTO timezone VALUES (38,2,0,NULL);
+INSERT INTO timezone VALUES (39,3,1,NULL);
+INSERT INTO timezone VALUES (40,3,0,NULL);
+INSERT INTO timezone VALUES (41,3,1,NULL);
+INSERT INTO timezone VALUES (42,3,0,NULL);
+INSERT INTO timezone VALUES (43,3.5,1,NULL);
+INSERT INTO timezone VALUES (44,4,0,NULL);
+INSERT INTO timezone VALUES (45,4,1,NULL);
+INSERT INTO timezone VALUES (46,4.5,0,NULL);
+INSERT INTO timezone VALUES (47,5,1,NULL);
+INSERT INTO timezone VALUES (48,5,0,NULL);
+INSERT INTO timezone VALUES (49,5.5,0,NULL);
+INSERT INTO timezone VALUES (50,5.75,0,NULL);
+INSERT INTO timezone VALUES (51,6,1,NULL);
+INSERT INTO timezone VALUES (52,6,0,NULL);
+INSERT INTO timezone VALUES (53,6,0,NULL);
+INSERT INTO timezone VALUES (54,6.5,0,NULL);
+INSERT INTO timezone VALUES (55,7,0,NULL);
+INSERT INTO timezone VALUES (56,7,1,NULL);
+INSERT INTO timezone VALUES (57,8,0,NULL);
+INSERT INTO timezone VALUES (58,8,1,NULL);
+INSERT INTO timezone VALUES (59,8,0,NULL);
+INSERT INTO timezone VALUES (60,8,0,NULL);
+INSERT INTO timezone VALUES (61,8,0,NULL);
+INSERT INTO timezone VALUES (62,9,0,NULL);
+INSERT INTO timezone VALUES (63,9,0,NULL);
+INSERT INTO timezone VALUES (64,9,1,NULL);
+INSERT INTO timezone VALUES (65,9.5,1,NULL);
+INSERT INTO timezone VALUES (66,9.5,0,NULL);
+INSERT INTO timezone VALUES (67,10,0,NULL);
+INSERT INTO timezone VALUES (68,10,1,NULL);
+INSERT INTO timezone VALUES (69,10,0,NULL);
+INSERT INTO timezone VALUES (70,10,1,NULL);
+INSERT INTO timezone VALUES (71,10,1,NULL);
+INSERT INTO timezone VALUES (72,11,0,NULL);
+INSERT INTO timezone VALUES (73,12,1,NULL);
+INSERT INTO timezone VALUES (74,12,0,NULL);
+INSERT INTO timezone VALUES (75,13,0,NULL);
+

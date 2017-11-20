@@ -1,0 +1,18 @@
+<div ng-controller="InvoiceSummaryReportingController as invoice_data_summary_report">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h3>Invoice Reporting</h3>
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <form id="search-email-invoice-form">
+            <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/tabs.html'"></div>
+        </form>
+
+
+
+    </div>
+
+    <toaster-container></toaster-container>
+</div>

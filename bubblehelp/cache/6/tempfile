@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<style type="text/css">
+.btspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+#bt {position:absolute; display:block; background:url(/portal/bubblehelp/images/bt_left.gif) top left no-repeat}
+#bttop {display:block; height:5px; margin-left:5px; background:url(/portal/bubblehelp/images/bt_top.gif) top right no-repeat; overflow:hidden}
+#btcont {display:block; padding:2px 12px 3px 11px; background:#FF8301; color:#FFF;}
+#btbot {display:block; height:5px; ; background:url(/portal/bubblehelp/images/bt_bottom.gif) top right no-repeat; overflow:hidden}
+#task-status {  position:fixed;  width:300px;  height: auto;  top:0;  margin-left:-150px; z-index: 999;  font-size:12px; font-weight:bold;
+  background:#ffff00;  padding-left:5px;  text-align:center;  display:none;  left:50%;}
+</style>    <meta charset="utf-8">
+    <title>List of Subcontractors (Help Page)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/portal/site_media/workflow_v2/js/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/portal/site_media/subcontractors/css/style.css" rel="stylesheet">
+    <link href="/portal/site_media/workflow_v2/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+	<script src="/portal/site_media/workflow_v2/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/portal/site_media/workflow_v2/js/modernzr.js"></script>    
+    <script type="text/javascript" src="/portal/site_media/workflow_v2/js/bootstrap/js/bootstrap.min.js"></script>
+    <!--    
+	<link rel="stylesheet" type="text/css" href="/portal/site_media/meeting_calendar/js/fileuploader.css"/>
+    <script type="text/javascript" src="/portal/site_media/meeting_calendar/js/fileuploader.min.js"></script>
+    -->
+    
+    
+    <script type="text/javascript" src="/portal/js/jscal2.js"></script> 
+	<script type="text/javascript" src="/portal/js/lang/en.js"></script>
+    <link rel="stylesheet" type="text/css" href="/portal/css/jscal2.css" />
+    <link rel="stylesheet" type="text/css" href="/portal/css/border-radius.css" />
+    <link rel="stylesheet" type="text/css" href="/portal/css/gold/gold.css" />
+        
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/portal/site_media/workflow_v2/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+<link rel="shortcut icon" href="/portal/favicon.ico">
+</head>
+<body>
+<link rel=stylesheet type="text/css" href="/portal/bubblehelp/pullmenu.css" />
+<link rel=stylesheet type="text/css" href="/portal/ticketmgmt/css/overlay.css" />
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;' src='javascript:false;'></iframe>
+<div id='boxdiv' class='overlay'><span id='task-status'></span>
+  <div class='content' style='width:390px;padding:3px;border:1px solid #011a39;'>
+	<div class='title'>Edit Help Content - <span id='blink'></span></div>
+		
+		<form name='regform' method='POST' target='ajaxframe' action='/portal/bubblehelp/bhelp.php?/set_data/' style='padding:0;margin:0;'>
+			<input type='hidden' name='link_id' id='link_id' />
+            <input type='hidden' name='item' id='item' value='new'/>
+			<table width="100%" border='0' cellpadding="2" cellspacing="2" class="list">
+			<!--<tr><td class='form1'>Subject:</td>
+				<td class='form2'><input type="text" id="email_subject" name="email_subject" value="Remotestaff: Client-Staff Support" class="inputbox2"/></td>
+			</tr>-->
+			  
+			  <tr><td class='form2'>Enter text here:</td></tr>
+			<tr><td class='form2'><textarea id="help_content" name='help_content' class='text' rows='5' style='width:95%;float:left;'></textarea></td></tr>
+			   
+			 <tr>
+			<td colspan="2" align='center'>
+			<input type='submit' class='button' id='createbutton' value='Edit'> <input type='button' class='button' value='Cancel' onClick="document.getElementById('boxdiv').style.display='none';">
+			</tr>
+		  </table>
+		</form>
+	</div>
+	
+</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><img src="/portal/site_media/workflow_v2/img/rs-logo-no-bg-small.png" ></a>
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right list_of_subcons"><a href="/portal/django/subcontractors/">List Of Subcontractors</a></p>
+                <ul id="nav" class="nav">
+                    <li><a href="/portal/adminHome.php">Admin Home</a></li>
+                        
+                        <li class="dropdown">
+                            <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/subcons.html">
+                                Contracts
+                                <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                  <li><a href="/portal/django/subcontractors/subcons/all">All</a></li>
+                                  <li><a href="/portal/django/subcontractors/subcons/active">Active</a></li>
+                                  <li><a href="/portal/django/subcontractors/subcons/suspended">Suspended</a></li>
+                                  <li><a href="/portal/django/subcontractors/subcons/resigned">Resigned</a></li>
+                                  <li><a href="/portal/django/subcontractors/subcons/terminated">Terminated</a></li>
+                                  <li><a href="/portal/django/subcontractors/temp_contracts/">Staff Contract Management</a></li>
+								  <li><a href="/portal/scheduled_staff_contract_termination.php">Scheduled Staff Contract Termination</a></li>
+                              </ul>
+                        </li>
+						
+						<li class="dropdown">
+                            <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/subcons.html">
+                                Reports
+                                <b class="caret"></b>
+                              </a>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">                             
+                                  <li><a href="/portal/django/subcontractors/cancellation_dashboard/">Cancellation Dasboard</a></li>
+								  <li><a href="/portal/new_hires_reporting.php">New Hires Reporting</a></li>
+                                  <li><a href="/portal/django/subcontractors/subconlist_reporting/" >Subconlist Reporting</a></li>
+                                  <li><a href="/portal/subcontractors_updates.php" >Staff Contracts Latest Updates</a></li>
+                                  <li><a href="/portal/revenue_monitor/" >Revenue Monitoring</a></li>
+                                  <li><a href="/portal/client_feedback/?/reports" >Client Feedback Report</a></li>
+                                  <li><a href="/portal/client_feedback/?/summary" >Client Feedback Summary</a></li>
+                                  <li><a href="/portal/django/subcontractors/list_of_contracts_that_observe_dst">Staff Contracts Observing DST</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="/portal/django/subcontractors/add/">Create New Staff Contract</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid admin_bg">
+<h4 align="center">List of Subcontractors</h4>
+
+<div id="home_task_container">
+	<div>
+        <p>Current Contracts</p>
+        <ul style="line-height:40px !important;">
+        
+            <li><a href="/portal/django/subcontractors/subcons/active">Active Contracts</a> : 586</li>
+        
+            <li><a href="/portal/django/subcontractors/subcons/terminated">Terminated Contracts</a> : 2117</li>
+        
+            <li><a href="/portal/django/subcontractors/subcons/resigned">Resigned Contracts</a> : 1084</li>
+        
+            <li><a href="/portal/django/subcontractors/subcons/suspended">Suspended Contracts</a> : 8</li>
+        
+        </ul>
+    </div>
+    
+	<div>    
+        <p>Temporary Contracts</p>
+        <ul style="line-height:40px !important;">
+            <li><a href="/portal/django/subcontractors/temp_contracts/">Newly Created Contracts</a> : 0</li>
+            <li><a href="/portal/django/subcontractors/temp_contracts/">Modified Contracts</a> :  9 <br /><em class="muted">(waiting for approval)</em></li>
+            
+        </ul>  
+    </div>
+    
+	<div>    
+        <p>Created By Client</p>
+        <ul style="line-height:40px !important;">
+            <li><a href="/portal/django/subcontractors/subcons/active?client_created=yes">Active Contracts</a> : 1</li>
+            <li><a href="/portal/django/subcontractors/subcons/suspended?client_created=yes">Suspended Contracts</a> : 0</li>
+            <li><a href="/portal/django/subcontractors/subcons/terminated?client_created=yes">Terminated Contracts</a> : 1</li>
+            <li><a href="/portal/django/subcontractors/subcons/resigned?client_created=yes">Resigned Contracts</a> : 0</li>        
+        </ul> 
+    </div> 
+    <br clear="all" />  
+</div>
+
+
+
+<footer>
+	<span class="pull-left"> &copy; Remotestaff Inc. 2013 </span>
+	<span class="pull-right"> Admin Rica Gil </span>
+    <br clear="all" />
+</footer>
+</div>
+
+    
+<script src="/portal/site_media/subcontractors/js/path.js"></script>
+<script src="/portal/site_media/subcontractors/js/subcontractors_v2.js"></script>
+
+
+<!--<script type="text/javascript" src="/portal/site_media/workflow_v2/js/bootstrap/js/bootstrap-dropdown.js"></script>-->
+
+<script>
+	jQuery(document).ready(function() {
+		//jQuery('.dropdown-toggle').dropdown()					   
+    	jQuery(window).load(function (e) {
+  			console.log('list of subcontractors home page');
+			//SearchSubcons();
+		});
+		
+		//search form
+		//jQuery('#search_btn').click(function(){
+		//	jQuery('#page').val('1');
+		//	SearchSubcons();
+		//});
+		
+	});
+	
+	
+	
+</script>
+	
+    <!--/.fluid-container-->
+<script type="text/javascript" language="javascript" src="/portal/bubblehelp/js/script.js"></script>
+<script type="text/javascript" language="javascript" src="/portal/bubblehelp/js/pullmenu.js"></script>
+</body>
+
+
+<div id="windowTitleDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
+    <div class="modal-header">
+        <h3>Information</h3>
+    </div>
+    <div class="modal-body" id="modal_body">
+        <div class="divDialogElements">
+            <div id="contract_result"></div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="close_btn" class="btn btn-default" data-dismiss="modal">Close</button>
+        <a href="/portal/django/subcontractors/subcons/active" id="ok_btn" class="btn btn-primary">Ok</a>
+        
+    </div>
+</div>
+</html>

@@ -1,0 +1,274 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0;padding:0;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{ vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{  vertical-align:top;}/* vertical align top */
+.underline{ padding-bottom:5px; border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{ display:block;}/* vertical menu */
+nav.horizontal ul li{ display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/*--login form start here--*/ 
+body {
+   
+padding:50px 0px 30px 0px;
+font-family: 'Open Sans', sans-serif;
+font-size: 100%;
+background: #fff;
+/*background: -moz-linear-gradient(top,  #8e9aa8 0%, #dbdbdb 100%, #8e9aa8 100%, #2989d8 100%, #207cca 100%, #f1f1f1 100%);  FF3.6+ 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8e9aa8), color-stop(100%,#dbdbdb), color-stop(100%,#8e9aa8), color-stop(100%,#2989d8), color-stop(100%,#207cca), color-stop(100%,#f1f1f1));  Chrome,Safari4+ 
+background: -webkit-linear-gradient(top,  #8e9aa8 0%,#dbdbdb 100%,#8e9aa8 100%,#2989d8 100%,#207cca 100%,#f1f1f1 100%);  Chrome10+,Safari5.1+ 
+background: -o-linear-gradient(top,  #8e9aa8 0%,#dbdbdb 100%,#8e9aa8 100%,#2989d8 100%,#207cca 100%,#f1f1f1 100%);  Opera 11.10+ 
+background: -ms-linear-gradient(top,  #8e9aa8 0%,#dbdbdb 100%,#8e9aa8 100%,#2989d8 100%,#207cca 100%,#f1f1f1 100%);  IE10+ 
+background: linear-gradient(to bottom,  #8e9aa8 0%,#dbdbdb 100%,#8e9aa8 100%,#2989d8 100%,#207cca 100%,#f1f1f1 100%);  W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e9aa8', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+min-height: 880px;
+}
+
+.login textarea {
+    resize: none;
+}
+
+.login {
+  width: 32%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px 30px 35px 29px;
+  border-radius: 4px;
+  border:1px solid black;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin: 0em 0em 1.5em 0em;
+}
+label{
+    font-size: 13px;
+}
+.login h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+}
+.login p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  margin: 10px 0px 0px 0px;
+}
+.login a:hover,.login select:hover
+{
+    text-decoration: none;
+}
+
+/*--meadia quiries start here--*/
+@media(max-width:1440px){
+.login {
+  width: 40%;
+}
+
+}
+@media(max-width:1280px){
+.login {
+  width: 50%;
+}
+}
+@media(max-width:1024px){
+.login {
+  width: 57.5%;
+}
+}
+@media(max-width:768px){
+.login {
+  width: 60%;
+}
+body {
+  padding: 130px 0px 75px 0px;
+}
+}
+@media(max-width:736px){
+
+}
+@media(max-width:667px){
+}
+@media(max-width:640px){
+.login {
+  width: 65%;
+}
+.login h2 {
+  font-size: 21px;  
+}
+label{
+    font-size: 10px;
+}
+body {
+  padding: 75px 0px 75px 0px;
+}
+}
+@media(max-width:600px){
+
+}
+@media(max-width:568px){
+
+}
+@media(max-width:480px){
+
+.login {
+  width: 80%;
+}
+
+body {
+  padding: 50px 0px 50px 0px;
+}
+}
+@media(max-width:414px){
+}
+@media(max-width:384px){
+.login {
+  width: 81.5%;
+}
+}
+@media(max-width:375px){
+
+}
+@media(max-width:320px){
+.login {
+  width: 84%;
+  padding: 15px 18px 30px 18px;
+}	
+
+h1 {
+  font-size: 22px;
+}
+body {
+  min-height: 550px;
+}
+}
+
+div#blackOut {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height:100%;
+	width: 100%;
+	background-color: #000;
+	z-index: 2;
+	}
+
+div#whiteBox {
+	position:fixed;
+	top:50%;
+	left:50%;
+	background-color:white;
+	border:black 2px solid;
+	padding:10px;
+	z-index: 3;
+}
+
+div#close{
+	
+	position:absolute;
+	left:98%;
+	z-index: 200;
+}
+#close a {
+	font: 20px/36px georgia, times, serif;
+	text-decoration: none;
+	color: white;
+	font-weight:bold;
+	}
+        
+        
+	
+#close a:hover {
+	text-decoration: underline;
+	color:red;
+}
+
+div#clse{
+	
+	position:absolute;
+	left:95%;
+	z-index: 200;
+}
+div#clse2{
+    
+    position:absolute;
+    left:95%;
+    z-index: 200;
+}
+#clse a {
+	font: 20px/36px georgia, times, serif;
+	text-decoration: none;
+	color: black;
+	font-weight:bold;
+	}
+	
+#clse a:hover {
+	text-decoration: underline;
+	color:red;
+}
+#clse2 a:hover {
+    text-decoration: underline;
+    color:red;
+}
+
+#prompt
+{
+        position: absolute;
+	z-index: 600;
+        padding:10px;
+        background-color: white;
+        border:1px solid black;
+        text-align: center;
+        font-weight: bold;
+        display:none;  
+        font-family: sans-serif;
+        top:50%;
+	left:50%;
+            
+}
+
+
+
+a.boxclose{
+    float:right;
+    margin-top:-20px;
+    margin-right:-10px;
+    cursor:pointer;
+    color: #fff;
+    border: 1px solid #AEAEAE;
+    background: #605F61;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 3px;
+    padding: 5px 3px; 
+    text-decoration: none;
+
+}
+
+.boxclose:before {
+    content: "×";
+}   
+
+
+
+
+

@@ -1,0 +1,99 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+
+            <div class="row" style="position:relative;">
+                <div class="form-group col-lg-6">
+                    <label class="font-normal">Search Client</label>
+                    <input ng-model="formData.searchBox" type="text" class="form-control"
+                           placeholder="Client Name, Email Address, Invoice Number"/>
+                </div>
+
+                <div class="form-group col-lg-2">
+                    <div class="col-lg-10">
+                        <div class="i-checks" style="height: 75px;line-height: 75px;white-space: nowrap;">
+                            <label class="">
+                                <input ng-model="formData.awaitingInvoiceCheckbox" ng-change="prepaid_clients()" type="checkbox" />
+                                <i></i> Prepaid Client
+                            </label></div>
+                    </div>
+                    <br clear="all"/>
+                </div>
+
+
+                <div class="form-group col-lg-2">
+                    <div class="col-lg-10">
+                        <div class="i-checks" style="height: 75px;line-height: 75px;white-space: nowrap;">
+                            <label class="">
+                                <input ng-model="formData.awaitingInvoiceViewMonthlyClientCheckbox" type="checkbox" ng-change="exclude_client()" />
+                                <i></i> Monthly Client
+                            </label></div>
+                    </div>
+                    <br clear="all"/>
+                </div>
+
+
+                <div class="form-group col-lg-2">
+                    <div class="col-lg-10">
+                        <div class="i-checks" style="height: 75px;line-height: 75px;white-space: nowrap;">
+                            <label class="">
+                                <input ng-model="formData.awaitingInvoiceViewThisMonthCheckbox" ng-change="view_this_month()" type="checkbox" />
+                                <i></i> View Only This Month
+                            </label></div>
+                    </div>
+                    <br clear="all"/>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="form-group col-lg-3">
+                    <label class="font-normal">Order Date</label>
+                    <div class="input-daterange input-group" style="width:100%">
+
+                        <input  date-range-picker min="'2012-01-01'" type="text"
+                                ng-model="invoice_data_summary_report.selected_date_range_order_date"
+                                options="invoice_data_summary_report.optionsDateRange"
+                                readonly="" placeholder="Select Dates" class="form-control">
+                    </div>
+                </div>
+
+
+                <div class="form-group col-lg-3">
+                    <label class="font-normal">Due Date</label>
+                    <div class="input-daterange input-group" style="width:100%">
+
+                        <input min="'2012-01-01'" type="text"
+                               ng-model="invoice_data_summary_report.selected_date_range_due_date"
+                               options="invoice_data_summary_report.optionsDateRange" readonly=""
+                               date-range-picker placeholder="Select Dates" class="form-control" >
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-lg-6">
+
+
+                    <h5 style="visibility:hidden;margin-bottom: 1%;">Search</h5>
+                    <button style="margin-left:-20px;width:50%;" ladda="loading6" ng-click="globalSearchBtn()"
+                            class="ladda-button ladda-button-demo btn btn-primary">Search
+                    </button>
+
+                    <button style="width:30%;" ladda="export_loading" ng-click="export_data()"
+                            class="ladda-button ladda-button-demo btn btn-primary">Export
+                    </button>
+
+                    <a ladda="loading_tab1" ng-click="refreshTab()"
+                       class="ladda-button ladda-button-demo btn btn-primary"><span
+                            class="glyphicon glyphicon-refresh"></span></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>

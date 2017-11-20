@@ -1,0 +1,80 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<div class="pull-right">
+				
+				
+                <!--
+                <button ng-if="invoice.status ==='cancelled'" class="btn btn-primary" disabled>Email</button>                
+                <button ng-if="invoice.status !=='cancelled'" data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="emailInvoice()" ladda="loading_email">Email</button>
+                <button ng-if="invoice.status !=='cancelled'" class="btn btn-primary" ng-click="openModalEmailCustomMessage()" >Send Custom Message</button>
+                -->
+				<div ng-if="invoice.status !=='cancelled'" dropdown="" class="btn-group">
+                    <button dropdown-toggle="" class="btn btn-primary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                        Send <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                    	
+                        <li ng-if="send_to_client_btn_status === true"><a href="#" ng-click="emailInvoice(); $event.preventDefault(); $event.stopPropagation(); ">Send to Client</a></li>
+                        <li ng-if="send_to_client_btn_status === false"><a href="#" ng-click="$event.preventDefault(); $event.stopPropagation(); ">Sending...</a></li>
+                        
+                        <li><a href="#" ng-click="openModalEmailCustomMessage(); $event.preventDefault(); $event.stopPropagation(); ">Send Custom Message to Client</a></li>
+                        <li class="divider"></li>                        
+                        <li><a href="#" ng-click="openModalEmailTemplateDegree(1); $event.preventDefault(); $event.stopPropagation(); ">Templated Email 1st Degree</a></li>
+                        <li><a href="#" ng-click="openModalEmailTemplateDegree(2); $event.preventDefault(); $event.stopPropagation(); ">Templated Email 2nd Degree</a></li>
+                        <li><a href="#" ng-click="openModalEmailTemplateDegree(3); $event.preventDefault(); $event.stopPropagation(); ">Templated Email 3rd Degree</a></li>
+                        <li><a href="#" ng-click="openModalEmailTemplateDegree(4); $event.preventDefault(); $event.stopPropagation(); ">Templated Email 4th Degree</a></li>
+                        
+                        <li class="divider"></li> 
+                        
+                        <li ng-if="invoice.status ==='paid'">
+                            <a ng-if="sending_payment_receipt === false" href="#" ng-click="sendReceipt(); $event.preventDefault(); $event.stopPropagation(); ">Send Payment Receipt</a>
+                            <a ng-if="sending_payment_receipt === true" href="#" ng-click="$event.preventDefault(); $event.stopPropagation(); ">Sending receipt...</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+				
+				<!--
+				<button ng-if="invoice.status ==='cancelled'" disabled class="btn btn-primary">Print PDF</button>
+				<button ng-if="invoice.status !=='cancelled'" class="btn btn-primary">Print PDF</button>
+				-->
+				
+				<div dropdown="" class="btn-group">
+                    <button dropdown-toggle="" class="btn btn-primary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+                        Invoice Option <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                    	<li><a id="export-link" href="#" target="_blank">Export to PDF</a></li>
+	                    <li ng-if="invoice.status ==='new'"><a href="#" ng-click="openModalAddPayment(); $event.preventDefault(); $event.stopPropagation(); ">Receive Payment</a></li>
+    	                <li ng-if="invoice.status ==='new'"><a href="#" ng-click="cancelInvoice(); $event.preventDefault(); $event.stopPropagation(); ">Cancel Invoice</a></li>
+        	            <li ng-if="invoice.status ==='new'"><a href="#" ng-click="openModalDisableAutoFollowUp(); $event.preventDefault(); $event.stopPropagation(); ">Disable Auto Follow-Up</a></li>
+        	            <li ng-if="invoice.status ==='new'" class="divider"></li>
+                        
+                        <li ng-if="split_view == false"><a href="/portal/accounts_v2/#/invoice/details/{{invoice.order_id}}?split_view=1" target="_blank">Split View</a></li>
+                        <li ng-if="split_view == true"><a href="/portal/accounts_v2/#/invoice/details/{{invoice.order_id}}" target="_blank">Client View</a></li>
+                        <!--
+                        <li><a href="#" ng-click="openModalInvoiceHistory(); $event.preventDefault(); $event.stopPropagation(); ">History</a></li>
+                        -->
+                        <li ng-if="invoice.status ==='new'"><a href="/portal/accounts_v2/#/accounts/update-invoice?order_id={{ invoice.order_id }}">Update Invoice</a></li>
+                        <li><a href="/portal/accounts_v2/#/accounts/invoice-version?order_id={{ invoice.order_id }}">Invoice Version</a></li>
+                        <li class="divider"></li>
+                        <li><a href="/portal/accounts_v2/#/accounts/new-invoice?client_id={{ invoice.client_id }}">Create New Invoice</a></li>
+
+                        <li ng-if="invoice.status ==='cancelled'" class="divider"></li>
+                        <li ng-if="invoice.status ==='cancelled'" ><a href="#" ng-click="updateStatusNew(); $event.preventDefault(); $event.stopPropagation(); ">Update Status (New)</a></li>
+                        
+                    </ul>
+                </div>	
+			</div>
+			
+			<h3 ng-if="invoice.status === 'new'">Awaiting Payment</h3>
+			<h3 ng-if="invoice.status === 'paid'">Paid Invoice </h3>
+			<div ng-show="invoice.date_paid">Date Paid : {{ invoice.date_paid | date:'MMM dd, yyyy'  }}</div>
+			<h3 ng-if="invoice.status === 'cancelled'">Cancelled Invoice</h3>
+			<div ng-if="invoice.status === 'cancelled'">Date Cancelled : {{ invoice.date_cancelled | date:'MMM dd, yyyy hh:mm a'  }}</div>
+			
+		</div>
+	</div>
+</div>	

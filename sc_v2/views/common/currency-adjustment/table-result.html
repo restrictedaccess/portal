@@ -1,0 +1,28 @@
+<div class="col-lg-12" >
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<h5>History</h5>
+			<table class="table table-bordered">
+                <thead>
+	                <tr>
+	                    <th>Currency</th>
+	                    <th>Rate</th>
+	                    <th>Effective Date</th>
+	                    <th>Added By</th>
+	                </tr>
+                </thead>
+                <tbody>
+                	<tr ng-repeat="history in histories">
+                		<td>
+                			<i ng-show="history.active === 'yes'" class="fa fa-hand-o-right"></i>
+                			{{ history.currency }}
+                		</td>
+                		<td>{{ history.sign }}{{ history.rate }}</td>
+                		<td>{{ history.date_added }}</td>
+                		<td>{{ history.admin_fname }} {{ history.admin_lname }}</td>
+                	</tr>
+                <tbody>	
+		</div>
+	</div>
+</div>
+

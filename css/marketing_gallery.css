@@ -1,0 +1,17 @@
+/* CSS Document */
+.img_container{
+	float:left; 
+	margin-left:5px; 
+	border:#CCCCCC solid 1px; 
+	padding:5px;
+}
+.img_text{
+	font:10px tahoma; 
+	color:#999999;
+}
+.view{
+text-align:center;
+margin:5px;
+}
+
+

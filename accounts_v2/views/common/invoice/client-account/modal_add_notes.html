@@ -1,0 +1,22 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Add Comment/Notes</h4>
+        
+    </div>
+    <div class="modal-body">
+    	<form role="form" name="auto_adjust_form" method="post" novalidate ng-submit="addNote()">
+    		
+    		<div class="form-group">
+                <textarea class="form-control" ng-model="client_account_notes"></textarea>
+            </div>
+    		
+    		
+            
+    		<div class="form-group">
+    			<button data-style="zoom-in" class="ladda-button btn btn-primary" type="submit" ladda="loading5"><strong>Add</strong></button>
+            	<button type="button" class="btn btn-white" ng-click="close_auto_adj_hrs()">Close</button>
+                
+            </div>
+    	</form>	
+    </div>
+</div>

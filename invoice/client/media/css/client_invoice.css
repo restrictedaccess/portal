@@ -1,0 +1,170 @@
+/* CSS Document */
+
+
+#close_link{
+    float:right; 
+	color:#FFFFFF; 
+	font-size:10px; 
+	font-family:tahoma; 
+	line-height:13px; 
+	padding-right:5px;
+	cursor:pointer;
+}
+.invoice_number{
+    color:#0033FF;
+	cursor:pointer;
+}
+
+div#invoice_form{
+    background:#FFFFFF !important;
+	margin: 30px auto !important;
+	
+}
+
+div#invoice_details{
+    margin:0px !important;
+	width:100% !important;
+    height:450px !important;
+	display:block !important;
+	overflow-y:scroll !important;
+	background-color:#FFFFFF !important;
+	border:none !important;
+	text-align:left!important;
+	
+}
+
+div#invoice_form h3{
+    background:#7A9512 !important;
+	color:#000000;
+}
+
+.invoice_row{
+    background:url(../images/dots.gif) no-repeat scroll 0 0 #FFF;
+    border-bottom: 1px solid #868686;
+    color: #7C3131;
+    display: block;
+    font-size: 11px;
+    padding: 5px 5px 5px 20px;
+    text-decoration: none;
+	cursor:pointer;
+}
+
+.invoice_row:hover{
+    /*background: url(../images/bg_nav_on.jpg) repeat-x scroll 0 0 #BEBEBE;*/
+	background:url(../images/dots.gif) no-repeat scroll 0 0 #0000FF;
+    color: #fff;
+}
+
+.invoice_row_highlighted{
+    /*background: url(../images/bg_nav_on.jpg) repeat-x scroll 0 0 #BEBEBE;*/
+	background:url(../images/dots.gif) no-repeat scroll 0 0 #0000FF;
+    color: #fff;
+}
+
+
+#right_panel  h3, h2{
+    margin:0;
+	padding:0;
+}
+
+#right_panel div#invoice_leads_details_box {
+    margin-bottom:20px;
+	margin-top:10px;
+}
+#right_panel div#invoice_leads_details_box p{
+    margin-bottom:4px;
+	margin-top:4px;
+}
+
+#right_panel div#invoice_leads_details_box div{
+    float:right;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:right;
+	
+}
+
+#right_panel fieldset{
+    margin-top:20px;
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#right_panel legend{
+    font-size:14px;
+	font-weight:bold;
+}
+
+#invoice_payments_box p{
+    margin-bottom:4px;
+	margin-top:4px;
+}
+
+#invoice_payments_box label{
+    float:left;
+	width:80px;
+}
+
+.money_value{
+    font-family:"Courier New", Courier, monospace;
+	font-size:14px;
+}
+
+#invoice_items_box{
+    margin-top:20px;
+	margin-bottom:20px;
+}
+.invoice_items_hdr {
+    background: url(../images/staffbox-hdr-bg.png) repeat-x scroll left top transparent;
+}
+
+.invoice_items_hdr td {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+	height: 29px !important;
+    line-height: 29px !important;
+
+}
+
+.invoice_item_list{
+    font-family:tahoma; 
+	font-size:12px; 
+	color:#333333;
+	padding:4px;
+	
+}
+
+.edit_delete_box{
+    float:left;
+	text-align:left;
+	font-family:tahoma;
+	font-size:11px;
+
+}
+
+.edit_delete_box img{
+    display:block;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+
+.invoice_due_date_box{
+    display:none;
+	background:#eee;
+}
+
+#invoice_no_loading{
+    color:#FF0000;
+	font-size:10px;
+}
+
+#invoice_paid_date_form{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #0000FF;
+    box-shadow: 3px 3px 5px #B8C6D1;
+    display: none;
+    position: absolute;
+	left: 790px;
+    top: 630px;
+}

@@ -1,0 +1,235 @@
+/* CSS Document */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, img, small, strong, dl, dt, dd, fieldset, form, label { margin: 0; padding: 0;  }
+
+body, select, input{ font-family:tahoma; font-size:12px; color:#333; }
+
+h2{
+    text-transform:uppercase;
+}
+
+
+body#navadminhome a#navadminhome, body#navselected a#navselected, body#navaddteam a#navaddteam  {
+    color:#fff !important;
+	text-decoration:none;  
+	display:block;
+    background:url(../images/remote-staff-nav-bg.png) top left repeat-x;
+	
+}
+
+#container{ 
+    background: none repeat scroll 0 0 #FFFFFF;
+    width: auto;
+}
+
+#nav{
+    position:static;
+    color: white;
+    padding: 0;
+    right:0; /*horizontally center bar in window*/
+    left:0; /*horizontally center bar in window*/
+	top:0;
+    background: #fff;
+    z-index: 10000;
+    width:auto; /*set width of bar to width of entire window*/
+}
+
+#nav img{width:215px; height:60px; margin-bottom:10px; margin-top:10px; }
+
+#nav span { 
+    float: right;
+    font-size: 11px;
+    line-height: 13px;
+    padding-right: 10px;
+    padding-top: 50px;
+	color:#999;
+}
+#nav span a{
+    color:#999;
+	text-decoration:none;
+}
+#nav span a:hover{
+	text-decoration:underline;
+}
+#nav div#navbox{ margin:0 auto; display:block; height:40px; background:url(../images/nav-bg.png); }
+#nav div#navbox ul{ list-style:none; display:block; margin:0; padding:0;  }
+#nav div#navbox ul li{ float:left; }
+#nav div#navbox ul li a:link, #nav div#navbox ul li a:visited{ display:block;  text-decoration:none; color:#fff; line-height:40px; height:40px; padding:0px 20px 0px 20px}
+#nav div#navbox ul li a:hover{ 
+    color:#fff;
+	text-decoration:none;  
+	display:block;
+    background:url(../images/remote-staff-nav-bg.png) top left repeat-x;
+}
+
+#nav div#navbox ul li img{ 
+    border:0;
+	margin:0;
+	height:10px !important;
+	width:10px !important;
+	float:right;
+    margin-right:10px;
+	margin-top:10px;
+}
+
+#divaddteam{
+    padding:10px;
+	margin:auto;
+	width:700px;
+}
+
+#divaddteam input, select, textarea{
+    padding:5px;    
+}
+
+#divaddteam p{
+    margin-bottom:10px;
+	margin-top:5px;
+}
+
+#divaddteam label{
+    display:block;
+	float:left;
+	width:150px;
+	text-align:right;
+	margin-right:10px;
+}
+
+#divaddteam td span{
+    float:left;
+	margin-right:2px;
+	width:220px;
+}
+
+.multiple{
+    height:150px;
+}
+
+#divteam{
+    padding:10px;
+}
+
+#divteam fieldset{
+    padding:10px;
+	background:#CCCCCC;
+	float:left;
+	margin:1px;
+	width:350px;
+}
+
+#divteam legend{
+    text-transform:capitalize;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#divteam p{
+    margin-bottom:10px;
+	margin-top:5px;
+}
+
+#divteam  label{
+    display:block;
+	float:left;
+	width:150px;
+	text-align:right;
+	margin-right:10px;
+}
+
+#divteam p span{
+    text-transform:capitalize;
+}
+
+.note_ctrl{
+    color:#FF0000;
+}
+
+
+
+#history{
+    margin-top:30px; 
+	margin-bottom:30px;
+}
+
+#history legend{
+    font-weight:bold;
+	font-size:12px;
+	margin-left:10px;
+}
+
+#history div#scroll{
+    padding-left:35px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:35px; 
+	/*
+	overflow-y:scroll;
+	height:200px;
+	*/ 
+	color:#999999;
+}
+
+#divteamtb{
+    font-family:"Courier New", Courier, monospace;
+}
+#divteamtb td.hdr{
+    border:#999999 outset 1px;
+	font-weight:bold;
+}
+
+#divteamtb td.admin_name{
+    text-transform:lowercase;
+}
+
+#divteamtb td span.admin_name{
+    text-transform:capitalize;
+	display:block;
+	font-size:11px;
+}
+
+#team_members{
+	border:#333333 solid 1px;
+}
+
+#team_members p{
+    background:#FFFF00;
+	width:180px;
+	height:50px;
+	margin:auto;
+	text-align:center;
+	line-height:20px;
+}
+
+.sub_team_member{
+}
+
+.sub_team_member span{
+    float:left; 
+	width:200px; 
+	height:50px;
+
+}
+
+#div_holder_team{
+    width:90%;
+	margin:auto;
+	font-family:"Courier New", Courier, monospace;
+}
+
+#div_holder_team p{
+    margin-bottom:10px;
+	margin-top:5px;
+}
+
+#div_holder_team  label{
+    display:block;
+	float:left;
+	width:105px;
+	margin-right:5px;
+}
+
+.team_name_txt{
+	font-weight:bold;
+	background:#FFFF00;
+}

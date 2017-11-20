@@ -1,0 +1,19 @@
+.contact_no_type_box div{
+	font-weight:bold;
+}
+.contact_no_type_box ul{
+	list-style:none;
+}
+
+.contact_no_type_box ul li button{
+	margin-bottom:10px;
+}
+
+.modal-header {
+	background-color: #F5F5F5 !important;
+    padding: 2px 15px !important;
+}
+
+.modal-footer {
+    padding: 5px 15px !important;
+}

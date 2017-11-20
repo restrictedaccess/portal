@@ -1,0 +1,37 @@
+body{
+	background:url(/../images/resume_bg.png) repeat!important;
+}
+
+#job_ads_category{
+font-size: 20px;
+font-weight:bold!important;
+}
+#ad_title{
+width:336px;
+}
+#responsibilities_textbox{
+width:965px;
+}
+#requirements_textbox{
+width:965px;
+}
+.panel .panel-heading{
+	font-weight:bold;
+	text-align:left;
+}
+.panel .panel-body{
+label{
+	text-align:left;
+}	
+
+span {
+	font-size: 24px;
+}
+.ads_form .form-group{
+	margin-bottom: 10px;
+}
+
+label .heading{
+text-align:left;
+}
+

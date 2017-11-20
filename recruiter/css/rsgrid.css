@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+.rs-header{
+	display:inline-block;
+	border-collapse:collapse;
+	vertical-align:top;
+	float:left;
+}
+.rs-grid-container{
+	display:inline-block;
+	overflow-x:auto;
+	float:left;
+}
+.rs-grid-container table{
+	border-collapse:collapse;
+	
+}
+.ui-jqgrid-btable{
+	position:relative;
+	z-index:1;
+}
+
+
+.ui-widget-content td{
+	padding-left:5px;
+	padding-right:5px;
+}
+.ui-widget-content ul{
+	margin:0;
+	padding:3px;
+	margin-left:1em;
+}
+.ui-widget-content select{
+	border-spacing:0;
+	margin:0;
+}
+.rs-header-item{
+	padding:1px;
+}
+#recruitment-sheet{
+	overflow:hidden;
+	white-space:nowrap;
+}
+.ui-row-ltr, .gridrow{
+	border:1px solid #DFD9C3;
+}
+.sorter span.ui-icon{
+	display:inline-block;
+	margin-left:5px;
+	height:10px;
+	margin-bottom:4px;
+}
+.ui-widget-content .hr_select{
+	margin-bottom:0.5em;
+}
+#rs-grid-container-recruitment-sheet .ui-widget-content .ui-icon{
+	display:inline-block;
+	margin-left:0.5em;
+	background-position:100px 100px;
+}
+#rs-grid-container-recruitment-sheet .ui-widget-content .ui-icon-close{
+	background-position:-80px -128px;
+}
+.rs-grid-container{
+	border:1px solid #2A5F98;
+	position:relative;
+	z-index:1;
+}
+.rs-preloader{
+	position:absolute;
+	z-index:10;
+	background-color:#fff;
+	text-align:center;
+	vertical-align:middle;
+}
+.rs-preloader img{
+	vertical-align:middle;
+}
+	
+.ui-widget-content .ui-icon-close{
+	cursor:pointer;
+	background-position:-80px -128px;
+}
+td.gridrow{
+	min-height: 18px;
+}

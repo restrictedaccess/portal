@@ -1,0 +1,114 @@
+@charset "utf-8";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin:0;
+}
+
+footer{
+	/*background-image: url("/portal/images/overlay-bg.png");*/
+	border-top:#999 solid 1px;
+	color:#333;
+	background-color:#999;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.navbar-inner{
+	background:#FFF !important;
+}
+
+.content{
+	width:96% !important;
+	margin:auto;
+	
+}
+
+#tb_staff_emails{
+	width:99%;
+	margin:auto;
+	background:#EEE !important;
+	font-size:12px !important;
+}
+
+#tb_staff_emails th {
+	/*
+	background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);	
+	margin:0;
+	*/
+	/* Darker text on medium background */
+	color: #000;
+	background-color:#999;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+#tb_staff_emails tr{
+	background:#FFF;
+}
+
+.bg{
+	background:#FFC !important;
+	
+}
+.no_bg{
+	background:none !important;
+}
+
+.staff_email_details_btn{
+	line-height:14px !important;
+	padding: 4px 9px !important;
+}
+
+#form label{
+	float:left;
+	margin-right:10px;
+	line-height:25px;
+	width:150px;
+	text-align:right;
+}
+
+.span_like_input{
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	border-radius: 4px 4px 4px 4px;
+    color: #555555;
+    display: inline-block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    vertical-align: middle;
+	float:none !important;
+    margin-left:0px !important;
+    min-height: 1px;
+}
+
+.span_like_input_disabled{
+	background-color: #EEEEEE;
+    cursor: not-allowed;
+}
+
+.error_message{
+	width:500px;
+}
+
+.histories{
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	border-radius: 4px 4px 4px 4px;
+    color: #555555;
+	padding:5px;
+    font-size: 12px;
+}

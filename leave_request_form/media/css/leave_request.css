@@ -1,0 +1,170 @@
+/* CSS Document */
+#showleave a{
+	text-decoration:none;
+	color:#000000;
+}
+.suggestionsBox {
+	position: absolute;
+	left: 0px;
+	top:5px;
+	
+	margin-top:23px;
+	margin-left:70px;
+	margin-right:0px;
+	margin-bottom:0px;
+	width: 255px;
+	height:300px;
+	overflow:auto;
+	padding:3px;
+	background-color: #000;
+	border-top: 3px solid #000;
+	color: #fff;
+}
+.suggestionList {
+	margin: 0px;
+	padding: 0px;
+}
+
+.suggestionList ul{
+	margin: 0px;
+	padding: 0px;
+}
+.suggestionList ul li {
+	list-style:none;
+	margin: 0px;
+	padding: 6px;
+	border-bottom:1px dotted #666;
+	cursor: pointer;
+}
+.suggestionList ul li:hover {
+	background-color: #FC3;
+	color:#000;
+}
+ul {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+}
+
+
+
+#suggest {
+	position:relative;
+	margin-bottom:20px;
+}
+
+.inquiring_about{
+	width:250px;
+	background-image:url(../../../images/down.png); 
+	background-position:right; 
+	background-repeat:no-repeat;
+	 
+	padding:4px;
+	cursor:auto; 
+	
+}
+
+
+
+#show_leave_request_details{
+	display:none;
+	position:absolute;
+	width:500px;
+	padding:5px;
+}
+
+#lrm{
+	padding:1px;
+}
+
+#lrm h2{
+	text-align:center;
+	margin-bottom:10px;
+	margin-top:5px;
+	
+	
+	padding:0px;
+}
+
+#lrm select{
+	font:13px tahoma;
+	width:278px;
+	padding:4px;
+}
+
+.staff_name{
+	background:#006699; color:#FFFFFF;  font-weight:bold;
+}
+
+.status_hdr{;
+	background:#CCCCCC;
+	text-align:center;
+	border:#999999 outset 2px;
+	font-weight:bold
+}
+
+.status_list{
+	display:block;
+	height:120px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border-left:#CCCCCC solid 1px;
+	border-bottom:#CCCCCC solid 1px;
+}
+
+.status_list ol{
+	list-style-type: none;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.status_list li a{
+	color: #00014e;
+	display: block;
+	padding: 3px 0;
+	padding-left: 5px;
+	text-decoration: none;
+	border-bottom: 1px solid #E7F0F5;
+	margin-top:2px;
+	font:11px tahoma;
+}
+
+
+.status_list li a span{
+	color:#999999;
+	float:right;
+	font-size:9px;
+}
+
+
+.status_list li a:visited, .status_list ol li a:active{
+	color: #000000;
+}
+
+.status_list li a:hover{
+	color:#FFFFFF;
+	background:#006699;
+}
+
+.status_list li a:active{
+	background:#006699;
+}
+.status_list li a:focus{
+	background:#006699;
+}
+
+* html .status_list li a{ /*IE only. Actual menu width minus left padding of LINK (20px) */
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+.response_note{
+	
+	border:#CCCCCC ridge 1px;
+	
+	display:block;
+	background:#FFFF99;
+	padding:3px;
+	
+}
+

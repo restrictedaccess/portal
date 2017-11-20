@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+#soa_table{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333333;
+}
+
+#soa_table th.numeric, td.numeric{
+	text-align:right;
+}
+/*
+#soa_table td.numeric{
+	font-family:"Courier New", Courier, monospace;
+}
+*/
+
+#soa_table td.total_charges{
+	font-weight:bold;
+	background:#FF0;
+}
+
+div#currency_rates_container{
+	width:40%;
+	margin:auto;
+	text-align:center;
+}
+
+div#currency_rates_container select, input[type='text']{
+	width:100px !important;
+}
+
+div#currency_rates_container button{
+	margin-bottom:10px;
+}

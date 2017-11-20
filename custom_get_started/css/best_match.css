@@ -1,0 +1,93 @@
+.search_form{
+	margin-bottom:10px;
+}
+.line-sep{
+	border-bottom:2px solid #EBEBEB;
+}
+.search_form{
+	background-color:#F9F5F6;
+}
+.list-header{
+	color:#959595;
+	font-weight:bold;
+	padding-top:7px;
+	font-size:13px;
+}
+.add-button, .add-button:hover, .add-button:active, .add-button:visited{
+	background-color:#727FAC;
+	font-size:17px;
+	display:inline-block;
+	padding:6px 15px;
+	color:#fff;
+}
+.h2_search{
+	font-size:20px;
+	text-align:center;
+	margin-top:16px;
+	margin-bottom:11px;
+}
+#addSkillListHeader,#addTaskListHeader{
+	font-size:23px;
+	color:#6868B4;
+}
+.candidate_list{
+	width:960px;
+	padding-left:0;
+}
+.candidate_box{
+	width:100%;
+	padding:0;
+	background-color:#F9F5F6;
+	border-radius: 5px;
+	border:1px solid #D9DDED;
+}
+.spacer-div{
+	width:100%;
+	margin:12px 18px;
+}
+.staff_id{
+	margin-top:9px;
+	display:inline-block;
+}
+.staff_name a, .staff_name a:visited, .staff_name a:hover{
+	color:#626262;
+	text-decoration:none;
+	font-size:16px!important;
+	font-weight:bold;
+}
+.skill-header{
+	display:block;
+	text-align:center;
+	font-size:19px;
+	color:#0054A6;
+}
+.skill-score-header{
+	color:#69AA46;
+	font-size:17px;
+	text-align:center;
+	display:block;
+}
+.detail_box{
+	width:306px;
+	min-height:180px;
+}
+.detail_box .skills li{
+	clear:both;
+}
+.notes_control_box{
+	width:460px;	
+	min-height:180px;
+}
+div.skills{
+	height:7.3em;
+}
+.control-box{
+	padding-left:344px;
+}
+.control_button{
+	background-color:#9E9ED8;
+}
+#asl-list{
+	position:relative;	
+	min-height:247px;
+}

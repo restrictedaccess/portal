@@ -1,0 +1,45 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+
+
+            <div class="row">
+                <div class="form-group col-lg-5">
+                    <h5>Search Client</h5>
+                    <input ng-model="search.searchQuery"  type="text" class="form-control" placeholder="Client Name, Email Address, Leads ID" />
+
+                </div>
+
+                <div class="form-group col-lg-2">
+                    <h5>Date Delivered</h5>
+
+                    <input date-range-picker class="form-control date-picker" type="text" ng-model="formData.daterange" />
+                </div>
+
+                <div class="form-group col-lg-3">
+                    <h5>Email Status</h5>
+
+                    <select ng-model="formData.emailStatus" chosen
+                             class="form-control chosen-select" ng-options="email_status.display as email_status.display for email_status in emailStatus">
+                    </select>
+                </div>
+
+
+
+
+
+                <div class="form-group col-lg-2">
+                    <h5 style="visibility:hidden;">Search</h5>
+                    <button style="margin-left:-20px;" ladda="loading6" ng-click="searchData()" class="ladda-button ladda-button-demo btn btn-primary" >Search Client</button>
+                    <a ladda="loading7" ng-click="refresh()" class="ladda-button ladda-button-demo btn btn-primary" ><span class="glyphicon glyphicon-refresh"></span></a>
+                </div>
+                <!--<div class="col-lg-1">-->
+                    <!--<h5 style="visibility:hidden;">Search</h5>-->
+                    <!---->
+                <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

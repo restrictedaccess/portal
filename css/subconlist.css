@@ -1,0 +1,75 @@
+/* CSS Document */
+
+.contract_details{
+	position:absolute; top:20; left:30%; width:800px; height:321px; z-index:1; padding:5px; border: #000000 2px solid; background-color:#fff;display:none
+}
+
+.contract_details p{
+	margin-bottom:5px;
+	margin-top:5px;
+	border:#CCCCCC dashed 1px;
+
+}
+
+.contract_details label{
+	float:left;
+	display:block;
+	width:100px;
+}
+.search_head{
+margin-left:5px;
+margin-right:5px;
+margin-top:5px;
+background:#CCCCCC;
+border:#999999 outset 1px;
+padding:5px;
+font-weight:bold;
+
+}
+#search_form{
+padding:10px;
+border:#666666 solid 2px;
+margin-left:5px;
+margin-right:5px;
+margin-bottom:5px;
+background:#FFFFFF;
+}
+
+#search_form p{
+margin-bottom:10px;
+margin-top:5px;
+}
+
+#search_form label{
+float:left;
+display:block;
+width:100px;
+}
+
+.a_button{
+ display:block;
+ font:11px tahoma;
+ border:#000000 outset 1px;
+ padding:2px;
+ text-align:center;
+ text-decoration:none;
+ float:left;
+ margin-left:2px;
+ color:#333333
+}
+
+
+#subcon_listings{
+padding:5px;
+border:#666666 solid 2px;
+background:#FFFFFF;
+margin-left:5px;
+margin-right:5px;
+
+}
+
+#subcon_listings p{
+margin-bottom:5px;
+margin-top:3px;
+
+}

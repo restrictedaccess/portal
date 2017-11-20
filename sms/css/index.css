@@ -1,0 +1,29 @@
+body { padding-top: 70px; }
+.container-fluid{
+	padding: 0px 15px 0px;
+}
+.bs-header{
+ 
+  font-size: 16px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.bs-header h3{
+	margin:0;
+	margin-bottom:10px;
+}
+#main_bar{
+	margin-bottom:10px;
+}
+#inputKeyword{
+	width:400px;
+}
+.rs-preloader{
+	position:absolute;
+	z-index:10;
+	background-color:#fff;
+	text-align:center;
+	vertical-align:middle;
+}
+.table>thead>tr>td.danger, .table>tbody>tr>td.danger, .table>tfoot>tr>td.danger, .table>thead>tr>th.danger, .table>tbody>tr>th.danger, .table>tfoot>tr>th.danger, .table>thead>tr.danger>td, .table>tbody>tr.danger>td, .table>tfoot>tr.danger>td, .table>thead>tr.danger>th, .table>tbody>tr.danger>th, .table>tfoot>tr.danger>th{
+	background-color:#ff9999!important;
+}

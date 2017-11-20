@@ -1,0 +1,131 @@
+/*HOMEPAGE JOB ROLE STYLE*/
+.job_selection{
+	height: auto; 
+	background-color: #00B1DA;
+}
+.remotestaff_job_selection {
+    background-color: #00b1da;
+    height: auto;
+    min-height: 420px;
+}
+.dropdown-bg {
+    background-color: transparent !important;
+}
+.dropdown-search-border {
+    border-bottom: 3px solid #fff;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+}
+ul.dropdown-menu.dropdown-search-menu {
+    background-color: #fff;
+    height: 246px;
+    overflow-y: scroll;
+    width: 100%;
+}
+ul.dropdown-menu.dropdown-search-menu li a {
+    color: #000;
+}
+
+/*HOMEPAGE BODY LIST GROUP STYLE*/
+ul.remotestaff_list_group > li.list-group-item:first-child,
+ul.remotestaff_list_group > li.list-group-item:last-child {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+/*HOMEPAGE PANEL STYLE*/
+.remotestaff_panel{
+	border-radius: 1px;
+	border-color: #0D76DB;
+	background-color: transparent;
+	margin-bottom: 10px;
+}
+.remotestaff_panel_heading{
+	background-color: #B2D5EB !important;
+	border-bottom-color: #fff !important;
+}
+ul.remotestaff_panel_list li:first-child{
+	margin-top:0px;
+}
+ul.remotestaff_panel_list li:last-child{
+	margin-bottom:0px;
+}
+ul.remotestaff_panel_list li{
+	margin:10px 0px;
+}
+ul.remotestaff_panel_sub_list{
+	padding:0px 0px 0px 15px;
+	margin:0px;
+}
+ul.remotestaff_panel_sub_list li:before{
+	display: inline-block;
+	content: "-";
+	width: 1em;
+	margin-left: -1em;
+}
+ul.remotestaff_panel_sub_list li{
+	margin:10px 0px !important;
+	list-style-type:none;
+}
+.remotestaff_panel_footer{
+	text-align: center;
+	border-top: none;
+	background-color: transparent;
+}
+
+/*JOB ROLE SELECTION THUMBNAIL STYLE*/
+.job_selection_thumbnail{
+	border: 2px solid #B2D233; 
+	padding: 15px 0px; 
+	min-height: 100px; 
+	height:auto; 
+	margin-bottom:0px;
+	background-color:#fff;
+}
+.job_selection_thumbnail img{
+	display:inline-block;
+	margin:10px 0px;
+}
+.job_selection_thumbnail h3{
+	margin: 10px 0px 0px;
+}
+.job_selection_thumbnail h4{
+	margin:0px;
+}
+
+/*BUBBLE STYLE*/
+.bubble {
+	position: absolute;
+	top: 15px;
+	width: 60%;
+	min-height: 60%;
+	height:auto;
+	padding: 13px 13px 13px 23px; 
+	font-weight:700;
+	background: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: #A3620A solid 2px;
+}
+.bubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 15px 20px 15px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+.bubble:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 16px 21px 16px 0;
+	border-color: transparent #A3620A;
+	display: block;
+	width: 0;
+	z-index: 0;
+}

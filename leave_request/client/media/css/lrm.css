@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+.with_event{
+	width:0% !important;
+}
+
+
+.leave_request_status_box{
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	
+}
+
+.leave_request_status_box_hdr{
+	font-weight:bold;
+	/*background:#e1e1e1;*/
+	padding:1px;
+	text-align:center;
+	background-color: #e1e1e1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #e1e1e1);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+}
+
+.leave_request_status_list{
+	height:150px;
+	overflow-y: auto;
+}
+
+.leave_request_status_list ol{
+	list-style:none;
+	margin:0;
+}
+
+.leave_request_status_list ol li{
+	border-bottom: 1px dashed #DDDDDD;
+	padding:5px;
+}
+
+.lr_id{
+	cursor:pointer;
+}
+
+.lr_id:hover{
+	background-color: #e1e1e1;
+}
+
+#leave_request_result{
+	padding-left:10px;
+}
+#lr_details p{
+	margin-bottom:10px;
+}
+
+#lr_details label{
+	float:left;
+	width:150px;
+}
+
+#calendar_indication{
+	font-weight:bold;
+	font-size: 1.5em;
+    letter-spacing: -0.05em;
+}
+
+
+
+time.icon {
+    background-color: #FFFFFF;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 0 #BDBDBD, 0 2px 0 #FFFFFF, 0 3px 0 #BDBDBD, 0 4px 0 #FFFFFF, 0 5px 0 #BDBDBD, 0 0 0 1px #BDBDBD;
+    display: block;
+    font-size: 1em;
+    height: 9em;
+    overflow: hidden;
+    position: relative;
+    transform-origin: 50% 10% 0;
+    width: 8em;
+	float: left;
+    margin: 1em;
+	
+}
+time.icon * {
+    display: block;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+time.icon strong {
+    
+    color: #FFFFFF;
+    padding: 0.4em 0;
+    position: absolute;
+    top: 0;
+}
+
+/*
+time.icon strong input{
+	float: right !important;
+    width: 0;
+    position: relative;
+}
+*/
+
+time.icon em {
+    bottom: 0.9em;
+    color: #333;
+    position: absolute;
+}
+
+time.icon small {
+    bottom: -0.9em;
+    color: #CCCCCC;
+    position: absolute;
+    font-size: 0.9em;
+    font-family: tahoma;
+	font-weight:normal !important;
+}
+
+time.icon span {
+    color: #2F2F2F;
+    font-size: 2.8em;
+    letter-spacing: -0.05em;
+    padding-top: 63px;
+    width: 100%;
+}
+
+
+.status_approved{
+	background-color: #009900;
+    box-shadow: 0 2px 0 #009900;
+	
+}
+
+.status_pending{
+	background-color: #FFFF00;
+    box-shadow: 0 2px 0 #FFFF00;
+	color:#000 !important;
+}
+
+.status_absent{
+	background-color: #0000FF;
+    box-shadow: 0 2px 0 #0000FF;
+}
+
+.status_denied{
+	background-color: #FF0000;
+    box-shadow: 0 2px 0 #FF0000;
+}
+
+.status_cancelled{
+	background-color: #999999;
+    box-shadow: 0 2px 0 #999999;
+}
+
+#comments_box{
+	margin-top:20px;
+	color:#666;
+}
+
+.comment{
+	margin-top:10px;
+}

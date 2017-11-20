@@ -1,0 +1,73 @@
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 0px !important;
+}
+
+#timesheet_table{
+	width:99%;
+	margin:0;
+}
+#timesheet_table th{
+	text-align:center;
+	vertical-align:middle;
+	word-wrap:break-word;
+	background:#eee;
+	border-bottom: 1px solid #dbdbdb !important;
+}
+
+#timesheet_table tbody td{
+	text-align:center;
+}
+
+#timesheet_table th.hdr_day{
+	width:3%;
+}
+
+#timesheet_table td.ts_day{
+	text-align:left !important;
+}
+
+#timesheet_table th.hdr_date{
+	width:3%;
+}
+
+#timesheet_table th.hdr_timein, #timesheet_table th.hdr_timeout, #timesheet_table th.hdr_start_lunch, #timesheet_table th.hdr_fin_lunch{
+	width:7%;
+}
+
+#timesheet_table th.hdr_total_hrs, #timesheet_table th.hdr_adj_hrs , #timesheet_table th.hdr_reg_ros_hrs, #timesheet_table th.hdr_lunch_hrs , #timesheet_table th.hdr_hrs_pay_to_subcon{
+	width:5%;
+}
+
+#timesheet_table th.hdr_notes{
+	width:20%;
+}
+
+#timesheet_table tfoot{
+	text-align:center;
+	background:#CCFFCC;
+}
+
+.ts_notes_container{
+	display:none;
+}
+
+
+#ts_notes table{
+	margin-top:20px;
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+.note{
+	cursor:pointer;
+	text-align:justify !important;
+}
+.note div{
+	font-size:small;
+	font-style:italic;
+}

@@ -1,0 +1,48 @@
+<!--<h3><a href='#'>New Activity</a> </h3>-->
+<div style='float:left;width:100%;padding:10px;'>
+	<div style='float:left;width:100%;padding:0 0 10px;'>
+	<strong>Work Task List:</strong>
+	<select name='workflow' class='inputbox' style='margin:0 28px;width:650px;'>
+		<option value='0'> -- Select Task Here -- </option>
+		<?php foreach( $this->workflows as $wf ):?>
+		<option value='<?php echo $wf['id'];?>'><?php echo $wf['work_details'];?></option>
+		<?php endforeach;?>
+	</select>
+	</div>
+	or
+<form id='actform' method='post' target='ajaxframe' action='index.php?item=create'>
+	<input type='hidden' name='wfdetails' id='wfdetails'/>
+	<strong>Enter Activity Here:</strong>
+	<input type='text' name='activity_details' class='inputbox' autocomplete='off' style='width:644px;margin:0 10px;'/>
+	<select name='category'>
+		<?php
+		if( count($this->task_types)) {
+			foreach($this->task_types as $idx => $type)
+				echo "<option value='{$type['type_value']}'>{$type['type_value']}</option>";
+			}
+		?>
+	</select>
+	<button id='create'>Create Activity</button>
+</form>
+</div>
+	<div class='topbar'>
+		<div style='float:left'><?php echo date('F d, Y');?></div>
+		
+		<div style='float:left;width:800px;font-weight:bold;text-align:center;'>TODAY'S ACTIVITY</div>
+		<div style='float:right;width:auto;font-weight:bold;padding-right:8px'>
+		<?php if($this->view == 'tssummary'):?>
+		<?php else:?>
+		<!--<span style='margin-left:20px;'><a href='#' id='reload'>Reload</a></span>
+		<span style='margin-left:20px;'>Save</span>-->
+		<?php endif;?>
+		
+			
+		</div>
+	</div>
+
+<div id="container" style="float:left;width:100%;">
+<div id="loadingimg" style="float:left;display:block; width:100%; text-align:center; top:100px; font:16px Arial;">
+	<img src="/adhoc/php/images/loading.gif" border=0 height='64' width='64'><br>
+	Loading... Please wait
+</div>
+</div>

@@ -1,0 +1,431 @@
+.affiliate_invoicing{
+font: bold 18px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+ text-align:center;
+}
+#invoice_pane {
+    background-color: #ddd;
+	
+}
+
+#invoice_bottom {
+    float: left;
+    background-color: #ddd;
+    width: 900px;
+}
+
+#invoice_functions {
+    padding-top: 8px;
+    padding-left: 4px;
+    padding-bottom: 8px;
+}
+
+#invoice_listings {
+    float: left;
+    width: 300px;
+    height: 600px;
+    padding-left: 4px;
+    padding-right: 8px;
+}
+
+.invoice_list{
+    height: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #888;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.invoice_list:hover{
+    background-color: #AAA;
+}
+
+#invoice_right_pane {
+    background-color: white;
+    float: left;
+    width: 680px;
+    padding-top: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.invoice_list_title {
+    font-weight: bold;
+    text-align: center;
+    border: 2px #EEE outset;
+    height: 18px;
+    line-height: 18px;
+    color: black;
+    background-color: #EEE;
+}
+
+.invoice_list_contents {
+    color: black;
+    height: 140px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    margin-bottom: 8px;
+}
+
+.invoice_list_highlighted {
+    background-color: #008;
+    color: white;
+}
+
+.spacer {
+    height: 12px;
+}
+
+.invisible {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#formCreateFromTimeRecord {
+    border: 1px ridge #888;
+    padding: 10px;
+    background-color: white;
+    width: 572px;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+.div_date {
+    float: left;
+    text-align: center;
+    width: 188px;
+}
+
+.cal_img {
+    cursor: pointer;
+}
+
+.input_date {
+    width: 88px;
+}
+
+.invoice_item_no {
+    float: left;
+    width: 44px;
+    border-right: 1px solid black;
+    line-height: 28px;
+    height:auto;
+    text-align: right;
+    padding-right: 4px;
+}
+
+.invoice_desc {
+    float: left;
+    width: 438px;
+    padding-left: 4px;
+    height: 28px;
+    background-color: white;
+}
+
+.invoice_amt {
+    float: left;
+    width: 60px;
+    text-align: right;
+    border-left: 1px solid black;
+    line-height: 28px;
+    height: auto;
+}
+
+#invoice_details {
+    float: left;
+    width: 650px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 300px;
+    padding-bottom: 4px;
+}
+
+#invoice_details_header {
+    border: 1px solid black;
+    width: 650px;
+    font-weight: bold;
+    margin-top: 12px;
+    line-height: 28px;
+    height: 28px;
+}
+
+#invoice_amt_hdr {
+    float: left;
+    width: 78px;
+    padding-left: 2px;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.invoice_details_row {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#comment_pane {
+    float: left;
+    background-color: white;
+    margin-top: 8px;
+}
+.invoice_converted{
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    padding-right: 25px;
+	margin-right:10px;
+}
+.invoice_percent{
+	text-align: right;
+    padding-top: 8px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    padding-right: 25px;
+	margin-right:10px;
+}
+#invoice_total_amount {
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    padding-right: 25px;
+	margin-right:10px;
+}
+
+#notes_comments_title {
+    text-align: center;
+    width: 570px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 2px outset #FFFFCC;
+    background-color: #FFFFCC;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#comment_div_container {
+    width: 574px;
+    height: 128px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-bottom: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#comment_functions {
+    padding-top: 8px;
+}
+
+#input_comment {
+    width: 430px;
+}
+
+#button_add_comment {
+    margin-left: 8px;
+}
+
+
+.comment_row {
+    width: 560px;
+}
+
+.comment_by_name {
+    float: left;
+    width: 76px;
+    padding-left: 4px;
+    line-height: 16px;
+}
+
+.comment_detail {
+    float: left;
+    width: 472px;
+    line-height: 16px;
+}
+
+.comment_row_color_1 {
+    background-color: #FFFFFF;
+}
+
+.comment_row_color_2 {
+    background-color: #CCCC99;
+}
+
+
+#div_invoice_list {
+    float: left;
+    width: 312px;
+}
+
+.admin-invoice-label-date {
+    float: left;
+    width: 80px;
+    text-align: left;
+}
+
+.invoice_desc_admin {
+    float: left;
+    width: 420px;
+    padding-left: 4px;
+    /*height: 28px;*/
+	height:auto;
+    background-color: white;
+	font:11px tahoma;
+	color:#333333;
+	
+}
+.invoice_desc_admin_str {
+    float: left;
+    width: 420px;
+    padding-left: 4px;
+    /*height: 28px;*/
+	height:auto;
+    background-color: white;
+
+	
+}
+
+
+.div_invoice_edit_del {
+    float: left;
+	margin-left:5px;
+}
+
+#form_add_edit {
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    padding-top: 28px;
+    padding-left: 12px;
+}
+
+#full_payment_details {
+    padding-left: 28px;
+    width: 500px;
+    float: left;
+}
+
+#text_area_payment_details {
+    width: 380px;
+    height: 80px;
+}
+
+#input_invoice_description {
+    width: 548px;
+}
+
+#title_add_edit {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+#div_invoice_main_functions {
+    padding-top: 8px;
+    padding-left: 4px;
+    padding-bottom: 12px;
+}
+
+.invoice_title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+#date-filter {
+    background-color: white;
+    width: 292px;
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 8px;
+    padding:4px;
+}
+
+/*** Added by Normaneil 10/24/2008 ****/
+
+.input_currency{
+    font: bold 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; color: #2d2b2b;
+	padding:10px;
+	margin:20px;
+	
+	
+	border:#CCCCCC solid 1px;
+   
+}
+#input_currency
+{
+	width:50PX;
+	font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; color: #2d2b2b;
+}
+.input_currency_wrapper{
+margin-bottom:5px;
+margin-top:5px;
+padding:5px;
+}
+.currency_title
+{
+	text-align:left;
+	padding:3px;
+	margin-bottom:7px;
+}
+.input_currency_txt{
+	width:50px;
+    text-align: right;
+    font-weight: bold;
+	
+}
+.show_conversion{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    padding-right: 4px;
+	color:#660000;
+	font: 18px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+	float:left;
+	background:#FFFFCC;
+}
+.conversion_details{
+    font: bold 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; color: #2d2b2b;
+	padding:10px;
+	margin:10px;
+}
+.currency_details
+{
+	float:left;
+	display:block;
+	padding-right:5px;
+}
+.btn_save_conversion
+{
+	float:right;
+	margin-top:5px;
+	margin-right:30px;
+}
+.equation{
+	text-align:right;
+	padding-right:10px;
+	 font: bold 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+	 color:#999999;
+}
+.exchange_rate_label
+{
+	 font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+	 color:#999999;
+	 margin-right:50px;
+}
+
+/*****************/

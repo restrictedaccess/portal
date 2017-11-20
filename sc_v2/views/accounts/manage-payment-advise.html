@@ -1,0 +1,15 @@
+<div ng-controller="ManagePaymentAdviseController as view">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Manage Payment Advice</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row" ng-include="'views/common/accounts/search-form.html'"></div>
+		<div class="row" ng-include="'views/common/accounts/table-result.html'"></div>
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

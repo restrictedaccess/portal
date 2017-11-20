@@ -1,0 +1,40 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<button ladda="createLoading" ng-click="create()" class="ladda-button ladda-button-demo btn btn-primary pull-right"  data-style="expand-left" style="margin-right: 10px;">Create Timesheet</button>
+			<h3>
+				List of Staff Without 
+				<span ng-show="current_month_year_str !== null">{{ current_month_year_str }} Timesheet</span>
+				<span ng-show="current_month_year_str === null">Current Month/Year Timesheet</span>		
+			</h3>
+  			<div class="text-muted"><p>Total number : <span class="badge badge-warning ng-binding">{{ num_records }}</span></p></div>
+			<table class="table table-bordered table-striped">
+				
+				<thead>
+					<tr>
+						<th class="text-center" width="5%"><input type="checkbox" ng-model="create_timesheet.master_select" ng-checked="true" ng-click="select_all()"></th>
+						<th class="text-center" width="8%">Subcon Id</th>
+						<th>Staff</th>
+						<th>Client</th>
+						<th>Job Designation</th>
+					</tr>				
+				</thead>
+					<tr ng-repeat="record in records">
+						<td class="text-center">
+							<input type="checkbox" ng-model="record.selected" ng-checked="record.selected" value="{{ record.subcontractors_id }}">
+						</td>
+						<td class="text-center">{{ record.subcontractors_id }}</td>
+						<td>{{ record.staff }}</td>
+						<td>{{ record.client }}</td>
+						<td>{{ record.job_designation }}</td>
+					</tr>
+				<tbody>
+					
+				</tbody>
+			</table>
+			
+
+		</div>
+	</div>
+</div>
+

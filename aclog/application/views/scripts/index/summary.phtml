@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+    <link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script>
+	
+	<script type="text/javascript" src="js/report_edit.js"></script>
+</head>
+<body>
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;height:10px;' src='javascript:false;'></iframe>
+
+<div style='float:left;width:100%'><div style="float:left;position:absolute;top:10px">Run Date: <?php echo $this->rundate;?></div>
+</div>
+<!--<script type="text/javascript" src="/portal/aclog/js/report.js"></script>-->
+
+	<div id="staff" style="float:left;width:100%;padding-right:0px;">
+				
+		<div class='date_range'><?php echo $this->from_date.' to '.$this->to_date;?></div>
+		<form action='#' method='post' id='taskform'>
+		<div id="tabular">
+			<?php if( count($this->results) == 0 ):?>
+			<div class='staffname' style='width:100%;'>No Records found!</div>
+			<?php else:?>
+			<table summary="ActivityListing" id="myactivity">
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				
+				<th scope="col" style='width:10%'>Task</th>
+				<?php
+					$date_arr = $this->results[0][ strtolower($this->task_types[0]['type_value']) ];
+					foreach($date_arr as $date => $val ):
+					$aDate = explode('-', $date);
+				?>
+				<th scope="col" style='width:4%'><?php echo $aDate[2];?></th>
+				<?php endforeach;?>
+			</tr>
+			<?php foreach( $this->results as $idx => $reports ):
+				if( count($this->task_types)):
+					foreach($this->task_types as $idx => $type):
+						$type_value = $type['type_value'];
+					?>
+					<tr>
+						<td class="number"><?php echo $reports['fname'].' '.$reports['lname'];?></td>
+						<td><?php echo $type_value;?></td>
+						<?php foreach( $reports[ strtolower($type_value) ] as $d => $pct ):?>
+						<td><?php echo round($pct, 1);?>%</td>
+						<?php endforeach;?>
+					</tr>
+				<?php endforeach;
+				endif;?>
+				
+				
+			<?php endforeach;?>
+			
+			</tbody>
+             
+            </table>
+			<?php endif;?>
+		</div>
+		</form>
+		
+    </div>
+<script type='text/javascript'>
+</script>
+</body>
+</html>

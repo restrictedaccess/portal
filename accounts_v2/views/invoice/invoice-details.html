@@ -1,0 +1,29 @@
+<div ng-controller="InvoiceDetailsController as invoice_details_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Invoice Number {{ order_id }}</h3>
+	    </div>
+	</div>
+	
+	<div ng-if="order_id === null"  class="wrapper wrapper-content animated fadeInRight" >
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+        		<div class="alert alert-danger">
+        			<p>Invoice Number is Missing</p>		
+        		</div>
+        	</div>
+        </div>		        	
+	</div>
+		
+	<div ng-if="order_id !== null" class="wrapper wrapper-content animated fadeInRight">
+		
+		<div class="row" ng-include="'views/common/invoice/invoice-details/invoice-buttons.html'"></div>
+		<div class="row" ng-include="'views/common/invoice/invoice-details/invoice.html'"></div>
+		<div class="row" ng-include="'views/common/invoice/invoice-details/comments_notes.html'"></div>
+		<div class="row" ng-include="'views/common/invoice/invoice-details/history.html'"></div>
+		
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

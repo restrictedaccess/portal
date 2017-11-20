@@ -1,0 +1,78 @@
+<div class="row">
+	<div class="col-lg-12">
+		<div class="ibox-content p-xs">
+			<div align="right" >
+				<div ng-if="quote.status != 'deleted'">
+					<div ng-if="quote.locked">
+						<button type='button' disabled class='btn btn-sm btn-default q-btn btn-add-quote-details' ng-click="openModalQuoteDetails()">Add Quote Details</button>
+						<button type='button' disabled class='btn btn-sm btn-default q-btn btn-delete-quote'>Delete Quote</button>
+						<!--<button type='button' disabled class='btn btn-sm btn-default q-btn btn-send-quote'>Send Quote</button>-->
+						<button type='button' disabled class='btn btn-sm btn-default q-btn btn-send-quote'>Convert to Service Agreement</button>
+						<a href="/portal/sc_v2/#/quote/service_agreement_info/{{quote.id}}/{{sa_id}}" class="btn btn-sm q-btn" target="_blank">Service Agreement <span class="badge badge-warning">{{totalSA}}</span></a>
+					</div>
+
+					<div ng-if="!quote.locked">
+
+						<button type='button' class='btn btn-sm btn-default q-btn btn-add-quote-details' ng-click="openModalQuoteDetails()" ng-disabled="isAccepted === 'yes'">Add Quote Details</button>
+						<button type='button' class='btn btn-sm btn-default q-btn btn-delete-quote' ladda="loading5" ng-click="deleteQuote()" ng-disabled="isAccepted === 'yes'">Delete Quote</button>
+						<!--<button type='button' class='btn btn-sm btn-default q-btn btn-send-quote' ladda="loading6" ng-click="openModalSendQuote()">Send Quote</button>-->
+						<button type='button' class='btn btn-sm btn-default q-btn btn-send-quote' ladda="loading7" ng-click="convertToSA()" ng-disabled="totalSA > 0">Convert to Service Agreement</button>
+						<a href="/portal/sc_v2/#/quote/service_agreement_info/{{quote.id}}/{{sa_id}}" class="btn btn-sm q-btn">Service Agreement <span class="badge badge-warning">{{totalSA}}</span></a>
+					</div>
+				</div>
+			</div>
+			<hr>
+
+			<div ng-if="quote.status === 'deleted'">
+				<div class='alert alert-danger'>Quote #{{quote.id}} for Client <strong>#{{quote.client.id}} {{quote.client.fname}} {{quote.client.lname}}</strong> is in deleted status.</div>
+			</div>
+			<!-- <div ng-if="quote.status != 'deleted'"> -->
+			<div ng-if="quote.locked">
+
+				<div class='text-center alert alert-danger'>This Quote is Locked</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4><a href="/portal/leads_information.php?id={{ quote.client.id }}">{{ quote.client.fname }} {{ quote.client.lname }}</a></h4>
+					<p>
+						<span>Client Id : {{ quote.client.id }}</span><br>
+						<span ng-if="quote.client.email">{{ quote.client.email }}</span><br ng-if="quote.client.email">
+						<span ng-if="quote.client.company_name">{{ quote.client.company_name}}</span><br ng-if="quote.client.company_name">
+						<span ng-if="quote.client.company_address">{{ quote.client.company_address}}</span><br ng-if="quote.client.company_address">
+						<span ng-if="quote.client.mobile">{{ quote.client.mobile}}</span> <br >
+						<!-- ran: {{quote.ran}} -->
+
+					</p>
+				</div>
+
+				<div class="col-sm-6 text-right">
+
+					<p>
+						Quote Id: <span class="font-bold text-navy"><strong>{{ quote.id }}</strong></span><br>
+
+						Status: <strong>
+						<span class="label label-warning">{{ quote.status }}</span>
+					</strong>
+						<br>
+						Created By: <strong>{{ quote.quoted_by.admin_fname }} {{ quote.quoted_by.admin_lname }}</strong> <br>
+						Date Created: <strong>{{ formatDate(quote.date_quoted) }}</strong> <br>
+						Date Posted: <span ng-show="quote.date_posted !==null"><strong>{{ formatDate(quote.date_posted)}}</strong></span>
+					</p>
+
+				</div>
+
+			</div>
+
+
+
+
+			<div>
+				<div class="ibox-content p-xl">
+
+					<div class="row" ng-include="'views/common/quote/details/quote_info.html'"></div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</div>
+</div>

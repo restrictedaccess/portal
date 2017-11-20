@@ -1,0 +1,17 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title border-bottom">
+			<button class="btn btn-primary btn-sm pull-right" ng-click="openModalAddInvoiceNotes()">Add Note</button>		
+			<h3>Comments / Notes</h3>					
+		</div>
+				
+		<div class="ibox-content" >			
+			<ol>
+	        	<li ng-repeat="h in invoice.comments | orderBy:'-date'" style="margin-bottom: 20px;">
+	        		<div class="font-bold">{{ h.name }} {{ h.date | date:'MMM dd, yyyy hh:mm a' }}</div>
+	        		<div style="margin-bottom: 20px;">{{ h.comment }}</div>
+	        	</li>
+	        </ol>	
+		</div>
+	</div>
+</div>

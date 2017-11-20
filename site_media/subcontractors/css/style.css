@@ -1,0 +1,494 @@
+@charset "utf-8";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin:0;
+	/*background:#F5F5F5;*/
+}
+
+footer{
+	background-image: url("/portal/images/overlay-bg.png");
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+	color:#999;
+}
+
+legend{
+	font-size:18px !important;
+}
+
+hr{
+	margin:5px !important;
+}
+
+.container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+#nav ul li{
+	line-height:30px;
+}
+
+@media (max-width: 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+#contract_list{
+	border-collapse: inherit !important;
+	border-spacing:1px !important;
+	background:#ccc;
+	
+}
+#contract_list th {
+	font-family:tahoma;
+	font-size:10px;
+	letter-spacing:0px;
+	line-height: 12px;
+	color: #000;
+	/*background-color:#999;*/
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+	background-color: #e1e1e1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #999);
+    background-repeat: repeat-x;
+}
+
+#contract_list td{
+	color:#666;
+	font-size:11px;
+	font-family:tahoma;
+	line-height:15px;
+}
+
+#contract_list td img{
+	float:left;
+	margin-right:10px;
+}
+
+#contract_list td pre{
+	background:#FFC;
+	margin: 1px;
+	padding:5px;
+	font-family:tahoma !important;
+	font-size:11px !important;
+}
+
+
+.running_late_sheet{
+	background:#000 !important;
+}
+
+.running_late_sheet th{
+	color:#FFF !important;
+	background-color:#333 !important;
+}
+
+.running_late_sheet td{
+	color:#000 !important;
+}
+
+.running_late_sheet td a{
+	color:#00F !important;
+	font-weight:normal !important;
+}
+
+.staff_name, .client_name{
+
+	font-weight:bold;
+}
+
+.subcons_status{
+	text-transform:capitalize;
+}
+
+#search_form{
+	width:98%;
+	margin:auto;
+	font-family:tahoma;
+	font-size:12px;
+}
+
+#search_form ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#search_form ul li{
+	float:left;
+	margin: 5px;
+    width: 120px;
+}
+#search_form select, #keyword, #date_started_from, #date_started_to{
+	width:115px;
+	font-family:tahoma;
+	font-size:12px;
+	padding:0px !important;
+	height:29px !important;
+}
+
+.contract_id{
+	font-size:12px;
+	text-decoration:underline;
+	color:#00F;
+}
+.status_box{
+	text-transform:capitalize;
+}
+.reason_link{
+	font-weight:bold;
+}
+/*
+#flexi{
+	width:60px !important;
+}
+
+#work_status{
+	width:80px !important;
+}
+*/
+
+.rssc_timerecords tr{
+	border-bottom:#999 solid 1px !important;
+}
+.rssc_timerecords td{
+	font-family:"Courier New", Courier, monospace !important;
+}
+
+.rssc_hours tr{
+	border-bottom:none !important;
+}
+
+#contents_div{
+	background:#F5F5F5;
+}
+
+#contact_container{
+	margin:auto; 
+	width:75%;
+	/*font-family:"Courier New", Courier, monospace;*/
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px !important;
+	background:#FFF;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	padding:10px;
+}
+
+#contact_container input[type="text"], #contact_container input[type="email"], #contact_container select{
+	/*
+	background:none !important;
+	border:none !important;
+	margin-bottom:2px !important;
+	box-shadow:none !important;
+	*/
+	/*font-family:"Courier New", Courier, monospace;*/
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px !important;
+}
+
+.personal_info{
+	/*
+	background:#d9edf7;
+	border:#bce8f1 1px solid;
+	*/
+	padding:5px;
+}
+.personal_info span{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18pt;
+	font-weight:bold;
+	color:#000;
+	text-transform:capitalize;
+}
+
+.personal_info img{
+	float:left;
+	margin-right:10px;
+}
+
+
+#contact_container ul{
+	list-style:none;
+	margin:0 12px 10px 12px !important;
+}
+
+#contact_container ul li {
+	margin-bottom:5px;
+	border-bottom:#eee solid 1px;
+	
+}
+
+
+
+#contact_container ul li label{
+	display:inline !important;
+	width:15%;
+	float:left;
+	color:#8B8B8B;
+}
+
+#schedule td select{
+	/*font-family:"Courier New", Courier, monospace;*/
+	font-family:Tahoma, Geneva, sans-serif;
+	width:22%;
+}
+
+#schedule td input{
+	/*font-family:"Courier New", Courier, monospace;*/
+	font-family:Tahoma, Geneva, sans-serif;
+	width:7%;
+}
+
+#starting_date, #end_date, #prepaid_start_date{
+	cursor:pointer !important;
+}
+
+
+#admin_notes{
+	width:50%;
+	height:120px;
+}
+
+.salary_formula{
+	display:inline;
+	/*margin-left:10px;*/
+	font-size:10px !important;
+}
+#parent_rev{
+	overflow: hidden;
+}
+#revenue_display{
+	background: none repeat scroll 0 0 #CCCCCC;
+    clear: left;
+    display: inline;
+    font-size: 12px;
+    margin-left: 5%;
+    padding: 5px;
+    position: absolute;
+}
+
+#revenue_display ul{
+	padding:0;
+	margin:0;
+}
+
+#scheduled_contract_cancellation_div{
+	font-family:"Courier New", Courier, monospace;
+	font-size:12px;
+}
+
+.contract_remarks{
+	background:#FF9;
+}
+.contract_remarks li{
+    border-bottom: medium none !important;
+    list-style: disc outside none !important;
+    margin-left: 3%;
+	font-style:italic;
+}
+
+#other_info{
+	float:right; 
+	display:inline; 
+	text-align:right;
+}
+
+
+.modified_field{
+	background:#ffa07a !important;
+}
+
+.actions_container{
+	text-align:center;
+	padding:5px;
+}
+
+.history_link{
+	cursor:pointer;
+}
+.history_details{
+	font-size:12px;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+#create_from_sa{
+	text-align:right;
+	margin-right:1%;
+}
+
+.service_agreement_details li{
+	margin-bottom:5px;
+	border-bottom:#fff solid 1px !important;
+}
+
+.setup_sa{
+	float:right;
+}
+
+.platform{
+	cursor:pointer !important;
+	
+}
+
+#home_task_container div{
+	float:left;
+	margin:5px;
+	width:20%;
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+	height:150px;
+}
+
+#home_task_container div p{
+	font-weight:bold;
+	/*background:#e1e1e1;*/
+	padding:1px;
+	text-align:center;
+	background-color: #e1e1e1;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #e1e1e1);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+}
+
+.rssc_staff{
+	text-transform:inherit;
+}
+
+#comment_str{
+	width:300px!important;
+}
+/*
+#contract_table select{
+	-moz-appearance: none; 
+	-webkit-appearance: none;
+	appearance: none;
+	text-indent: .01px;
+	text-overflow: "";
+}
+
+
+#contract_table select:hover{
+	-moz-appearance: show !important; 
+	-webkit-appearance: show !important;
+	appearance: show !important;
+}
+
+.small_width{
+	width:3%;
+}
+*/
+
+#attendance_report_tb th{
+	text-align:right !important;
+}
+#attendance_report_tb th.work_sched_str{
+	text-align:left !important;
+}
+
+#attendance_report_tb tbody tr td div{
+	font-family:"Courier New", Courier, monospace
+}
+#attendance_report_tb .totals{
+	color:#F00;
+	font-weight:bold;
+	background:#ddd;
+}
+
+#page_num{
+	width:60px !important;
+}
+
+#from_date, #to_date{
+	font-family: tahoma;
+    font-size: 12px;
+    height: 20px !important;
+    padding: 4px !important;
+    width: 115px;
+	cursor:pointer;
+}
+#cancellation_report .cr_hd{
+	text-align:right !important;
+}
+
+
+#render_running_late_result_tb {
+    font-size: 12px;
+    font-family: tahoma;
+}
+
+#render_running_late_result_tb th{
+    font-size: 13px;
+	text-align:center;
+}
+
+#staff_attendance_list{
+	list-style:none;
+}
+
+#staff_attendance_list li{
+	margin-bottom:15px;
+}
+
+
+.pagination {
+display: inline-block;
+padding-left: 0;
+margin: 20px 0;
+border-radius: 4px;
+}
+
+.pagination>li {
+display: inline;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+margin-left: 0;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+z-index: 2;
+color: #fff;
+cursor: default;
+background-color: #337ab7;
+border-color: #337ab7;
+}
+
+.pagination>li>a, .pagination>li>span {
+position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #337ab7;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+}

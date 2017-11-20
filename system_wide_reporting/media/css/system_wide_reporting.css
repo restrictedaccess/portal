@@ -1,0 +1,218 @@
+/* CSS Document */
+
+/* search form */
+#search_form{
+	font:11px tahoma !important;
+	text-align:center;
+	width:70%;
+	margin:auto;
+}
+
+#search_form div{
+	line-height:25px;
+}
+/* end search form */
+
+
+.staff_attendance_summary{
+	font-family:'Courier New', Courier, monospace;
+}
+
+.staff_attendance_summary p{
+	margin-bottom:3px; 
+	margin-top:5px;
+}
+
+.staff_attendance_summary span{
+	float:right; 
+	width:65px;
+}
+
+
+#running_late_legend{
+	font-size:10px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+
+#running_late_legend label{
+	float:left;
+	width:160px;
+	text-align:center;
+	margin-right:5px;
+}
+
+
+
+/*PAGINATION*/
+.pagination{
+	
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+	
+}
+
+.pagination ul{
+margin: 0;
+padding: 0;
+font:10px tahoma;
+
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+text-decoration: none; 
+color: #2e6ab1;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #2b66a5;
+color: #000;
+background-color: #FFFF80;
+}
+
+.pagination a.currentpage{
+background-color: #2e6ab1;
+color: #FFF !important;
+border-color: #2b66a5;
+font-weight: bold;
+cursor: default;
+}
+
+.pagination a.disablelink, .pagination a.disablelink:hover{
+background-color: white;
+cursor: default;
+color: #929292;
+border-color: #929292;
+font-weight: normal !important;
+}
+
+.pagination a.prevnext{
+font-weight: bold;
+}
+
+/*END PAGINATION*/
+
+#applicant_list td , input , select{
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+}
+
+#applicant_list .hdr {
+	color:#FFFFFF;
+}
+#applicant_list .ctr{
+	color:#999999;
+}
+
+.invoice_result{
+	color:#0000FF;
+	cursor:pointer;
+}
+.leads_list{
+	color:#0000FF;
+	font-weight:bold; 
+	cursor:pointer;
+	text-transform:capitalize;
+	display:block;
+}
+.staff_list_hdr td{
+	font-weight:bold;
+	border:#666666 outset 1px;
+}
+.staff_list:hover{
+	background:#AAAAAA;
+}
+
+.staff_list_highlighted{
+	
+	background:#AAAAAA;
+	font-weight:bold;
+}
+.iresult{
+	display:block; 
+	border-bottom:#CCCCCC solid 1px;
+	margin-bottom:10px;
+}
+.iresult li{
+	text-transform:capitalize;
+}
+.
+#invoice_result li{
+	text-transform:capitalize;
+}
+
+#invoice_result .line{
+	float:left;
+	width:150px;
+	
+	margin-bottom:10px;
+}
+
+.leftR{
+	
+	
+	font-family:tahoma;
+	height:345px;
+	
+}
+
+.filter{
+	font-family:tahoma;
+	font-size:11px;
+}
+
+.filter select{
+	font-family:tahoma;
+	font-size:11px;
+	width:119px;
+}
+
+.filter #month{
+	
+	width:50px;
+}
+.filter #year{
+	
+	width:51px;
+}
+
+.filter #go{
+	font-family:tahoma;
+	font-size:11px;
+}
+
+
+#subcons_quick_view_filter_result{
+	border:#C0C0C0 solid 1px;
+	padding:10px;
+	font-size:11px;
+	display:block;
+}
+
+#subcons_quick_view_filter_result li{
+	line-height:15px;
+}
+
+
+#compliance_quick_view{
+	border:#C0C0C0 solid 1px;
+	padding:10px;
+	font-size:11px;
+	display:block;
+	height:432px;
+}
+
+#rssc_working_staff li{
+	text-transform:capitalize;
+}

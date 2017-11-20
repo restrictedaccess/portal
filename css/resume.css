@@ -1,0 +1,18 @@
+/*
+BODY 
+{
+PADDING-RIGHT: 10px; 
+PADDING-LEFT: 10px; 
+FONT-SIZE: 8pt; 
+FONT-FAMILY: Verdana; 
+BACKGROUND-COLOR: white
+}
+*/
+
+TABLE {FONT: 8pt Verdana}
+TD {FONT: 8pt Verdana}
+DIV {FONT: 8pt Verdana}
+TH {FONT: 8pt verdana; COLOR: black}
+TR.TRHeader {BACKGROUND-COLOR: #eeeeee}
+TD.subtitle {FONT: bold 10pt verdana; FONT-STYLE: italic}
+TD.ResumeHdr {FONT: bold 8pt verdana; COLOR: #000000; TEXT-ALIGN: center}

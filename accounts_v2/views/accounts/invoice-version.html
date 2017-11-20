@@ -1,0 +1,269 @@
+<div ng-controller="InvoiceVersionController as slr">
+    <div class="row border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h3>Invoice Version</h3>
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <button type="button" id="changeLayout-btn" name="changeLayout-btn" ng-click="changeLayout()" class="btn btn-primary">
+                                    <i id="layoutIcon" class="fa fa-list-ul" aria-hidden="true"></i>
+                                    {{btnLayout}}
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+
+                        <div class="row">
+                            <div id="divFrom" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Version:</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        <select ng-change="fetchDataByOrderIdVersion(fromVersion, 'left')" ng-model="fromVersion" class="form-control" ng-options="item as item.versionStr for item in allVersions track by item.version">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Updated on:</label>
+                                    </div>
+                                    <div id="updatedOnLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{fromVersionData.updated_on | date}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Updated By:</label>
+                                    </div>
+                                    <div id="updatedByLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{fromVersionData.updated_by}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Sent On:</label>
+                                    </div>
+                                    <div id="sentOnLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{fromVersionData.sent_on | date}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Total Amount Due:</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        <strong> $ {{fromVersionData.total_amount_due | number : fractionSize}} </strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="thumbnail" style="overflow: auto; overflow-x: hidden;">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>To:</label> {{fromVersionData.to}}
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>Date Created:</label> {{fromVersionData.date_created | date}}
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>Due Date</label> {{fromVersionData.due_date | date}}
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                        <th width="5%">Item No.</th>
+                                                        <th width="30%">Cover Date</th>
+                                                        <th width="30%">Description</th>
+                                                        <th width="10%">Qty</th>
+                                                        <th width="10%">Unit Price</th>
+                                                        <th width="15%">Amount</th>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr ng-repeat="data in fromVersionData.items">
+                                                            <td>{{data.item_id}}</td>
+                                                            <td>{{data.cover_date.start | date}} - {{data.cover_date.end | date}}</td>
+                                                            <td>{{data.description}}</td>
+                                                            <td>{{data.qty}}</td>
+                                                            <td>{{data.unit_price | number : fractionSize}}</td>
+                                                            <td>{{data.amount | number : fractionSize}}</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right" style="font-weight: normal !important;">Subtotal:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{fromVersionData.sub_total | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right" style="font-weight: normal !important;">GST:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{fromVersionData.gst | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right">Total Amount Due:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{fromVersionData.total_amount_due | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <h2 class="pull-right" style="color:red; background-color: #adff2f;">Amount Due: ${{fromVersionData.total_amount_due | number : fractionSize }}</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="divTo" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Version:</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        <select ng-change="fetchDataByOrderIdVersion(toVersion, 'right')" ng-model="toVersion" class="form-control" ng-options="item as item.versionStr for item in allVersions track by item.version">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Updated on:</label>
+                                    </div>
+                                    <div id="updatedOnLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{toVersionData.updated_on | date}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Updated By:</label>
+                                    </div>
+                                    <div id="updatedByLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{toVersionData.updated_by}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Sent On:</label>
+                                    </div>
+                                    <div id="sentOnLeft" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        {{toVersionData.sent_on | date}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <label>Total Amount Due:</label>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                        <strong> $ {{toVersionData.total_amount_due | number : fractionSize}} </strong>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="thumbnail" style="overflow: auto; overflow-x: hidden;">
+                                            <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>To:</label> {{toVersionData.to}}
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>Date Created:</label> {{toVersionData.date_created | date}}
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                    <label>Due Date</label> {{toVersionData.due_date | date}}
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                        <th width="5%">Item No.</th>
+                                                        <th width="30%">Cover Date</th>
+                                                        <th width="30%">Description</th>
+                                                        <th width="10%">Qty</th>
+                                                        <th width="10%">Unit Price</th>
+                                                        <th width="15%">Amount</th>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr ng-repeat="data in toVersionData.items">
+                                                            <td>{{data.item_id}}</td>
+                                                            <td>{{data.cover_date.start | date}} - {{data.cover_date.end | date}}</td>
+                                                            <td>{{data.description}}</td>
+                                                            <td>{{data.qty}}</td>
+                                                            <td>{{data.unit_price | number : fractionSize}}</td>
+                                                            <td>{{data.amount | number : fractionSize}}</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right" style="font-weight: normal !important;">Subtotal:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{toVersionData.sub_total | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right" style="font-weight: normal !important;">GST:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{toVersionData.gst | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                            <label class="pull-right">Total Amount Due:</label>
+                                                        </div>
+                                                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                            ${{toVersionData.total_amount_due | number : fractionSize}}
+                                                        </div>
+                                                    </div>
+                                                    <hr />
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                            <h2 class="pull-right" style="color:red; background-color: #adff2f;">Amount Due: ${{toVersionData.total_amount_due | number : fractionSize}}</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <!--<div class="row">-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
+                                <!---->
+                            <!--</div>-->
+                            <!--<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
+                                <!---->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <toaster-container></toaster-container>
+</div>

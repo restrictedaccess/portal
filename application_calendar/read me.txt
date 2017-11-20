@@ -1,0 +1,15 @@
+ALERT INTEGRATION
+
+1. include this script to your script: <script type="text/javascript" src="application_calendar/js/app_return_schedule.js"></script>
+2. include this line to your script: <!--ASL ALARM--> <DIV ID='alarm' STYLE='POSITION: Absolute; RIGHT: 5px; TOP: 5px; width: 200px; VISIBILITY: HIDDEN'></DIV> <!--ENDED-->
+3. finished
+
+
+TABLE:
+
+tb_app_appointment
+
+user_id = admin id
+leads_id = applicant ID (in bs calendar this is client id or leads id)
+client_id = client or customer id
+

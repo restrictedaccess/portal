@@ -1,0 +1,26 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Disable Auto Follow Up</h4>
+        
+    </div>
+    <div class="modal-body">
+    	<form role="form" name="add_invoice_note_form" method="post" novalidate ng-submit="updateDisableAutoFollowUp()">
+    		
+    		<p class="text-center">Note: That invoice follow up will send when a staff finishes work</p>
+    		<p class="text-center">If you select Yes, the sending will be disabled</p>
+    		<p class="text-center">If you select No, the sending will be enabled</p>
+    		<div class="form-group">
+                <select class="form-control" ng-model="disable_auto_follow_up">
+                	<option value="Y">Yes</option>
+                	<option value="N">No</option>
+                </select>
+            </div>
+            
+    		<div class="form-group">
+    			<button data-style="zoom-in" class="ladda-button btn btn-primary" type="submit" ladda="loading5"><strong>Update</strong></button>
+            	<button type="button" class="btn btn-white" ng-click="close_email_custom_message()">Close</button>
+                
+            </div>
+    	</form>	
+    </div>
+</div>

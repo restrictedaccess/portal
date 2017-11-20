@@ -1,0 +1,38 @@
+<cat>Marketing</cat>
+<ul>
+<li>Telemarketer:Sales</li>
+<li>Marketing Assistant:Marketing</li>
+<li>Graphic Designer:Photoshop|Illustrator|InDesign</li>
+</ul>
+<cat>I.T.</cat>
+<ul>
+<li>PHP Developer:PHP</li>
+<li>Flash Developer:ActionScript 3.0</li>
+<li>Web Designer:HTML 4.0</li>
+<li>Front-End Developer:HTML 4.0</li>
+<li>Server Admin:Admin</li>
+<li>.Net Developer:.NET Framework</li>
+<li>I-Phone Developer:C\+\+ Programming</li>
+<li>C# Developer:.NET Programming - C#</li>
+<li>Flash Designer:Flash</li>
+<li>Cisco Certified**:Cisco Networking</li>
+</ul>
+<cat>OFFICE</cat>
+<ul>
+<li>Back Office Admin:^Typing - General \[5 Minutes Onscreen\]</li>
+<li>Virtual Assistant/PA:^Reading Comprehension</li>
+<li>Accountant:Accounting </li>
+<li>Bookkeeper:^Bookkeeping - Professional</li>
+<li>Legal Assistant:^Legal Assistant</li>
+<li>Data Entry:^Typing - General \[5 Minutes Onscreen\]</li>
+<li>Customer Service:^Call Center Customer Service Scenarios</li>
+<li>Technical Support (Call Center):Call Center Technical Support</li>
+</ul>
+<cat>OTHERS</cat>
+<ul>
+<li>Architecture:Pro/ENGINEER</li>
+<li>Draftsperson:Pro/ENGINEER</li>
+<li>Electrical Engineering:Basic Electronics</li>
+<li>Mechanical Engineering:^Mechanical Reasoning</li>
+<li>Civil Engineering:Pro/ENGINEER</li>
+</ul>

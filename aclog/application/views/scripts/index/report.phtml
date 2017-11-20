@@ -1,0 +1,59 @@
+<script type="text/javascript" src="/portal/aclog/js/report.js"></script>
+<script type="text/javascript" src="/portal/js/jscal2.js"></script>
+<script type="text/javascript" src="/portal/js/lang/en.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/css/jscal2.css" />
+
+<form id='filter_form' action='?item=report' method='get'>
+	<div style='float:right;padding:20px 10px 0;width:917px;'>
+			<input type='hidden' name='userid'/>
+			<span>Users:</span>
+			<span id='query'>
+				<select name='users' class='inputbox2' style='height:23px' onchange='rep.showUsers(this);'>
+					<option value='all'> ALL </option>
+					<option value='select'> Select User/s </option>
+				</select>
+			<!--<input type='text' name='search' id='search' class='inputbox2' style='width:150px;padding-right:10px;'/>-->
+			<div class='userslist'>
+				<ul>
+				<?php foreach( $this->users as $user ):
+					//$userdisplay = $user['fname'].' '.$user['lname'].' - '.$user['latest_job_title'];
+					//if( strlen($user['latest_job_title']) > 20) $job_title = substr($user['latest_job_title'], 0, 20).'...';
+					//else $job_title = $user['latest_job_title'];
+					
+					$userdisplay = sprintf("%s %s (<b>%s</b>) - <i title='%s'>%s</i>", $user['fname'], $user['lname'], $user['type'], $user['latest_job_title'], $user['latest_job_title']);	
+				?>
+				<li><input type='checkbox' name='selectUser[]' value='<?php echo $user['userid'];?>'/><?php echo $userdisplay;?></li>
+				<?php endforeach;?>
+				</ul>
+				<!--<span style="position:absolute;right:10px;font-size:10px;"><a href='javascript:rep.hideUsers();' style='color:#f00;'>hide</a></span>-->
+			</div>
+			</span>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span id='cat'>Type:</span>
+			<select name='category' id='category' style='height:23px'>
+				<option value=''>All</option>
+				<?php
+				if( count($this->task_types)) {
+					foreach($this->task_types as $idx => $type)
+						echo "<option value='{$type['type_value']}'>{$type['type_value']}</option>";
+					}
+				?>
+			</select>
+			&nbsp;&nbsp;
+			<span id='show_count'>Date from:</span>
+			<input type="text" id="from_date" name="from_date" value="<?php echo $this->from_date;?>" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;
+			<span id='show_count'>Date to:</span>
+			<input type="text" id="to_date" name="to_date" value="<?php echo $this->to_date;?>" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='button' id="filter" value='Show List' title="Show Detailed Reports" onclick='rep.filterReport()'/> &nbsp;&nbsp;or
+			<div style='float:right;margin-top:10px;'><input id='summaryreport' type='button' onclick='rep.filterReport(1)' value='Show Table Summary'/></div>
+	</div>
+		
+	<div class="container" style='white-space:nowrap;'>
+		
+		<div>	
+		<iframe id='iFrameRep' name='iFrameRep' frameborder='0' src=''  style='height:200px;width:100%;float:left;overflow:hidden;'></iframe>
+		</div>
+    </div>
+</form>

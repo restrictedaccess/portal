@@ -1,0 +1,36 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Timesheet Adjustment</h4>
+        <!--<small class="font-bold" ng-model="reference_date">Reference Date.</small>-->
+        <span class="font-bold">Reference Date {{ adj_hrs_selected_reference_date }}</span>
+    </div>
+    <div class="modal-body">
+    	
+        <div class="row">
+		    <label class="col-xs-7 col-sm-7 col-md-7 text-muted">Adjusted Hours</label>
+		    	<div class="col-xs-5 col-sm-5 col-md-5">
+		        	<input type="text" class="form-control" ng-model="ts_details_adj_hours"> 
+		      </div>
+		</div>
+  
+		<div class="row" style="margin-top:8px">
+		    <label class="col-xs-7 col-sm-7 col-md-7 text-muted">Regular Roster Hours:</label>
+		    <div class="col-xs-5 col-sm-5 col-md-5">
+		      <input type="text" readonly="" class="form-control" ng-model="ts_details_regular_rostered"> 
+		    </div>
+		</div>
+    
+	    <div class="row">
+	      <label class="col-xs-7 col-sm-7 col-md-7 text-muted">Hours Charge to Client:</label>
+	      <div class="col-xs-5 col-sm-5 col-md-5">
+	        	<input type="text" readonly="" class="form-control" ng-model="ts_details_hrs_charged_to_client"> 
+	      </div>
+	    </div>
+	    
+    </div>
+    
+    <div class="modal-footer">
+        <button type="button" class="btn btn-white" ng-click="close_adj_hrs()">Close</button>
+        <button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="update_timesheet_adj_hrs()" ladda="loading5"><span class="ladda-label">Update</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+    </div>
+</div>

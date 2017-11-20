@@ -1,0 +1,294 @@
+/* CSS Document */
+.paging a{
+	text-decoration:none;
+	color:#333333;
+	border:#999999 solid 1px;
+	background:#CCCCCC;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#per_info{
+	border-bottom:2px solid #8ca722;
+	background:#E7E7E7;
+	
+	
+}
+#per_info h2{
+	height:25px;
+	width:250px; 
+	line-height:25px; 
+	padding-left:5px;  
+	background:#E7E7E7 url(../leads_information/media/images/hire-a-staff-tab.png) top left no-repeat; 
+	font-size:11px;
+	font-weight:bold; 
+	border:0; 
+	padding-bottom:0;
+	margin:0;
+	float:left;
+	
+}
+
+#per_info h2 a{
+	color:#ffffff;
+	text-decoration:none;
+	height:25px;
+	width:220px;
+	display:block; 
+	
+}
+#per_info h2 a:hover{
+	color:#ffffff;
+	
+	
+}
+
+#per_info h2:hover{
+	background:#E7E7E7 url(../leads_information/media/images/hire-a-staff-tab-green.png) top left no-repeat;
+	 
+}
+
+#per_info h2.inf_select{
+	background:#E7E7E7 url(../leads_information/media/images/hire-a-staff-tab-green.png) top left no-repeat;
+	cursor:auto;
+	color:#FFFFFF;
+}
+
+.identical a {
+	text-decoration:none;
+}
+
+.identical div {
+	border:#FF0000 dashed 1px;
+	padding:2px;	
+}
+
+.identical a:hover {
+	text-decoration:underline;
+}
+#leads_transfer_error_msg{
+	background:#FFFF00;
+	border:#333333 solid 5px;
+	position:absolute; 
+	font-weight:bold;
+	margin-left:400px;
+	width:500px;
+	text-align:center;
+	
+}
+
+#leads_transfer_error_msg li{
+	text-align:left;
+}
+.email{
+	font-weight:bold;
+	color:#000000;
+}
+.timestamp{
+	color:#660000;
+	font-weight:bold;
+}
+.lead_id{
+	color:#CCCCCC;
+}
+.steps_list_section{
+	margin-top:5px;
+	height:55px;
+	overflow:auto;
+}
+.move_btns{
+	text-transform:capitalize;
+}
+.leads_owner{
+	background:#FFFF00;
+	color:#000000;
+	font-weight:bold;
+}
+.search_select{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+}
+
+
+.leads_list{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px;
+}
+
+.leads_list h2{
+	font-size:18px;
+	margin:0px;
+	text-align:left;
+}
+
+.leads_list select{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:12px;
+	width:150px;
+	
+}
+
+
+.agent_name{
+	margin-top:15px;
+	padding-left:5px;
+	cursor:pointer;
+	padding-bottom:5px;
+	padding-top:3px;
+	display:block;
+	width:300px;
+	background:#2c66a5;
+	float:left;
+}
+.paging_box{
+	float:right;
+	background:#2c66a5;
+}
+
+
+.agent2{
+	display:block;
+	color:#999999;
+	
+	
+	
+}
+
+.agent_leads{
+	/*border-bottom:1px solid #000000;*/
+	margin-bottom:20px;
+}
+
+.leads_box{
+	border-bottom:#CCCCCC solid 1px;
+	margin-bottom:5px;
+	padding-left:5px;
+	padding-bottom:3px;
+}
+.leads_table td{
+	font-size:11px;
+	color:#666666;
+}
+
+.agent1{
+	color:#FFFFFF;
+	font-weight:bold;
+	display:block;
+	text-transform:capitalize;
+
+		
+	
+}
+
+
+.leads_name{
+	text-transform:capitalize;
+	font33333333;
+	margin-bottom:2px;
+	color:#000000;
+}
+
+.leads_name span{
+	float:right;
+	padding-right:5px;
+	font-size:11px;
+	text-transform:none;
+
+}
+
+.counter{
+	float:left;
+	display:block;
+	width:40px;
+}
+.lead_status{
+	color:#FF0000;
+		
+}
+.leads_info{
+	padding-left:10px;
+	font-size:11px;
+}
+
+.registered_in{
+	color:#006600;
+	font-size:11px;
+	font-weight:bold;
+}
+.registered_url{
+	font-size:11px;
+}
+.registered_domain{
+	
+	font-size:11px;
+}
+
+
+.add_notes_form{
+	display:none;
+	position:absolute;
+	background:#FFFFFF;
+	padding:5px;
+	border:#333333 3px solid;
+}
+
+
+
+
+
+/*PAGINATION*/
+.pagination{
+	float:right;
+	text-align:right;
+	padding-top:5px;
+	padding-bottom:5px;
+	
+}
+
+.pagination ul{
+margin: 0;
+padding: 0;
+font:10px tahoma;
+
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+text-decoration: none; 
+color: #2e6ab1;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #2b66a5;
+color: #000 !important;
+background-color: #FFFF80;
+}
+
+.pagination a.currentpage{
+background-color: #2e6ab1;
+color: #FFF !important;
+border-color: #2b66a5;
+font-weight: bold;
+cursor: default;
+}
+
+.pagination a.disablelink, .pagination a.disablelink:hover{
+background-color: white;
+cursor: default;
+color: #929292;
+border-color: #929292;
+font-weight: normal !important;
+}
+
+.pagination a.prevnext{
+font-weight: bold;
+}

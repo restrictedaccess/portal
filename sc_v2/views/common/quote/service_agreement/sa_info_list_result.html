@@ -1,0 +1,62 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content">
+            <!--<button data-style="zoom-in" class="ladda-button btn btn-primary btn-sm pull-right" ladda="loading5" ng-click="generateQuote()" ng-disabled="setting === null"><strong>Generate Quote</strong></button>-->
+            <h3>List of Service Agreement</h3>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>Service Agreement Id</th>
+                    <th class="text-center">Status</th>
+                    <th>Created By</th>
+                    <th>Date Created</th>
+                    <th>Date Posted</th>
+                </tr>
+                </thead>
+                <tbody>
+                <div ng-show="quotes === null">
+                    Loading ...
+                </div>
+                <div ng-show="quotes !== null">
+                    <tr dir-paginate="q in quotes|itemsPerPage:5">
+
+
+
+                        <td ng-show="quoteStatus == 'no'">
+
+                            <a href="/portal/sc_v2/#/quote/service_agreement_info/{{q.id}}/{{q.service_agreement_id}}">{{ q.service_agreement_id }}</a></td>
+
+                        <td ng-show="quoteStatus == 'yes'">
+
+                            <a href="/portal/sc_v2/pro-forma.php#/files/quote/{{q.details.ran}}">{{ q.service_agreement_id }}</a></td>
+
+
+                        <!--<td ng-show="Details !== null">-->
+
+                            <!--<a ng-mouseover="getQuoteDetails(q.id)" href="/portal/sc_v2/#/quote/details/?quote_id={{ q.id }}"  data-toggle="tooltip"  data-html="true"-->
+                               <!--data-original-title="{{Details}}" data-placement="right" class="quote-tooltip">{{ q.id }}</a></td>-->
+
+
+
+                        <td class="text-center">
+                            <span class="label label-warning">{{q.status}}</span>
+                            <!--<span class="label label-warning" ng-show="quoteStatus ===''">draft</span>-->
+                        </td>
+
+                        <td>{{ q.created_by.admin_fname }} {{ q.created_by.admin_lname }}</td>
+                        <td>{{ formatDate(q.date_created) }}</td>
+                        <td ng-if="q.date_posted">{{ formatDate(q.date_posted) }}</td>
+                        <td ng-if="!q.date_posted"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <center><dir-pagination-controls
+                    max-size="5"
+                    direction-links="true"
+                    boundary-links="true">
+            </dir-pagination-controls></center>
+        </div>
+    </div>
+</div>
+</div>

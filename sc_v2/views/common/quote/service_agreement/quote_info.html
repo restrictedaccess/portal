@@ -1,0 +1,49 @@
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox-content p-xs">
+            <div align="left" >
+                <h3>Quote Info</h3>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4><a href="/portal/leads_information.php?id={{ quote.client.id }}">{{ quote.client.fname }} {{ quote.client.lname }}</a></h4>
+                    <p>
+                        Client Id : {{ quote.client.id }}<br>
+                        {{ quote.client.email }}<br>
+                        {{ quote.client.company_name}}<br>
+                        {{ quote.client.company_address}}<br>
+                        {{ quote.client.mobile}} <br>
+                        <!-- ran: {{quote.ran}} -->
+
+                    </p>
+                </div>
+
+                <div class="col-sm-6 text-right">
+
+                    <p>
+                        Quote Id: <span class="font-bold text-navy"><strong>{{ quote.id }}</strong></span><br>
+
+                        Status: <strong><span class="label label-warning" ng-show="quote.status === ''">draft</span>
+                        <span class="label label-info" ng-show="quote.status ==='new'">{{ quote.status }}</span>
+                        <span class="label label-primary" ng-show="quote.status ==='posted'">{{ quote.status }}</span></strong>  <br>
+                        Created By: <strong>{{ quote.quoted_by.admin_fname }} {{ quote.quoted_by.admin_lname }}</strong> <br>
+                        Date Created: <strong>{{ formatDate(quote.date_quoted) }}</strong> <br>
+                        Date Posted: <span ng-show="quote.date_posted !==null"><strong>{{ formatDate(quote.date_posted)}}</strong></span>
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+            <div>
+                <div class="ibox-content p-xl">
+
+                    <div class="row" ng-include="'views/common/quote/service_agreement/quote_SAdetails.html'"></div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>

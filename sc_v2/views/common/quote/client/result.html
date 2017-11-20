@@ -1,0 +1,54 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<button data-style="zoom-in" class="ladda-button btn btn-primary btn-sm pull-right" ladda="loading5" ng-click="generateQuote()" ng-disabled="quotes.leads === null"><strong>Generate Quote</strong></button>
+			<h3>List of Quotes</h3>
+
+
+			<table class="table table-bordered table-striped">
+				<thead>
+				<tr>
+					<th>Quote Id</th>
+					<th class="text-center">Status</th>
+					<th>Created By</th>
+					<th>Date Created</th>
+					<th>Date Posted</th>
+				</tr>
+				</thead>
+
+				<tbody>
+				<div ng-show="quotes.quote_data === null">
+					Loading ...
+				</div>
+				<div ng-show="quotes.quote_data !== null">
+					<tr dir-paginate="q in quotes.quote_data|itemsPerPage:5" ng-show="quoteStatus == q.status">
+
+						<td>
+							<a href="/portal/sc_v2/#/quote/details/?quote_id={{ q.quote_id }}" data-toggle="tooltip"  data-html="true"
+							   data-original-title="{{q.Details}}" data-placement="right" class="quote-tooltip">{{ q.quote_id }}</a>
+						</td>
+
+
+						<td class="text-center">
+							<span class="label label-warning">{{ quoteStatus }}</span>
+							<!--<span class="label label-warning" ng-show="quoteStatus ===''">draft</span>-->
+						</td>
+
+						<td>{{ q.created_by.admin_fname }} {{ q.created_by.admin_lname }}</td>
+						<td>{{ formatDate(q.date_quoted) }}</td>
+						<td ng-if="q.date_posted">{{ formatDate(q.date_posted) }}</td>
+						<td ng-if="!q.date_posted"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<center><dir-pagination-controls
+					max-size="5"
+					direction-links="true"
+					boundary-links="true">
+			</dir-pagination-controls>
+			</center>
+		</div>
+	</div>
+</div>
+</div>

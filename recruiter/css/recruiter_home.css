@@ -1,0 +1,44 @@
+#container{
+	position:relative;
+	padding:30px 15px;
+	padding-top:40px;
+}
+.note{
+	padding-top:10px;
+}
+.tab-pane{
+	padding-top:10px;
+}
+#myTab a{
+	background-color:#f8f8f8;
+}
+#myTab>li>a:hover, #myTab>li>a:focus, #myTab>li.active>a, #myTab>li.active>a:hover, #myTab>li.active>a:focus, #myTab .open>a, #myTab .open>a:hover, #myTab .open>a:focus{
+	font-weight:bold;
+}
+.footer {
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.spacer{
+	margin-bottom:10px;
+}
+.small-spacer{
+	margin-bottom:-14px;
+}
+dt.clearfix{
+	clear:both!important;
+	margin-bottom:3px;
+}
+#date_added_from, #city, #date_registered_from, #date_updated_from, #date_registered_from, #keyword, select[name=gender], select[name=inactive]{
+	width:151px;
+	margin-right:20px;
+}
+.form-group label{
+	font-weight:bold;
+}
+.form-group label.radio{
+	font-weight:normal;
+}

@@ -1,0 +1,30 @@
+#leads_info {
+	border:#999999 solid 1px; 
+	padding:5px;
+}
+
+
+#leads_info p{
+	margin-bottom:7px;
+	margin-top:5px;
+}
+
+#leads_info label{
+	float:left;
+	display:block;
+	width:120px;
+}
+
+
+.tab {
+	float:left;  border-left:#0080FF solid 1px;border-top:#0080FF solid 1px;border-right:#0080FF solid 1px; text-align:center; background:#CCCCCC; padding:5px;
+}
+
+.tab a {
+		text-decoration: none;
+		display: block;
+		color: #000000;
+}
+
+
+

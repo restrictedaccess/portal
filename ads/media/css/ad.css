@@ -1,0 +1,21 @@
+.lsb {
+background:url(../images/nav_logo14.png) repeat scroll center bottom transparent;
+border-color:#CCCCCC #999999 #999999 #CCCCCC;
+border-style:solid;
+border-width:1px;
+height:30px;
+
+color:#000000;
+cursor:pointer;
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+height:30px;
+margin:0;
+outline:0 none;
+}
+
+.lsb:hover {
+	border:#999999 solid 1px;
+}
+
+

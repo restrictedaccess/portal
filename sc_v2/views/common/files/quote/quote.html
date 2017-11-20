@@ -1,0 +1,57 @@
+
+<div class="row">
+<div class="col-lg-12">
+		<div class="ibox-content p-xs">
+
+      <div class="row">
+        <div class="col-sm-12">
+          <center><h2><strong>Pro Forma Request of Service</strong></h2></center>
+        </div>
+      </div>
+      <br>
+
+
+
+          <div class="row">
+
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="panel panel-default">
+                      <div class="panel-heading">
+                          <h3 class=""><strong>Client Information</strong></h3>
+                      </div>
+
+                      <div class="panel-body">
+                          <div class="table-responsive">
+                              Client Name: <strong>{{ quote.client.fname }} {{ quote.client.lname }}</strong><br>
+                              Client ID: <strong>{{quote.client.id}}</strong><br>
+                              Email: <strong>{{quote.client.email}}</strong><br>
+                              Company Address: <strong>{{quote.client.company_address}}</strong><br>
+                              Date Created: <strong>{{formatDate(quote.service_agreements[0].date_created)}}</strong>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+
+
+
+		<div>
+			<div class="ibox-content p-xs">
+
+			     <div ng-include="'views/common/files/quote/quote_details.html'"></div>
+            </div>
+		</div>
+</div>
+</div>
+</div>
+
+
+<!--<h3 style="color:#23527c;"><strong style="color:#000;">Client:</strong>&nbsp;{{ quote.client.fname }} {{ quote.client.lname }}</h3>-->
+<!--<div class="text-muted">-->
+    <!--Email: {{quote.client.email}}<br>-->
+    <!--Company Address: {{quote.client.company_address}}<br>-->
+    <!--Contact#: {{quote.client.mobile}}-->

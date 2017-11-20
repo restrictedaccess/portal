@@ -1,0 +1,32 @@
+-- phpMyAdmin SQL Dump
+-- version 2.9.1.1
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Apr 10, 2009 at 08:58 AM
+-- Server version: 5.0.27
+-- PHP Version: 5.2.0
+-- 
+-- Database: `remotestaff`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tb_calendar_actions`
+-- 
+
+CREATE TABLE `tb_calendar_actions` (
+  `id` double NOT NULL auto_increment,
+  `appointment_id` double NOT NULL,
+  `angent_id` double NOT NULL,
+  `type` varchar(100) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `date_added` date NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- 
+-- Dumping data for table `tb_calendar_actions`
+-- 
+

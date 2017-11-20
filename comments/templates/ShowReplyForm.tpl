@@ -1,0 +1,3 @@
+<p><textarea name="message_{$comment_id}" id="message_{$comment_id}" style="height:100px; width:90%;" ></textarea></p>
+<p><input type="checkbox" value="yes" name="send_email_{$comment_id}" id="send_email_{$comment_id}" />Email this message to {$to}</p>
+<p><input type="button" value="Save" onclick="SaveReply({$comment_id})" /><input type="button" value="Close" onclick="toggle('reply_div_{$comment_id}')" /></p>

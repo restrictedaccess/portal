@@ -1,0 +1,424 @@
+#faqs{
+	margin-left:10px;
+	font:bold 11px tahoma;
+	text-transform:uppercase;
+}
+
+#div_time_recording {
+    font-family: arial;
+    font-size: 12px;
+}
+
+#dtr_time_sheet {
+    font-size: 12px;
+    width: 900px;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#dtr_time_sheet_client {
+    font-size: 12px;
+    width: 1024px;
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.time_sheet_headers {
+    float: left;
+    width: 900px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #31617b; 
+}
+
+.time_sheet_headers_client {
+    float: left;
+    width: 1024px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #31617b; 
+}
+
+.dtr_col_day_of_week {
+    float: left;
+    width: 78px;
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    white-space:nowrap;
+    overflow:hidden;
+    padding-left: 2px;
+}
+
+.dtr_col_time {
+    float: left;
+    width: 68px;
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid black;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.dtr_col_client {
+    float: left;
+    width: 188px;
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid black;
+    white-space:nowrap;
+    overflow:hidden;
+    padding-left: 2px;
+}
+
+.dtr_col_timezone {
+    float: left;
+    width: 128px;
+    height: 32px;
+    line-height: 32px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    white-space:nowrap;
+    overflow:hidden;
+    padding-left: 2px;
+}
+
+.dtr_col_spacer {
+    float: left;
+    width: 28px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.clear{
+    clear: both;
+}
+
+.dtr_rows {
+    border-top: 1px solid black;
+    width: 900px;
+}
+
+.dtr_rows_client {
+    border-top: 1px solid black;
+    width: 1024px;
+}
+
+.dtr_rows:hover {
+    background-color: #D1ECFF;
+}
+
+.dtr_rows_client:hover {
+    background-color: #D1ECFF;
+}
+
+.dtr_col_regular_hours_header{
+    float: left; width: 52px;
+    height: 32px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    padding-right: 2px;
+}
+
+.dtr_col_notes {
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.dtr_col_total_hours_header{
+    float: left; width: 42px;
+    height: 32px;
+    border-left: 1px solid black;
+    text-align: center;
+    padding-right: 2px;
+}
+
+.dtr_col_regular_hours{
+    float: left; width: 52px;
+    height: 32px;
+    line-height: 32px;
+    white-space:nowrap;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: right;
+    padding-right: 2px;
+}
+
+.dtr_col_total_hours{
+    float: left; width: 42px;
+    height: 32px;
+    line-height: 32px;
+    white-space:nowrap;
+    border-left: 1px solid black;
+    text-align: right;
+    padding-right: 2px;
+}
+
+.dtr_col_time_au, .dtr_col_time_ph {
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
+    padding-left: 2px;
+}
+
+.dtr_col_time_ph {
+    background-color: #e7eff7;
+}
+
+.dtr_col_time_au {
+    background-color: #FFFFCC;
+}
+
+.dtr_notes {
+    padding-top: 0;
+    height: 32px;
+}
+
+.dtr_notes button {
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.dtr_notes span {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    float: left;
+    width: 118px;
+    height: 28px;
+    clip: bottom;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#div_select_subcon {
+    padding-left: 12px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+#div_scm_tab {
+    font-size: 12px;
+    font-family: arial;
+}
+
+#subcon_tabs {
+    padding-left: 12px;
+}
+
+#subcon_main {
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    padding-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 18px;
+    color: white;
+    background-color: #0066CC;
+    position: relative;
+    top: -2px;
+    min-height: 400px;
+}
+
+.scm_tab {
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-left: 1px solid #888888;
+    border-top: 1px solid #888888;
+    border-bottom: 1px solid #888888;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.scm_tab_last {
+    border-right: 1px solid #888888;
+}
+
+.scm_tab_selected {
+    color: white;
+    background-color: #0066CC;
+    border-bottom: none;
+}
+
+.scm_tab:hover{
+    color: white;
+    background-color: #0066CC;
+}
+
+.clear {
+    clear: both;
+}
+
+
+#image_list {
+    width:180px;
+    height:540px;
+    min-height: 540px;
+}
+
+#div_image_list {
+    width:180px;
+    float:left;
+    height: 480px;
+    min-height: 480px;
+    padding-bottom: 8px;
+}
+
+#div_screen_shot_img_with_activity {
+    margin-left: 8px;
+    width:640px;
+    float:left;
+    height: 540px;
+    min-height: 540px;
+}
+
+#div_screen_shot_img {
+    padding-bottom: 8px;
+}
+
+#div_activity_note {
+    padding-bottom: 18px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#span_activity_note {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#div_bottom_screenshots {
+    padding-top: 8px;
+}
+
+.col_time_idle {
+    border-right: 1px solid black;
+}
+
+.border_right {
+    border-right: 1px solid black;
+}
+
+.hdr_2line {
+    height: 16px;
+    line-height: 16px;
+}
+
+.bg_color_row_1 {
+    background-color: white;
+    color: black;
+}
+
+.bg_color_row_2 {
+    background-color: #E0FFFF;
+    color: black;
+}
+
+.bg_color_weekends {
+    background-color: #AAAAAA;
+    color: black;
+}
+
+#subcon_status {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+#statusNextLogin {
+    padding-left: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 500px;
+}
+
+#asia_manila_tz {
+    float: left;
+    width: 250px;
+}
+
+#au_sydney_tz {
+    float: left;
+    width: 250px;
+}
+
+#available_months {
+    padding: 12px;
+}
+
+#iframe_work_flow{
+    width: 100%; 
+    height: 600px;
+    border: none;
+}
+
+#div_select_month{
+    padding-bottom: 8px;
+}
+
+.invisible {
+    display: none;
+}
+
+#div_add_notes {
+    padding: 8px;
+    border: 1px solid black;
+    margin: 2px;
+    z-index: 5;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+}
+
+#div_title_add_notes {
+    padding-bottom: 8px;
+}
+
+#div_display_notes {
+    padding: 8px;
+    border: 1px solid black;
+    margin: 2px;
+    z-index: 4;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    height: 208px;
+    width: 208px;
+}
+
+.time_record_notes {
+    border-top: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.time_record_left_floater {
+    float: right;
+    width: 372px;
+}
+
+.time_record_notes_name {
+    float: left;
+    width: 98px;
+    text-align: right;
+    padding-right: 8px;
+}
+
+.time_record_notes_note {
+    float: left;
+    width: 254px;
+}

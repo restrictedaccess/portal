@@ -1,0 +1,164 @@
+<!-- timesheet display -->
+
+	<strong>TIMESHEET: </strong> <span id='aid'><?php echo $this->daterange;?></span><a href='#' class='jqmClose' style='float:right'>Close</a><hr>
+				
+	<h3><?php echo $this->staff_name['fname'].' '.$this->staff_name['lname'];?></h3>
+		
+	<div id="staff-timesheet" style="float:left;width:100%;padding:8px;">
+		<div class="tabular">
+			<table summary="Timesheet">
+		
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				<th scope="col">Time In</th>
+				<th scope="col">Time Out</th>
+				<th scope="col">Adj. Hours</th>
+				<!--<th scope="col">Contract Hours</th>-->
+				<th scope="col">Logged Hours</th>
+				<th scope="col">Regular Hours</th>
+				
+				 
+				<th scope="col">Over time</th>
+				<th scope="col">Under time</th>
+				
+				<th scope="col">Night Diff Hrs</th>
+				<th scope="col">Night Diff Hrs OT</th>
+				
+				<th scope="col">Rest Day Hours</th>
+				<th scope="col">Rest Day OT</th>
+				
+				<th scope="col">Regular Item</th>
+				<th scope="col">OT Item</th>
+				
+				<th scope="col">Night Diff Item</th>
+				<th scope="col">OT+N. Diff Item</th>
+				
+				<th scope="col">Restday Item</th>
+				<th scope="col">Restday OT Item</th>
+				<th scope="col">Total</th>
+			  
+			</tr>
+			<?php
+			$hourly_rate = $this->staff_name['hourly_rate'];
+			//$timedetails = json_decode($this->staff_timedetails[$userid]);
+			foreach( $this->staff_timedetails as $uid => $timerecord ):
+				$total_adj_hrs = $total_reg_hrs = $total_ot = $total_ut = $total_rostered =
+				$ndiff = $ndiff_ot = $logged_hrs =
+				$total_rest_hrs = $total_rest_ot = $total_time_logged = 0;
+				
+				$total_reg_pay = $total_ot_pay = $total_ndiff_pay = $total_ndiff_otpay =
+				$total_rest_pay = $total_rest_otpay = $gross_total = 0;
+				
+				$timedetails = json_decode($timerecord);
+				if( count($timedetails) ):
+				foreach( $timedetails as $idx => $timedetail ):
+					$timedetail = (array)($timedetail);
+					
+					
+					$reg_pay = $ot_pay = $ndiff_pay = $ndiff_ot_pay =
+					$rest_pay = $rest_ot_pay = $total_pay = 0;
+					
+					$reg_hrs = $timedetail['reg_hrs'];
+					$ot_hrs = $timedetail['ot_hrs'];
+					$ndiff = $timedetail['ndiff'];
+					$ndiff_ot = $timedetail['ndiff_ot'];
+					$rest_hrs = $timedetail['rest_hrs'];
+					$rest_ot = $timedetail['rest_ot_hrs'];
+					$time_logged = $timedetail['time_logged'];
+					
+					$reg_pay = $reg_hrs * $hourly_rate;
+					$ot_pay = $ot_hrs * $hourly_rate * 1.25;
+					
+					$rest_pay = $rest_hrs * $hourly_rate * 1.30;
+					$rest_ot_pay = $rest_ot * $hourly_rate * 1.69;
+					
+					//$total_ndiff_pay = round( ($ndiff * $hourly_rate) + ( $ndiff * $hourly_rate * 0.1), 2);
+					
+					if( $ndiff ) {
+						if( $timedetail['dayweek'] > 5 )
+							$ndiff_pay = ($ndiff * $hourly_rate) + ( $ndiff * $hourly_rate * 0.1 * 1.3);
+						else
+							$ndiff_pay = ($ndiff * $hourly_rate) + ( $ndiff * $hourly_rate * 0.1);
+					}
+					$ndiff_ot_pay = (1.25*$hourly_rate) * $ndiff_ot + (0.1*$hourly_rate) * $ndiff_ot;
+					
+					$total_pay = $reg_pay + $ot_pay + $ndiff_pay + $ndiff_ot_pay + $rest_pay + $rest_ot_pay;
+			?>
+				<tr>
+					<td class="number"><?php echo date("D M j, Y", strtotime($timedetail['monthyear'].'-'.$timedetail['day']));?></td>
+					<td><?php if($timedetail['timein'] !== null) echo date("H:i", $timedetail['timein']);?></td>
+					<td><?php if($timedetail['timeout'] !== null) echo date("H:i", $timedetail['timeout']);?></td>
+					<td><?php echo $timedetail['adj_hrs'];?></td>
+					<td><?php echo $time_logged;?></td>
+					<td><?php echo $reg_hrs;?></td>
+					<td><?php echo $ot_hrs;?></td>
+					<td><?php echo $timedetail['ut_hrs'];?></td>
+					<td><?php echo $ndiff;?></td>
+					<td><?php echo $ndiff_ot;?></td>
+					<td><?php echo $rest_hrs;?></td>
+					<td><?php echo $rest_ot;?></td>
+					
+					<td><?php echo round($reg_pay, 2);?></td>
+					<td><?php echo round($ot_pay, 2);?></td>
+					<td><?php echo round($ndiff_pay, 2);?></td>
+					<td><?php echo round($ndiff_ot_pay, 2);?></td>
+					<td><?php echo round($rest_pay, 2);?></td>
+					<td><?php echo round($rest_ot_pay, 2);?></td>
+					<td><?php echo round($total_pay, 2);?></td>
+				</tr>
+				<?php
+					$total_adj_hrs += $timedetail['adj_hrs'];
+					$total_reg_hrs += $reg_hrs;
+					$total_rostered += $timedetail['regular_rostered'];
+					$total_ot += $ot_hrs;
+					$total_ut += $timedetail['ut_hrs'];
+					$total_ndiff += $ndiff;
+					$total_ndiff_ot += $ndiff_ot;
+					$total_rest_hrs += $rest_hrs;
+					$total_rest_ot += $rest_ot;
+					
+					$total_reg_pay += $reg_pay;
+					$total_ot_pay += $ot_pay;
+					$total_ndiff_pay += $ndiff_pay;
+					$total_ndiff_otpay += $ndiff_ot_pay;
+					$total_rest_pay += $rest_pay;
+					$total_rest_otpay += $rest_ot_pay;
+					$gross_total += $total_pay;
+					
+					$total_time_logged += $time_logged;
+				endforeach;
+				endif;
+			endforeach;
+			
+			?>
+			<tr style='background:#ccc;'>
+				<td class="number">Total</td>
+				<td></td>
+				<td></td>
+				<td><?php echo $total_adj_hrs;?></td>
+				<td><?php echo $total_rostered;?></td>
+				<td><?php echo $total_reg_hrs;?></td>
+				<td><?php echo $total_ot;?></td>
+				<td><?php echo $total_ut;?></td>
+				<td><?php echo $total_ndiff;?></td>
+				<td><?php echo $total_ndiff_ot;?></td>
+				<td><?php echo $total_rest_hrs;?></td>
+				<td><?php echo $total_rest_ot;?></td>
+				
+				<td><?php echo round($total_reg_pay, 2);?></td>
+				<td><?php echo round($total_ot_pay, 2);?></td>
+				<td><?php echo round($total_ndiff_pay, 2);?></td>
+				<td><?php echo round($total_ndiff_otpay, 2);?></td>
+				<td><?php echo round($total_rest_pay, 2);?></td>
+				<td><?php echo round($total_rest_otpay, 2);?></td>
+				<td><?php echo round($gross_total, 2);?></td>
+			</tr>
+			
+			  </tbody>
+                    
+            </table>
+		</div>
+    </div>

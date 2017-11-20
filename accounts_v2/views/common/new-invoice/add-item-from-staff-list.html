@@ -1,0 +1,134 @@
+<div class="inmodal">
+	<div class="modal-header">
+		<h4 class="modal-title">Add From Staff List</h4>
+		<small class="font-bold">Select from staff list to add items to invoice.</small>
+	</div>
+	<div class="modal-body">
+
+		<div class="alert alert-danger" ng-repeat="error in errors">
+			{{error}}
+		</div>
+
+		<form method="get" class="form-horizontal">
+
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Select Work Status</h3>
+				</div>
+				<div class="panel-body">
+					
+					<select ng-options="work_status as work_status for work_status in work_statuses" class="form-control" ng-model="selected_package"></select>
+				</div>
+			</div>
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Select Staff</h3>
+				</div>
+				<div class="panel-body" style="overflow-y:scroll;max-height: 40em">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Subcon ID</th>
+									<th>Staff</th>
+									<th width="50%">Job Designation</th>
+									<th>Hourly Rate</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<tr ng-repeat="subcontractor in getStaffFromSelectedPackage()">
+									<td>
+									<input ng-model="subcontractor.selected" type="checkbox">
+									</td>
+									<td>{{subcontractor.subcontractors_id}}</td>
+									<td>{{subcontractor.fname}} {{subcontractor.lname}}</td>
+									<td>{{subcontractor.job_designation}}</td>
+									<td>
+										<i ng-if="currency ==='AUD'" class="fa fa-dollar"></i>
+										<i ng-if="currency ==='USD'" class="fa fa-usd"></i>
+										<i ng-if="currency ==='GBP'" class="fa fa-gbp"></i>
+										{{subcontractor.hourly_rate | number:2}}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="panel-footer">
+					<button type="button" class="btn btn-default" ng-click="select_all()">
+						Select All
+					</button>
+					<button type="button" class="btn btn-default" ng-click="deselect_all()">
+						Deselect All
+					</button>
+				</div>
+			</div>
+
+
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Select Dates</h3>
+				</div>
+				<div class="panel-body">
+					<div class="form-group col-md-12">
+						<div class="input-group date">
+							<input  min="'2012-01-01'" type="text" ng-model="selected_date_range" date-range-picker placeholder="Invoice Date" id="modelSelectDate" class="form-control">
+
+							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Preview</h3>
+				</div>
+				<div class="panel-body" style="overflow-y:scroll;max-height: 40em">
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Name and Description</th>
+									<th>Qty</th>
+									<th>Unit Price</th>
+									<th>Amount</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="subcontractor in getComputedSelectedStaff()">
+									<td>{{subcontractor.getInvoiceItem()}}</td>
+									<td>{{subcontractor.qty}}</td>
+									<td>{{subcontractor.hourly_rate | number:2}}</td>
+									<td>
+										<i ng-if="currency ==='AUD'" class="fa fa-dollar"></i>
+										<i ng-if="currency ==='USD'" class="fa fa-usd"></i>
+										<i ng-if="currency ==='GBP'" class="fa fa-gbp"></i>
+										{{subcontractor.total | number:2}}
+									</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-white" ng-click="cancel()">
+			Close
+		</button>
+		<button type="button" class="btn btn-primary" ng-click="add_items()">
+			Add
+		</button>
+	</div>
+</div>
+

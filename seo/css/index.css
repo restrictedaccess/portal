@@ -1,0 +1,9 @@
+#main-body{
+	margin-top:30px;
+	clear:both;
+	
+}
+#category_dialog_header, #skill_dialog_header{
+	border:0;
+	background:none!important;
+}

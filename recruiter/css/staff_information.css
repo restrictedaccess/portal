@@ -1,0 +1,15 @@
+.contact_references{
+	margin:0;
+}
+.contact_references p{
+	margin:0;
+}
+.employment_history:hover{
+	cursor: pointer;
+}
+.ui-widget{
+	font-size:12px!important;
+}
+.drawer{
+	overflow:hidden;
+}

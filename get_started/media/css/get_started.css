@@ -1,0 +1,162 @@
+/* CSS Document */
+.notes_sec{
+	border:#666666 solid 1px;
+}
+.notes_hdr{
+	background:#FFFFCC; border-bottom:#666666 solid 1px; font-weight:bold; text-align:center;
+}
+#notes_list{
+	overflow-y:scroll; height:170px; display:block; border-bottom:#666666 solid 1px;
+}
+#notes_list ul{
+	margin:0px;
+	padding-left:20px;
+}
+#notes_list ol{
+	margin:0px;
+	padding-left:25px;
+}
+
+#notes_list span{
+	font-style:italic;
+	font-size:10px;
+	color:#666666;
+	margin-left:10px;
+}
+.notes_con{
+	padding:5px;
+	
+}
+
+.selected{
+	color:#0000FF;
+	font-weight:bold;
+	font-size:14px;
+	text-transform:uppercase;
+}
+.tb_prc{
+	background:#333333;
+}
+.tb_prc td{
+	line-height:20px;
+	
+}
+.tr_w{
+	background:#FFFFFF;
+}
+.td_w{
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.lbl{
+	color:#999999;
+}
+
+
+.hdr_list{
+	padding:2px;
+	background:#CCCCCC;
+	font-weight:bold;
+	text-align:center;
+	border:#999999 outset 1px;
+}
+
+.controls{
+	padding:2px;
+	background:#CCCCCC;
+	font-weight:bold;
+	text-align:center;
+	border:#999999 outset 1px;
+}
+
+#right_pane{
+	padding:10px;
+}
+
+#right_pane h3{
+	margin:0;
+}
+
+#left_pane label{
+	display:block;
+	font-weight:bold;
+	text-align:center;
+	padding:2px;
+	background:#333333;
+	color:#FFFFFF;
+}
+#left_pane div{
+	height:300px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+#left_pane ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#left_pane li a{
+	display: block;
+	padding:2px;
+	text-decoration: none;
+	border-bottom:#CCCCCC solid 1px;
+	font-size:11px;
+	color:#000;
+	
+}
+
+#left_pane li a span{
+	display: block;
+}
+
+#left_pane li a:visited, #left_pane ul li a:active{
+	color: #00014e;
+	
+}
+
+
+#left_pane li a:hover{
+	color: black;
+	background:#FFFFCC;
+}
+
+#left_paneli a:active{
+	background:#ffffcb;
+	
+}
+#left_pane li a:focus{
+	color: black;
+	background:#ffffcb;
+	
+}
+
+* html #left_paneli a{ /*IE only. Actual menu width minus left padding of LINK (20px) */
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+/* client section */
+.recruitment_order{
+	cursor:pointer;
+	color:#0000FF;
+	margin-bottom:10px;
+}
+
+.recruitment_order:hover{
+	text-decoration:underline;
+}
+
+.recruitment_order em{
+	margin-left:10px;
+	color:#999999;
+	
+}
+
+.recruitment_order span{
+	margin-left:10px;
+	color:#999999;
+	font-size:10px;
+	
+}

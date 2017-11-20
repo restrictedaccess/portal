@@ -1,0 +1,53 @@
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 24px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 100%;
+	/*list-style-image:url(../images/arrow_18.gif);*/
+	/*overflow:auto;*/
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 23px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 23px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #999;
+	border-left: none;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #e0e0e0;
+	white-space:nowrap;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	font-weight:bold;
+	display: block;
+	/*font-size: 1.2em;*/
+	padding: 0 17px;
+	border: 1px solid #fff; /*--Gives the bevel look with a 1px white border inside the list item--*/
+	outline: none;
+}
+
+ul.tabs li a .active{
+	list-style-image:url(../images/arrow_18.gif);
+}
+
+ul.tabs li a:hover {
+	background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #fff;
+	border-bottom: 1px solid #fff; /*--Makes the active tab look like it's connected with its content--*/
+}
+
+html ul.tabs li .hilite{
+	background: #ff8301;
+	color:#ff0000;
+}

@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+.features-table{
+	position:relative;
+	z-index:1;
+}
+.shortlist-delete{
+	position:absolute;
+	z-index:10;
+	min-height:134px;	
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	border:1px solid #333;
+	padding:1em;
+}
+.shortlist-delete h3{
+	color:#333;
+	margin-left:10px;
+	background-color:transparent;
+}
+
+.shortlist-delete a, .shortlist-delete a:visited{
+	color:#333;
+}
+.shortlist-delete p{
+	margin-top:0;
+}
+.shortlist-delete p img{
+	cursor:pointer;
+}
+.availability dl dd, .availability dl dt{
+	float:left;
+}
+.availability dl dt{
+	clear:both;
+}
+.availability dl dd{
+	margin-left:5px;
+	margin-bottom:5px;
+}

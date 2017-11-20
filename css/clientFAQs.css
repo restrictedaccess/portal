@@ -1,0 +1,33 @@
+/* CSS Document */
+#client-faqs p{
+    padding-left:200px;
+	font-size:14px;
+	text-decoration:underline; 
+}
+
+#client-faqs li{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+#client-faqs li span{
+    cursor:pointer;
+	color:#0000FF;
+	text-decoration:underline; 
+}
+
+
+#client-faqs li div{
+    display:none;
+	color:#000000;
+	line-height:20px;
+	padding:10px;
+	cursor:auto;
+	
+}
+
+#client-faqs div li{
+    cursor:auto !important;
+	color:#000000 !important;
+	text-decoration:none !important;
+}

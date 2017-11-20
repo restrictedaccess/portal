@@ -1,0 +1,26 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Update Currency Rate</h4>
+        <span class="font-bold"></span>
+    </div>
+    <div class="modal-body">
+    	
+        <div class="row">
+		    <label class="col-xs-6 col-sm-6 col-md-6 text-muted">{{ selected_currency }} New Rate</label>
+		    	<div class="col-xs-6 col-sm-6 col-md-6">
+		        	<div class="input-group m-b">
+			  			<span class="input-group-addon">{{ selected_currency_sign }}</span> 
+			  			<input type="text" class="form-control" ng-model="reference_currency_rate" placeholder="0.00" value="0.00">
+			        </div>
+		      </div>
+		</div>
+  
+  		
+	    
+    </div>
+    
+    <div class="modal-footer">
+        <button type="button" class="btn btn-white" ng-click="close_modal_currency_adj()">Close</button>
+        <button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="add_new_currency_rate()" ladda="loading5"><span class="ladda-label">Save Changes</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+    </div>
+</div>

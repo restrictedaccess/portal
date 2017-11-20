@@ -1,0 +1,13 @@
+A.spellButton
+{
+	font : normal 8pt verdana, sans-serif;
+	color:blue;
+	text-decoration:underline;
+	cursor: pointer;
+}
+A.spellButton:Hover
+{
+	font : normal 8pt verdana, sans-serif;
+	color:blue;
+	text-decoration:none;
+}

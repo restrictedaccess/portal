@@ -1,0 +1,54 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content" ng-show="data_report !==null">
+            <table class="table table-responsive table-bordered table-striped">
+
+                <thead>
+                    <tr>
+                        <th class="text-center" style="width: 9%;">Client</th>
+                        <th class="text-center" style="width: 10%;">Contact Details</th>
+                        <th class="text-center" style="width: 4%;"><abbr title="Days Before Suspension">DBS</abbr></th>
+                        <th class="text-center">Invoice Number</th>
+                        <th class="text-center" ng-click="sortFunc('client_docs.invoice_amount')">Amount&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" ng-click="sortFunc('client_docs.due_date')">Due Date&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" ng-click="sortFunc('date_delivered')">Date Delivered&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" ng-click="sortFunc('date_opened')">Date Opened&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" ng-click="sortFunc('email_status')">Email Status&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"></th>
+                        <th class="text-center" style="width: 9%;">Add Notes/Comments</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in data_report | orderBy:sort" ng-if="$index < data_report.limit" ng-class="getBGColor(data)">
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/client-account/{{data.client_docs.client_id}}">{{ data.client_fname }} {{ data.client_lname }}</a></td>
+                        <td class="text-center">{{ data.client_docs.client_email}}<br>{{data.client_mobile}}</td>
+                        <td class="text-center">{{ data.days_before_suspension}}</td>
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/details/{{data.order_id}}">{{ data.order_id }}</a></td>
+                        <td class="text-center" ng-if="data.client_docs.currency=='AUD'">AUD($) {{ data.client_docs.invoice_amount }}</td>
+                        <td class="text-center" ng-if="data.client_docs.currency=='USD'">USD($) {{ data.client_docs.invoice_amount }}</td>
+                        <td class="text-center" ng-if="data.client_docs.currency=='GBP'">GBP(&pound;) {{ data.client_docs.invoice_amount }}</td>
+                        <td class="text-center">{{formatDate(data.client_docs.due_date)}}</td>
+                        <td class="text-center">{{formatDateTime(data.date_delivered)}}</td>
+                        <!--<td class="text-center" ng-if="data.date_opened">{{ formatdate(data.date_opened) }}</td>-->
+                        <td class="text-center">{{formatDateTime(data.date_opened)}}</td>
+                        <!--<td class="text-center" ng-if="!data.date_opened"></td>-->
+                        <td class="text-center" style="cursor:pointer;" ><a ng-click="openModalHistory(data.order_id)">{{ data.email_status }}</a> <i style="font-size: 1.2em;" ng-if="getBGColor(data) == 'danger-red' || getBGColor(data) == ''" class="fa fa-question-circle" tooltip-placement="top" tooltip="{{getTooltipText(data)}}"></i></td>
+                        <td class="text-center">
+                            <div style="position:relative;">
+                                <span ng-show="data.client_docs.comments.length > 0" style="position: absolute;top:-5px;z-index: 999;margin-left:1em;" class="label label-warning pull-right">{{ data.client_docs.comments.length}}</span>
+                                <span ng-click="openModalAddComments(data.index)" class="text-success" style="cursor: pointer;"><i class="fa fa-file"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <div class="form-group text-center" ng-show="data_report.length > limitSize">
+                <button ng-click="loadMore()" class="btn btn-primary"  data-style="expand-left" ng-show="data_report.limit < data_report.length">Show More Clients</button>
+                <button ng-click="loadLess()" class="btn btn-primary"  data-style="expand-left" ng-show="data_report.limit > data_report.length">Show Less</button>
+            </div>
+
+        </div>
+    </div>
+</div>

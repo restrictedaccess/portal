@@ -1,0 +1,45 @@
+body{
+	font-family:Verdana;
+	border:0px solid #d9d9d9;
+
+}
+#modal_contracts{
+	width:700px;
+	height:300px;
+	background-color:#FFFFCC;
+	position:absolute;
+	z-index:100;
+	border:2px solid #000;
+}
+
+#sidepopup {
+    background-color: #fff;
+    padding: 10px;
+    border-bottom:1px solid #ccc;
+}
+
+#contract_list{
+	height:462px;
+	padding:10px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+#contract_list_table td{
+
+}
+
+#contract_list_table th{
+	text-align:left;
+	background:#75caeb;
+}
+#contract_list_table{
+	width:100%;
+}
+#contract_list_table tr:nth-child(even){
+	border-bottom:1px solid #ccc;
+	background:#f9f9f9;
+}
+#contract_list_table tr:nth-child(odd){
+	border-bottom:1px solid #ccc;
+	background:#FFFFFF;
+}

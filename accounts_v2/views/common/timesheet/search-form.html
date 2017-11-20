@@ -1,0 +1,55 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Advanced Search</h5>
+		</div>
+		<div class="ibox-content">
+			
+			
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="searchClients()" data-placeHolder="Choose Staffing Consultant" chosen id="staffing_consultants" class="chosen-select" style="width:100%;" ng-model="ts.selected_staffing_consultant" ng-options="staffing_consultant.admin_id as (staffing_consultant.admin_fname + ' ' + staffing_consultant.admin_lname) for staffing_consultant in staffing_consultants"></select>
+					</div>
+					<div class="form-group col-lg-3">
+						<select id="week" ng-change="setDefaultDateRangeValue()" data-placeHolder="Choose Week" chosen id="week" class="chosen-select" style="width:100%;" ng-model="ts.selected_week" ng-options="w as ('Week #'+ w.week +' [ '+w.start_date+' - '+w.end_date+' ]') for w in weeks"></select>
+					</div>
+
+				</div>
+				
+				
+				
+				
+				<div class="row">
+					
+					
+					<div class="form-group col-lg-5">
+						<input type="checkbox" ng-model="ts.exlude_inactive_clients" ng-change="refreshClients()"/> Exclude Inactive Clients
+						<select ng-change="searchStaff(ts)" data-placeHolder="Choose Client" id="leads_id" chosen="" chosen id="leads_id" class="chosen-select" style="width:100%;" ng-model="ts.client" ng-options="client as (client.fname + ' ' + client.lname + ' [ '+ client.email + ' ]') for client in client_options track by client.leads_id"></select>
+						
+					</div>
+					
+					<div class="form-group col-lg-3">			            
+						<input  min="'2012-01-01'" type="text" ng-model="ts.selected_date_range" readonly="" date-range-picker placeholder="Select Dates" class="form-control">
+					</div>
+
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="getClientSc(ts.subcon)" data-placeHolder="Choose Staff" id="userid" chosen="" chosen id="userid" class="chosen-select" style="width:100%;" ng-model="ts.subcon" ng-options="staff as (staff.fname + ' ' + staff.lname +' [ #' + staff.id +' - '+staff.status+ ' ]') for staff in staffs"></select>
+						
+					</div>
+					
+					<div class="form-group col-lg-2">
+						
+						<button ladda="loadingDemo" ng-click="search()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left">Search Timesheet</button>								
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+</div>	

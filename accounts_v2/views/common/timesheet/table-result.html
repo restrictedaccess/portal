@@ -1,0 +1,212 @@
+<div id="timesheet-container">
+	<div class="col-lg-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content custom-padding">
+				<div class="alert alert-warning" ng-show="special_arrangements">
+					<div ng-repeat="arrangement in special_arrangements">					 
+						<div class="font-bold">Timesheet {{ arrangement.month_year }} #{{ arrangement.timesheet_id }}</div>
+						<div class="text-muted">{{ arrangement.admin_name }} {{ arrangement.date_added }}</div>						
+						<em>{{ arrangement.note }}</em>
+						
+					</div>
+				</div>	
+				<div class="alert alert-danger text-center" ng-show="background_process_msg" ng-hide="!background_process_msg">{{ background_process_msg }}</div>
+				<div class="pull-left" style="margin-bottom:20px;">
+					<span class="label label-danger" >No Timesheet</span>
+					<span class="label label-warning">Locked</span>
+					<span class="label label-success">Open</span>
+				</div>
+
+
+				<div class="table-container">
+				<table class="table table-bordered scrollable" fixed-header>
+	                <thead>
+	                <tr>
+	                    <th width="4%" style="vertical-align:middle;">Day</th>
+	                    <th style="vertical-align:middle;">Date</th>
+	                    <th style="vertical-align:middle;">Time In</th>
+	                    <th style="vertical-align:middle;">Time Out</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Actual Hrs Wrk</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Hrs Chrg to RBS</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Adj Hrs</th>
+	                    <th class="text-right" width="6%" style="vertical-align:middle;">Reg Ros Hrs</th>
+						<th class="text-right" width="6%" style="vertical-align:middle;">Hrs Chrg Client</th>
+						<th class="text-right" width="6%" style="vertical-align:middle;">Diff Chrg Client</th>
+						<th class="text-right" width="6%" style="vertical-align:middle;">Hrs Pay Subcon</th>
+						<th class="text-right" width="7%" style="vertical-align:middle;">Diff Paid vs Adj Hrs</th>
+	                    <th style="vertical-align:middle;">Lunch Start</th>
+	                    <th style="vertical-align:middle;">Lunch Finish</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Lunch Hrs</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Notes</th>
+	                    <th width="4%" class="text-right" style="vertical-align:middle;">Remark</th>
+	                </tr>
+	                </thead>
+	                <tbody>
+		                <tr ng-repeat="record in records" style="background: {{ record.bgcolor }}" >
+		                    <td style="vertical-align:middle;"> {{ record.reference_day }} </td>
+		                    <td style="vertical-align:middle;">
+
+								<div ng-init="checkTimesheetStatus(record)" style="background-color:{{backgroundColors.record[record.timesheet_details_id]}};color:white;font-size:10px;padding:1px;text-align:center;border-radius: 3px;">
+									{{ record.reference_date_str }}
+								</div>
+
+		                    	 <!--<div class="pull-right" ng-if="record.timesheet_details_id !==''">-->
+		                    		<!--<span class="label label-warning" ng-if="record.date_status ==='locked'">{{ record.date_status }}</span>-->
+		                    		<!--<span class="label label-success" ng-if="record.date_status ==='open'">{{ record.date_status }}</span>-->
+		                    	 <!--</div>-->
+
+		                    	 <!--<div class="pull-right" ng-if="record.timesheet_details_id ===''">-->
+
+		                    		<!--<span class="label label-danger" >No Timesheet</span>-->
+		                    	 <!--</div>-->
+
+		                    </td>
+		                    <td style="vertical-align:middle;">
+		                    	<div ng-repeat="time_record in record.time_records.time_records.timerecords ">
+		                    		{{ formatDateTime(time_record.time_in )}}
+		                    	</div>
+		                    </td>
+
+							<td style="vertical-align:middle;">
+								<div ng-repeat="time_record in record.time_records.time_records.timerecords ">
+									{{ formatDateTime(time_record.time_out )}}
+								</div>
+							</td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.time_records.total_hours.total_worked_hours }} </td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.time_records.total_hours.total_charged_hours_to_rbs }} </td>
+		                    <td class="text-right" style="vertical-align:middle;">
+		                    	<!-- 
+		                    	<span ng-if="record.date_status ==='locked'">{{ record.adj_hrs }}</span>
+		                    	<span id="ts_adj_{{ record.timesheet_details_id }}" ng-click="openModalAdjHrs( record.timesheet_details_id, record.reference_date_str )" class="text-success" style="cursor: pointer;" ng-if="record.date_status ==='open'" >{{ record.adj_hrs }}</span>
+		                    	-->
+		                    	<span ng-show="record.date_status ==='locked'">{{ record.adj_hrs }}</span>
+		                    	<!--
+		                    		<span id="ts_adj_{{ record.timesheet_details_id }}" ng-click="openModalAdjHrs( record.timesheet_details_id, record.reference_date_str, record )" class="text-success" style="cursor: pointer;" ng-show="record.date_status ==='open'" >{{ record.adj_hrs }}</span>
+		                    	-->	
+		                    	
+		                    	<span class="text-success" ng-show="record.date_status ==='open'" >
+		                    	<input type="text" value="{{ record.adj_hrs }}" ng-model="record.adj_hrs"  style="width: 45px; text-align: right;" />
+		                    	</span>
+		                    	
+		                    </td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.regular_rostered }} </td>
+		                    <td class="text-right" style="vertical-align:middle;">
+		                    	<span ng-show="record.date_status ==='locked'">{{ record.hrs_charged_to_client }} </span> 
+		                    	
+		                    	<span ng-show="record.date_status ==='open'" ng-click="openModalHrsChrgClient( record )" style="color:blue; cursor: pointer;">
+		                    		{{ record.hrs_charged_to_client }} 
+		                    	</span>
+		                    </td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.diff_charged_to_client }} </td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.hrs_to_be_subcon }} </td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.diff_paid_vs_adj_hrs }} </td>
+		                    <td style="vertical-align:middle;">
+		                    	<div ng-repeat="time_record in record.time_records.time_records.lunchrecords ">
+									{{ time_record.time_in_hour }}
+		                    	</div>
+		                    </td>
+							<td style="vertical-align:middle;">
+								<div ng-repeat="time_record in record.time_records.time_records.lunchrecords ">
+									{{ time_record.time_out_hour }}
+								</div>
+							</td>
+		                    <td class="text-right" style="vertical-align:middle;"> {{ record.time_records.total_hours.total_lunch_hours }} </td>
+		                    <td style="vertical-align:middle;"> <!--<span id="ts_note_{{ record.timesheet_details_id }}" ng-click="openModalNote( record.timesheet_details_id,  record.reference_date_str )" class="text-success" style="cursor: pointer;"></span> -->
+		                    	<div ng-show="record.total_notes ===0" >
+		                    		<span ng-click="openModalNote( record )" style="cursor: pointer;"><i class="fa fa-file"></i></span>
+		                    	</div>
+		                    	
+		                    	<div ng-show="record.total_notes !==0" >
+			                    	<span style="position: relative; top:-5px; left:-5px" class="label label-warning pull-right">{{ record.total_notes }}</span>
+			                    	<span ng-click="openModalNote( record )" class="text-success" style="cursor: pointer;"><i class="fa fa-file"></i></span>
+		                    	</div>
+		                    </td>
+		                    <td style="vertical-align:middle;">
+		                    	<!-- RSSC Issue -->
+		   						<div ng-show="record.rssc_issues" style="margin-bottom: 10px;" >
+
+			                    	<span class="label label-warning" style="background-color: #333;" tooltip-placement="top" tooltip-append-to-body="true" tooltip-html-unsafe="{{ record.rssc_issues.logs_str }}" >
+			                    		RSSC Down
+			                    	</span>
+			                    	
+ 								</div>
+ 								
+ 								<!-- Suspended -->
+		   						<div ng-if="record.suspension_log.latest_status ==='suspended'" style="margin-bottom: 10px;" >
+			                    	<span class="label label-danger" tooltip-placement="top" tooltip-append-to-body="true" tooltip-html-unsafe="{{ record.suspension_log.logs_str }}" >
+			                    		suspended
+			                    	</span>
+ 								</div>
+ 								
+ 								<!-- Leave Request -->
+		                    	<div ng-repeat="leave in record.leaves" style="font-size: 10px; margin-bottom: 10px;">
+		                    		<span class="label label-success" tooltip-placement="top" tooltip-append-to-body="true" tooltip-html-unsafe="{{ leave.leave_type }}">
+		                    			<!--<i class="fa fa-pencil-square"></i>-->
+		                    			{{ leave.status }}
+		                    		</span>
+		                    	</div>  
+		                    </td>
+		                </tr>
+	                
+	                </tbody>
+	                <thead ng-show="records">
+	                	
+	                    <th colspan="4" class="text-right" >Totals</th>
+	                    <th class="text-right">{{ totals.total_login_hrs }}</th>
+	                    <th class="text-right">{{ totals.total_charged_hours_to_rbs }}</th>
+	                    <th class="text-right">{{ totals.total_adj_hrs }}</th>
+	                    <th class="text-right" >{{ totals.total_regular_rostered }}</th>
+						<th class="text-right" >{{ totals.total_hrs_charged_to_client }}</th>
+						<th class="text-right" >{{ totals.total_diff_charged_to_client }}</th>
+						<th class="text-right" >{{ totals.total_hrs_to_be_subcon }}</th>
+	                    <th class="text-right" >{{ totals.total_diff_paid_vs_adj_hrs }}</th>
+	                    <th class="text-right">&nbsp;</th>
+						<th class="text-right">&nbsp;</th>
+	                    <th class="text-right">{{ totals.total_lunch_hrs }}</th>
+						<th class="text-right">&nbsp;</th>
+	                    <th class="text-right" colspan="2">&nbsp;</th>
+	                    
+	                </tr>
+	                </thead>
+	            </table>
+				</div>
+	            <div ng-show="ts.subcon" class="row text-center" >
+	            	<p>
+						User Id : <span class="label label-default">{{ userID }}</span>
+	            		Subcontractors Id : <span class="label label-default">{{ ts.subcon.id }}</span>
+		            	Contract Status : <span class="label label-default">{{ ts.subcon.status }}</span>
+		            	Prepaid : <span class="label label-default">{{ ts.subcon.prepaid }}</span>
+		            	Timezone <small>Default</small> : <span class="label label-default">Asia/Manila</span>
+					</p>	            	
+	            </div>
+	           
+	            
+	            <!-- Initial load of Page all buttons are disabled -->
+	            <div ng-show="records == null" class="row" style="text-align: center;">
+	            	<button class="btn btn-danger btn-sm" disabled  style="margin-right: 10px;">Lodge to RBS</button>
+	            	<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Auto Adjust Hour</button>
+	            	<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Recompute Diff Charge to Client</button>
+	            	<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Special Arrangements</button>
+	            	<button class="btn btn-primary btn-sm" disabled >History</button>
+	            </div>
+	            <!-- If Records -->
+	            <div ng-show="records" class="row" style="text-align: center;">
+
+	            	<button ladda="loadingLodgeDemo" ng-click="lodge()" class="ladda-button ladda-button-demo btn btn-danger btn-sm"  data-style="expand-left" style="margin-right: 10px;">Lodge to RBS</button>
+	            	<span ng-show="locked_dates_counter ===0">
+	            		<button class="btn btn-primary btn-sm" ng-click="openModalAutoAdjustHrs(ts)" style="margin-right: 10px;">Auto Adjust Hour</button>
+	            		<button ladda="loadingDemo2" ng-click="recompute()" class="ladda-button ladda-button-demo btn btn-primary btn-sm"  data-style="expand-left" style="margin-right: 10px;">Recompute Diff Charge to Client</button>
+	            	</span>
+	            	<span ng-show="locked_dates_counter !==0">
+	            		<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Auto Adjust Hour</button>
+	            		<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Recompute Diff Charge to Client</button>
+	            	</span>
+	            	<button class="btn btn-primary btn-sm" ng-click="openModalCommunicationRecords(ts)" style="margin-right: 10px;">Special Arrangements</button>
+	            	<button class="btn btn-primary btn-sm" ng-click="openModalHistory(ts)">History</button>
+	            </div>
+	            
+	            	
+			</div>
+		</div>
+	</div>
+</div>

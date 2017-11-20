@@ -1,0 +1,105 @@
+/* CSS Document */
+.box_title{
+	padding:5px; 
+	background:#CCCCCC; 
+	border:#666666 ridge 1px; 
+	font:bold 12px Arial;
+}
+.box {
+	padding:5px; 
+	border:#666666 solid 1px;
+	font:12px Arial;
+}
+
+#create_panel {
+	background:#FFFFFF;
+ 	font:12px Arial;
+}
+#create_panel p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#create_panel label{
+	float:left;
+	display:block;
+	width:120px;
+}		
+
+#create_box{
+ background:#FFFFFF;
+ font:12px Arial;
+}	
+
+#create_box p{
+	margin-bottom:5px;
+	margin-top:5px;
+}	
+
+#create_box label{
+	float:left;
+	display:block;
+	width:120px;
+ 
+}	
+
+#right_panel{
+	margin:5px;
+	padding:5px;
+	font:12px Arial;
+	border:#CCCCCC solid 1px;
+}
+
+#right_panel p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#right_panel label{
+	float:left;
+	display:block;
+	width:90px;
+	
+
+	
+}
+
+
+
+.invoice_wrapper{
+	padding:3px; 
+	border-bottom:#000000 solid 1px;
+	font:11px Arial;
+}
+
+.invoice_list_title {
+background-color:#CCCCCC;
+border:1px outset #666666;
+font:bold 12px Arial;
+text-align:center;
+padding:5px;
+margin-top:10px;
+
+}
+
+div.scroll {
+height: 150px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+margin-bottom:5px;
+}
+
+.scroll_list{
+height: 150px;
+overflow: auto;
+border:#CCCCCC 1px solid;
+background-color: #FFFFFF;
+margin:0px;
+}
+
+.list_wrapper{
+margin-top:0px;
+margin-bottom:0px;
+}
+
+

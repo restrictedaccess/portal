@@ -1,0 +1,64 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	color:#333;
+	margin:0;
+}
+
+#content{
+	width:70%;
+	margin:auto;
+}
+
+.sub_accounts_list ol li{
+	line-height:20px;
+}
+
+.sub_accounts_list li ul li{
+	color:#666;
+	margin-bottom:2px !important;
+}
+
+.staff_name{
+	font-style:italic;
+	font-size:11px;
+}
+
+#forms p{
+	margin-bottom:10px;
+	margin-top:3px;
+}
+
+#forms label{
+	float:left;
+	width:280px;
+	margin-right:5px;
+	text-align:right;
+	color:#999;
+}
+
+#staff_list{
+    background:#000;
+	padding:1px;
+	position:absolute;
+	z-index:10000;
+	width:200px;
+	height:300px;
+	overflow-y:scroll;
+	font:10px tahoma;
+	margin:0;
+	color:#CCC;
+}
+
+
+#selected_box{
+	width:70%;
+	margin:auto;
+	margin-bottom:10px !important;
+}
+
+.text_box{
+	width:250px;
+}

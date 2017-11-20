@@ -1,0 +1,8 @@
+.summary{
+	font-size:1.5em;	
+}
+  .modal-dialog.modal-lg {
+    width: 900px!important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }

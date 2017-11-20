@@ -1,0 +1,112 @@
+body {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+.gwt-DialogBox {
+    border: 2px outset;
+    background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+    background-color: #C3D9FF;
+    padding: 3px;
+    margin: 2px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.gwt-DialogBox .Contents {
+    padding: 10px;
+}
+
+.grid_header {
+    font-weight: bold;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 12;
+    text-align: center;
+    background-color: #EEE;
+    border-color: white;
+}
+
+#grid_records {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 12;
+    border-collapse: separate;
+    border-color: white;
+}
+
+#grid_records tr:hover {
+    background-color: #BBBBFF;
+}
+
+
+.col_day {
+    width: 48px;
+}
+
+.col_date {
+    width: 28px;
+}
+
+.col_time {
+    width: 68px;
+}
+
+.col_hrs {
+    width: 48px;
+}
+
+.col_notes {
+    width: 200;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.row_even {
+    background-color: #CCFFCC;
+}
+
+.row_odd {
+    background-color: #EEFFEE;
+}
+
+.row_sat {
+    background-color: #FFFFCC;
+}
+
+.row_sun {
+    background-color: #FFFFAA;
+}
+
+#panel_timesheet {
+    text-align: left;
+}
+
+.cursor_pointer {
+    cursor : pointer;
+}
+
+#grid_records div{
+    font-size: 12px;
+}
+
+.size_12 {
+    font-size: 12px;
+}
+
+.definition_of_terms {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 8px;
+}
+
+.word_key {
+    font-weight: bold;
+}
+
+.label_style {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}

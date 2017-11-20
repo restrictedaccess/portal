@@ -1,0 +1,143 @@
+/* CSS Document */
+#glossymenu{ background:url(images/remote-staff-nav-bg.jpg) top left repeat-x; height:36px; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-bottom:4px; }
+#glossymenu ul{ list-style:none;  }
+#glossymenu ul li{  float:left;  }
+#glossymenu ul li a:link, #glossymenu ul li a:visited{  display:block; padding:14px 12px 10px 8px; text-decoration:none; color:#fff; }
+#glossymenu ul li a:hover{ background:url(./images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+#glossymenu ul li.spacer{ width:30px; }
+a#homenav{ background:url(./images/remote-staff-nav-bg2.jpg) top left repeat-x;  font-weight:bold; }
+
+
+
+
+
+.glossymenu{
+	position: relative;
+	padding: 0 0 0 34px;
+	margin: 0  0 0 0;
+	background: url(media/menub_bg.gif) repeat-x; /*tab background image path*/
+	height: 46px;
+	list-style: none;
+}
+
+.glossymenu li{
+	float:left;
+}
+
+.glossymenu li a{
+	float: left;
+	display: block;
+	color:#000;
+	text-decoration: none;
+	font-family: tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	padding:0 0 0 16px; /*Padding to accomodate left tab image. Do not change*/
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	cursor: pointer;	
+}
+
+.glossymenu li a b{
+	float: left;
+	display: block;
+	padding: 0 24px 0 8px; /*Padding of menu items*/
+}
+
+.glossymenu li.current a, .glossymenu li a:hover{
+	color: #fff;
+	background: url(media/menub_hover_left.gif) no-repeat; /*left tab image path*/
+	background-position: left;
+}
+
+.glossymenu li.current a b, .glossymenu li a:hover b{
+	color: #fff;
+	background: url(media/menub_hover_right.gif) no-repeat right top; /*right tab image path*/
+}
+
+.tablecontent tbody tr:hover {
+  background: #FFFFCC;
+  }
+  
+
+
+/********************************/  
+.class1  a {padding: 1px 0.5em; margin-left: 1px; border: 1px solid #778; border-bottom:  none; text-decoration: none; font: bold 12px Tahoma, Verdana , sans-serif;color: #000000 ; 	}
+.class1 A:visited {text-decoration: none}
+.class1 A:active {text-decoration: none;color: red; background:#99FFFF;}
+.class1 A:hover {color: #000; background: #99FF66;	border-color: #227;}
+
+
+
+
+.animatedtabs{
+border-bottom: 1px solid gray;
+overflow: hidden;
+width: 100%;
+font-size: 11px; /*font of menu text*/
+}
+
+
+.animatedtabs ul{
+list-style-type: none;
+margin: 0;
+margin-left: 10px; /*offset of first tab relative to page left edge*/
+padding: 0;
+}
+
+.animatedtabs li{
+float: left;
+margin: 0;
+padding: 0;
+}
+
+.animatedtabs a{
+float: left;
+position: relative;
+top: 5px; /* 1) Number of pixels to protrude up for selected tab. Should equal (3) MINUS (2) below */
+background: url(media/tab-blue-left.gif) no-repeat left top;
+margin: 0;
+margin-right: 3px; /*Spacing between each tab*/
+padding: 0 0 0 9px;
+text-decoration: none;
+
+}
+
+.animatedtabs a span{
+float: left;
+position: relative;
+display: block;
+background: url(media/tab-blue-right.gif) no-repeat right top;
+padding: 5px 14px 3px 5px; /* 2) Padding within each tab. The 3rd value, or 3px, should equal (1) MINUS (3) */
+font-weight: bold;
+color: black;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.animatedtabs a span {float:none;}
+/* End IE5-Mac hack */
+
+
+.animatedtabs .selected a{
+background-position: 0 -125px;
+top: 0;
+}
+
+.animatedtabs .selected a span{
+background-position: 100% -125px;
+color: black;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}
+
+.animatedtabs a:hover{
+background-position: 0% -125px;
+top: 0;
+}
+
+.animatedtabs a:hover span{
+background-position: 100% -125px;
+padding-bottom: 8px; /* 3) Bottom padding of selected tab. Should equal (1) PLUS (2) above */
+top: 0;
+}

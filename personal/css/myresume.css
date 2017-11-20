@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+
+div.scroll {
+	height: 300px;
+	width: 100%;
+	overflow: auto;
+	border: 1px solid #CCCCCC;
+}
+
+.scroll p {
+	margin-bottom: 10px;
+	margin-top: 4px;
+	margin-left: 0px;
+}
+
+.scroll label {
+	width: 90px;
+	float: left;
+	text-align: right;
+}
+
+.spanner {
+	width: 400px;
+	overflow: auto;
+	padding: 5px 0 5px 10px;
+	margin-left: 20px;
+}
+
+#l {
+	float: left;
+	width: 350px;
+	text-align: left;
+	padding: 5px 0 5px 10px;
+}
+
+#l ul {
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+#r {
+	float: right;
+	width: 120px;
+	text-align: left;
+	padding: 5px 0 5px 10px;
+}
+
+.ads {
+	width: 580px;
+}
+
+.ads td {
+	font-size: 12px;
+}
+
+.ads h2 {
+	color: #990000;
+	font-size: 2.5em;
+}
+
+.ads p {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 30px;
+}
+
+.ads .jobs p{
+	margin-left: 0px;
+	margin-top:0px;
+	font-size:12px;
+}
+.ads h3 {
+	color: #003366;
+	font-size: 1.5em;
+	margin-left: 30px;
+}
+
+#comment {
+	float: right;
+	width: 500px;
+	padding: 5px 0 5px 10px;
+	margin-right: 20px;
+	margin-top: 0px;
+}
+
+#comment p {
+	margin-bottom: 4px;
+	margin-top: 4px;
+}
+
+#comment label {
+	display: block;
+	width: 100px;
+	float: left;
+	padding-right: 10px;
+	font-size: 11px;
+	text-align: right;
+}
+
+.cName {
+	color: white;
+	font-family: verdana;
+	font-size: 14pt;
+	font-weight: bold
+}
+
+.cName label {
+	font-style: italic;
+	font-size: 8pt
+}
+
+.cName A {
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 8pt
+}
+
+.jobRESH {
+	color: #000000;
+	size: 2;
+	font-weight: bold
+}

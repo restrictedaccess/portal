@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+#message-writer{
+	width:100%;
+	min-height:200px;
+	border: 1px solid #ccc;
+	max-height:200px;
+	overflow-y:auto;
+}
+#message-writer p{
+	margin-left:5px;
+	margin-bottom:1em;
+}
+#message-writer ul li, #message-writer ol li{
+	margin-bottom:1em;
+}
+h1.to-be-endorsed{
+	margin-bottom:1em;
+	color:#000;
+	font-size:14px;
+}
+.to-be-endorsed-staff{
+	list-style-type:none;
+}
+.to-be-endorsed-staff li{
+	margin-bottom:1em;
+}
+.to-be-endorsed-staff .red{
+	color:red;
+}
+.to-be-endorsed-staff .blue{
+	color:blue;
+}

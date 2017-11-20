@@ -1,0 +1,28 @@
+<div id="timesheet-container">
+	<div class="col-lg-12">
+		<div class="ibox float-e-margins">
+			<div class="ibox-content">
+				
+				
+				<table class="table table-bordered">
+	                <thead>
+	                <tr>
+	                    
+                        <th>Client</th>                        
+                        <th>Count</th>
+	                </tr>
+	                </thead>
+	                <tbody>
+		                <tr ng-show="records" ng-repeat="record in records" >
+		                    <td> {{ record._id.client_name }} </td>
+		                    <td> {{ record.count }} </td>		                    
+		                </tr>	
+		                <tr ng-show="records == null">
+                			<td colspan="2">Loading...</td>
+                		</tr>                
+	                </tbody>	                
+	            </table>	            	
+			</div>
+		</div>
+	</div>
+</div>

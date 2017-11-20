@@ -1,0 +1,114 @@
+#form_create_staff input[type="text"], input[type="email"], input[type="password"], select{
+	width:35% !important;
+}
+
+#form_create_staff select#staff_currency_id{
+	display:inline !important;
+	width:23% !important;
+}
+
+#form_create_staff input[type="text"]#php_monthly{
+	display:inline !important;
+	width:11% !important;
+}
+
+.form-input{
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#client_start_work_hour, #client_finish_work_hour{
+	display:inline !important;
+	width:13% !important;
+}
+
+#staff_working_schedules select{
+	width:22% !important;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: inline;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#staff_working_schedules input[type="text"]{
+	width:12% !important;
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: inline;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+}
+
+#starting_date{
+	cursor:pointer !important;
+}
+
+#client_settings{
+	text-align:center;
+}
+
+#client_settings select{
+	background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display:inline;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+}
+
+#client_settings select#currency{
+	width:100px !important;
+}
+
+#client_settings select#apply_gst{
+	width:100px !important;
+}
+
+.add_comment{
+	width:50% !important;
+	margin:auto;
+	background:#999;
+}
+
+.subcon{
+	
+	cursor:default !important;
+	background-color:#FFF !important;
+	border:none !important;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset !important;
+	padding-left:0px !important;
+}
+

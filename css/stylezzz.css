@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+/* Main Styling Sheet */
+
+/* resetting layout values */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, img, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, label { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; 	vertical-align: baseline; background: transparent; } 
+
+body{ width:100%; background:#fff url(../images/remote-staff-bg.jpg) top left repeat-x; font-family:Arial, Helvetica, sans-serif; font-size:14px; }
+
+h1, h2, h3, p{  margin:0px 20px 12px 20px;  }
+h1{ font-size:24px; line-height:30px; color:#173d6a; border-bottom:2px solid #ddd; padding-bottom:10px;}
+h2{ font-size:18px; color:#165394; line-height:24px; }
+.bigfont{ font-size:30px; }
+p{ font-size:14px; color:#000; line-height:20px;  }
+.homereason{ padding-left:37px; }
+
+.smalltext{ font-size:11px; color:#666; }
+
+.smalltext a:link, .smalltext a:visited{ text-decoration:none; color:#666; }
+.smalltext a:hover{ text-decoration:underline; color:#000; }
+
+#container{ width:920px; margin:auto; }
+
+#header{ height:89px; width:920px; }
+#headerleft{ width:484px; float:left; }
+#headerright{ width:436px; float:right; text-align:right}
+#headerright p { margin:0; color:#55707e; font-weight:bold; }
+
+#nav{ background:url(../images/remote-staff-nav-bg.jpg) top left repeat-x; }
+#nav ul{ list-style:none;  }
+#nav ul li{  float:left;  }
+#nav ul li a:link, #nav ul li a:visited{  display:block; padding:14px 12px 10px 12px; text-decoration:none; color:#fff; }
+#nav ul li a:hover{ background:url(../images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+#nav ul li.spacer{ width:33px; }
+
+#content-left{ width:175px; float:left; }
+
+#content-main{ width:480px; float:left; }
+
+#content-right{ width:265px; float:right; }
+
+
+div#formbox{ width:265px; margin:auto; background:#d9e4e9; padding-bottom:15px; margin-bottom:20px; }
+div#formbox h1{ height:55px;  background:url(../images/bg-title2.jpg) top left repeat-x; font-size:18px; color:#fff; font-weight:normal; text-align:center;  padding:0; line-height:24px; margin:0;  }
+div#formbox h2{ font-size:14px; color:#55707e; text-align:center;  }
+div#formbox p{ color:#55707e;  font-size:12px;}
+div#formbox p.fhalf{ width:120px; float:left; margin:0; }
+div#formbox input{ width:220px; height:18px; font-size:12px; padding:0; }
+div#formbox textarea{ width:220px; height:50px; font-size:12px; padding:0; }
+div#formbox input.ihalf{ width:100px; }
+
+div#rightblurb{ width: 265px; margin-bottom:20px;  }
+div#rightblurb h1{ height:41px; background:url(../images/bg-title.jpg) top left repeat-x; line-height:41px; font-size:14px; color:#fff; text-align:center;  margin:0; }
+div#rightblurb h2{ font-size:12px; color:#333; text-align:center;  margin:0; padding-top:10px; }
+div#rightblurb p{ color:#000;  font-size:11px; line-height:16px;}
+div#rightblurb img.tv{padding:5px 15px 0px 20px; float:left;  }
+
+/* about us - styling */
+#teamlist{ width:350px; float:left; margin-bottom:30px;  }
+div#team{ margin-bottom:30px;  }
+div#team img{ margin-right:15px;float:left; border:1px solid #ccc; }
+div#team p{ font-size:12px; clear:both; height:140px; }
+div#team p .tname{ font-size:14px !important; font-weight:bold; color:#3075c2; }
+div#team h2{ height:24px; line-height:24px; background:#636363; color:#fff; font-size:14px;  padding-left:15px; margin-top:0px; margin-bottom:20px; }
+#aboutus{ width:570px; float:left;  }
+#aboutus .img-caption{ font-size:12px; font-weight:bold; color:#000; text-align:center; }
+
+/* available staff */
+
+#availstaff{ height:391px; background:url(../images/img-availstaff-bg.jpg) top left repeat-x; clear:both; }
+#availstaff div{ width:230px; text-align:center; font-size:14px; color:#fff; float:left; height:391px;  }
+#availstaff div p{ line-height:25px; color:#fff;  margin:0px 15px 0px 15px; }
+#availstaff div p a:link, #availstaff div p a:visited{ text-decoration:none; display:block; color:#fff; }
+#availstaff div p a:hover{ background:#87b4ec; color:#036; text-decoration:none; display:block; }
+
+#footer{  background:#8ead24 url(../images/remote-staff-footer-bg.jpg) top left repeat-x; clear:both}
+#footer div#footerbox{ width:920px; margin:auto;  }
+#footer div#footerbox p{ font-size:11px; border-top:2px solid #769213;  margim:0; }
+#footer div#footerbox div#sublinks{ margin:20px 20px 0px 20px;  padding-top:15px; padding-bottom:5px; }
+#footer div#footerbox div#sublinks dl{ padding-left:20px; padding-right:20px; float:left; font-size:11px;   }
+#footer div#footerbox div#sublinks dl dt{ font-weight:bold; border-bottom:1px solid #769213; margin-bottom:5px; }
+#footer div#footerbox div#sublinks dl dd{ padding-left:10px; height:15px; line-height:15px; }
+#footer div#footerbox div#sublinks dl dd a:link, #footer div#footerbox div#sublinks dl dd a:visited{ text-decoration:none; color:#000; }
+#footer div#footerbox div#sublinks dl dd a:hover{ text-decoration:underline; color:#666; }
+
+
+/* =============  for videos  ============== */
+#vid{ margin:20px 0px 20px 0px;  border-bottom:1px dotted #ccc; }
+#vid p{ font-size:12px; line-height:18px; padding:0px; margin:0px 0px 10px 0px;  }
+a.myPlayer { display:block; text-align:center; margin:0 0px 5px 0;  border:1px solid #999; } 
+.myPlayer2 { display:block; text-align:center; margin:0 10px 5px 20px;  border:1px solid #999; float:left } 
+/* play button */ 
+a.myPlayer img { margin-top:70px; border:0px; } 
+/* when container is hovered we alter the border color */ 
+a.myPlayer:hover { border:1px solid #000; }
+
+
+
+

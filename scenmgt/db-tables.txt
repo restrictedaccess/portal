@@ -1,0 +1,73 @@
+CREATE TABLE IF NOT EXISTS `client_concerns_input` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `leads_id` int(10) unsigned NOT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `admin_id` int(10) unsigned NOT NULL,
+  `concerns` text,
+  `concern_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `leads_id` (`leads_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `client_concern_staff` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `concern_input_id` int(10) unsigned NOT NULL,
+  `userid` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `userid` (`userid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `client_concerns` (
+  `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
+  `concern_title` varchar(150) DEFAULT NULL COMMENT 'description',
+  `admin_id` int(9) unsigned NOT NULL,
+  `concern_status` enum('1','0') NOT NULL DEFAULT '1',
+  `concern_create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `concern_update_date` timestamp NULL DEFAULT NULL COMMENT 'audit purpose field',
+  PRIMARY KEY (`id`),
+  KEY `concern_status` (`concern_status`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `client_concern_questions` (
+  `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
+  `concern_id` int(9) unsigned NOT NULL,
+  `question_text` text,
+  `question_create_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `question_status` enum('1','0') NOT NULL DEFAULT '1',
+  `answer_id` int(9) unsigned DEFAULT NULL COMMENT 'follow-up question',
+  PRIMARY KEY (`id`),
+  KEY `concern_id` (`concern_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `client_concern_answers` (
+  `id` int(9) unsigned NOT NULL AUTO_INCREMENT,
+  `question_id` int(9) unsigned NOT NULL,
+  `answer_text` varchar(300) NOT NULL,
+  `answer_score` int(3) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `concern_question_id` (`question_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `scenario_users` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `userid` int(10) unsigned NOT NULL,
+  `create` enum('1','0') NOT NULL DEFAULT '0',
+  `read` enum('1','0') NOT NULL DEFAULT '1',
+  `update` enum('1','0') NOT NULL DEFAULT '0',
+  `delete` enum('1','0') NOT NULL DEFAULT '0',
+  `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `userid` (`userid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8
+
+
+
+scenario_users (
+admin_id
+admin_email
+permission: edit, delete, add, read
+last_login: date
+)

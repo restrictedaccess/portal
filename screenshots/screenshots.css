@@ -1,0 +1,37 @@
+#div_screenshots {
+    padding-top: 8px;
+    padding-left: 8px;
+    font-family: verdana;
+    font-size: 8pt;
+    font-weight: bold;
+    height: 540px;
+}
+
+#image_list {
+    width:180px;
+    height:540px;
+    min-height: 540px;
+}
+
+#div_image_list {
+    width:180px;
+    float:left;
+    height: 540px;
+    min-height: 540px;
+}
+
+#div_screen_shot_img {
+    margin-left: 8px;
+    width:640px;
+    float:left;
+    height: 540px;
+    min-height: 540px;
+}
+
+#top_screenshots {
+    padding-bottom: 8px;
+}
+
+div.clear{
+    clear: both;
+}

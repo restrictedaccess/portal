@@ -1,0 +1,16 @@
+<div ng-controller="InvoicePaymentsController as invoice_payment">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Invoice Payments</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">
+		
+		<!--<div class="row" ng-include="'views/common/invoice-payments/search-form.html'"></div>-->
+		<div class="row" ng-include="'views/common/invoice-payments/table-result.html'"></div>
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

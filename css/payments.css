@@ -1,0 +1,371 @@
+/*
+Use by page : admin_payments.php | Admin Section
+Created by : Normaneil Macutay
+Nov.17.2008
+*/
+
+.payment_box{
+width:1015px;
+padding:1px;
+margin:1px;
+background:#CCCCCC;
+font:12px Arial;
+
+}
+
+.title_header{
+	background:#FFFFFF;
+	padding:5px;
+	border:#333333 solid 1px;
+	font-weight:bold;
+	color:#000000;
+
+}
+
+.headers{
+	background:#EFEFEF;
+	height:30px;
+	/*
+	border-left:#333333 solid 1px;
+	border-right:#333333 solid 1px;
+	*/
+	border:#333333 solid 1px;
+}
+.item_no{
+float:left;
+width:28px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+
+}
+
+.name{
+float:left;
+width:200px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+}
+
+.name_desc{
+float:left;
+width:250px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+}
+.total_desc{
+float:left;
+width:330px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+}
+
+.amount_peso{
+float:left;
+width:110px;
+height:28px;
+padding-top: 3px;
+padding-right: 5px;
+text-align:right;
+border-right:#333333 solid 1px;
+}
+.amount_dollar{
+float:left;
+width:124px;
+height:28px;
+padding-top: 3px;
+text-align:right;
+
+}
+
+
+.box{
+	float:left;
+	width:500px;
+	margin-left:5px;
+	
+}
+.list_wrapper{
+	background:#FFFFFF;
+	height:30px;
+	border-bottom:#333333 solid 1px;
+}
+
+
+div.scroll {
+height: 250px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+
+}
+
+.total_amount_wrapper{
+margin-top:5px;
+background:#FFFFFF;
+height:28px;
+border:#333333 solid 1px;
+
+}
+
+.total_pesos_txt{
+ width:227px;
+ height:28px;
+ float:left;
+ padding-top: 3px;
+padding-left: 5px;
+}
+
+.sub_total_amount_peso{
+float:left;
+width:114px;
+height:28px;
+padding-top: 3px;
+padding-right: 5px;
+text-align:right;
+border-right:#333333 solid 1px;
+}
+
+.sub_total_amount_dollar{
+float:left;
+width:104px;
+height:28px;
+padding-top: 3px;
+text-align:right;
+
+}
+
+#payment_summary_viewer {
+	float:left;
+	width:480px;
+	margin-left:5px;
+	background:#FFFFFF;
+	padding:10px;
+}
+
+#payment_summary_viewer p{
+margin-bottom:5px;
+margin-top:5px;
+margin-left:20px;
+}
+
+#payment_summary_viewer label{
+float:left;
+display:block;
+width:180px;
+border:#000000 solid 1px;
+}
+
+#payment_summary_viewer span{
+float:left;
+display:block;
+margin-left:10px;
+}
+
+.view_title_header{
+	background:#FFFFFF;
+	padding:5px;
+	font-weight:bold;
+	color:#000000;
+}
+
+.view_headers{
+	background:#EFEFEF;
+	height:30px;
+	border:#333333 solid 1px;
+}
+
+.view_item_no{
+float:left;
+width:28px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+font-weight:normal;
+}
+
+.view_name{
+float:left;
+width:200px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+font-weight:normal;
+font-size:11px;
+}
+
+.view_amount_peso{
+float:left;
+width:110px;
+height:28px;
+padding-top: 3px;
+padding-right: 5px;
+text-align:right;
+border-right:#333333 solid 1px;
+font-weight:normal;
+}
+.view_amount_dollar{
+float:left;
+width:104px;
+height:28px;
+padding-top: 3px;
+text-align:right;
+font-weight:normal;
+
+}
+.view_total{
+float:left;
+width:448px;
+height:28px;
+padding-top: 3px;
+text-align:right;
+font-weight:normal;
+
+}
+div.scroll2 {
+height: 230px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+
+}
+
+#add_form {
+	display:none; 
+	width:400px; 
+	height:100px; 
+	border:#006600 solid 5px; 
+	position:absolute; 
+	background:#FFFFFF; 
+	padding:5px;
+}
+
+#add_form p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#add_form label{
+	float:left;
+	display:block;
+	width:100px;
+	text-align:right;
+	padding-right:3px;
+}
+.subcon_section_client_aount_form{
+	display:none; 
+	width:400px;
+	height:100px;
+	border:#006600 solid 5px;
+	position:absolute;
+	background:#FFFFFF;
+	padding:5px;
+	z-index:2;
+	left: 400px;
+	
+	
+}
+
+
+
+.total_section{
+float:left;
+width:335px;
+height:28px;
+padding-top: 3px;
+padding-left: 5px;
+border-right:#333333 solid 1px;
+}
+
+
+/* Added Nov.20,2008 */
+.subcon_item_hdr{
+float:left; width:20px; height:28px; padding-left:4px; border-right:#333333 solid 1px;padding-top:3px;
+}
+.subcon_name_hdr{
+float:left; width:255px;height:28px; padding-left:4px; padding-top:3px;border-right:#333333 solid 1px;
+} 
+.subcon_peso_hdr{
+float:left; width:100px;height:28px; text-align:right; padding-right:5px; padding-top:3px;border-right:#333333 solid 1px;
+} 
+.subcon_dollar_hdr{
+float:left; width:100px;height:28px;text-align:right; padding-right:5px; padding-top:3px;border-right:#333333 solid 1px;
+} 
+.subcon_client_price_hdr{
+float:left; height:28px;; padding-left:50px; padding-top:3px;
+
+}
+
+.subcon_item_txt{
+float:left; width:20px; height:28px; padding-left:4px; border-right:#333333 solid 1px;padding-top:3px;
+font:11px tahoma;
+}
+.subcon_name_txt{
+float:left; width:255px;height:28px; padding-left:4px; padding-top:3px;border-right:#333333 solid 1px;
+font:11px tahoma;
+} 
+.subcon_peso_txt{
+float:left; width:100px;height:28px; text-align:right; padding-right:5px; padding-top:3px;border-right:#333333 solid 1px;
+font:11px tahoma;
+} 
+.subcon_dollar_txt{
+float:left; width:100px;height:28px;text-align:right; padding-right:5px; padding-top:3px;border-right:#333333 solid 1px;
+font:11px tahoma;
+} 
+.subcon_client_price_txt{
+float:left; width:220px;height:28px; padding-right:5px; padding-top:3px;
+font:11px tahoma;
+border-right:#333333 solid 1px;
+}
+
+.subcon_section_client_payment_details{
+float:left; width:220px;height:28px; padding-left:7px; padding-top:3px;
+font:11px tahoma;
+}
+
+.subcon_section_total_profit{
+float:left; width:480px;height:28px; padding-left:7px; padding-top:3px;
+font:11px tahoma;
+}
+
+
+.subcon_total_pesos_txt{
+	width:277px;
+	height:28px;
+	float:left;
+	padding-top: 3px;
+	padding-left: 5px;
+}
+.subcon_total_amount_peso{
+	float:left; width:100px;height:28px; 
+	text-align:right; 
+	padding-right:5px; 
+	padding-top:3px;
+	border-right:#333333 solid 1px;
+}
+.subcon_total_amount_dollar{
+	float:left; width:100px;height:28px; 
+	text-align:right; 
+	padding-right:5px; 
+	padding-top:3px;
+	border-right:#333333 solid 1px;
+}
+
+.show_hide_button{
+width:30px;
+font:11px tahoma;
+}
+
+.box_for_subcon{
+	float:left;
+	width:1000px;
+	margin-left:5px;
+}

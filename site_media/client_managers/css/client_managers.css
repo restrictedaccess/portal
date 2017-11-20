@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	color:#333;
+	margin:0;
+}
+
+section{
+	display:block;
+}
+
+nav{
+	background:url(/portal/images/remote-staff-nav-bg2.jpg); height:40px;
+}
+
+nav ul{
+	background:url(/portal/images/remote-staff-nav-bg.jpg) top left repeat-x; height:36px; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-bottom:4px;
+	list-style:none;
+}
+
+nav ul li{  float:left;  }
+nav ul li a{ color:#FFF !important;}
+nav ul li a:link, #glossymenu ul li a:visited{  display:block; padding:14px 12px 10px 8px; text-decoration:none; color:#fff !important; }
+nav ul li a:hover{ background:url(/portal/images/remote-staff-nav-bg2.jpg) top left repeat-x; color:#fff !important;}
+nav ul li.spacer{ width:30px; }
+
+
+
+footer{
+	text-align:center;
+	color:#CCC;
+}
+
+h1{
+	text-align:center;
+	font-size:24px;
+}
+
+#managers_list{
+	width:680px;
+	margin:auto;
+}
+
+#managers_list legend{
+    color:#333;
+	font-weight:bold;
+}
+
+#managers_list li{
+    line-height:20px;
+}
+
+#add_manager{
+	float:right;
+}
+
+.headline_definition{
+	text-align:center;
+	color:#999;
+}
+
+#forms p{
+	margin-bottom:10px;
+	margin-top:3px;
+}
+
+#forms label{
+	float:left;
+	width:280px;
+	margin-right:5px;
+	text-align:right;
+	color:#999;
+}
+
+#msg_error{
+	padding:5px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:10px;
+	background:#FF0;
+}
+
+#staff_list{
+    background:#000;
+	padding:1px;
+	position:absolute;
+	z-index:10000;
+	width:200px;
+	height:300px;
+	overflow-y:scroll;
+	font:10px tahoma;
+	margin:0;
+	color:#CCC;
+}
+
+
+#selected_box{
+	width:70%;
+	margin:auto;
+	margin-bottom:10px !important;
+}
+/*
+#staff_list ol{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#staff_list li{
+	float:left;
+	margin-right:10px;
+	font-size:10px;
+}
+*/

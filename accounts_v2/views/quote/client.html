@@ -1,0 +1,14 @@
+<div ng-controller="ClientQuoteController as client_quote_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Client Quote</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">	
+		<div class="row" ng-include="'views/common/quote/client/info.html'"></div>
+		<div class="row" ng-include="'views/common/quote/client/result.html'"></div>
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

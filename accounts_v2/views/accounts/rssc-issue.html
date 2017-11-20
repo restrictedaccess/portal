@@ -1,0 +1,14 @@
+<div ng-controller="RSSCIssueController as rssc">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>RSSC Issues</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row" ng-include="'views/common/rssc-issue/search-form.html'"></div>
+		<div class="row" ng-include="'views/common/rssc-issue/table-result.html'"></div>
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

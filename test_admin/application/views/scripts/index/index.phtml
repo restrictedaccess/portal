@@ -1,0 +1,92 @@
+<style type="text/css">
+.confirmWindow {
+    display: none;
+    position: fixed;
+    top: auto;
+    left: 30%;
+    
+    /*margin-left: -300px;*/
+    width: 400px;
+    
+    background-color: #EEE;
+    color: #333;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.jqmOverlay { background-color: #000; }
+
+* html .confirmWindow {
+     position: absolute;
+     top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}
+</style>
+	
+	<div id="test" style="float:left;width:100%;padding-right:1px;">
+		<div id="tabular">
+			<table summary="CatListing">
+			<tbody>
+           	<tr>
+				<th scope="col">Test List <span id='testname'></span> <span onmouseover="tooltip('Double-click at least one Available Test to add it to the Selected Test.');" onmouseout="exit();"><img src="images/help.png" width='18' id='helptextth1'></span></th>
+				<th scope="col">Selected Test/s <span onmouseover="tooltip('Double-clicking the item in Selected Test list will remove from test session.');" onmouseout="exit();"><img src="images/help.png" width='18' id='helptextth1'></span></th>
+				<th scope="col">Candidate Emails &nbsp;&nbsp; <a href='#' id='addemail'>Add more</a> <span onmouseover="tooltip('Click on \'Add more\' link to add more recipient/candidate.');" onmouseout="exit();"><img src="images/help.png" width='18' id='helptextth1'></span></th>
+			  
+			</tr>
+			<?php //foreach($this->categories as $cnt => $cat):?>
+			<tr>
+				
+				<td id='tlists'>
+					<div class='testholder' style='height:400px;'>
+						<ul class='testlist' id='listfromcat'>
+							<li>Please first select the Test Category from left side</li>
+						</ul>
+					</div>
+					
+					
+				</td>
+				
+				<td id='tlists'>
+					<div class='testholder' style='height:400px;'>
+						<ul class='testlist' id='selectedtest'></ul>
+					</div>
+					
+					
+				</td>
+				
+				<td id='tlists'>
+					<div class='testholder' style='height:400px;'>
+						<ul class='testlist' id='emails'>
+							<?php echo $this->form;?>
+						</ul>
+					</div>
+					
+					
+				</td>
+								
+			</tr>
+			<?php //endforeach;?>
+			
+                    
+			  </tbody>
+                    
+            </table>
+		</div>
+		
+		<div style='float:left;width:100%'>
+			<div style='float:right'><button id='createsession'>Create Session</button></div>
+		</div>
+		
+    </div>
+	
+	<div class='confirmWindow' id='dialog'><strong>Session Request Details</strong><span id='aid'></span><a href='#' class='jqmClose' style='float:right'>Close</a><hr>
+	<div style='float:left;padding:4px;width:100%;'>
+	  <p><strong>Test Name:</strong>
+	  <div id='div_testname' style='padding:0 0 6px 30px;'></div>
+	  </p>
+	  <p><strong>Send test session to the following email/s:</strong></p>
+	  <div id='div_emailaddr' style='padding:0 0 10px 30px;'></div>
+	  <p style='text-align:center;'><button class='jqmClose' type="button" id="btn_no">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <button type="button" id="btn_yes">Continue</button>
+	  </p>
+	</div>
+	</div>

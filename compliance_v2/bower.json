@@ -1,0 +1,17 @@
+{
+  "name": "compliance_v2",
+  "description": "Compliance V2",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.13.0"
+  }
+}

@@ -1,0 +1,6 @@
+tb_app_appointment
+
+user_id = admin id
+leads_id = applicant ID (in bs calendar this is client id or leads id)
+client_id = client or customer id
+

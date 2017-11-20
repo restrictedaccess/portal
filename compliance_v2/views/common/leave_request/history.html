@@ -1,0 +1,16 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title border-bottom">			
+			<h3>History</h3>					
+		</div>
+				
+		<div class="ibox-content" >			
+			<ol>
+                <li ng-repeat="h in history | orderBy:'-response_date'" style="margin-bottom: 20px;">
+                    <div class="font-bold" >{{ h.response_date | date:'MMM dd, yyyy hh:mm a' }} {{ h.response_by }}</div>        		
+                    <div ng-bind-html="h.notes" style="word-wrap: break-word;"></div>
+                </li>
+            </ol>	
+		</div>
+	</div>
+</div>

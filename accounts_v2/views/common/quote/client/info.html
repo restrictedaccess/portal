@@ -1,0 +1,24 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<h3>Client Information</h3>
+			<div ng-show="setting ===null">
+				Loading ...
+			</div>
+			<div ng-show="setting !==null">
+				<p>
+					<label class="text-muted">Id : </label> {{ leads_id }}<br>
+					<label class="text-muted">Name : </label> 
+						<a href="/portal//portal/leads_information.php?id={{ leads_id }}">
+							{{ setting.fname }} {{ setting.lname }}	
+						</a>
+					<br>
+					<label class="text-muted">Email : </label> {{ setting.email }}<br>
+					<label class="text-muted">Available Balance : </label> {{ setting.sign }}{{ setting.running_balance}}<br>
+					<label class="text-muted">Daily Rate : </label> {{ setting.sign }}{{ setting.daily_rate }}<br>
+					<label class="text-muted">Status : </label> {{ setting.status }}
+				</p>
+			</div>	
+		</div>
+	</div>
+</div>			

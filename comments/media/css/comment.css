@@ -1,0 +1,68 @@
+/* CSS Document */
+.com_hdr{
+	background:#333333; 
+	color:#FFFFFF; 
+	padding-left:5px; 
+	padding-right:5px; 
+	padding-top:5px; 
+	padding-bottom:1px;
+}
+.com_div{
+	padding:5px; 
+	background:#fff;
+	border:#333333 solid 1px;
+}
+.com_box{
+	padding:5px;
+	border-bottom:#CCCCCC solid 1px;
+}
+.com_con{
+	float:right;
+}
+.comm{
+	margin-top:10px;
+	display:block;
+	width:95%;
+	padding:5px;
+	background:#FFFFFF;
+}
+.reply_div{
+	display:none;
+}
+
+.rep_sec{
+	margin-top:20px;
+}
+
+.rep_list{
+	padding:5px; border:#CCCCCC solid 1px; background:#FFFFCC; width:90%;
+}
+
+.edit_reply_div{
+	display:none;
+	padding:10px;
+	background:#FFFFFF;
+	border:#333333 solid 3px;
+	position:absolute;
+}
+
+.reply_edit_text{
+	height:150px;
+	width:600px;
+}
+
+.rep_con{
+	margin-left:15px;
+	font-size:11px;
+}
+
+.rep_con a{
+	font-size:11px;
+	color:#666666;
+	text-decoration:none;
+}
+
+.rep_con a:hover{
+	color:blue;
+	text-decoration:underline;
+}

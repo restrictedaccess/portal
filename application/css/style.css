@@ -1,0 +1,131 @@
+html, body {
+	height: 100%;
+}
+#box {
+	min-height: 100%;
+	margin-bottom:50px;
+}
+.footer {
+	position: relative;
+	margin-top: -360px; /* negative value of footer height */
+	height: 360px;
+	clear: both;
+	background:#fce19e url(../images/remote-staff-footer-bg.jpg) top left repeat-x; 
+}
+.footer .footer-box {
+	padding-top: 15px;
+}
+.footer .links h3 {
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 5px;
+	font-size: 12px !important;
+}
+.footer .links {
+	font-size: 11px;
+}
+.footer .links ul {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 1em;
+}
+.footer .links a {
+	color: #333;
+}
+.footer .footer-address {
+	font-size: 11px;
+	border-top: 2px solid #fff;
+	margin: 0;
+}
+.logo{
+	background:url(../images/remote-staff-logo.jpg) no-repeat transparent;
+	height:89px;
+	width:700px;
+}
+.navigation{
+	background:url(../images/bg_header.jpg) repeat-x transparent;
+}
+.navigation a.nav{
+	padding:8px 11px 10px 11px;
+	color:#fff!important;
+}
+.main_container h3{
+	color:#02AEEE;
+	
+}
+.progress_builder{
+	margin-bottom: 2em;
+}
+.progress_builder_item{
+	text-align:center;
+	margin-right:1em;
+}
+.progress_builder_item span{
+	clear:both;
+}
+.step_one{
+	background:url(../images/1.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_one_gray{
+	background:url(../images/1_gray.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_two{
+	background:url(../images/2.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_two_gray{
+	background:url(../images/2_gray.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_three{
+	background:url(../images/3.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_three_gray{
+	background:url(../images/3_gray.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_four{
+	background:url(../images/4.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_four_gray{
+	background:url(../images/4_gray.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_five{
+	background:url(../images/5.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.step_five_gray{
+	background:url(../images/5_gray.png) no-repeat transparent;
+	height:66px;
+	width:66px;
+	display:inline-block;
+}
+.sign_in_via_fb{
+	background:url(../images/sign_in_via_fb.png) no-repeat transparent;
+	width:197px;
+	height:24px;
+	border:none;
+}

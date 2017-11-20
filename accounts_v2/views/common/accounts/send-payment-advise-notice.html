@@ -1,0 +1,72 @@
+<div class="inmodal">
+	<div class="modal-header">
+		<i class="fa fa-usd modal-icon"></i>
+		<h4 class="modal-title">Send Payment Notice</h4>
+		<small class="font-bold">Send the payment notice to {{client_name}}.</small>
+	</div>
+	<div class="modal-body">
+		
+		<div class="alert alert-danger" ng-repeat="error in errors">
+        	{{error}}   
+        </div>
+		
+		<form method="get" class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">
+					To:
+				</label>
+				
+				<div class="col-sm-4">
+					<input type="email" ng-model="client_email" class="form-control"/>
+				</div>
+				<label class="col-sm-2 control-label">
+					CC:
+				</label>
+				
+				<div class="col-sm-4">
+					<input type="text" ng-model="email_cc" class="form-control"/>
+				</div>
+				
+			</div>
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Subject:
+					
+				</label>
+	
+				<div class="col-sm-10">
+					<input type="text" ng-model="email_subject" class="form-control"/>
+				</div>
+			</div>
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+				
+				<div class="col-sm-12">
+					<summernote class="summernote" config="editor_options" ng-model="emailText"></summernote>
+				</div>
+				
+			</div>
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+				
+				<div class="col-sm-12">
+				</div>
+			</div>
+			
+		</form>
+		
+		<form action="" class="dropzone" drop-zone="config_dropzone" id="file-dropzone" >
+			
+		</form>
+		
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-white" ng-click="payment_notice_cancel()">
+			Close
+		</button>
+		<button type="button" class="btn btn-primary" ng-click="send_payment_notice()">
+			<i class="fa fa-envelope"></i> {{process_button}}
+		</button>
+	</div>
+</div>
+

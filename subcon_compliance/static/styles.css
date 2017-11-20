@@ -1,0 +1,191 @@
+
+div#feedback h3{
+	margin: 0 0 5px 0;
+	padding: 0 7px;
+  background-color:#D9EDF7;
+}
+form.ff {
+	padding:1px 27px;
+}
+form.ff header {
+  margin: 0 0 20px 0; 
+}
+form.ff header div {
+  font-size: 90%;
+  color: #999;
+}
+form.ff header h3 {
+  margin: 0 0 5px 0;
+  background-color:#D9EDF7;
+}
+form.ff > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 17px 0;
+}
+form.ff > div > fieldset > div > div {
+  margin: 0 12px 5px;
+  text-align:center;
+  /*margin:5px;
+  border: 1px solid #aaa;*/
+  float:left;
+  line-height:12px;
+}
+
+form.ff > div > fieldset > div > ul {
+  margin: 0 0 5px 0;
+  text-align:center;
+  /*border: 1px solid #aaa;*/
+  float:left;
+  line-height:12px;
+
+    width: 100%;
+}
+
+form.ff > div > fieldset > div > ul li {
+	list-style:none;
+	display:inline;
+	
+	border-left: 1px solid #AAAAAA;
+    display: block;
+    float: left;
+    padding: 0 17px;
+    text-align: center;
+}
+
+form.ff > div > fieldset > div > ul li:first-child {border:none }
+form.ff > div > label,
+legend {
+	width: 90%;
+	float: left;
+	padding-right: 10px;
+	font-size: 90%;
+	font-weight: bold;
+    padding-right: 10px;
+}
+form.ff > div > div,
+form.ff > div > fieldset > div {
+  width: 75%;
+  float: left;
+  /*border: 1px dotted #AAAAAA;*/
+  padding: 8px 0;
+}
+form.ff > div > fieldset label {
+	font-size: 75%;
+}
+
+form.ff > div > fieldset .choice {
+	display:block;
+}
+
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+.csro_sig {
+	color:#999;
+	font-size:80%;
+}
+
+#imghead {
+	background:url(/portal/images/remote-staff-logo2.jpg) no-repeat left;
+	width:700px;
+	height:89px;
+	/*float:left;*/
+	padding:5px;
+	/*margin-left:10px;*/
+}
+
+#loading {
+  position:fixed;
+  width:auto;
+  height: auto;
+  top:0;
+  /*margin-left:-150px;*/
+  z-index: 9999;
+  font-size:14px;
+  font-weight:bold;
+  background:#ffff00;/*e3e0ac;*/
+  padding: 0 14px;
+  text-align:center;
+  display:none;
+  left:40%;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+button[disabled]:active, button[disabled],
+input[type="reset"][disabled]:active,
+input[type="reset"][disabled],
+input[type="button"][disabled]:active,
+input[type="button"][disabled],
+input[type="radio"][disabled],
+select[disabled] > input[type="button"],
+select[disabled] > input[type="button"]:active,
+input[type="submit"][disabled]:active,
+input[type="submit"][disabled] {
+  /*padding: 0px 6px 0px 6px;*/
+  background:#ddd;
+  border: 1px outset ButtonFace;
+  color: #999;
+  cursor: inherit;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+@media (max-width: 600px) {
+  form.ff > div {
+    margin: 0 0 15px 0; 
+  }
+  form.ff > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form.ff > div > div,
+  form.ff > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form.ff > div > label,
+	legend {
+  	text-align: left;
+  }
+}

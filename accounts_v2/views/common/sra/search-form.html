@@ -1,0 +1,34 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Advanced Search</h5>
+		</div>
+		<div class="ibox-content">
+			
+			
+			<form role="form">
+				
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="filterCurrencyAdjustments()" data-placeHolder="Choose Client" id="leads_id" chosen="" chosen id="leads_id" class="chosen-select" style="width:100%;" ng-model="sra_view.client" ng-options="client as (client.fname + ' ' + client.lname + ' [ '+ client.email + ' ]') for client in clients"></select>
+						
+					</div>
+					<div class="form-group col-lg-3">
+						<select ng-change="filterCurrencyAdjustments()" data-placeHolder="Choose Month and Year" id="month_year" chosen="" chosen id="month_year" class="chosen-select" style="width:100%;" ng-model="sra_view.selected_month_year" ng-options="month_year as month_year.label for month_year in month_years"></select>
+						
+					</div>
+					
+					
+					<div class="form-group col-lg-4">
+						<button class="btn btn-primary" ng-click="filterCurrencyAdjustments()" class="ladda-button ladda-button-demo" ladda="loadingSearch"><i class="fa fa-search"></i> Search</button>
+						<button class="btn btn-primary" ng-click="applyCurrencyAdjustment()" class="ladda-button ladda-button-demo" ladda="loadingApplyCurrency"><i class="fa fa-dollar"></i> Apply Currency Adjustment</button>
+					</div>
+					
+				</div>
+				
+
+			</form>
+
+		</div>
+	</div>
+</div>	

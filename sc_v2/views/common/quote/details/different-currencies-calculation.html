@@ -1,0 +1,140 @@
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th width="25%">PHP</th>
+			<th width="25%">AUD</th>
+			<th width="25%">GBP</th>
+			<th width="25%">USD</th>
+		</tr>
+	</thead>
+	<tbody>
+
+
+		<tr ng-show="salaryBreakDown===null">
+
+			<td>
+				Yearly : ₱0.00<br>
+				Monthly :₱0.00  <br>
+				Weekly :₱0.00  <br>
+				Daily :₱0.00  <br>
+				Hourly :₱0.00  <br>
+			</td>
+
+
+			<td>
+				Yearly :$0.00  <br>
+				Monthly :$0.00  <br>
+				Weekly :$0.00  <br>
+				Daily :$0.00  <br>
+				Hourly :$0.00  <br>
+			</td>
+
+
+				<td>
+				Yearly :£0.00  <br>
+				Monthly :£0.00  <br>
+				Weekly :£0.00  <br>
+				Daily :£0.00  <br>
+				Hourly :£0.00  <br>
+			</td>
+
+
+			<td>
+
+				Yearly :$0.00  <br>
+				Monthly :$0.00  <br>
+				Weekly :$0.00  <br>
+				Daily :$0.00 <br>
+				Hourly :$0.00 <br>
+			</td>
+
+		</tr>
+		<tr ng-show="salaryBreakDown===null">
+		<td>
+
+
+			<div class="radio i-checks"><label> <input ng-change="marginChanged()" type="radio" value="1" name="a" ng-model="formData.margin"> <i></i> w/ Margin</label></div>
+			<div class="radio i-checks"><label> <input ng-change="marginChanged()" type="radio" value="2" name="a" ng-model="formData.margin"> <i></i> w/o Margin </label></div>
+			<div class="radio i-checks"><label> <input ng-change="marginChanged()" type="radio" value="3" name="a" ng-model="formData.margin"> <i></i> Custom </label></div>
+
+
+
+		</td>
+
+
+		<td>
+			{{getDecimal(salaryBreakDown.staff_salary)}}/{{AUD_cur}}<br>
+			{{workStatus}} @ $ {{AUD}}
+		</td>
+		<td>
+			{{getDecimal(salaryBreakDown.staff_salary)}}/{{GBP_cur}}<br>
+			{{workStatus}} @ £ {{GBP}}
+		</td>
+		<td>
+			{{getDecimal(salaryBreakDown.staff_salary)}}/{{USD_cur}}<br>
+			{{workStatus}} @ $ {{USD}}
+		</td>
+	</tr>
+
+
+		<tr ng-show="salaryBreakDown!==null">
+
+			<td>
+				Yearly : ₱{{getDecimal(salaryBreakDown.php.yearly)}}<br>
+				Monthly :₱{{getDecimal(salaryBreakDown.php.monthly)}} <br>
+				Weekly :₱{{getDecimal(salaryBreakDown.php.weekly)}}  <br>
+				Daily :₱{{getDecimal(salaryBreakDown.php.daily)}}  <br>
+				Hourly :₱{{getDecimal(salaryBreakDown.php.hourly)}} <br>
+			</td>
+			<td>
+				Yearly : ${{getDecimal(salaryBreakDown.aud.yearly)}}<br>
+				Monthly :${{getDecimal(salaryBreakDown.aud.monthly)}} <br>
+				Weekly :${{getDecimal(salaryBreakDown.aud.weekly)}}  <br>
+				Daily :${{getDecimal(salaryBreakDown.aud.daily)}}  <br>
+				Hourly :${{getDecimal(salaryBreakDown.aud.hourly)}} <br>
+			</td>
+
+			<td>
+				Yearly : £{{getDecimal(salaryBreakDown.gbp.yearly)}}<br>
+				Monthly :£{{getDecimal(salaryBreakDown.gbp.monthly)}} <br>
+				Weekly :£{{getDecimal(salaryBreakDown.gbp.weekly)}}  <br>
+				Daily :£{{getDecimal(salaryBreakDown.gbp.daily)}}  <br>
+				Hourly :£{{getDecimal(salaryBreakDown.gbp.hourly)}} <br>
+			</td>
+			<td>
+
+				Yearly : ${{getDecimal(salaryBreakDown.usd.yearly)}}<br>
+				Monthly :${{getDecimal(salaryBreakDown.usd.monthly)}} <br>
+				Weekly :${{getDecimal(salaryBreakDown.usd.weekly)}}  <br>
+				Daily :${{getDecimal(salaryBreakDown.usd.daily)}}  <br>
+				Hourly :${{getDecimal(salaryBreakDown.usd.hourly)}} <br>
+			</td>
+
+		</tr>
+
+	<tr ng-show="salaryBreakDown!==null">
+		<td>
+
+
+		   <div ><label> <input ng-change="marginChanged()" type="radio" value="1"  ng-model="formData.margin"> <i></i> w/ Margin</label></div>
+		   <div ><label> <input ng-change="marginChanged()" type="radio" value="2"  ng-model="formData.margin"> <i></i> w/o Margin </label></div>
+			 <div ><label> <input ng-change="marginChanged()" type="radio" value="3"  ng-model="formData.margin"> <i></i> Custom </label></div>
+		</td>
+
+
+			<td>
+				{{getDecimal(salaryBreakDown.staff_salary)}}/{{AUD_cur}}<br>
+				{{workStatus}} @ $ {{AUD}}
+			</td>
+			<td>
+				{{getDecimal(salaryBreakDown.staff_salary)}}/{{GBP_cur}}<br>
+				{{workStatus}} @ £ {{GBP}}
+			</td>
+			<td>
+				{{getDecimal(salaryBreakDown.staff_salary)}}/{{USD_cur}}<br>
+				{{workStatus}} @ $ {{USD}}
+			</td>
+	</tr>
+
+	</tbody>
+</table>

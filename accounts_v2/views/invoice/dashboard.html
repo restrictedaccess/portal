@@ -1,0 +1,20 @@
+<div ng-controller="DashboardController as dashboard_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Dashboard Page</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">	
+		<!--
+		<div class="row" ng-include="'views/common/quote/client/info.html'"></div>
+		<div class="row" ng-include="'views/common/quote/client/result.html'"></div>
+		-->
+		<p>Notifications</p>
+		<ol>
+			<li ng-repeat="notification in notifications">{{ notification }}</li>
+		</ol>
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

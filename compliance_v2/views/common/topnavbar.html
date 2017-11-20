@@ -1,0 +1,45 @@
+<div class="row border-bottom">
+    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <span minimaliza-sidebar></span>
+            <form role="search" class="navbar-form-custom" method="post" action="views/search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="{{ 'SEARCH' | translate }}" class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <!--<li>-->
+                <!--<span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>-->
+            <!--</li>-->
+           
+            <li class="dropdown" dropdown>
+                <a class="dropdown-toggle count-info" href dropdown-toggle>
+                    <i class="fa fa-bell"></i> <span class="label label-primary"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    
+                    <li>
+                        <div class="text-center link-block">
+                            <a ui-sref="miscellaneous.notify">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/portal/logout.php">
+                    <i class="fa fa-sign-out"></i> Log out
+                </a>
+            </li>
+            <li>
+                <a ng-click="$root.rightSidebar = !$root.rightSidebar">
+                    <i class="fa fa-tasks"></i>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</div>

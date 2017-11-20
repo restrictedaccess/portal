@@ -1,0 +1,137 @@
+<script type="text/javascript" src="/portal/aclog/js/report.js"></script>
+<script type="text/javascript" src="/portal/js/jscal2.js"></script>
+<script type="text/javascript" src="/portal/js/lang/en.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/css/jscal2.css" />
+<script type="text/javascript" src="js/report_edit.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	<div style='float:right;width:67%;padding:20px 10px;'>
+		<form id='filter_form' action='' method='get' style='float:left;'>
+			<input type='hidden' name='item' value='myactivity'/>
+			<input type='hidden' name='staff' value='<?php echo $this->staffpausedact;?>'/>
+			<span id='cat'>Status:</span>
+			<select name='status' id='status' style='height:23px'>
+				<option value=''>All</option>
+				<option value='paused'>Paused</option>
+				<option value='finished'>Finished</option>
+				<option value='ongoing'>Ongoing</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;
+			<span id='cat'>Type:</span>
+			<select name='category' id='category' style='height:23px'>
+				<option value=''>All</option>
+				<?php
+				if( count($this->task_types)) {
+					foreach($this->task_types as $idx => $type)
+						echo "<option value='{$type['type_value']}'>{$type['type_value']}</option>";
+					}
+				?>
+			</select>
+			&nbsp;&nbsp;
+			<span id='show_count'>Date from:</span>
+			<input type="text" id="from_date" name="from_date" value="<?php echo $this->from_date;?>" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;
+			<span id='show_count'>Date to:</span>
+			<input type="text" id="to_date" name="to_date" value="<?php echo $this->to_date;?>" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='submit' id="filter" value='Filter' title="Submit Filter"/> &nbsp;&nbsp;
+			<!--<input type='button' id="reset" value='Reset' title="Reset filter"/>
+			<a href='javascript:void(0);' onclick='class_seat.daycount(1);'>1 day</a>
+			<input type='button' class='button' value="Filter Date" name='submit' id='filterdate'/>-->
+		</form>
+	</div>
+	<br/>
+		
+	<div id="staff" style="float:left;width:100%;padding-right:20px;">
+		<div class='tableheader'><?php echo $this->pageName;?><br/></div>
+		<?php if( count($this->results) > 0 ):
+		foreach( $this->results as $uid => $reports ):
+			$logs = !empty($reports['logs']) ? $reports['logs'] : array();
+		?>
+		
+		<div class='staffname'><?php echo $reports['fname'].' '.($reports['lname']!='..'?$reports['lname']:'');?></div>
+		<div class='date_range'><?php echo count($logs).' '.($this->status?$this->status:'').' activities found.  Type '.$this->type.', from '.$this->from_date.' to '.$this->to_date;?></div>
+		
+		<div id="tabular">
+			<table summary="ActivityListing" id="myactivity">
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				<th scope="col" style='width:10%'>Start Time</th>
+				<th scope="col" style='width:10%'>Time Ended</th>
+				<th scope="col" style='width:10%'>Elapsed Time</th>
+				<th scope="col" style="width:53%;">Activity</th>
+				<th scope="col" style='width:7%'>Type</th>
+				<th scope="col" style='width:5%'>Pct.</th>
+			</tr>
+			
+			<?php
+				if( count($logs) > 0 ):
+					foreach( $logs as $log ):
+						$dt = new DateTime($log['activity_date']);
+						$date = $dt->format('Y-m-d');
+						//$total_sec += $result['time_sec'];
+						sscanf($log['time_diff'], "%d:%d:%d", $hrs, $min, $sec);
+						$time_sec = isset($sec) ? $hrs * 3600 + $min * 60 + $sec : $hrs * 60 + $min;
+						
+						if( $this->elapsed_daily[ $log['userid'].$date] )
+							$pct_task = ($time_sec / $this->elapsed_daily[ $log['userid'].$date]) * 100;
+						else $pct_task = 0;
+						
+						//$pct_task = ($time_sec / $this->elapsed_daily[$date]) * 100;
+						$total_sec += $time_sec;
+						$time_ended = $log['activity_status']=='paused'?$log['activity_status'] .' <span class="paused">(count:'.$log['pausecnt'].')</span>':($log['activity_status']=='finished'?$log['time_ended']:$log['activity_status']);
+						$task_from_date = $log['task_from_date'];
+					?>
+					
+					<tr id='row<?php echo $log['id'];?>'>
+						<td class="number"><?php echo $date;?></td>
+						<td><?php echo $log['time_started'];?></td>
+						<td id='endtime<?php echo $log['id'];?>'><?php echo $time_ended;?></td>
+						<td id='cell<?php echo $log['id'];?>' <?php if($time_sec>10800) echo "style='background:#f00'";?>>
+						<input type='text' name='tdinp<?php echo $log['id'];?>' id='tdinp<?php echo $log['id'];?>' value='<?php echo $log['time_diff'];?>'/>
+						</td>
+						<td class='details'><?php echo $log['activity_details'];
+						if( $log['activity_status']=='ongoing' ):
+							//&& $now != date('Y-m-d', strtotime($result['activity_date']))
+							echo "<span class='asterisk'>**</span>";
+						elseif( $log['activity_status']=='paused' ):?>
+							<span class='asterisk'>*</span>
+							<?php if($this->owner):
+								if($date != date('Y-m-d')):?>
+								<span style='float:right;'><img src='images/play.png' title='click to restart activity' class='icon' onclick="dorep.restart(<?php echo $log['id'];?>)"/></span>
+								<?php else:?>
+								<span style='float:right;'><img src='images/play.png' title='click to restart activity' class='icon' onclick="dorep.restart(<?php echo $log['id'];?>, 'setstate')"/></span>
+								<?php endif;?>
+							<?php endif;?>
+						<?php endif;?>
+						<?php if($task_from_date):?>
+							<a href="javascript:window.top.location='/portal/aclog/?item=myactivity&status=&from_date=<?php echo $task_from_date;?>&to_date=<?php echo $task_from_date;?>'">
+							<span class='asterisk'> &rArr; task from <?php echo $task_from_date;?></span></a>
+						<?php endif;?>
+						</td>
+						<td><?php echo ucfirst($log['category']);?></td>
+						<td><?php echo round($pct_task, 2);?>%</td>
+					</tr>
+			<?php endforeach;
+			else:?>
+				<td colspan='7'>No Records found!</td>	
+			<?php endif;?>
+			
+			</tbody>
+                    
+            </table>
+		</div>
+		<?php
+		endforeach;
+		else:?>
+			<div class='staffname' style='width:100%;'>No Records found!</div>
+		<?php endif;?>
+    </div>
+	<div style="float:left;width:80px"><span style='color:#ff0000'>*</span> paused <br><span style='color:#ff0000'>**</span> unfinished</div>
+	<script type='text/javascript'>
+	jQuery(document).ready(function($) {
+		$("select#status option[value=<?php echo $this->status;?>]").attr("selected","selected");
+	});
+	</script>

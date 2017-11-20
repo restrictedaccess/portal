@@ -1,0 +1,50 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class="ibox-content custom-padding">
+            <h3>PAYPAL PAYMENTS</h3>
+            <div ng-if="result.docs">
+                <!--<div ibox-tools></div>-->
+                <table datatable="ng" dt-options="dtOptions"  class="table table-striped table-bordered table-hover dataTables-example">
+                    <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Payment Mode</th>
+                        <th>Client ID</th>
+                        <th>Client Name</th>
+                        <th>Transaction ID</th>
+                        <th>Payment Type</th>
+                        <th>Transaction Date/Time</th> 
+                        <th>Expected Check Clear Date</th>
+                        <th>Currency</th>
+                        <th>Amount</th>    
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="d in result.docs">
+                        <td><a href="/portal/accounts_v2/#/invoice/details/{{ d.doc.order_id }}" target="_blank">{{ d.doc.order_id }}</a></td>
+                        <td>{{ d.doc.payment_mode }}</td>
+                        <td>{{ d.doc.client_id }} </td>
+                        <td><a href="/portal/accounts_v2/#/invoice/client-account/{{ d.doc.client_id }}">{{ d.doc.client_fname }} {{ d.doc.client_lname }}</a> </td>
+                        <td>{{ d.response.PAYMENTINFO_0_TRANSACTIONID }}</td>
+                        <td>{{ d.response.PAYMENTINFO_0_PAYMENTTYPE }}</td>
+                        <td>
+                            <span ng-if="d.response.PAYMENTINFO_0_ORDERTIME">
+                                {{ d.response.PAYMENTINFO_0_ORDERTIME | date:'MMM dd, yyyy hh:mm a' }}
+                            </span>
+                        </td>
+                        <td>
+                            <span ng-if="d.response.PAYMENTINFO_0_EXPECTEDECHECKCLEARDATE">
+                                {{ d.response.PAYMENTINFO_0_EXPECTEDECHECKCLEARDATE | date:'MMM dd, yyyy hh:mm a' }}
+                            </span>
+                        </td>
+                        <td>{{ d.doc.currency }}</td>
+                        <td>
+                            <i ng-if="d.doc.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="d.doc.currency ==='USD'" class="fa fa-usd"></i><i ng-if="d.doc.currency ==='GBP'" class="fa fa-gbp"></i>{{ d.doc.total_amount }}
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>    
+        </div>
+    </div>
+</div>        

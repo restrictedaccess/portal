@@ -1,0 +1,47 @@
+/* CSS Document */
+#product_needs {
+	font:11px Arial;
+}
+#product_needs p {
+margin-bottom:5px;
+margin-top:5px;
+}
+
+
+#product_needs label{
+float:left;
+display:block;
+width:110px;
+font-weight:bold
+}
+
+.product_box_title{
+padding:5px; background:#DEE5EB ; border:#DEE5EB outset 1px;
+}
+
+
+#lead_info {
+	font:11px Arial;
+	padding:10px;
+	margin-top:10px;
+
+	
+}
+#lead_info p{
+	margin-bottom:3px;
+	margin-top:3px;
+}
+
+#lead_info label{
+	float:left;
+	display:block;
+	width:220px;
+	font-weight:bold;
+}
+
+#lead_info span{
+	margin-left:5px;
+}
+#lead_info input{
+font:10px tahoma; width:80px;
+}

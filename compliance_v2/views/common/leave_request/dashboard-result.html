@@ -1,0 +1,104 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<form role="form">
+				<div class="row">					
+					<div class="col-lg-3">			            
+						<input  min="'2012-01-01'" type="text" ng-model="lrdash.selected_date_range" readonly="" date-range-picker placeholder="Select Dates" class="form-control">
+						
+					</div>
+					<div class="col-lg-3">						
+						<button ladda="loadingDemo" ng-click="refreshLeaverRequestDashboard()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left">Refresh</button>														
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<div class="ibox-content">
+			
+		<div class="row">
+			
+			<div class="col-lg-2">
+				<div class="widget yellow-bg p-lg text-center">
+		            <div class="m-b-md">
+		                <i class="fa fa-calendar-o fa-4x"></i>		
+		                <h1 class="m-xs">
+		                	<a style="color: #FFF;" href="/portal/compliance_v2/#/leave-request/search?status=pending&start_date={{ start_date }}&end_date={{ end_date }}" target="_blank">{{ counters.pending }}</a>
+		                </h1>		
+		                <h3 class="font-bold no-margins">
+		                    Pending
+		                </h3>
+		                <small>status</small>
+		            </div>
+		        </div>		        
+		   </div>     
+		        
+		        
+	        <div class="col-lg-2">
+				<div class="widget navy-bg p-lg text-center">
+		            <div class="m-b-md">
+		                <i class="fa fa-calendar-o fa-4x"></i>		
+		                <h1 class="m-xs">
+		                	<a style="color: #FFF;" href="/portal/compliance_v2/#/leave-request/search?status=approved&start_date={{ start_date }}&end_date={{ end_date }}" target="_blank">{{ counters.approved }}</a>
+		                </h1>		
+		                <h3 class="font-bold no-margins">
+		                    Approved
+		                </h3>
+		                <small>status</small>
+		            </div>
+		        </div>		        
+	        </div>
+		        
+		        
+	        <div class="col-lg-2">
+				<div class="widget lazur-bg p-lg text-center" style="background-color: #1c84c6 !important;">
+		            <div class="m-b-md">
+		                <i class="fa fa-calendar-o fa-4x"></i>		
+		                <h1 class="m-xs">
+		                	<a style="color: #FFF;" href="/portal/compliance_v2/#/leave-request/search?status=absent&start_date={{ start_date }}&end_date={{ end_date }}" target="_blank">{{ counters.absent }}</a>		                	
+		                </h1>		
+		                <h3 class="font-bold no-margins">
+		                    Absent
+		                </h3>
+		                <small>status</small>
+		            </div>
+		        </div>		        
+	        </div>
+		        
+	        <div class="col-lg-2">
+				<div class="widget red-bg p-lg text-center">
+		            <div class="m-b-md">
+		                <i class="fa fa-calendar-o fa-4x"></i>		
+		                <h1 class="m-xs">
+		                	<a style="color: #FFF;" href="/portal/compliance_v2/#/leave-request/search?status=denied&start_date={{ start_date }}&end_date={{ end_date }}" target="_blank">{{ counters.denied }}</a>
+		                </h1>		
+		                <h3 class="font-bold no-margins">
+		                    Denied
+		                </h3>
+		                <small>status</small>
+		            </div>
+		        </div>		        
+	        </div>
+		        
+	        <div class="col-lg-2">
+				<div class="widget lazur-bg p-lg text-center" style="background-color: #d1dade !important;">
+		            <div class="m-b-md">
+		                <i class="fa fa-calendar-o fa-4x"></i>		
+		                <h1 class="m-xs">
+		                	<a style="color: #FFF;" href="/portal/compliance_v2/#/leave-request/search?status=cancelled&start_date={{ start_date }}&end_date={{ end_date }}" target="_blank">{{ counters.cancelled }}</a>
+		                </h1>		
+		                <h3 class="font-bold no-margins">
+		                    Cancelled
+		                </h3>
+		                <small>status</small>
+		            </div>
+		        </div>		        
+	        </div>
+
+		</div>	
+				
+			
+            	
+		</div>
+	</div>
+</div>

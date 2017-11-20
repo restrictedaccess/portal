@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title><?php echo $this->escape($this->pageTitle);?></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+	<link rel="stylesheet" type="text/css" href="/portal/test_admin/css/screen.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/portal/test_admin/css/styles.css" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="/portal/ticketmgmt/js/jqModal.js"></script>
+	<link rel=stylesheet type=text/css href="/portal/css/tooltip.css">
+	<script type="text/javascript" src="/portal/js/tooltip.js"></script>
+</head>
+<body>
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;height:10px;' src='javascript:false;'></iframe>
+<div id="header">
+	<h1>Remotestaff</h1>
+
+    <h2>Test Administration</h2>
+	<!--<ul>
+		<li><a href="">test<span>newline</span></a></li>
+	</ul>-->
+	<div id="layoutdims">
+		<?php echo $this->layout()->topnav;?>
+	</div>
+</div>

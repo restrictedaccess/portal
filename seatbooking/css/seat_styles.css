@@ -1,0 +1,532 @@
+
+/* $Id: rp_styles.css 1 2011-12-16 mike $ */
+
+body {
+	margin: 0px;
+	background-image: url(../images/admin_bg.gif);
+	background-repeat: repeat-x;
+}
+
+body, td, div {
+	color: #333333;
+}
+.content_tbl td {
+	border-bottom: 1px solid #aaa;
+	padding:4px 2px 4px 2px;
+}
+div.topbar {
+	background-image: url(../images/admin_topbarbg.gif);
+	background-repeat: repeat-x;
+	font-size: 30pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+}
+
+td.topbar_right {
+	border-bottom: 1px solid #C8CCD1;
+}
+
+td.topbar_menu {
+	background-color: #436088;
+	background-image: url(../images/admin_topbar_menu.gif);
+	background-repeat: repeat-x;
+	color: #EEEEEE;
+	padding-left: 7px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+div.shadow {
+	background-image: url(../images/admin_shadow.gif);
+	background-repeat: repeat-x;
+	height: 8px;
+}
+
+/*td {
+	font-size: 8pt;
+}*/
+
+td.leftside {
+	vertical-align: top;
+	padding: 7px;
+	padding-top: 10px;
+	width:17%;
+}
+
+td.rightside {
+	padding: 10px;
+	padding-top: 0px;
+	padding-left: 0px;
+	vertical-align: top;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	font-size: 9pt;
+	color: #555555;
+	width: 80%;
+}
+
+td.content {
+	padding: 10px;
+	
+	vertical-align: top;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	font-size: 9pt;
+	color: #555555;
+	width: 96%;
+}
+
+div.menu_section {
+	width: 168px;
+	border: 1px solid #CCCCCC;
+	border-bottom: none;
+	margin-bottom: 10px;
+}
+
+.menu a {
+	background-color: #FFFFFF;
+	background-image: url(../images/admin_menu_bg1.gif);
+	background-repeat: repeat-y;
+	background-position: top right;
+	border-bottom: 1px solid #DDDDDD;
+	padding: 3px;
+	padding-left: 5px;
+	font-size: 12px;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	display: block;
+}
+
+.menu a:hover {
+	background-color: #e3e9ff ;
+	background-image: url(../images/admin_menu_bg2.gif);
+}
+
+
+.menu_header {
+	color: #FFFFFF;
+	background-color: #436088;
+	background-image: url(../images/admin_header.gif);
+	background-repeat: repeat-x;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 5px;
+	padding-left: 8px; 
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	cursor: pointer;
+}
+
+td.header {
+	color: #FFFFFF;
+	background-color: #436088;
+	background-image: url(../images/admin_header.gif);
+	background-repeat: repeat-x;
+	font-weight: bold;
+	font-size: 8pt;
+	padding: 4px;
+	padding-left: 8px;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+}
+
+td.item {
+	font-size: 8pt;
+	padding: 5px;
+	padding-left: 8px;
+	border-top: 1px solid #DDDDDD;
+	color: #333;
+	vertical-align:top;
+}
+
+td.setting1 {
+	background: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+}
+
+td.setting2 {
+	background: #FFFFFF;
+	padding: 10px;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	background-color: #FFFFFF;
+	background-image: url(../images/admin_setting.gif);
+	background-repeat: repeat-y;
+}
+
+tr.background1 {
+	background: #f4f9ff;
+}
+
+tr.background2 {
+	background: #FFFFFF;
+}
+
+td.stat0 {
+	background: #FFFFFF;
+	font-size: 8pt;
+	padding: 5px;
+	padding-left: 8px;
+	color: #666666;
+}
+
+td.stat1 {
+	background: #FFFFFF;
+	font-size: 8pt;
+	padding: 5px;
+	padding-left: 8px;
+	border: 1px solid #DDDDDD;
+	border-bottom: none;
+	border-left: none;
+	color: #666666;
+}
+
+td.stat2 {
+	background: #FFFFFF;
+	font-size: 8pt;
+	padding: 5px;
+	padding-left: 8px;
+	border-top: 1px solid #DDDDDD;
+	color: #666666;
+}
+
+td.invoice_header {
+	padding: 7px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+td.vert_tab0 {
+	border-right: 1px solid #CCCCCC;
+}
+
+td.vert_tab {
+	background: #FFFFFF; 
+	border: 1px solid #CCCCCC; 
+	padding: 5px 10px 5px 10px; 
+	height: 35px;
+}
+
+td.form1 {
+	vertical-align: top;
+	text-align: right;
+	font-size: 9pt;
+	padding: 6px 4px 4px 4px;
+}
+
+td.form2 {
+	padding: 4px;
+	font-size: 9pt;
+	text-align:left;
+}
+
+table.list {
+	width: 100%;
+	/*border: 1px solid #CCCCCC;*/
+}
+
+/*table.list td {
+	color:#333;
+}*/
+
+table.list td span{
+	color:#ff0000;
+}
+
+table.list td.right{
+	text-align:right;
+}
+
+table.stats {
+	border: 1px solid #CCCCCC;
+}
+
+div.error {
+	color: #FF0000;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+span.error {
+	background: #FFF3F3;
+	/*padding: 5px 7px 5px 7px;*/
+	color: #FF0000;
+}
+
+div.success {
+	color: #00CC33;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+
+div.box {
+	background: #F1F8FF;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.floatleft {
+	float: left;
+}
+
+div.pages {
+	padding-bottom: 5px;
+}
+
+div.pages2 {
+	padding-top: 5px;
+}
+
+div.smallbox {
+	padding: 0 4px; 
+	border: 1px solid #CCCCCC; 
+}
+
+div.smallbox_header {
+	padding: 2px 5px 2px 5px; 
+	background: #EEEEEE;
+	font-size: 9pt;
+	font-weight:bold;
+}
+
+div.smallbox_content {
+	padding: 8px 5px 2px 5px;
+}
+div.seat_empty {
+	background: #E3E0AC;
+	padding:4px 3px;
+	border-bottom:1px solid #aaa;
+	border-right:1px solid #aaa;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 2px;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+h3 {
+	margin-top: 0px;
+	margin-bottom: 2px;
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+input.button {
+	background: #EEEEEE;
+	padding: 3px;
+	font-size: 9pt;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	font-weight: bold;
+}
+
+input.button_small {
+	background: #EEEEEE;
+	font-size: 9pt;
+	font-family: "Trebuchet MS", verdana, arial, serif;
+	font-weight: bold;
+}
+
+.text {
+	font-size: 9pt;
+	font-family: arial, verdana, serif;
+}
+
+textarea.template {
+	width: 95%;
+	padding: 5px;
+	padding-top: 8px;
+	font-family: courier, verdana, arial, serif;
+}
+
+textarea.text {
+	font-family: arial, verdana, serif;
+}
+
+form {
+	margin: 0px;
+}
+
+img.icon, input.checkbox {
+	vertical-align: middle;
+}
+
+img.icon2 {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+font.large {
+	font-size: 25pt;
+}
+
+font.large_gray {
+	font-size: 25pt;
+	color: #555555;
+}
+
+a:link { color: #333333; /*336699;*/ }
+a:visited { color: #333333; }
+a:hover { color: #336699; }
+
+a.header:link { color: #FFFFFF; }
+a.header:visited { color: #FFFFFF; }
+a.header:hover { color: #FFFFFF; }
+
+a.menu:link { color: #333333; text-decoration: none; }
+a.menu:visited { color: #333333; text-decoration: none; }
+a.menu:hover { color: #336699; text-decoration: none; }
+
+a.menu_header:link { color: #FFFFFF; text-decoration: none; }
+a.menu_header:visited { color: #FFFFFF; text-decoration: none; }
+a.menu_header:hover { color: #FFFFFF; text-decoration: none; }
+
+.pane_container {
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	float: left; width: 100%;
+	background: #fff;
+	/*height:300px;*/
+}
+.pane_content {
+	padding: 4px;
+	/*font-size: 1.2em;*/
+	height:auto;
+	overflow:scroll;
+    overflow-x: hidden;
+	background:#fff;
+}
+
+.inputbox {
+	background-color: #FFFFAA;
+	border: 1px solid #104383;
+	padding: 2px;
+	color: #011a39;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.inputbox2, .inputbtn {
+	border: 1px solid #104383;
+	padding: 2px;
+	margin:0;
+	color: #011a39;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.inputbox2 {background-color: #FFF;}
+.inputbtn {background-color: #FFFFAA;}
+
+/* staff forms */
+.client_box{
+	background:#D9FFD9; 
+	padding:5px; 
+	margin-top:10px; 
+	margin-bottom:15px; 
+	border:#CAE4FF solid 1px;
+}
+.choose_client{
+	color:#0000FF; 
+	font-weight:bold;
+}
+.bold_rate{
+	font-weight:bold;
+}
+.client_charge_out_rate{
+	padding:3px;
+	font:bold 14px Arial;
+	text-align:center;
+	border:#00FF80 outset 1px;
+	background:#D9FFD9;
+	margin-top:30px;
+}
+.client_charge_out_rate_box{
+	border:#00FF80 solid 1px;
+}
+
+.staff_working_hrs_det{
+	padding:3px;
+	font:bold 14px Arial;
+	text-align:center;
+	border:#00FF80 outset 1px;
+	background:#D9FFD9;
+	margin-top:30px;
+}
+
+table.staff_settings td{
+/*padding:3px;*/
+color: #333;
+/*text-align:left;*/
+}
+
+table.staff_settings td.contract_td{
+font-weight:bold;
+text-align:left;
+}
+
+table.working-hrs {
+	padding:1px;
+	border: 1px #62A4D5 solid ;
+}
+
+table.working-hrs td.rate_td_hdr{
+	color:#FFFFFF;
+	font:bold 12px Arial;
+	border:#FFFFFF solid 1px;
+	text-align:center;
+	background:#62A4D5;
+}
+
+table.working-hrs td, td.dow, td.hours, td.rate_td2{ 
+	color:#000;
+	font: 11px Arial;
+	border:#62A4D5 solid 1px;
+}
+
+table.working-hrs td.hours{
+	text-align:center;
+}
+table.working-hrs td.rate_td2{
+	font-weight:bold;
+	text-align:center;
+}
+
+
+table.working-hrs input.select_small {
+	border:1px solid #444444;
+	font-family:Tahoma,Verdana;
+	font-size:12px;
+	width:30px;
+}
+
+table.working-hrs select.select_time {
+	border:1px solid #444444;
+	font-family:Tahoma,Verdana;
+	font-size:12px;
+	width:100px;
+}
+
+/*********** end staff form ****/
+
+button[disabled]:active, button[disabled],
+input[type="reset"][disabled]:active,
+input[type="reset"][disabled],
+input[type="button"][disabled]:active,
+input[type="button"][disabled],
+select[disabled] > input[type="button"],
+select[disabled] > input[type="button"]:active,
+input[type="submit"][disabled]:active,
+input[type="submit"][disabled] {
+  /*padding: 0px 6px 0px 6px;*/
+  background:#ddd;
+  border: 1px outset ButtonFace;
+  color: #999;
+  cursor: inherit;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}

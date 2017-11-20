@@ -1,0 +1,39 @@
+/*.attach_ticket, .generate_link, .attach_to_email {
+	top: 50px;
+	left: 50%;
+}*/
+
+.attach_ticket {
+	margin-left: -150px;
+	width: 320px;
+	height:270px;
+}
+.generate_link {
+	margin-left: -150px;
+	width: 440px;
+	height:100px;
+}
+
+.attach_to_email {
+	margin-left: -150px;
+	width: 340px;
+	height:250px;
+}
+	
+.attach_ticket, .generate_link, .attach_to_email {
+	top: 50px;
+	left: 50%;
+	display: none;
+	position: fixed;
+	background-color: #EEE;
+	color: #333;
+	border: 1px solid black;
+	padding: 12px;
+}
+	
+.jqmOverlay { background-color: #000; }
+	
+* html .attach_ticket {
+	 position: absolute;
+	 top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+}

@@ -1,0 +1,42 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Add New Rate</h5>
+		</div>
+		<div class="ibox-content">
+			<div class="row">
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Currency</label>
+		        	<select class="form-control" ng-model="ca.reference_currency" data-placeHolder="Choose Currency">
+			    		<option ng-repeat="currency in currencies" value="{{ currency.code }}">{{ currency.code }}</option> 	
+			    	</select>
+		      	</div>			    
+			    
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">New Rate</label>
+		        	<input type="text" class="form-control" ng-model="ca.reference_currency_rate" />
+		        	
+		      	</div>
+		      	
+		      	<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Effective Date</label>
+			    	<!--
+		        	<input type="datetime" class="form-control" date-time ng-model="ca.effective_date" view="date" auto-close="true" min-view="date" format="YYYY-MM-DD">
+		        -->
+		        <input type="text" datepicker-popup="yyyy-MM-dd" ng-model="ca.reference_effective_date" is-open="ca.reference_effective_date.open"
+       ng-click = "ca.reference_effective_date.open = true" max-date="maxDate" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" 
+       ng-required="true" close-text="Close"  class="form-control" />
+       
+       
+		      	</div>
+		      	
+			</div>
+			<br clear="all" />
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="add_new_currency_rate()" ladda="loading5"><span class="ladda-label">Save Changes</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+		      	</div>
+			</div>
+		</div>
+	</div>
+</div>	

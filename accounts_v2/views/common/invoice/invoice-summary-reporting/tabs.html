@@ -1,0 +1,56 @@
+<div class="row m-t-sm">
+    <div class="col-lg-12">
+        <div class="panel blank-panel">
+            <div class="panel-heading">
+                <div class="panel-options" style="margin-bottom: -15px;">
+                    <ul class="nav nav-tabs invoice-reporting-tabs">
+                        <li class="active"><a href="/#tab-1" data-toggle="tab" aria-expanded="true" ng-click="changeTab(1)">Awaiting Invoices<span class="badge badge-primary">{{TotalNumberofDocs1}}</span></a></li>
+                        <li class=""><a href="/#tab-6" data-toggle="tab" aria-expanded="true" ng-click="changeTab(6)">Paid Invoices<span class="badge badge-primary">{{TotalNumberofDocs6}}</span></a></li>
+                        <li class=""><a href="/#tab-2" data-toggle="tab" aria-expanded="false" ng-click="changeTab(2)">Aged Receivables<span class="badge badge-info">{{TotalNumberofDocs}}</span></a></li>
+                        <li class=""><a href="/#tab-4" data-toggle="tab" aria-expanded="false" ng-click="changeTab(4)">First Month Invoice<span class="badge badge-info">{{TotalNumberofDocs4}}</span></a></li>
+                        <li class=""><a href="/#tab-5" data-toggle="tab" aria-expanded="false" ng-click="changeTab(5)">Final Invoice<span class="badge badge-info">{{TotalNumberofDocs5}}</span></a></li>
+                        <li class=""><a href="/#tab-3" data-toggle="tab" aria-expanded="false" ng-click="changeTab(3)">Ready to release Subcon Payroll<span class="badge badge-info">{{TotalNumberofDocs3}}</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel-body">
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-1">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/awaiting-paid-invoices-content/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/awaiting-paid-invoices-content/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/awaiting-paid-invoices-content/report_table.html'"></div>
+                    </div>
+                    <div class="tab-pane" id="tab-6">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/paid-invoices/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/paid-invoices/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/paid-invoices/report_table.html'"></div>
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/aged-receivables/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/aged-receivables/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/aged-receivables/report_table.html'"></div>
+                    </div>
+                    <div class="tab-pane" id="tab-4">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/first-month-invoice/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/first-month-invoice/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/first-month-invoice/report_table.html'"></div>
+                    </div>
+                    <div class="tab-pane" id="tab-5">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/final-invoice/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/final-invoice/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/final-invoice/report_table.html'"></div>
+                    </div>
+                    <div class="tab-pane" id="tab-3">
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/release-subcon-payroll/search.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/release-subcon-payroll/extra_details.html'"></div>
+                        <div class="row" ng-include="'views/common/invoice/invoice-summary-reporting/release-subcon-payroll/report_table.html'"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

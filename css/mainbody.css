@@ -1,0 +1,376 @@
+#mainbox {
+  border:solid 1px black;
+  background-color:white;
+
+  margin:0px 290px 5px 15px;
+  padding:12px;
+
+  border-top:    solid 1px #C7CFC2;
+  border-right:  solid 1px #F7FFF2;
+  border-bottom: solid 1px #F7FFF2;
+  border-left:   solid 1px #C7CFC2;
+
+  font-size:100%;
+}
+
+#statsbox {
+  background-color: #EFF7E0;
+  border:           solid 1px #C7CFB0;
+  width:            113px;
+  color:            #303030;
+  font-size:        70%;
+  font-weight:      bold;
+  padding:          3px;
+  margin-left:      10px;
+  margin-bottom:    5px;
+}
+
+
+#loginbox {
+  background-color: #EFF7E0;
+  border:           solid 1px #C7CFB0;
+  width:            120px;
+  color:            #303030;
+  margin-left:      10px;
+}
+
+#loggedinbox {
+  padding:5px;
+  font-size:75%;
+  font-weight:bold;
+}
+
+#loggedinbox a {
+  color:#107F30;
+  text-decoration:none;
+}
+
+#loggedinbox a:hover {
+  text-decoration:underline;
+}
+
+#right-column {
+  position: absolute;
+  width:    140px;
+  right:    6px;
+  padding:  37px 4px 4px 4px;
+}
+
+#newsbox {
+  padding:8px;
+  background-color:white;
+  font-size:80%;
+}
+
+#newsheading {
+  font-size:   130%;
+  color:       #2F6F9F;
+  font-weight: bold;
+  padding:     0px;
+  margin:      0px 0px 9px 0px;
+}
+
+#adcontainer {
+  margin-top:   0px;
+  margin-right: 150px;
+  margin-left:  3px;
+}
+
+.adtype {
+  position:relative;
+  margin-bottom:5px;
+  font-size:70%;
+  font-weight:bold;
+  color:black;
+}
+
+
+.adcell {
+  padding-bottom:8px;
+  width:50%;
+}
+
+.adrow {
+  position:relative;
+  width:100%;
+  margin:3px 0px 2px 0px;
+  padding:0px;
+}
+
+.adbox {
+  position:relative;
+  background-color:#A6D695;
+  background-image:url(images/white-1x8.gif);
+  background-position:top right;
+  background-repeat:no-repeat
+}
+
+.paidadbox {
+  position:relative;
+  background-color:#D5EACA;/*#D2F2C7; /*D6B095;*/
+  background-image:url(images/white-1x8.gif);
+  background-position:top right;
+  background-repeat:no-repeat
+}
+
+.adbody {
+  position:relative;
+  background-image:url(images/adbody-bkg.gif);
+  background-repeat:repeat-x;
+  background-color:#FFFFFF;
+}
+
+.paidadbody {
+  position:relative;
+  background-image:url(images/paidadbody-bkg.gif);
+  background-repeat:repeat-x;
+  background-color:#FFFFFF;
+}
+
+.addesc {
+  position:relative;
+  border-right:solid 1px #A4ADA1;
+  border-left:solid 1px #A4ADA1;
+  padding:8px 10px 5px 10px;
+  font-size:11px;
+}
+
+.adprice {
+  background-color:#F7FFC0;
+  margin-top:8px;
+  padding:3px;
+  font-weight:bold
+}
+
+.adpostdate {
+  margin-top:2px;
+  font-size:80%;
+  font-weight:bold;
+  color:#003070;
+}
+
+
+.adpriceempty {
+  background-color:transparent;
+}
+
+.adtitlediv {
+  position:relative;
+  min-height:2.3em;
+  height:40px!important;
+  height:4em;
+  padding:4px 10px 5px 7px;
+  font-size:75%;
+  font-weight:bold;
+}
+
+.adtranstype {
+  position:absolute;
+  top:4px;
+  left:8px;
+  color:#007030;
+}
+
+.paidadtranstype {
+	position:absolute;
+	top:10px;
+	left:24px;
+	font-size:12px;
+	color:#000000;
+	
+}
+
+.adtitle {
+  margin-left:5.5em;
+  margin-right:12px
+}
+
+.adtitlehref {
+  text-decoration:none;
+  color:black;
+}
+
+.direct-adlink:link, .direct-adlink:visited, .direct-adlink:active {
+  color:#4767B0;
+  font-weight:bold;
+  text-decoration:none;
+  text-decoration:underline;
+}
+
+.direct-adlink:hover {
+  color:#B06747;
+  text-decoration:underline;
+}
+
+
+.adarrow {
+  cursor:pointer;
+  position:absolute;
+  top:5px;
+  right:7px
+}
+
+.topabsolute {
+  position: absolute;
+  top: 0px;
+}
+
+
+a.paidadtitle {
+  color:#171767;
+  text-decoration:underline;
+}
+
+.visit {
+  font-size:70%;
+  color:#909090;
+  cursor:pointer;
+}
+
+.addesctopad {
+  font-size:10px;
+  margin-top:5px;
+}
+
+
+.nextprevtext {
+  position:relative;
+  font-weight:bold;
+  background-color:#A6D695;
+  font-size:80%;
+  margin-left:7px;
+  margin-right:6px;
+  display:block;
+  padding:7px 3px 0px 3px;
+  height:20px;
+}
+
+.nextprevtext a {
+  color:black;
+  text-decoration:none;
+}
+
+.nextprevtext a:hover {
+  text-decoration:underline;
+}
+
+.searchbox {
+  background:#FAFFDB;
+  border:1px solid #6F7F40;
+  padding:3px;
+  font-size:80%;
+  color:#306040;
+}
+
+.menubutton {
+  cursor:pointer;
+  border:outset 1px #ccc;
+  font-weight:bold;
+  font-size:70%;
+  padding:3px 7px 3px 7px;
+  color:#000000;
+  text-decoration:none;
+  background:url(images/teal-gradient.gif) repeat-x left top;
+}
+
+
+.searchbutton {
+  cursor:pointer;
+  border:outset 1px #ccc;
+  font-weight:bold;
+  font-size:70%;
+  padding:2px;
+  color:#375027;
+  background:url(../images/gray-gradient.gif) repeat-x left top;
+}
+
+.searchtext {
+  font-size:70%;
+  font-weight:bold;
+}
+
+.faqsbox {
+  position:relative;
+  width:100%;
+  margin:3px 0px 2px 0px;
+  padding:0px;
+  font-size:85%;
+}
+
+.faqsbox a {
+  color:#107F30;
+}
+
+.faqsbox a:hover {
+  text-decoration:underline;
+}
+
+.imgcol {
+  background-color: #FFF66B;
+  width: 70px;
+  border: 1px solid black;
+  vertical-align:middle;
+  text-align:center;
+  color: #000000;
+  padding: 0px;
+}
+
+.imgcol a {
+  width: 99.99%;
+  display: block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+
+.editthisaddiv {
+  background-color:#A6D695;
+  padding-bottom:1px;
+  text-align:right;
+
+}
+
+.editthisadlink:link, .editthisadlink:visited{
+  padding-right:8px;
+  font-size:75%;
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+}
+
+.searchtermlist {
+  margin:10px 0px 9px 5px;
+  font-size:80%;
+  background-color:#D2F2C7;
+  padding:9px 17px 8px 17px;
+  line-height:160%;
+  text-align:justify;
+}
+
+.searchtermlist a, .searchtermlist a:visited {
+  color:#171767;
+  text-decoration:none;
+}
+
+.fulltermlist {
+  margin:10px 0px 9px 5px;
+  font-size:80%;
+  background-color:#D2F2C7;
+  padding:9px 17px 8px 17px;
+  line-height:110%;
+}
+
+.fulltermlist a, .fulltermlist a:visited {
+  color:#171767;
+  text-decoration:none;
+  font-size:90%;
+}
+
+.viewmoreterms {
+  color:#000040;
+}
+
+a.viewmoreterms:hover {
+  color:black;
+  text-decoration:underline;
+}

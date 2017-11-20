@@ -1,0 +1,199 @@
+@CHARSET "ISO-8859-1";
+body{
+	font:12px Arial;
+	margin:0;
+}
+
+.header{
+	border-bottom:2px solid #DDD;
+	color:#173D6A;
+	font-size:18px;
+}
+.clear{
+	clear:both;
+}
+.filter-form {
+	overflow:hidden;
+	background: #fff; 
+	border-radius:8px;
+	border:1px solid #ADAA9F;
+}
+
+.filter-form dl{
+	margin:20px;
+	overflow:hidden;
+}
+#pg_pager td{
+	color:#fff;
+}
+	
+.filter-form dl dt, .filter-form dl dd{
+	float:left;
+}
+
+
+.filter-form input, .filter-form select{
+	padding:0.1em;
+}
+
+
+.filter-form dl dt{
+	font-weight:bold;
+	width:150px;
+	margin-bottom:1em;
+	padding-top:.3em;
+}
+.filter-form dl dd{
+	margin-right:49px;
+	padding:0;
+	margin-left:0;
+	
+}
+
+#recruitment-sheet .ui-state-hover a{
+	text-decoration:underline;
+}
+
+.tab-list{
+	list-style-type:none;
+	margin-bottom:10px;
+	overflow:hidden;
+	padding-left:0px;
+}
+.tab-list li{
+	float:left;
+	height:20px;
+	width:70px;
+	text-align:center;
+	padding:1em;
+	background-color:rgba(144, 144, 144, 0.15);
+	border:1px solid #333;
+	margin-left:1px;
+}
+.tab-list li a{
+	text-decoration:underline;
+	color:#000;
+}
+#open-close-cancel{
+	border:0;
+}
+#service-type{
+	border:0;
+}
+
+#open-close-cancel .ui-tabs-panel, #service-type .ui-tabs-panel{
+	padding:0;
+}
+
+#search{
+	margin-bottom:10px;
+	margin-left:10px;
+}
+.control a, .control a:visited{
+	color:#000;
+	text-decoration:none;
+}
+.control a:hover{
+	text-decoration:underline;
+}
+.control{
+	text-align:right;
+	margin-top:0;
+	margin-bottom:0.2em;
+}
+#individual-filter{
+	display:inline-block;
+}
+select[name=filter-text]{
+	width:380px;
+}
+strong.hr{
+	display:block;
+}
+strong.full{
+	cursor:pointer;
+}
+.popup{
+	display:inline-block;
+	margin-left:20px;
+}
+
+span.hr_service_update{
+	display:block;
+	cursor:pointer;
+}
+span.hr_status_update{
+	display:block;
+	cursor:pointer;
+}
+.notes-list{
+	list-style-type:none;	
+}
+h3{
+	background-color:#fff;
+}
+.summary{
+	background-color:#ccc;
+	padding:5px;
+	border-bottom:1px dashed #000;
+}
+
+
+/*
+* Popup
+*/
+#order-information, #order-details, #order-list{
+	overflow:hidden;
+}
+#order-information h2{
+	color:#003366;
+	font-size:1em;
+	border-bottom:1px dashed #003366;
+	background:none;
+	margin-bottom:0.5em;
+}
+#order-details{
+	border-right:1px solid #333;
+	width:500px;
+	float:left;
+	height:315px;
+	overflow-y:scroll;
+}
+#order-details dt{
+	float:left;
+	clear:both;
+	width:180px;
+	font-weight:bold;
+	color:#333;
+}
+#order-details dd{
+	float:left;
+	width:200px;
+	padding-left:10px;
+}
+#order-list{
+	width:300px;
+	float:left;
+	overflow-y:scroll;
+	height:315px;
+}
+#order-list ul{
+	list-style-type:none;
+}
+#order-list ul li{
+	margin-bottom:3px;
+	padding:0.4em;
+}
+#order-list ul li.ui-selected{
+	background:#ccc url(images/ui-bg_highlight-hard_100_ffffff_1x100.png) 50% top repeat-x;
+}	
+
+.notes_list{
+	height:300px;
+	float: left;
+	width:425px;
+	height:300px;
+	padding-right:25px;
+	overflow-y:auto;
+	overflow-x:hidden
+}

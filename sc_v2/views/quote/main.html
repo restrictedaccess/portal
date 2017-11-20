@@ -1,0 +1,16 @@
+<!--<div ng-controller="MainDetailsController as main_details_controller">-->
+<div ng-controller="MainDetailsController as main_details_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Client Quote Management</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">	
+		<div class="row" ng-include="'views/common/quote/main/quote_search.html'"></div>
+		<div class="row" ng-include="'views/common/quote/main/leads.html'"></div> 
+	</div>	
+	
+	
+	<toaster-container></toaster-container>
+</div>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#staff_name{
+	padding:5px;
+	background:#abccdd;
+	font:bold 11px tahoma;
+}
+
+#contents{
+	padding:10px;
+	width:98%;
+}
+
+#contents h3{
+	margin:0;
+	padding:0;
+	background:#DEE5EB;
+}
+
+#contents  h2{
+	text-align:center;
+}

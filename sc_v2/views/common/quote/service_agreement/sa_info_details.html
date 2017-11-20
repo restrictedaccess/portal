@@ -1,0 +1,110 @@
+<div id="quote-container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class=""><strong>Service Details Summary</strong></h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped" >
+                            <thead>
+                            <tr>
+                                <td class="text-center"><strong>Item</strong></td>
+                                <td class="text-left"><strong>Description</strong></td>
+                                <td class="text-center"><strong>Amount</strong></td>
+                            </tr>
+                            </thead>
+
+                            <tbody ng-repeat="(key,value) in quote.quote_details">
+
+                            <tr >
+                                <td class="text-center">{{iterateItems(key)}}</td>
+                                <td class="text-left">
+                                    <h3>{{value.work_position}} - {{value.candidate.fname}}</h3>
+                                    <div ng-if="value.work_description != ''">Work Details : {{value.work_description}}</div>
+                                    <div ng-if="value.work_description == ''">Work Details : {{value.work_status}} {{value.working_hours}}hr(s) {{value.work_status_description}}</div>
+                                    Working Hours: {{value.client_work_start}} to {{value.client_work_finish}} {{value.client_timezone}} <br>
+                                    Client hourly rate : ${{getDecimal(value.client_hr)}}<br>
+                                    <div ng-show="value.selected_start_work != ''">Start Date : {{value.selected_start_work}}</div>
+                                </td>
+
+                                <td class="text-center">
+                                    <strong>{{leads_currency_setting.currency_sign}}{{getDecimal(value.quoted_price)}}</strong>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td class="text-left">
+                                    <div><h3>Currency Fluctuation</h3></div>
+                                </td>
+                                <td class="text-center">
+
+                                        <strong>{{leads_currency_setting.currency_sign}}{{getDecimal(value.currency_adjustment)}}</strong>
+                                </td>
+                            </tr>
+
+                             <tr ng-if="value.service_fee">
+                                <td></td>
+                                <td class="text-left">
+                                    <div><h3>Service Fee</h3></div>
+                                </td>
+
+                                 <td class="text-center">
+                                     <strong ng-if="value.service_fee !== null">{{leads_currency_setting.currency_sign}}{{getDecimal(value.service_fee)}}</strong>
+                                 </td>
+                             </tr>
+
+                             <tr ng-if="value.office_fee">
+                                 <td></td>
+                                 <td class="text-left"><div><h3>Office Fee</h3></div></td>
+                                 <td class="text-center">
+                                     <strong ng-if="value.office_fee !== null">{{leads_currency_setting.currency_sign}}{{getDecimal(value.office_fee)}}</strong>
+                                 </td>
+                             </tr>
+
+                            <tr ng-if="value.others_description">
+                                <td></td>
+                                <td class="text-left">
+                                    <div ng-if="value.others_description !== null"><h3>Office Miscellaneous <label class="text-muted" style="font-size: 13px !important;">({{value.others_description}})</label></h3></div>
+                                </td>
+                                <td class="text-center">
+                                    <strong ng-if="value.others !== null || value.others > 0">{{leads_currency_setting.currency_sign}}{{getDecimal(value.others)}}</strong>
+                                </td>
+                            </tr>
+
+                            </tbody>
+
+                            <tbody class="total-computation">
+                                <tr>
+                                    <td class="highrow"></td>
+                                    <td class="highrow text-right"><strong>Subtotal</strong></td>
+                                    <td class="highrow text-center"><strong>{{leads_currency_setting.currency_sign}}{{getDecimal(totalAmount)}}</strong></td>
+                                </tr>
+
+
+                                <tr ng-if="leads_currency_setting.currency_gst_apply == 'Yes'">
+                                    <td class="highrow"></td>
+                                    <td class="highrow text-right"><strong>GST</strong></td>
+                                    <td class="highrow text-center"><strong>{{leads_currency_setting.currency_sign}}{{getDecimal(gstvalue)}}</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="highrow"></td>
+                                    <td class="highrow text-right"><strong>Total Amount</strong></td>
+                                    <td ng-if="leads_currency_setting.currency_gst_apply == null" class="highrow text-center total-color"><strong>{{leads_currency_setting.currency_sign}}{{getDecimal(totalAmount)}}</strong></td>
+                                    <td ng-if="leads_currency_setting.currency_gst_apply == 'No'" class="highrow text-center total-color"><strong>{{leads_currency_setting.currency_sign}}{{getDecimal(totalAmount)}}</strong></td>
+                                    <td ng-if="leads_currency_setting.currency_gst_apply == 'Yes'" class="highrow text-center total-color"><strong>{{leads_currency_setting.currency_sign}}{{getDecimal(totalAmountValue)}}</strong></td>
+                                </tr>
+                        </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

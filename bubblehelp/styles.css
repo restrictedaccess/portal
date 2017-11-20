@@ -1,0 +1,9 @@
+<style type="text/css">
+.btspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+#bt {position:absolute; display:block; background:url(/portal/bubblehelp/images/bt_left.gif) top left no-repeat}
+#bttop {display:block; height:5px; margin-left:5px; background:url(/portal/bubblehelp/images/bt_top.gif) top right no-repeat; overflow:hidden}
+#btcont {display:block; padding:2px 12px 3px 11px; background:#FF8301; color:#FFF;}
+#btbot {display:block; height:5px; ; background:url(/portal/bubblehelp/images/bt_bottom.gif) top right no-repeat; overflow:hidden}
+#task-status {  position:fixed;  width:300px;  height: auto;  top:0;  margin-left:-150px; z-index: 999;  font-size:12px; font-weight:bold;
+  background:#ffff00;  padding-left:5px;  text-align:center;  display:none;  left:50%;}
+</style>

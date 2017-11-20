@@ -1,0 +1,42 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Timesheet History</h4>
+        
+    </div>
+    <div class="modal-body" style="height: 300px; overflow-y: scroll;">
+    	<!--
+    	<ul>
+    		<li ng-repeat="history in histories">
+    			<div><span class="label label-info">{{ history.reference_date }}</span></div>
+    			<ol>
+    				<li ng-repeat="h in history.histories">
+    					<div>{{ h.admin_fname }} {{ h.admin_lname }}</div>
+    					<div>{{ h.changes }}</div>
+    					<div>{{ h.date_changed }}</div>
+    				</li>
+    			</ol>
+    		</li>
+    	</ul>
+    	-->
+    	<table width="100%" class="table table-bordered">
+    		<tr ng-repeat="history in histories">
+    			<td>
+    				<div><h4 class="text-center">Timesheet #{{ history.timesheet_id }}. Reference Date : {{ history.reference_date }}</h4></div>
+    				<ol>
+	    				<li ng-repeat="h in history.histories">
+	    					<div>{{ h.admin_fname }} {{ h.admin_lname }}</div>
+	    					<div>{{ h.changes }}</div>
+	    					<div>{{ h.date_changed }}</div>
+	    				</li>
+	    			</ol>
+    			</td>
+    		</tr>
+    		
+    	</table>
+    	
+    </div>
+    
+    <div class="modal-footer">
+		<button type="button" class="btn btn-white" ng-click="close_history()">Close</button> 	
+	</div>
+</div>

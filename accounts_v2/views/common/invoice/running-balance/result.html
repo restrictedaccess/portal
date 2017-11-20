@@ -1,0 +1,49 @@
+<div class="col-lg-12">
+	
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Result</h5>
+		</div>
+		<div class="ibox-content">
+			
+			<table class="table table-stripped table-bordered">
+				<thead>
+					<tr>
+						<th width="15%">Transaction Date</th>
+						<th>Type</th>
+						<th>Particular</th>
+						<th>Remarks</th>
+						<th>Added by</th>
+						<th width="8%" class="text-right">Credit</th>						
+						<th width="8%" class="text-right">Charge</th>
+						<th width="11%"class="text-right">Available Balance</th>
+					</tr>
+				</thead>
+                <tbody>
+                	
+                	<tr ng-show="transactions" ng-repeat="t in transactions">
+                		<td>{{ t.added_on | date:'MMM dd, yyyy hh:mm a' }}</td>
+                		<td>{{ t.credit_type }}</td>
+                		<td>{{ t.particular }}</td>
+                		<td>{{ t.remarks }}</td>
+                		<td>{{ t.added_by }}</td>
+                		<td class="text-right"><i ng-if="t.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="t.currency ==='USD'" class="fa fa-usd"></i><i ng-if="t.currency ==='GBP'" class="fa fa-gbp"></i>{{ t.credit | number:2 }}</td>
+                		<td class="text-right"><i ng-if="t.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="t.currency ==='USD'" class="fa fa-usd"></i><i ng-if="t.currency ==='GBP'" class="fa fa-gbp"></i>{{ t.charge | number:2 }}</td>
+                		<td class="text-right"><i ng-if="t.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="t.currency ==='USD'" class="fa fa-usd"></i><i ng-if="t.currency ==='GBP'" class="fa fa-gbp"></i>{{ t.running_balance | number:2 }}</td>
+                	</tr>
+                	
+                	<tr ng-show="transactions == null">
+                		<td colspan="8">Loading...</td>
+                	</tr>
+                	
+                </tbody>
+           </table>
+           <div class="text-center">           	
+           		<button type="button" ng-disabled="page === 0" ng-click="show_more_transactions()" ladda="loadingTransactions" class="ladda-button ladda-button-demo btn btn-info btn-xs"  data-style="expand-left">
+					<i class="fa fa-arrow-down"></i> Show More ( {{ total_docs }} )
+				</button>	
+           </div>
+		</div>
+	</div>
+	
+</div>

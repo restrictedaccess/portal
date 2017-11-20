@@ -1,0 +1,75 @@
+.container.thankyou p, .container.thankyou table{
+    color:#000;
+}
+
+.container-fluid{
+    background-color:#fff;
+}
+body{
+    background-color:#fff;
+}
+.container.thankyou{
+    padding: 30px 10px;
+}
+/* MOBILE DEVICES */
+@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+    .thankyou-heading-style-1{
+        font-family: "Myriad Pro";
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        color:#000;
+        
+    }
+    .thankyou-heading-style-2{
+		font-family: "Myriad Pro";
+		font-size: 1.5em;
+		font-weight: bold;
+	    text-align: center;
+        color:#000;
+	}
+    p.contact{
+        font-size:1.3em;
+        text-align: center;
+        font-family: "Myriad Pro";
+    }
+    p.contact a{
+        color:#000;
+    }
+    div.action a.btn{
+        text-align: center;
+        display: block;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media (min-width: 768px) {
+	
+	/* START: THANK YOU PAGE */
+	.thankyou-heading-style-1{
+		font-family: "Myriad Pro";
+		font-size: 3em;
+		font-weight: bold;
+	    text-align: center;
+        color:#000;
+        padding-top:0.2em;
+        padding-bottom:0.2em;
+	}
+    /* END: THANK YOU PAGE */
+    .thankyou-heading-style-2{
+		font-family: "Myriad Pro";
+		font-size: 1.6em;
+		font-weight: bold;
+	    text-align: center;
+        color:#000;
+	}
+    p.contact{
+        font-size:1.3em;
+        text-align: center;
+        font-family: "Myriad Pro";
+    }
+    p.contact a{
+        color:#000;
+    }
+
+}

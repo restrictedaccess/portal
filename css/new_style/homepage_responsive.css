@@ -1,0 +1,1254 @@
+/* IPHONE 4 */
+@media only screen and (min-width: 320px) {
+	.bnt-view-candidates, 
+	.bnt-view-candidates:hover, 
+	.bnt-view-candidates:active, 
+	.bnt-view-candidates:focus {
+		background-color: rgb(0, 177, 217);
+		border-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		color: rgb(255, 255, 255);
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 7px;
+		font-weight: 600;
+		padding: 2px 0px;
+		text-align: center;
+		text-transform: capitalize;
+		width: 100%;
+	}
+	.dropdown-search-caret {
+		border-width: 5px 5px 0px;
+		margin: 7px 0px !important;
+	}
+	.dropdown-search {
+		background-color: transparent;
+		border: medium none;
+		color: #fff;
+		font-family: "Myriad Pro";
+		padding: 0px;
+		text-align: left;
+		box-shadow: none;
+	}
+	#role-home{
+		font-size: 11px !important;
+		margin: 0px;
+		color: #fff;
+		font-weight: 400;
+	}
+	#job_selection_title {
+		color: #fff;
+		margin-top: 28%;
+		margin-bottom: 0;
+		font-size-adjust: 0.49;
+		font-size: 12px;
+	
+		width: 102%;
+}
+	.hourty-rate {
+		position: absolute;
+		left: 51%;
+		top: 40%;
+		font-size: 10px;
+		color: #ffffff;
+		width: 90px;
+	}
+	.job_selection img {
+		width: 50%;
+		min-width: 110px;
+		max-width: 301px;
+		padding-top: 20px;
+	}
+	.homepage_header_1 {
+		margin: 20px 0px 0px;
+		font-size: 25px;
+	}
+	.homepage_sub_header_1 {
+		font-size: 14px;
+		margin-bottom: 0px;
+	}
+	.bubble {
+		font-size: 9px;
+		width: 46%;
+		left: 50%;
+	}
+	.homepage_header_2 {
+		position:relative; 
+		line-height: 17px; 
+		padding-left: 35px; 
+		font-size: 15px;
+	}
+	.fold-1{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 475px 230px;
+		padding-bottom: 15px;
+	}
+	.fold-2{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 445px 315px;
+		padding-bottom: 15px;
+	}
+	ul.remotestaff_list_group > li.list-group-item{
+		margin: 5px 0px;
+		border: 3px solid #4AC8E5;
+		font-size: 10px;
+		line-height: 9px;
+		color: #000;
+	}
+	#homepage_carousel{
+		margin: 10px 0px 10px;
+		min-height: 300px;
+	}
+	.homepage_carousel_header{
+		font-size: 15px; 
+		margin:0px 0px 10px 0px;
+	}
+	.homepage_carousel_text{
+		font-size: 13px;
+		line-height: 1.6em;
+		color: #999;
+	}
+	.homepage_carousel_author{
+		font-size: 13px;
+	}
+	ul.remotestaff_bullet{
+		list-style-image: url('../img/bullet.png');
+		line-height: 1.6em;
+		font-size: 13px;
+	}
+	.remotestaff_btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin: 25px 0px;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.remotestaff_btn_primary {
+		color: #fff;
+		background-color: #04ADEF;
+		border-color: #04ADEF;
+	}
+	.remotestaff_badge {
+		display: inline-block;
+		padding: 4px 8px;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background-color: #04ADEF;
+		border-radius: 15px;
+		position:absolute;
+		top: -2px;
+		left: 5px;
+	}
+	.remotestaff_man_needs{
+		display:inline-block;
+		width: 70%;
+		min-width: 220px;
+		max-width: 290px;
+	}
+	.bubble:after{
+		left: -20px;
+		top: 36px;
+	}
+	.bubble:before{
+		left: -23px;
+		top: 35px;
+	}
+	.homepage_header_3{
+		margin:0px; 
+		font-size: 25px;
+		margin-top: 20px;
+	}
+	.homepage_sub_header_3{
+		font-size: 14px; 
+		margin-bottom: 20px;
+	}
+	.homepage_header_4{
+		margin:0px; 
+		font-size: 25px; 
+		line-height: 120%; 
+		margin-top: 10px;
+	}
+	.homepage_sub_header_4{
+		font-size: 14px; 
+		margin-top: 12px;
+		margin-bottom: 20px;
+	}
+	.job_role_header_1{
+		font-size: 5px;
+	}
+	.job_role_sub_header_1{
+		font-size: 6px;
+	}
+	.job_role_btn{
+		margin: 25px 0px; 
+		font-size: 11px;
+	}
+	.remotestaff_panel_list li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		color: #000;
+		line-height: 2em !important;
+	}
+	.remotestaff_panel_body{
+		height: auto;
+		min-height: auto;
+	}
+	.link-role-home{
+		font-size: 10px;
+	}
+	.remotestaff_panel_btn{
+		font-weight: bold;
+		font-size: 12px;
+		color: rgb(255,255,255);
+		text-align: center;
+		background-color: #035481;
+		border-color: #035481;
+		border-radius: 0px;
+		background-color: rgb(3,83,129);
+		-moz-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-webkit-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true)";
+		filter: progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true);
+	}
+	.remotestaff_panel_head {
+		font-family: "Myriad Pro";
+		font-weight: bold;
+		color: #035481;
+		text-align: center;
+		margin:0px;
+		font-size: 14px;
+	}
+}
+
+/* COL-XS */
+@media only screen and (min-width: 480px) {
+	.bnt-view-candidates, 
+	.bnt-view-candidates:hover, 
+	.bnt-view-candidates:active, 
+	.bnt-view-candidates:focus {
+		background-color: rgb(0, 177, 217);
+		border-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		color: rgb(255, 255, 255);
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+		padding: 5px 0px;
+		text-align: center;
+		text-transform: capitalize;
+		width: 100%;
+	}
+	.dropdown-search-caret {
+		border-width: 5px 5px 0px;
+		margin: 8px 0px !important;
+	}
+	.dropdown-search {
+		background-color: transparent;
+		border: medium none;
+		color: #fff;
+		font-family: "Myriad Pro";
+		padding: 0;
+		text-align: left;
+		box-shadow: none;
+	}
+	#role-home{
+		font-size: 16px !important;
+		margin:0px; 
+		color:#fff; 
+		font-weight:400;
+	}
+	#job_selection_title {
+		color: #fff;
+		margin-top: 25%;
+		margin-bottom: 0;
+		font-size-adjust: 0.48;
+		font-size: 21px;
+	
+		width: 102%;
+}
+	.hourty-rate {
+		position: absolute;
+		left: 50%;
+		top: 40%;
+		font-size: 14px;
+		color: #ffffff;
+		width: 130px;
+	}
+	.job_selection img {
+	  width: 50%;
+	  min-width: 165px;
+	  max-width: 301px;
+	  padding-top: 20px;
+	}
+	.homepage_header_1 {
+		margin: 20px 0px 0px;
+		font-size: 25px;
+	}
+	.homepage_sub_header_1 {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.bubble {
+		font-size: 15px;
+		width: 50%;
+		left: 40%;
+	}
+	.homepage_header_2 {
+		position:relative; 
+		line-height: 30px; 
+		padding-left:35px; 
+		font-size: 22px;
+	}
+	.fold-1{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 475px 230px;
+		padding-bottom: 15px;
+	}
+	.fold-2{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 445px 315px;
+		padding-bottom: 15px;
+	}
+	ul.remotestaff_list_group > li.list-group-item{
+		margin: 5px 0px;
+		border: 3px solid #4AC8E5;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000;
+	}
+	#homepage_carousel{
+		margin: 10px 0px 25px;
+		min-height: 275px;
+	}
+	.homepage_carousel_header{
+		font-size: 22px; 
+		margin:0px 0px 10px 0px;
+	}
+	.homepage_carousel_text{
+		font-size: 14px;
+		line-height: 1.6em;
+		color: #999;
+	}
+	.homepage_carousel_author{
+		font-size: 18px;
+	}
+	ul.remotestaff_bullet{
+		list-style-image: url('../img/bullet.png');
+		line-height:1.6em;
+		font-size: 14px;
+	}
+	.remotestaff_btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin: 25px 0px;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.remotestaff_btn_primary {
+		color: #fff;
+		background-color: #04ADEF;
+		border-color: #04ADEF;
+	}
+	.remotestaff_badge {
+		display: inline-block;
+		padding: 6px 9px;
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background-color: #04ADEF;
+		border-radius: 15px;
+		position:absolute;
+		top: 1px;
+		left: 3px;
+	}
+	.remotestaff_man_needs{
+		display:inline-block;
+		width: 60%;
+		min-width: 305px;
+		max-width: 390px;
+	}
+	.bubble:after{
+		left: -20px;
+		top: 75px;
+	}
+	.bubble:before{
+		left: -23px;
+		top: 74px;
+	}
+	.homepage_header_3{
+		margin:0px; 
+		font-size: 25px;
+		margin-top: 20px;
+	}
+	.homepage_sub_header_3{
+		font-size: 15px; 
+		margin-bottom: 20px;
+	}
+	.homepage_header_4{
+		margin:0px; 
+		font-size: 25px; 
+		line-height: 120%; 
+		margin-top: 10px;
+	}
+	.homepage_sub_header_4{
+		font-size: 15px; 
+		margin-top: 12px;
+		margin-bottom: 20px;
+	}
+	.job_role_header_1{
+		font-size: 8px;
+	
+}
+	.job_role_sub_header_1{
+		font-size: 7px;
+	}
+	.job_role_btn{
+		margin: 25px 0px; 
+		font-size: 15px;
+	}
+	.remotestaff_panel_list li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #000;
+		line-height: 1.6em !important;
+	}
+	.remotestaff_panel_body{
+		height: auto;
+		min-height: auto;
+	}
+	.link-role-home{
+		font-size: 14px;
+	}
+	.remotestaff_panel_btn{
+		font-weight: bold;
+		font-size: 14px;
+		color: rgb(255,255,255);
+		text-align: center;
+		background-color: #035481;
+		border-color: #035481;
+		border-radius: 0px;
+		background-color: rgb(3,83,129);
+		-moz-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-webkit-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true)";
+		filter: progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true);
+	}
+	.remotestaff_panel_head {
+		font-family: "Myriad Pro";
+		font-weight: bold;
+		color: #035481;
+		text-align: center;
+		margin:0px;
+		font-size:18px;
+	}
+}
+
+
+
+/* CUSTOM MEDIA QUERIES */
+@media only screen and (min-width: 561px) {
+	.job_role_header_1{
+		font-size: 11px;
+	}
+	.job_role_sub_header_1{
+		font-size: 8px;
+	}
+}
+@media only screen and (min-width: 600px) {
+	.job_role_header_1{
+		font-size: 12px;
+	}
+	.job_role_sub_header_1{
+		font-size: 8px;
+	}
+}
+@media only screen and (min-width: 650px) {
+	.job_role_header_1{
+		font-size: 13px;
+	}
+	.job_role_sub_header_1{
+		font-size: 9px;
+	}
+}
+@media only screen and (min-width: 689px) {
+	.job_role_header_1{
+		font-size: 15px;
+	}
+	.job_role_sub_header_1{
+		font-size: 12px;
+	}
+}
+
+
+/* COL-SM */
+@media only screen and (min-width: 768px) {
+	.bnt-view-candidates, 
+	.bnt-view-candidates:hover, 
+	.bnt-view-candidates:active, 
+	.bnt-view-candidates:focus {
+		background-color: rgb(0, 177, 217);
+		border-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		color: rgb(255, 255, 255);
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		padding: 10px;
+		text-align: center;
+		text-transform: capitalize;
+		width: auto;
+	}
+	.dropdown-search-caret {
+		border-width: 10px 10px 0px;
+		margin: 12px 0px !important;
+	}
+	.dropdown-search {
+		background-color: transparent;
+		border: medium none;
+		color: #fff;
+		font-family: "Myriad Pro";
+		padding: 0px;
+		text-align: left;
+		box-shadow: none;
+	}
+	#role-home{
+		font-size: 24px !important;
+		margin:0px; 
+		color:#fff; 
+		font-weight:400;
+	}
+	#job_selection_title {
+		color: #fff;
+		margin-top: 30%;
+		margin-bottom: 0;
+		font-size-adjust: 0.49;
+		font-size: 38px;
+	
+		width: 102%;
+}
+	.hourty-rate {
+		position: absolute;
+		left: 199px;
+		top: 100px;
+		font-size: 22px;
+		color: #ffffff;
+		width: 200px;
+	}
+	.job_selection img {
+		width:100%; 
+		min-width: 100px; 
+		max-width: 220px; 
+		padding-top: 20px;
+	}
+	.homepage_header_1 {
+		margin: 30px 0px 0px;
+		font-size: 40px;
+	}
+	.homepage_sub_header_1 {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+	.bubble {
+		font-size: 16px;
+		width: 50%;
+		left: 30%;
+	}
+	.homepage_header_2 {
+		position:relative; 
+		line-height: 35px; 
+		padding-left: 39px; 
+		font-size: 24px;
+	}
+	.fold-1{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 475px 230px;
+		padding-bottom: 15px;
+	}
+	.fold-2{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-position: 445px 315px;
+		padding-bottom: 15px;
+	}
+	ul.remotestaff_list_group > li.list-group-item{
+		margin: 5px 0px;
+		border: 3px solid #4AC8E5;
+		font-size: 19px;
+		line-height: 30px;
+		color: #000;
+	}
+	#homepage_carousel{
+		margin: 10px 0px 25px;
+		min-height: 350px;
+	}
+	.homepage_carousel_header{
+		font-size: 35px; 
+		margin:0px 0px 10px 0px;
+	}
+	.homepage_carousel_text{
+		font-size: 18px;
+		line-height: 1.6em;
+		color: #999;
+	}
+	.homepage_carousel_author{
+		font-size: 25px;
+	}
+	ul.remotestaff_bullet{
+		list-style-image: url('../img/bullet.png');
+		line-height:1.6em;
+		font-size:16px;
+	}
+	.remotestaff_btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin: 25px 0px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.remotestaff_btn_primary {
+		color: #fff;
+		background-color: #04ADEF;
+		border-color: #04ADEF;
+	}
+	.remotestaff_badge {
+		display: inline-block;
+		padding: 8px 12px;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background-color: #04ADEF;
+		border-radius: 15px;
+		position:absolute;
+		top: 3px;
+		left: 1px;
+	}
+	.remotestaff_man_needs{
+		display:inline-block;
+		width: 50%;
+		min-width: 275px;
+		max-width: 360px;
+	}
+	.bubble:after{
+		left: -20px;
+		top: 75px;
+	}
+	.bubble:before{
+		left: -23px;
+		top: 74px;
+	}
+	.homepage_header_3{
+		margin:0px; 
+		font-size: 40px;
+		margin-top: 20px;
+	}
+	.homepage_sub_header_3{
+		font-size: 20px; 
+		margin-bottom: 20px;
+	}
+	.homepage_header_4{
+		margin:0px; 
+		font-size: 40px; 
+		line-height: 120%; 
+		margin-top: 10px;
+	}
+	.homepage_sub_header_4{
+		font-size: 20px; 
+		margin-top: 12px;
+		margin-bottom: 20px;
+	}
+	.job_role_header_1{
+		font-size: 15px;
+	}
+	.job_role_sub_header_1{
+		font-size: 12px;
+	}
+	.job_role_btn{
+		margin: 25px 0px; 
+		font-size: 20px;
+	}
+	.remotestaff_panel_list li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #000;
+		line-height: 1.6em !important;
+	}
+	.remotestaff_panel_body{
+		height: auto;
+		min-height: auto;
+	}
+	.link-role-home{
+		font-size: 18px;
+	}
+	.remotestaff_panel_btn{
+		font-weight: bold;
+		font-size: 16px;
+		color: rgb(255,255,255);
+		text-align: center;
+		background-color: #035481;
+		border-color: #035481;
+		border-radius: 0px;
+		background-color: rgb(3,83,129);
+		-moz-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-webkit-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true)";
+		filter: progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true);
+	}
+	.remotestaff_panel_head {
+		font-family: "Myriad Pro";
+		font-weight: bold;
+		color: #035481;
+		text-align: center;
+		margin:0px;
+		font-size:18px;
+	}
+}
+
+/* COL-MD */
+@media only screen and (min-width: 992px) {
+	.bnt-view-candidates, 
+	.bnt-view-candidates:hover, 
+	.bnt-view-candidates:active, 
+	.bnt-view-candidates:focus {
+		background-color: rgb(0, 177, 217);
+		border-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		color: rgb(255, 255, 255);
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		padding: 10px;
+		text-align: center;
+		text-transform: capitalize;
+		width: auto;
+	}
+	.dropdown-search-caret {
+		border-width: 10px 10px 0px;
+		margin: 5px 0px !important;
+	}
+	.dropdown-search {
+		background-color: transparent;
+		border: medium none;
+		color: #fff;
+		font-family: "Myriad Pro";
+		padding: 0px;
+		text-align: left;
+		box-shadow: none;
+	}
+	#role-home{
+		font-size: 32px !important;
+		margin:0px; 
+		color:#fff; 
+		font-weight:400;
+	}
+	#job_selection_title {
+		color: #fff;
+		margin-top: 26%;
+		margin-bottom: 0;
+		font-size-adjust:0.49;
+		font-size: 50px;
+	
+		width: 102%;
+}
+	.hourty-rate {
+		position: absolute;
+		left: 250px;
+		top: 120px;
+		font-size: 25px;
+		color: #ffffff;
+		width: 225px;
+	}
+	.job_selection img {
+		width:100%; 
+		min-width: 100px; 
+		max-width:301px; 
+		padding-top: 20px;
+	}
+	.homepage_header_1 {
+		margin: 30px 0px 0px;
+		font-size: 45px;
+	}
+	.homepage_sub_header_1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.bubble {
+		font-size: 16px;
+		width: 50%;
+		left: 45%;
+	}
+	.homepage_header_2 {
+		position:relative; 
+		line-height: 30px; 
+		padding-left: 35px; 
+		font-size: 24px;
+	}
+	.fold-1{
+		background-image: url('../img/down-left.png');
+		background-repeat: no-repeat;
+		background-position: 388px 220px;
+		padding-bottom: 45px;
+	}
+	.fold-2{
+		background-image: url('../img/down-right.png');
+		background-repeat: no-repeat;
+		background-position: 360px 335px;
+		padding-bottom: 125px;
+	}
+	ul.remotestaff_list_group > li.list-group-item{
+		margin: 10px 0px;
+		border: 3px solid #4AC8E5;
+		font-size: 15px;
+		line-height: 30px;
+		color: #000;
+	}
+	#homepage_carousel{
+		margin: 0px;
+	}
+	.homepage_carousel_header{
+		font-size: 24px; 
+		margin:0px 0px 10px 0px;
+	}
+	.homepage_carousel_text{
+		font-size: 16px;
+		line-height: 1.6em;
+		color: #999;
+	}
+	.homepage_carousel_author{
+		font-size:18px;
+	}
+	ul.remotestaff_bullet{
+		list-style-image: url('../img/bullet.png');
+		line-height:1.6em;
+		font-size:16px;
+	}
+	.remotestaff_btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin: 15px 0px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.remotestaff_btn_primary {
+		color: #fff;
+		background-color: #04ADEF;
+		border-color: #04ADEF;
+	}
+	.remotestaff_badge {
+		display: inline-block;
+		padding: 8px 12px;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background-color: #04ADEF;
+		border-radius: 15px;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	.remotestaff_man_needs{
+		display:inline-block;
+		width: 70%;
+		min-width: 275px;
+		max-width: 315px;
+	}
+	.bubble:after{
+		left: -20px;
+		top: 75px;
+	}
+	.bubble:before{
+		left: -23px;
+		top: 74px;
+	}
+	.homepage_header_3{
+		margin:0px; 
+		font-size: 45px;
+		margin-top: 20px;
+	}
+	.homepage_sub_header_3{
+		font-size: 25px; 
+		margin-bottom: 20px;
+	}
+	.homepage_header_4{
+		margin:0px; 
+		font-size: 45px; 
+		line-height: 120%; 
+		margin-top: 10px;
+	}
+	.homepage_sub_header_4{
+		font-size: 25px; 
+		margin-top: 12px;
+		margin-bottom: 20px;
+	}
+	.job_role_header_1{
+		font-size: 22px;
+	}
+	.job_role_sub_header_1{
+		font-size: 16px;
+	}
+	.job_role_btn{
+		margin: 25px 0px; 
+		font-size: 25px;
+	}
+	.remotestaff_panel_list li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 14px;
+		color: #000;
+		line-height: 1.6em !important;
+	}
+	.remotestaff_panel_body{
+		height: auto;
+		min-height: 365px;
+	}
+	.link-role-home{
+		font-size: 26px;
+	}
+	.remotestaff_panel_btn{
+		font-weight: bold;
+		font-size: 14px;
+		color: rgb(255,255,255);
+		text-align: center;
+		background-color: #035481;
+		border-color: #035481;
+		border-radius: 0px;
+		background-color: rgb(3,83,129);
+		-moz-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-webkit-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true)";
+		filter: progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true);
+	}
+	.remotestaff_panel_head {
+		font-family: "Myriad Pro";
+		font-weight: bold;
+		color: #035481;
+		text-align: center;
+		margin:0px;
+		font-size:18px;
+	}
+}
+
+/* COL-LG */
+@media only screen and (min-width: 1200px) {
+	.bnt-view-candidates, 
+	.bnt-view-candidates:hover, 
+	.bnt-view-candidates:active, 
+	.bnt-view-candidates:focus {
+		background-color: rgb(0, 177, 217);
+		border-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		color: rgb(255, 255, 255);
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		padding: 10px;
+		text-align: center;
+		text-transform: capitalize;
+		width: auto;
+	}
+	.dropdown-search-caret {
+		border-width: 10px 10px 0px;
+		margin: 12px 0px !important;
+	}
+	.dropdown-search {
+		background-color: transparent;
+		border: medium none;
+		color: #fff;
+		font-family: "Myriad Pro";
+		padding: 0;
+		text-align: left;
+		box-shadow: none;
+	}
+	#role-home{
+		font-size: 33px !important;
+		margin:0px; 
+		color:#fff; 
+		font-weight:400;
+	}
+	#job_selection_title {
+		color: #fff;
+		margin-top: 20%;
+		margin-bottom: 0;
+		font-size:62px;
+	
+		width: 102%;
+}
+	.hourty-rate {
+		position: absolute;
+		left: 260px;
+		top: 120px;
+		font-size: 25px;
+		color: #ffffff;
+		width: 225px;
+	}
+	.job_selection img {
+		width:100%; 
+		min-width: 100px; 
+		max-width:301px; 
+		padding-top: 20px;
+	}
+	.homepage_header_1 {
+		margin: 45px 0px 0px; 
+		font-size: 55px;
+	}
+	.homepage_sub_header_1 {
+		font-size: 25px; 
+		margin-bottom: 50px;
+	}
+	.bubble {
+		font-size: 17px;
+		width: 60%;
+		left: 40%;
+	}
+	.homepage_header_2 {
+		position:relative; 
+		line-height: 35px; 
+		padding-left:35px; 
+		font-size: 32px;
+	}
+	.fold-1{
+		background-image: url('../img/down-left.png');
+		background-repeat: no-repeat;
+		background-position: 475px 230px;
+		padding-bottom: 45px;
+	}
+	.fold-2{
+		background-image: url('../img/down-right.png');
+		background-repeat: no-repeat;
+		background-position: 445px 315px;
+		padding-bottom: 115px;
+	}
+	ul.remotestaff_list_group > li.list-group-item{
+		margin: 10px 0px;
+		border: 3px solid #4AC8E5;
+		font-size: 19px;
+		line-height: 30px;
+		color: #000;
+	}
+	#homepage_carousel{
+		margin: 0px;
+	}
+	.homepage_carousel_header{
+		font-size: 32px; 
+		margin:0px 0px 10px 0px;
+	}
+	.homepage_carousel_text{
+		font-size: 16px;
+		line-height: 1.6em;
+		color: #999;
+	}
+	.homepage_carousel_author{
+		font-size: 20px;
+	}
+	ul.remotestaff_bullet{
+		list-style-image: url('../img/bullet.png');
+		line-height:1.6em;
+		font-size:16px;
+	}
+	.remotestaff_btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin: 15px 0px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.42857143;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	.remotestaff_btn_primary {
+		color: #fff;
+		background-color: #04ADEF;
+		border-color: #04ADEF;
+	}
+	.remotestaff_badge {
+		display: inline-block;
+		padding: 8px 12px;
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 1;
+		color: #fff;
+		background-color: #04ADEF;
+		border-radius: 15px;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	.remotestaff_man_needs{
+		display:inline-block;
+		width:65%;
+		min-width: 275px;
+		max-width: 355px;
+	}
+	.bubble:after{
+		left: -20px;
+		top: 75px;
+	}
+	.bubble:before{
+		left: -23px;
+		top: 74px;
+	}
+	.homepage_header_3{
+		margin:0px; 
+		font-size: 55px;
+		margin-top: 45px;
+	}
+	.homepage_sub_header_3{
+		font-size: 37px; 
+		margin-bottom: 50px;
+	}
+	.homepage_header_4{
+		margin:0px; 
+		font-size:54px; 
+		line-height: 120%; 
+		margin-top: 20px;
+	}
+	.homepage_sub_header_4{
+		font-size:34px; 
+		margin-top: 12px;
+		margin-bottom: 30px;
+	}
+	.job_role_header_1{
+		font-size: 24px;
+	}
+	.job_role_sub_header_1{
+		font-size: 16px;
+	}
+	.job_role_btn{
+		margin: 30px 0px; 
+		font-size: 24px;
+	}
+	.remotestaff_panel_list li{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 16px;
+		color: #000;
+		line-height: 1.6em !important;
+	}
+	.remotestaff_panel_body{
+		height: auto;
+		min-height: 440px;
+	}
+	.link-role-home{
+		font-size: 26px;
+	}
+	.remotestaff_panel_btn{
+		font-weight: bold;
+		font-size: 18px;
+		color: rgb(255,255,255);
+		text-align: center;
+		background-color: #035481;
+		border-color: #035481;
+		border-radius: 0px;
+		background-color: rgb(3,83,129);
+		-moz-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-webkit-box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		box-shadow: 4px 2px 5px 0px rgba(0,51,79,0.75);
+		-ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true)";
+		filter: progid:DXImageTransform.Microsoft.dropshadow(OffX = 4,OffY = 2,Color = #bf0033.6b944241c3f4f,Positive = true);
+	}
+	.remotestaff_panel_head {
+		font-family: "Myriad Pro";
+		font-weight: bold;
+		color: #035481;
+		text-align: center;
+		margin:0px;
+		font-size:18px;
+	}
+}

@@ -1,0 +1,258 @@
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("/portal/font/new_font/MYRIADPRO-REGULAR.eot?#iefix") format("embedded-opentype"), 
+    url("/portal/font/new_font/MYRIADPRO-REGULAR.woff") format("woff"), 
+    url("/portal/font/new_font/MYRIADPRO-REGULAR.ttf") format("truetype"), 
+    url("/portal/font/new_font/MYRIADPRO-REGULAR.svg") format("svg");
+}
+@font-face {
+    font-family: "Myriad Pro Light";
+    src: url("/portal/font/new_font/fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), 
+    url("/portal/font/new_font/fonts/MyriadPro-Light.woff") format("woff"), 
+    url("/portal/font/new_font/fonts/MyriadPro-Light.ttf") format("truetype"), 
+    url("/portal/font/new_font/fonts/MyriadPro-Light.svg") format("svg");
+}
+
+@media (max-width: 1200px) {
+	/*NAVIGATION STYLE*/
+	.navbar-header {
+		float: none;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-collapse {
+		border-top: 1px solid transparent;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+	}
+	.navbar-collapse.collapse {
+		display: none !important;
+	}
+	.navbar-nav {
+		float: none !important;
+		margin: 7.5px -15px;
+	}
+	.navbar-nav > li {
+		float: none;
+	}
+	.navbar-nav > li > a {
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	
+	/* REMOTESTAFF NAVIGATION CUSTOM */
+	.remotestaff_navbar {
+		position: absolute !important;
+	}
+	.remotestaff_navbar_brand {
+		float: none;
+	}
+	.remotestaff_navbar_toggle {
+		position: absolute;
+	}
+	.remotestaff_navbar_container {
+		padding: 0;
+		width: 100%;
+	}
+	.remotestaff_navbar_container > .navbar-header {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.remotestaff_site_slogan {
+		display: none;
+	}
+	.remotestaff_navbar {
+		min-height: 100px;
+		position: fixed;
+	}
+	.remotestaff_phone {
+		font-size: 30px;
+		position: absolute;
+		right: 25px;
+		top: 37px;
+	}
+}
+
+.remotestaff_navbar_container{
+	padding-left:10px;
+	padding-right:10px;
+}
+
+/*HEADER STYLE*/
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	font-family: "Myriad Pro";
+	color:#000;
+}
+
+/*NAVIGATION STYLE*/
+.navbar-default .remotestaff_navbar_toggle:focus, 
+.navbar-default .remotestaff_navbar_toggle:hover {
+    background: #fff none repeat scroll 0 0;
+}
+.remotestaff_navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(136, 136, 136, 0.75);
+    margin-bottom: 0;
+    min-height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.remotestaff_side_bar_nav {
+    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 0 1px 1px rgba(136, 136, 136, 0.75);
+    width: 100%;
+}
+.remotestaff_sidemenu {
+    text-indent: 10px !important;
+}
+.remotestaff_navbar_brand {
+    height: 110px;
+    padding: 15px;
+}
+.navbar-default .remotestaff_navbar_toggle {
+    border-color: #00afd9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #00afd9;
+}
+.remotestaff_navbar_toggle {
+    margin-bottom: 30px;
+    margin-top: 38px;
+}
+.remotestaff_icon-bar {
+    background-color: #00afd9;
+}
+.remotestaff_container {
+    padding: 20px 0;
+}
+.remotestaff_site_slogan {
+    font-size: 16px;
+    margin: 6px 0;
+    color:#777;
+}
+.remotestaff_navbar_nav {
+    margin: 37px 0 29px;
+}
+.remotestaff_navbar .navbar-nav > li > a {
+    padding: 10px;
+    font-size: 13px;
+}
+.remotestaff_navbar .nav > li > a {
+    padding: 10px;
+}
+.remotestaff_contact_no {
+    font-size: 16px !important;
+    font-weight:700;
+}
+.remotestaff_jobseeker {
+    color: #2285c5 !important;
+}
+.remotestaff_navbar .navbar-nav > .active > a, 
+.remotestaff_navbar .navbar-nav > .active > a:focus, 
+.remotestaff_navbar .navbar-nav > .active > a:hover, 
+.remotestaff_navbar .navbar-nav > li > a.remotestaff_nav:hover {
+    background-color: #04adef;
+    border-radius: 6px;
+    color: #fff !important;
+    padding: 10px;
+    transition: all 0.5s ease 0s;
+}
+.remotestaff_navbar_nav li {
+    margin: 0px;
+}
+
+/*CAROUSEL STYLE*/
+.carousel-indicators li, .carousel-indicators .active{
+	background-color: #959595;
+	width: 15px;
+	height: 15px;
+}
+.carousel-indicators .active{
+	width: 18px;
+	height: 18px;
+}
+.carousel-indicators {
+	bottom: 0px;
+	left: 0px;
+}
+.carousel {
+	position: relative;
+	min-height: 340px;
+}
+.carousel-indicators {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 15;
+	width: 50%;
+	padding-left: 15px;
+	margin-left: 0%;
+	text-align: left;
+	list-style: none;
+}
+.carousel-text {
+	font-size:16px;
+	line-height:1.6em;
+	color: #999;
+}
+
+/* REQUEST CALL BACK*/
+.request_call_back {
+	margin: 0px;
+	padding:10px 20px;
+	border: 4px solid #CBCBCB;
+	background-color: #EFEFEF;
+}
+.request_call_back input, 
+.request_call_back textarea {
+	background-color: rgb(255,255,255);
+	border-color: rgb(0,0,0);
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 0px;
+}
+
+/*FOOTER STYLE*/
+ul.remotestaff_footer_nav li {
+	margin-bottom: 27px;
+}
+ul.remotestaff_footer_nav li:last-child {
+	margin-bottom: 0;
+}
+ul.remotestaff_footer_nav li a {
+	font-size: 16px;
+	line-height: 120%;
+}
+li.map {
+	font-size: 25px;
+	margin: 0 0 20px;
+}
+li.phone {
+	margin: 25px 0 20px;
+}
+li.company_name {
+	margin: 10px 0;
+}
+li.address {
+    margin: 10px 0;
+}
+li.website { 
+    margin: 10px 0;
+}
+a.phone {
+    font-size: 18px !important;
+    font-weight: 700;
+}
+.remotestaff-border-right {
+	border-right: 2px solid #438fae;
+	min-height: 260px;
+}
+ul.social_media_connect li {
+	margin: 60px 0;
+}
+.footer ul li {
+	color: #fff;
+}

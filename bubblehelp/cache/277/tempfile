@@ -1,0 +1,1026 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+.btspot {color:#900; padding-bottom:1px; border-bottom:1px dotted #900; cursor:pointer}
+#bt {position:absolute; display:block; background:url(/portal/bubblehelp/images/bt_left.gif) top left no-repeat}
+#bttop {display:block; height:5px; margin-left:5px; background:url(/portal/bubblehelp/images/bt_top.gif) top right no-repeat; overflow:hidden}
+#btcont {display:block; padding:2px 12px 3px 11px; background:#FF8301; color:#FFF;}
+#btbot {display:block; height:5px; ; background:url(/portal/bubblehelp/images/bt_bottom.gif) top right no-repeat; overflow:hidden}
+#task-status {  position:fixed;  width:300px;  height: auto;  top:0;  margin-left:-150px; z-index: 999;  font-size:12px; font-weight:bold;
+  background:#ffff00;  padding-left:5px;  text-align:center;  display:none;  left:50%;}
+</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Remotestaff  Job Advertisements Applicants (Help Page)</title>
+<link rel=stylesheet type=text/css href="css/font.css">
+<link rel=stylesheet type=text/css href="css/style.css">
+<link rel=stylesheet type=text/css href="menu.css">
+<link rel=stylesheet type=text/css href="./leads_information/media/css/leads_information.css">
+</head>
+<body style="background:#ffffff" text="#000000" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<link rel=stylesheet type="text/css" href="/portal/bubblehelp/pullmenu.css" />
+<link rel=stylesheet type="text/css" href="/portal/ticketmgmt/css/overlay.css" />
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;' src='javascript:false;'></iframe>
+<div id='boxdiv' class='overlay'><span id='task-status'></span>
+  <div class='content' style='width:390px;padding:3px;border:1px solid #011a39;'>
+	<div class='title'>Edit Help Content - <span id='blink'></span></div>
+		
+		<form name='regform' method='POST' target='ajaxframe' action='/portal/bubblehelp/bhelp.php?/set_data/' style='padding:0;margin:0;'>
+			<input type='hidden' name='link_id' id='link_id' />
+            <input type='hidden' name='item' id='item' value='new'/>
+			<table width="100%" border='0' cellpadding="2" cellspacing="2" class="list">
+			<!--<tr><td class='form1'>Subject:</td>
+				<td class='form2'><input type="text" id="email_subject" name="email_subject" value="Remotestaff: Client-Staff Support" class="inputbox2"/></td>
+			</tr>-->
+			  
+			  <tr><td class='form2'>Enter text here:</td></tr>
+			<tr><td class='form2'><textarea id="help_content" name='help_content' class='text' rows='5' style='width:95%;float:left;'></textarea></td></tr>
+			   
+			 <tr>
+			<td colspan="2" align='center'>
+			<input type='submit' class='button' id='createbutton' value='Edit'> <input type='button' class='button' value='Cancel' onClick="document.getElementById('boxdiv').style.display='none';">
+			</tr>
+		  </table>
+		</form>
+	</div>
+	
+</div>
+<form method="POST" name="form" action="#"  onsubmit="return checkFields();">
+<input type="hidden" name="id" id="leads_id" value="10594">
+<input type="hidden" name="lead_status" id="lead_status" value="New Leads"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="timezones/cheatclock.php"></script>
+<script type="text/javascript" src="/portal/bugreport/pullmenu.js"></script>
+<link rel=stylesheet type=text/css href="/portal/seatbooking/css/pullmenu.css">
+<style type="text/css">
+a.hlink {text-decoration:none;color:#666666;}
+</style>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"  style="background-color:#FFFFFF;">
+<tr>
+	<td colspan="2">
+	<table width="100%">
+	<tr>
+	<td width="4%" valign="middle"><img src="images/flags/Philippines.png" align="middle" title="Philippines/Manila" /></td>
+	<td width="18%" valign="middle"><b>Manila</b> <span id="manila"></span></td>
+	<td width="4%"valign="middle"><img src="images/flags/Australia.png" align="absmiddle" title="Australia/Sydney" /></td>
+	<td width="20%" valign="middle"> <b>Sydney</b> <span id="sydney"></span></td>
+	<td width="4%" valign="middle"><img src="images/flags/usa.png" align="absmiddle" title="USA/San Francisco" /></td>
+	<td width="26%" valign="middle"><b>San Francisco</b> <span id="sanfran"></span><br /> 
+	  <b>New York</b> <span id="newyork"></span></td>
+	<td width="4%" valign="middle"><img src="images/flags/uk.png" align="absmiddle" title="UK/London" /> </td>
+	<td width="20%"><b>London</b> <span id="london"></span> </td>
+	</tr>
+	</table>	</td>
+</tr>
+
+<tr><td valign="top" >
+<img src="images/remote-staff-logo2.jpg" alt="think" >
+</td>
+
+<td align="right" >
+
+<div align="right"><img src='images/remote-staff-country-active-AUS.jpg' border='0'><a href="http://www.remotestaff.co.uk/portal/recruitment_1.php?id=10594"><img border="0" onmouseout=this.src="images/remote-staff-country-inactive-UK.jpg" onmouseover=this.src="images/remote-staff-country-active-UK.jpg" src="images/remote-staff-country-inactive-UK.jpg"></a><a href="http://www.remotestaff.net/portal/recruitment_1.php?id=10594"><img border="0" onmouseout=this.src="images/remote-staff-country-inactive-US.jpg" onmouseover=this.src="images/remote-staff-country-active-US.jpg" src="images/remote-staff-country-inactive-US.jpg"></a>
+</div>
+<!--
+<iframe id="frame" name="frame" width="100%" height="100%" src="notes.php" frameborder="0" scrolling="no">Your browser does not support inline frames or is currently configured not to display inline frames.</iframe>
+-->
+<div style="padding:5px; color:#666666;">
+<a href="javascript:popup_win8('.\/rschat.php?portal=1&email=lance@remotestaff.com.au&hash=o161a3d117669d07d9',800,600);"  class='hlink' title='Open remostaff chat'>Chat</a> | 	<a href="logout.php" class="hlink">Logout</a> | <a href="logout.php" class="hlink" title="Login in Different Account">Login</a>
+	| <a href="/portal/bubblehelp/bhelp.php?/create_page/&curl=recruitment_1.php?id=10594" class="hlink" title="Open Help Page" >Help Page</a>
+| <a href="#" onmouseover="showReportMenu(this)" onmouseout="mclosetime()" class="hlink">Bug Report</a> | <a href="gotowiki.php" title="Open the Wiki page"  class="hlink">Wiki</a></div>
+
+</td>
+
+</tr>
+</table>
+
+<!-- /HEADER -->
+
+
+	
+		
+			<div style="float:right; padding-right:10px;"><a href="admin_profile.php" class="link10"  >Administrator Profile</a></div>
+<div style="clear:both;"></div>
+<div style="background:url(images/remote-staff-nav-bg2.jpg); height:40px;">
+<div id="glossymenu">
+<ul>
+
+  <li><a href="adminHome.php"  >Home</a></li>
+  <li><a href="/portal/recruiter/recruiter_home.php"  >Recruitment</a></li>
+  <li><a href="leads.php?lead_status=New Leads"  >New Leads <img src='images/star.png' border='0'  ></a></li>
+  <li><a href="leads.php?lead_status=Follow-Up"  >Follow Up </a></li>
+  <li><a href="leads.php?lead_status=asl"  >ASL </a></li>
+  <li><a href="leads.php?lead_status=custom recruitment"  >Custom Recruitment <img src='images/star.png' border='0'  ></a></li>
+  <li><a href="leads.php?lead_status=Keep In-Touch"  >Keep in Touch </a></li>
+  <li><a href="leads.php?lead_status=pending"  >Pending </a></li>
+  <li><a href="leads-active.php?lead_status=Client&filter=ACTIVE"  >Clients <img src='images/star.png' border='0'  ></a></li>
+  <li><a href="/portal/subcon_management/rssc_reports.html"  >Sub Contractor Management</a></li>
+  <li><a href='subconlist.php' >List of Sub Contractors</a></li>
+  <li><a href='/portal/ticketmgmt/' >Tickets</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+</div>
+</div>	
+<table width=100% cellpadding=0 cellspacing=0 border=0 align=center>
+  <tr><td colspan=2 style='height: 1px;'>&nbsp;</td>
+</tr>
+<tr><td width="220" style='border-right: #006699 2px solid; width: 170px; vertical-align:top; '>
+			<td width="173" valign="top" >
+		
+						
+							
+<style type="text/css">
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+
+#markermenu{
+
+ width:auto;
+}
+#markermenu ul{
+list-style-type: none;
+padding: 0;
+width:230px;
+margin:5px;
+
+}
+#markermenu li {
+   margin-bottom:5px;
+   
+   
+}
+#markermenu li a{
+/*
+font: bold 11px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: #00014e;
+display: block;
+padding: 3px 0;
+padding-left: 20px;
+text-decoration: none;
+border: 3px solid #E7F0F5;
+margin-top:2px;
+height:30px;
+line-height:30px;
+*/
+    border:#d0e8ff solid 1px;
+    background: #e3f3ff;
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #FFFFFF, #d0e8ff);
+	
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#FFFFFF), to(#d0e8ff));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#FFFFFF', EndColorStr='#d0e8ff', GradientType=0);
+				
+	height:30px;
+	line-height:30px;
+	display:block;
+	text-decoration:none;
+   	border-left:#a6c8e1 solid 1px;
+	border-right:#a6c8e1 solid 1px;
+
+	padding-left:25px;
+	padding-right:25px;
+	text-align:center;
+	color:#333333;			
+}
+
+#markermenu li img{
+    float:left;
+	
+}
+
+
+
+#markermenu li a:hover{
+/*
+color: black;
+background:#ffffcb url(images/arrow-list-red.gif) no-repeat left ;
+*/
+background: #a6c8e1;
+	/*background: #e3f3ff;*
+    /* Mozilla: */
+    background: -moz-linear-gradient(top, #FFFFFF, #a6c8e1);
+	
+    /* Chrome, Safari:*/
+    background: -webkit-gradient(linear,
+                left top, left bottom, from(#FFFFFF), to(#a6c8e1));
+    /* MSIE */
+    filter: progid:DXImageTransform.Microsoft.Gradient(
+                StartColorStr='#FFFFFF', EndColorStr='#a6c8e1', GradientType=0);
+}
+
+#markermenu li a:active{
+background:#ffffcb;
+}
+#markermenu li a:focus{
+background:#ffffcb;
+}
+
+* html #markermenu li a{ /*IE only. Actual menu width minus left padding of LINK (20px) */
+margin-bottom:0px;
+margin-top:0px;
+}
+#dropmenudiv{
+position:absolute;
+background-color: #E3FFB0;
+border:1px solid #a6c8e1;
+border-bottom-width: 0;
+line-height:18px;
+z-index:100;
+-moz-box-shadow: 3px 3px 5px #666666;
+    -webkit-box-shadow: 3px 3px 5px #666666;
+    box-shadow: 3px 3px 5px #666666;
+	font-family:tahoma;
+	font-size:11px;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 3px;
+border-bottom: 1px solid #a6c8e1;
+padding: 1px 0;
+text-decoration: none;
+color:#333333;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #C7FF5E;
+}
+
+/* Sample CSS definition for the example list. Remove if desired */
+.navlist li {
+list-style-type:georgian;
+width: 170px;
+background-color: #0099FF;
+}
+
+</style>
+<script type="text/javascript">
+<!-- Begin
+function setVariables() {
+if (navigator.appName == "Netscape") {
+v=".top=";
+dS="document.";
+sD="";
+y="window.pageYOffset";
+}
+else {
+v=".pixelTop=";
+dS="";
+sD=".style";
+
+y="document.body.scrollTop";
+
+   }
+}
+function checkLocation() {
+object="object1";
+yy=eval(y);
+eval(dS+object+sD+v+yy);
+setTimeout("checkLocation()",10);
+//alert (v);
+}
+//  End -->
+
+/***********************************************
+* AnyLink Vertical Menu- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+
+var USERS=new Array()
+USERS[0]='<a href="/portal/django/rsadmin/" >Admin Account Users</a>'
+USERS[1]='<a href="/portal/adminnaddagent.php">Business Developer Management</a>'
+USERS[2]='<a href="adminaffiliates.php">Affiliates</a>'
+USERS[3]='<a href="/portal/adminBPTransferLeads.php">Business Developer Transfer Leads</a>'
+USERS[4]='<a href="/portal/django/client_sub_accounts/" >Create Client Sub-Account</a>'
+USERS[5]='<a href="/portal/recruitment_team/" >Recruitment Team</a>'
+
+
+var INVOICING=new Array()
+INVOICING[0]='<a href="/portal/invoice/StaffInvoiceMaintenance/StaffInvoiceMaintenance.html" >Sub-Contractors</a>'
+INVOICING[1]='<a href="/portal/admin_subcon_payment_details.php">Sub-Contractors Bank Accounts</a>'
+INVOICING[2]='<a href="/portal/django/inhouse/" >Inhouse Payment Settings</a>'
+INVOICING[3]='<a href="/portal/django/commission/" target="blank">Commissions</a>'
+//INVOICING[1]='<a href="adminInvoicesForClient.php">Clients</a>'
+//INVOICING[2]='<a href="adminBPCommission.php">Business Developer Commission</a>'
+//INVOICING[3]='<a href="adminInvoicingForAff.php">Affiliates</a>'
+//INVOICING[4]='<a href="payment_history.php">Payments History</a>'
+//INVOICING[5]='<a href="admin_set_up_fee_invoice.php">Set-Up Fee Invoice</a>'
+//INVOICING[6]='<a href="admin_create_quote.php">Create a Quote</a>'
+//INVOICING[8]='<a href="invoice/IremitSenderMaintenance/IremitSenderMaintenance.html" >Sub-Contractors Iremit Sender</a>'
+//INVOICING[9]='<a href="admin_leads_invoice_payment.php">Secure Pay/PayPal Payments</a>'
+//INVOICING[10]='<a href="admin_get_started.php">Recruitment Service Ordering</a>'
+
+var TOOLS=new Array() 
+//TOOLS[0]='<a href="admin_job_order.php">Job Request/Order Form</a>'
+TOOLS[0]='<a href="/portal/admin_testimonials.php">Testimonials</a>'
+TOOLS[1]='<a href="/portal/admin_comments_suggestion.php">Comments &amp; Suggestions</a>'
+TOOLS[2]='<a href="/portal/django/bulletin_board/">Bulletin Board</a>'
+TOOLS[3]='<a href="/portal/promo_codes_monitoring/" >Promo Codes Monitoring</a>'
+TOOLS[4]='<a href="/portal/job_titles.php">Job Titles Price Management</a>'
+TOOLS[5]='<a href="/portal/seatbooking/seatb.php?/index/" >RS Office Seat Booking</a>'
+TOOLS[6]='<a href="/portal/tools/TimeZoneConverter/TimeZoneConverter.html" >Time Zone Converter</a>'
+TOOLS[7]='<a href="/portal/rs_contact_nos/" >RS Contact Number Management</a>'
+
+var SKILLTEST=new Array()
+SKILLTEST[0]='<a href="/portal/skillstest/apptest.php?/index/" >Manage Skills Tests</a>'
+SKILLTEST[1]='<a href="/portal/test_admin/" >Generate Test Session</a>'
+//SKILLTEST[3]='<a href="/skills_test/?/reports/" >Skills Test Reports</a>'
+
+var RECREPORTING=new Array()
+RECREPORTING[0]='<a href="/portal/recruiter/recruiter_job_orders_view_summary.php" >Recruitment Summary</a>'
+RECREPORTING[1]='<a href="/portal/recruiter/recruitment_sheet.php" >Recruitment Sheet</a>'
+RECREPORTING[2]='<a href="/portal/recruiter/recruitment_sheet_dashboard.php">Recruitment Dashboard</a>'
+RECREPORTING[3]='<a href="/portal/recruiter/recruitment_team_shortlists.php">Recruitment Team Shortlists</a>'
+
+var LEADS=new Array() 
+LEADS[0]='<a href="AddUpdateLeads.php">Add New Leads</a>'
+//LEADS[1]='<a href="admin_prepaid_clients.php">Prepaid Clients</a>'
+//LEADS[2]='<a href="admininactiveList.php">No Longer a Prospect</a>'
+
+var TRIAL = new Array()
+TRIAL[0]='<a href="/adhoc/django/requested_time_slots_management/" >Manage Trial Staff Candidates</a>'
+TRIAL[1]='<a href="/adhoc/django/purchased_time_blocks_management/" >Manage Time Blocks</a>'
+TRIAL[2]='<a href="/adhoc/django/requested_time_slots_management/" >Running Balance Management</a>'
+TRIAL[3]='<a href="/adhoc/site_media/admin/category_subcategory_management/CategorySubCategoryManagement.html" >Manage Trial Staff Categories</a>'
+TRIAL[4]='<a href="/adhoc/site_media/admin/alias_price_management/AliasPriceManagement.html" >Manage Trial Staff Advertised Rates</a>'
+TRIAL[5]='<a href="/adhoc/django/assigning_staff/" >Member Assign Staff</a>'
+
+var PREPAID = new Array()
+PREPAID[0]='<a href="/portal/admin_prepaid_clients.php">Prepaid Clients</a>'
+PREPAID[1]='<a href="/portal/AdminRunningBalanceClientSearch/ClientSearch.html" >Client Available Balance Search</a>'    
+PREPAID[2]='<a href="/portal/AdminMassGeneratePrepaidAdjustments/AdminMassGeneratePrepaidAdjustments.html" >Prepaid Invoice Mass Generation & Adjustments</a>'    
+PREPAID[3]='<a href="/portal/AdminPrepaidInvoiceManagement/AdminPrepaidInvoiceManagement.html" >Prepaid Invoice Management</a>'  
+PREPAID[4]='<a href="/portal/django/accounts/" target="blank">Statement Of Account</a>'  
+
+var MEETINGCALENDAR = new Array()
+MEETINGCALENDAR[0]='<a href="#" onclick="open_calendar();return false;">View My Calendar</a>'
+MEETINGCALENDAR[1]='<a href="#" onclick="open_admin_calendar();return false;">View Other Admins\' Calendar</a>'
+
+var SCREENRECORDING = new Array()
+SCREENRECORDING[0]='<a href="/portal/screenshare_admin.php" target="blank">Screen Share</a>'
+SCREENRECORDING[1]='<a href="/portal/screenrecorder_admin.php" target="blank">Screen Recorder</a>'
+SCREENRECORDING[2]='<a href="/portal/screenrec_list.php" target="blank">Saved Screen Recording</a>'
+
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var horizontaloffset=2 //horizontal offset of menu from default location. (0-5 is a good value)
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function open_calendar()
+{
+  window.open('meeting_calendar/?view_type=view','_blank','width=1024,height=900,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,scrollbars=yes,status=no');
+}
+function open_admin_calendar()
+{
+  window.open('meeting_calendar/?view_type=other_admin','_blank','width=1024,height=900,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,scrollbars=yes,status=no');
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x-obj.offsetWidth < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move menu up?
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either? (position at top of viewable window then)
+edgeoffset=dropmenuobj.y
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+obj.offsetWidth+horizontaloffset+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+/////////////////////////
+var timer;
+function scrolltop()
+{
+document.getElementById('scrollmenu').style.top=(document.body.scrollTop+230) ;
+timer=setTimeout("scrolltop()",1);
+}
+function stoptimer()
+{
+clearTimeout(timer);
+}
+</script>
+
+
+<div id="markermenu" >
+	<ul>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, USERS, '270px')" onmouseout="delayhidemenu();">Add Users</a></li>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, PREPAID, '270px')" onmouseout="delayhidemenu();">Prepaid Client</a></li>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, INVOICING, '270px')" onmouseout="delayhidemenu();">Invoices</a></li>
+		<li><a href="/portal/django/subcontractors/accepted_service_agreement/"  >Accepted Service Agreements</a></li>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, RECREPORTING, '270px')" onmouseout="delayhidemenu();">Recruiters Reporting</a></li>
+		<li><a href="/portal/stats/page_view.php"  >Client Portal Activities</a></li>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, SKILLTEST, '270px')" onmouseout="delayhidemenu();">Skill Test Management</a></li>
+		<li><a href="/portal/scenmgt/?/admin/"  >Scenario Management</a></li>
+		<li><a href="admin_activity_tracker_notes.php">Activity Tracker Notes Settings</a></li>
+		<li><a href="/portal/aclog/"  >Activity Logger</a></li>
+		<li><a href="/portal/leave_request/admin/" >Leave Request Management</a></li>
+		<li><a href="/portal/django/workflow/"  >Workflow</a></li>
+					<li><a href="#" onmouseover="dropdownmenu(this, event, MEETINGCALENDAR, '270px')" onmouseout="delayhidemenu();">Meeting Calendar</a></li>
+				<li><a href="#" onmouseover="dropdownmenu(this, event, TOOLS, '270px')" onmouseout="delayhidemenu();">Tools</a></li>
+		<li><a href="/adhoc/django/requested_time_slots_management/"  >Trial Based</a></li>
+		<li><a href="/portal/bugreport/"  >Bug Report</a></li>
+		<li><a href="#" onmouseover="dropdownmenu(this, event, SCREENRECORDING, '270px')" onmouseout="delayhidemenu();">Screen Recording</a></li>
+		<!--<li><a href="#" onmouseover="dropdownmenu(this, event, LEADS, '270px')" onmouseout="delayhidemenu();">Leads</a></li>-->
+		<!--<li><a href="admin_personnel_info.php">Personnel</a></li>-->
+		<!--<li><a href="send-staff-resume-to-leads-adminside.php">Recommendation&nbsp;Summary</a></li>-->
+		<!--<li><a href="send-resume-to-leads.php">Send Resume to Leads</a></li>-->
+		<!--<li><a href="admin_problems_and_issues.php">Problems / Issues</a></li>-->		
+	</ul>
+</div>
+
+
+					
+		</td>
+	</td>
+<td width=100% valign=top >
+<table width=100%  border=0 align=left cellpadding=2 cellspacing=8 >
+<tr>
+<td>
+
+
+<div class="animatedtabs">
+<ul>
+<li ><a href="leads_information.php?id=10594&lead_status=&page_type="><span>Lead</span></a></li>
+<li ><a href="client_account.php?id=10594&lead_status=&page_type="><span>Contracted Staff Member</span></a></li>
+<li ><a href="jobpostings.php?id=10594&lead_status=&page_type="><span>Post Job Ad on Website</span></a></li>
+<li class='selected'><a href="recruitment_1.php?id=10594&lead_status=&page_type="><span>Recruitment Progress</span></a></li>
+<li class='selected'><a href="leads_csro_report.php?id=10594&lead_status=&page_type="><span>CSRO Report</span></a></li>
+<li ><a href="leads_invoice_setting.php?id=10594&lead_status=&page_type="><span>Invoice/ASL Email Recipient Settings</span></a></li>
+<li ><a href="leads_cases.php?id=10594&lead_status=&page_type="><span>Cases</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr><td height="100%" colspan=2 valign="top" >
+<!-- Clients Details starts here -->
+<span class="toggle-btn" onClick="toggle('personal_information')">SHOW / HIDE</span>
+<h2>Information</h2>
+<div id="personal_information" style="display:none;">
+<table width='100%' cellpadding='0'cellspacing='0' style="border:#333333 1px;" >
+<tr><td style="border-right:#000000 1px solid;">&nbsp;</td><td align="right" valign="bottom"><br /><a href="AddUpdateLeads.php?leads_id=10594&lead_status=New Leads&page_type=TRUE&url=recruitment_1.php?id=10594">Edit Leads Information</a></td></tr>
+<tr>
+<td width="50%" valign="top" style="border-right:#000000 1px solid;">
+<!-- left info -->
+<table width='100%' cellpadding='3'cellspacing='0' id="leads_info"  >
+<tr>
+<td width="30%" valign="top" class="td_info td_la" >Fullname</td>
+<td width="70%" valign="top" class="td_info"><b>Simon Boyle #10594</b>
+</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Gender</td>
+<td  valign="top" class="td_info">Male</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Status</td>
+<td  valign="top" class="td_info"><b style="color:#FF0000;">Client</b></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Promotional Code</td>
+<td  valign="top" class="td_info" style="color:#006600;">101INBOUNDCALL</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Ratings</td>
+<td  valign="top" class="td_info"><span id="ratings"></span><span style="float:right;"><small>change rating</small> <select name="star" id="star" style="font:10px tahoma;" onchange="ChangeLeadsRating()" >
+<option value=0 selected='selected'>0</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option>
+
+</select>&nbsp;</span></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Date Registered</td>
+<td  valign="top" class="td_info">April 21, 2014
+<span style="float:right; font-family:tahoma; font-size:10px; color:#666666;">
+ Last Updated Date : Dec. 16, 2014 08:22:51 AM<br /> Last Viewed Date : Dec. 16, 2014 07:08:09 PM </span>
+</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Primary Email</td>
+<td  valign="top" class="td_info">lance@runtimerec.com
+<span style="float:right;"><a href="javascript:popup_win('./leads_information/admin_bp_reset_password_for_lead.php?leads_id=10594',400,200);" style=" font-size:10px;">reset password</a></span>
+</td>
+</tr>
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Skype Id</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Alternative Email</td>
+<td  valign="top" class="td_info"><a href="javascript:ShowAddAlternativeEmailsForm();" style="float:right; font-size:10px;">add email</a>
+<div id="alternative_email_form"></div>
+<div  id="alternative_emails_list">
+<table width="80%" cellpadding="1" cellspacing="2">
+</table>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Country / IP</td>
+<td width="70%" valign="top" class="td_info">United Kingdom  </td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">State</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Leads of</td>
+<td width="70%" valign="top" class="td_info">BP : Chris Jankulovski [ chrisj@remotestaff.com.au ] </td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company</td>
+<td width="70%" valign="top" class="td_info">HCS</td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Position</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Address</td>
+<td width="70%" valign="top" class="td_info">1st Floor, 85D Queen St., 
+3 Royal Exchange Court, 
+Glasgow, 
+G1 3DB</td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Website</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Phone</td>
+<td width="70%" valign="top" class="td_info">+44843 289 0427</td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Mobile Phone</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Industry</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">No.of Employee</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Turnover in a Year</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Company Profile</td>
+<td width="70%" valign="top" class="td_info">Icsbusiness box provide clouds software Project governance solution to financial institutions.
+We require candidates with strong Excel experience with a knowledge of Project management to assist our business going forward </td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">No.of Remote Staff neeeded</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Remote Staff needed</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Remote Staff needed in Home Office</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Remote Staff needed in Office</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td width="30%" valign="top" class="td_info td_la">Remote Staff responsibilities</td>
+<td width="70%" valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td valign="top" class="td_info td_la">Client Staff Relations Officer</td>
+<td valign="top" class="td_info"> </td>
+</tr>
+
+<tr>
+<td valign="top" class="td_info td_la">Hiring Coordinator</td>
+<td valign="top" class="td_info"> </td>
+</tr>
+
+
+<tr>
+<td valign="top" class="td_info td_la">Lead is Inquiring about : </td>
+<td valign="top" class="td_info" >
+<div ><a href="javascript:ShowPosition();" id="add_position_link" style=" font-size:10px;">Add Position</a></div>
+<div id="add_position"></div>
+<div id="job_positions">
+<table width="100%" cellpadding="2" cellspacing="1">
+
+</table>
+</div>
+</td>
+</tr>
+
+<tr>
+<td valign="top" class="td_info td_la">Currency <small style="color:#FF0000;">( Client Settings. )</small></td>
+<td valign="top" class="td_info" ><strong></strong> <small style="margin-left:10PX;"></small></td>
+</tr>
+
+
+
+</table>
+<!-- end left info --></td>
+<td width="50%" valign="top" style="padding-left:2px;">
+<!-- right info -->
+<table width='100%' cellpadding='3'cellspacing='0' id="leads_info"  >
+<tr>
+<td  colspan="2" valign="top" class="td_info" ><b style="color:#FF0000;">Contact Details</b></td>
+</tr>
+
+<tr>
+<td width="50%"  valign="top" class="td_info td_la">Accounts Department Staff Name 1</td>
+<td width="50%"  valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Accounts Department Email 1</td>
+<td  valign="top" class="td_info">Audrey.Declety@icsbusinessbox.net</td>
+</tr>
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Accounts Department Contact nos. 1</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td width="50%"  valign="top" class="td_info td_la">Accounts Department Staff Name 2</td>
+<td width="50%"  valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Accounts Department Email 2</td>
+<td  valign="top" class="td_info">Accounts@icsbusinessbox.net</td>
+</tr>
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Accounts Department Contact nos. 2</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+
+
+<tr>
+<td colspan="2"  valign="top" class="td_info"><b style="color:#FF0000;">Person directly working with sub-contractor in client organization</b></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Name</td>
+<td  valign="top" class="td_info">CC: Project Analyst/Date Entry</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Job Title</td>
+<td  valign="top" class="td_info">Lance and Lawrence</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Skype</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Email</td>
+<td  valign="top" class="td_info">Lawrence.Anthony@hcsgroup.net</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Contact</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Business Owner/Director/CEO</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Business Partners</td>
+<td  valign="top" class="td_info"></td>
+</tr>
+
+<tr>
+<td colspan="2"  valign="top" class="td_info"><b style="color:#FF0000;">Secondary Contact Person</b></td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Name</td>
+<td  valign="top" class="td_info">Cameron Grant</td>
+</tr>
+
+
+
+<tr>
+<td  valign="top" class="td_info td_la">Email</td>
+<td  valign="top" class="td_info">Cameron.Grant@icsbusinessbox.net</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Phone No.</td>
+<td  valign="top" class="td_info">Gillian.Moore@icsbusinessbox.net</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Company Position</td>
+<td  valign="top" class="td_info">CC Cameorn, Gillian and Lance for .NET subs</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Note</td>
+<td  valign="top" class="td_info">CC Gillian for Tech Analyst
+</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la" colspan="2"><b style="color:#FF0000;">Upload Files</b></td>
+</tr>
+<tr>
+<td  valign="top" class="td_info" colspan="2">
+		<table cellspacing=1 cellpadding=3 width=100%>
+			<tr>
+				<td colspan="2">File Type/Size<font color="#666666"><em>(doc, pdf or image format) Upload limit per file is 5 MB)</em></font></td>
+			</tr>
+			<tr>
+				<td>Type</td>
+				<td>
+					<select name="type">
+	                    <option value="" selected>Select File Type</option>
+						<option value="Signed contract">Signed contract</option>
+						<option value="Credit card form">Credit card form</option>
+						<option value="Direct debit form">Direct debit form</option>
+                        <option value="Other">Other</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Staff</td>
+				<td>
+					<select name="staff">
+	                    <option value="" selected>Select Staff</option>
+						
+					</select>
+				</td>
+			</tr>  
+			<tr>
+				<td>File</td>
+				<td><input type="file" name="fileimg" value="" size="35" />	</td>
+			</tr>                      
+			<tr>
+				<td valign="top">Notes</td>
+				<td><textarea name="notes" rows="3" cols="35"></textarea></td>
+			</tr>
+			<tr>
+            	<td></td>
+				<td><input type="button" style="cursor:pointer" onclick="alert('disabled');return false;" onmouseout="" oncontextmenu="return false;" value="Upload File" name="upload_file" class="button"></td>
+			</tr>			
+		</table>
+</td>
+</tr>
+
+<tr>
+<td  valign="top" class="td_info td_la">Preffers to Communicate Via : </td>
+<td  valign="top" class="td_info">Email</td>
+</tr>
+</table>
+
+<!-- end right info --></td>
+</tr>
+</table></div>
+<!-- Clients Details ends here -->
+</td>
+</tr>
+<tr><td width=100% colspan=2 valign="top">
+<h2>Applicants</h2>
+<div class="hiresteps"><table width=100% cellspacing=1 cellpadding=4 align=center border=0 bgcolor=#DEE5EB>
+<tr bgcolor='#666666'>
+    <td width='4%' height="20" align=left><font size='1' color="#FFFFFF"><b>#</b></font></td>
+    <td width='11%' align=left><b><font size='1' color="#FFFFFF">Posting Date</font></b></td>
+    <td width='18%' align=left><b><font size='1' color="#FFFFFF">Company</font></b></td>
+    <td width='19%' align=left><b><font size='1' color="#FFFFFF">Position</font></b></td>
+    <td width='8%' align=center><b><font size='1' color="#FFFFFF">Unprocessed</font></b></td>
+    <td width='8%' align=center><b><font size='1' color="#FFFFFF">Pre-Screened</font></b></td>
+    <td width='7%' align=center><b><font size='1' color="#FFFFFF">Shortlisted</font></b></td>
+    <td width='7%' align=center><b><font size='1' color="#FFFFFF">Inactive</font></b></td>
+    <td width='6%' align=center><b><font size='1' color="#FFFFFF">Endorsed</font></b></td>
+    <td width='6%' align=center><b><font size='1' color="#FFFFFF">On ASL</font></b></td>
+</tr>
+
+<tr bgcolor=#FFFFFF>
+	<td width='4%' height="20" align=left>1)</td>
+	<td width='11%' align=left><font size='1'>2014-11-20 13:51:26</font></td>
+	<td width='18%' align=left><font size='1'>RemoteStaff Client</font></td>
+	<td width='19%' align=left><font size='1'><a href='#' onClick= "javascript:popup_win('./ads2.php?id=3042',700,700);">Data Entry</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=unprocessed', 750, 280);">14</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=prescreened', 750, 280);">8</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=shortlist', 750, 280);">6</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=inactive', 750, 280);">17</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=endorsement', 750, 280);">6</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3042&type=asl', 750, 280);">20</a></font></td>
+</tr>
+<tr bgcolor=#f5f5f5>
+	<td width='4%' height="20" align=left>2)</td>
+	<td width='11%' align=left><font size='1'>2014-12-04 08:21:41</font></td>
+	<td width='18%' align=left><font size='1'>RemoteStaff Client</font></td>
+	<td width='19%' align=left><font size='1'><a href='#' onClick= "javascript:popup_win('./ads2.php?id=3087',700,700);">Technical Analyst</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=unprocessed', 750, 280);">1</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=prescreened', 750, 280);">0</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=shortlist', 750, 280);">5</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=inactive', 750, 280);">1</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=endorsement', 750, 280);">5</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3087&type=asl', 750, 280);">0</a></font></td>
+</tr>
+<tr bgcolor=#FFFFFF>
+	<td width='4%' height="20" align=left>3)</td>
+	<td width='11%' align=left><font size='1'>2014-12-11 14:52:29</font></td>
+	<td width='18%' align=left><font size='1'>RemoteStaff Client</font></td>
+	<td width='19%' align=left><font size='1'><a href='#' onClick= "javascript:popup_win('./ads2.php?id=3108',700,700);">Project Analyst</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=unprocessed', 750, 280);">0</a></font></td>
+	<td width='8%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=prescreened', 750, 280);">0</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=shortlist', 750, 280);">6</a></font></td>
+	<td width='7%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=inactive', 750, 280);">2</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=endorsement', 750, 280);">0</a></font></td>
+	<td width='6%' align=center><font size='1'><a href='#' onClick="javascript:popup_win('/portal/recruiter/staff_endorsed_on_posting.php?posting_id=3108&type=asl', 750, 280);">0</a></font></td>
+</tr>
+
+</table></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; background: URL('images/bg1.gif'); background-repeat: repeat-x">
+<tr><td style="border-bottom: 2px #0d509e solid; " colspan="2" >&nbsp;</td></tr>
+<tr><td valign="top" >
+Copyright © 2008 Think Innovations Pty Ltd<br />
+<a href="http://remotestaff.com.au/"  class="link10" title="Outsourcing Online Staff from the Philippines">REMOTESTAFF.COM.AU</a>
+</td><td valign="top" align="right"><font size="1"><a href="logout.php" class="link10">Agent/Client/Sub-Contractor login</a></font></td></tr>
+<tr><td colspan="2" valign="top" align="right"><img src="images/Small-Logo2.jpg" alt="Think Innovations" align="middle" /></td></tr>
+</table>
+
+<script type="text/javascript" src="./js/MochiKit.js"></script>
+<script type="text/javascript" src="./leads_information/media/js/leads_information.js"></script>
+<script language=javascript src="js/functions.js"></script>
+<script type="text/javascript" language="javascript" src="/portal/bubblehelp/js/script.js"></script>
+<script type="text/javascript" language="javascript" src="/portal/bubblehelp/js/pullmenu.js"></script>
+</body>
+</html>

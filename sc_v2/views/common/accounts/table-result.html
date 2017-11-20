@@ -1,0 +1,159 @@
+<div class="col-lg-12">
+
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Invoices with Payment Advice</h5>
+		</div>
+
+		<div class="ibox-content">
+			<div class="tabs-container">
+				<tabset>
+					<tab heading="New Invoices">
+						<!-- New Invoices -->
+						<div class="panel-body">
+							<div class="project-list table-responsive">
+								<table class="table table-hover issue-tracker">
+									<thead>
+										<tr>
+											<th>Tax Invoice No.</th>
+											<th>Date Created</th>
+											<th>Client ID</th>
+											<th>Client Name</th>
+											<th>Days Before Suspension</th>
+											<th>Auto Debit</th>
+											<th>Invoice Amount</th>
+											<th>Payment Advise</th>
+											<th>Payment Amount</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="invoice in new_invoices" >
+											<td><a href="/portal/AdminPrepaidInvoice/AdminPrepaidInvoice.html?doc_id={{invoice.couch_id}}" target="_blank">{{invoice.order_id}}</a></td>
+											<td>{{invoice.added_on_xero}}</td>
+											<td><a href="/portal/AdminRunningBalance/RunningBalance.html?client_id={{invoice.client_id}}" target="_blank">{{invoice.client_id}}</a></td>
+											<td><a href="/portal/leads_information.php?id={{invoice.client_id}}" target="_blank">{{invoice.client_fname}} {{invoice.client_lname}}</a></td>
+											<td>{{invoice.client_settings.days_before_suspension}}</td>
+											<td>{{invoice.client_settings.autodebit}}</td>
+											<td>{{invoice.total_amount_money}}</td>
+											<td>{{invoice.payment_advise}}</td>
+											<td>{{invoice.payment_advise_amount_full}}</td>
+											<td>
+											<button ng-click="updatePaymentAdvise(invoice.order_id,invoice.payment_advise,invoice.payment_advise_amount)" class="btn btn-white btn-xs">
+												<i class="fa fa-pencil"></i> Update
+											</button>
+											
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="row">
+									<div class="col-lg-12" align="center">
+										<button ng-click="show_more_invoices('new')" class="btn btn-white btn-xs" ng-hide="hide_more_new">
+											<i class="fa fa-arrow-down"></i> Show More New Invoices ({{new_invoice_count}})
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</tab>
+					<tab heading="Paid Invoices">
+						<!-- Paid Invoices -->
+						<div class="panel-body">
+							<div class="project-list table-responsive">
+								<table class="table table-hover issue-tracker">
+									<thead>
+										<tr>
+											<th>Tax Invoice No.</th>
+											<th>Date Created</th>
+											<th>Client ID</th>
+											<th>Client Name</th>
+											<th>Days Before Suspension</th>
+											<th>Auto Debit</th>
+											<th>Invoice Amount</th>
+											<th>Payment Advise</th>
+											<th>Payment Amount</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="invoice in paid_invoices" >
+											<td><a href="/portal/AdminPrepaidInvoice/AdminPrepaidInvoice.html?doc_id={{invoice.couch_id}}" target="_blank">{{invoice.order_id}}</a></td>
+											<td>{{invoice.added_on_xero}}</td>
+											<td><a href="/portal/AdminRunningBalance/RunningBalance.html?client_id={{invoice.client_id}}" target="_blank">{{invoice.client_id}}</a></td>
+											<td><a href="/portal/leads_information.php?id={{invoice.client_id}}" target="_blank">{{invoice.client_fname}} {{invoice.client_lname}}</a></td>
+											<td>{{invoice.client_settings.days_before_suspension}}</td>
+											<td>{{invoice.client_settings.autodebit}}</td>
+											<td>{{invoice.total_amount_money}}</td>
+											<td>{{invoice.payment_advise}}</td>
+											<td>{{invoice.payment_advise_amount_full}}</td>
+											<td>
+											<button ng-click="sendPaymentNotice(invoice.order_id,invoice.payment_advise,invoice.payment_advise_amount_full,invoice.client_fname+' '+invoice.client_lname, invoice.client_email, invoice)" class="btn btn-primary btn-xs" ng-hide="invoice.payment_advise=='No'">
+												<i class="fa fa-envelope"></i> Send Notice
+											</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="row">
+									<div class="col-lg-12" align="center">
+										<button ng-click="show_more_invoices('paid')" class="btn btn-white btn-xs" ng-hide="hide_more_paid">
+											<i class="fa fa-arrow-down"></i> Show More Paid Invoices ({{paid_invoice_count}})
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</tab>
+					<tab heading="Cancelled Invoices">
+						<!-- Cancelled Invoices -->
+						<div class="panel-body">
+							<div class="project-list table-responsive">
+								<table class="table table-hover issue-tracker">
+
+									<thead>
+										<tr>
+											<th>Tax Invoice No.</th>
+											<th>Date Created</th>
+											<th>Client ID</th>
+											<th>Client Name</th>
+											<th>Days Before Suspension</th>
+											<th>Auto Debit</th>
+											<th>Invoice Amount</th>
+											<th>Payment Advise</th>
+											<th>Payment Amount</th>
+	
+										</tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="invoice in cancelled_invoices" >
+											<td><a href="/portal/AdminPrepaidInvoice/AdminPrepaidInvoice.html?doc_id={{invoice.couch_id}}" target="_blank">{{invoice.order_id}}</a></td>
+											<td>{{invoice.added_on_xero}}</td>
+											<td><a href="/portal/AdminRunningBalance/RunningBalance.html?client_id={{invoice.client_id}}" target="_blank">{{invoice.client_id}}</a></td>
+											<td><a href="/portal/leads_information.php?id={{invoice.client_id}}" target="_blank">{{invoice.client_fname}} {{invoice.client_lname}}</a></td>
+											<td>{{invoice.client_settings.days_before_suspension}}</td>
+											<td>{{invoice.client_settings.autodebit}}</td>
+											<td>{{invoice.total_amount_money}}</td>
+											<td>{{invoice.payment_advise}}</td>
+											<td>{{invoice.payment_advise_amount_full}}</td>
+											
+										</tr>
+									</tbody>
+								</table>
+								<div class="row">
+									<div class="col-lg-12" align="center">
+										<button ng-click="show_more_invoices('cancelled')" class="btn btn-white btn-xs" ng-hide="hide_more_cancelled">
+											<i class="fa fa-arrow-down"></i> Show More Cancelled Invoices ({{cancelled_invoice_count}})
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</tab>
+
+				</tabset>
+
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="LockTimesheetController as lts">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Lock / Unlock Timesheet</h3>
+	    </div>
+	</div>
+	
+	<div ng-show="lock_unlock_timesheet ==='Y'" class="wrapper wrapper-content animated fadeInRight">
+		<div class="row" ng-include="'views/common/lock-timesheet/search-form.html'"></div>
+		<div class="row" ng-include="'views/common/lock-timesheet/table-result.html'"></div>
+	</div>
+	
+	<div ng-show="lock_unlock_timesheet ==='N'" class="wrapper wrapper-content animated fadeInRight">
+		<div class="alert alert-danger">
+			<h3>You are not authorized to Lock/Unlock Timesheets </h3>
+		</div>
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

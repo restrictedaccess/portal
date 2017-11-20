@@ -1,0 +1,35 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<button data-style="zoom-in" class="ladda-button btn btn-primary btn-sm pull-right" ladda="loading5" ng-click="generateQuote()" ng-disabled="setting === null"><strong>Generate Quote</strong></button>
+			<h3>List of Quotes</h3>
+			
+			<table class="table table-bordered table-striped">
+				<thead>
+					<tr>
+						<th>Quote Id</th>
+						<th class="text-center">Status</th>
+						<th>Created By</th>
+						<th>Date Created</th>
+						<th>Date Posted</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+					<tr ng-repeat="q in quotes">
+						<td><a href="/portal/accounts_v2/#/quote/details/?quote_id={{ q.id }}" target="_blank">{{ q.id }}</a></td>
+						<td class="text-center">
+							<span class="label label-warning" ng-show="q.status ==='draft'">{{ q.status }}</span>
+							<span class="label label-info" ng-show="q.status ==='new'">{{ q.status }}</span>
+							<span class="label label-primary" ng-show="q.status ==='posted'">{{ q.status }}</span>
+						</td>
+						<td>{{ q.created_by.fname }} {{ q.created_by.lname }}</td>
+						<td>{{ q.date_quoted }}</td>
+						<td>{{ q.date_posted }}</td>
+					</tr>
+				</tbody>
+				
+			</table>		
+		</div>
+	</div>
+</div>

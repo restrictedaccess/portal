@@ -1,0 +1,129 @@
+/* CSS Document */
+.testi_hdr{
+	padding:5px; 
+	background:#333333; 
+	color:#FFFFFF;
+}
+.pagination{
+padding: 5px;
+font:10px tahoma;
+color:#999999;
+text-align:center;
+}
+
+.pagination ul{
+margin: 0;
+padding: 0;
+text-align: center; /*Set to "right" to right align pagination interface*/
+font-family: tahoma; font-size: 10px;
+}
+
+.pagination li{
+list-style-type: none;
+display: inline;
+padding-bottom: 1px;
+}
+
+.pagination a, .pagination a:visited{
+padding: 0 5px;
+border: 1px solid #9aafe5;
+text-decoration: none; 
+color: #2e6ab1;
+}
+
+.pagination a:hover, .pagination a:active{
+border: 1px solid #2b66a5;
+color: #000;
+background-color: #FFFF80;
+}
+
+.pagination a.currentpage{
+background-color: #2e6ab1;
+color: #FFF !important;
+border-color: #2b66a5;
+font-weight: bold;
+cursor: default;
+}
+
+.pagination a.disablelink, .pagination a.disablelink:hover{
+background-color: white;
+cursor: default;
+color: #929292;
+border-color: #929292;
+font-weight: normal !important;
+}
+
+.pagination a.prevnext{
+font-weight: bold;
+}
+
+
+.staff_hdr{
+	font:bold 15px Arial; 
+	margin-top:20px; 
+	margin-bottom:20px; 
+	padding:5px;
+	color:#FFFFFF;
+	background:#333333;
+}
+.testi_holder{
+	font:11px tahoma; 
+	margin-top:2px; 
+	text-align:justify; 
+	padding-left:10px;
+	padding-right:10px;
+}
+.testi_img_holder{
+	float:left; 
+	width:92px; 
+	height:106px; 
+	padding:3px; 
+	border:#CCCCCC ridge 1px; 
+	margin-right:5px;
+}
+#staff_wrapper {
+	
+	padding-top:5px;
+	background:#F4F4F4;
+
+}
+#staff_wrapper p{
+	margin-bottom:7px;
+	margin-top:7px;
+	line-height: 17px;
+} 
+#staff_wrapper span{
+	color:#CCCCCC;
+}
+
+
+.staff_box{
+	display:block;
+	background:#FFFFFF;
+	/*border:#73BECE solid 3px;*/
+	border:#c6f1fa solid 3px;
+	float:left;
+	margin-left:0px;
+	width:340px;
+	margin-top:5px;
+	padding:5px;
+	height:350px;
+	
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+	
+}
+
+.client_name{
+	font:bold 12px Arial;
+	color:#006600;
+}
+.staff_name{
+	font:bold 12px Arial;
+	color:#000033;
+}
+.staff_job_title{
+	font:bold 11px tahoma;
+	color:#FF0000;
+}
+

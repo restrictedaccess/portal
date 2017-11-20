@@ -1,0 +1,168 @@
+body {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+
+.gwt-DialogBox {
+    border: 2px outset;
+    background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+    background-color: #C3D9FF;
+    padding: 3px;
+    margin: 2px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.gwt-DialogBox .Contents {
+    padding: 10px;
+}
+
+.gwt-PopupPanelGlass {
+    background-color: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+.grid_header {
+    font-weight: bold;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 12;
+    text-align: center;
+    background-color: #EEE;
+    border-color: white;
+}
+
+#grid_records {
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+    font-size: 12;
+    border-collapse: separate;
+    border-color: white;
+}
+
+#grid_records tr:hover {
+    background-color: #BBBBFF;
+}
+
+.size_12 {
+    font-size: 12px;
+}
+
+.col_day {
+    width: 48px;
+}
+
+.col_date {
+    width: 28px;
+}
+
+.col_time {
+    width: 68px;
+}
+
+.col_hrs {
+    width: 48px;
+}
+
+.col_notes {
+    width: 200;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.row_even {
+    background-color: #CCFFCC;
+}
+
+.row_odd {
+    background-color: #EEFFEE;
+}
+
+.row_sat {
+    background-color: #FFFFCC;
+}
+
+.row_sun {
+    background-color: #FFFFAA;
+}
+
+#panel_timesheet {
+    text-align: left;
+}
+
+.cursor_pointer {
+    cursor : pointer;
+}
+
+.gwt-TabPanel {
+}
+
+.gwt-TabPanelBottom {
+    border: 1px solid #87B3FF;
+}
+
+.gwt-TabBar {
+    background-color: #C3D9FF;
+}
+
+.gwt-TabBar .gwt-TabBarFirst {
+    height: 100%;
+    padding-left: 3px;
+}
+
+.gwt-TabBar .gwt-TabBarRest {
+    padding-right: 3px;
+}
+
+.gwt-TabBar .gwt-TabBarItem {
+    border-top: 1px solid #C3D9FF;
+    border-bottom: 1px solid #C3D9FF;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+    font-weight: bold;
+    background-color: #E8EEF7;
+    border-top: 1px solid #87B3FF;
+    border-left: 1px solid #87B3FF;
+    border-right: 1px solid #87B3FF;
+    border-bottom: 1px solid #E8EEF7;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: default;
+}
+
+#tab_panel_top div{
+    font-size: 16px;
+}
+
+#grid_records div{
+    font-size: 12px;
+}
+
+.row_even_invoices {
+    background-color: #CCFFCC;
+    font-size: 12px;
+}
+
+.row_odd_invoices {
+    background-color: #EEFFEE;
+    font-size: 12px;
+}
+
+.version {
+    font-size: 10px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+

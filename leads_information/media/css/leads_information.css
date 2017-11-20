@@ -1,0 +1,481 @@
+/* CSS Document */
+.jo_comments{
+    color:#333333;
+	cursor:pointer;
+	background:#CCCCCC;
+	border:#999999 outset 1px;
+	padding-left:3px;
+	padding-right:3px;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+
+
+#invoice_setting_add_email li{
+	list-style:none;
+	padding:5px;
+}
+
+.default_s{
+    font-size:9px;
+	font-style:italic;
+	background:#FFFF33;
+	color:#666666;
+	padding-right:5px;
+}
+
+.cc_s{
+    font-size:9px;
+	font-style:italic;
+	background:#66FFFF;
+	color:#666666;
+	padding-right:5px;
+}
+
+#alternative_email_form{
+	display:none;
+}
+
+#add_position{
+	position:absolute;
+	display:none;
+	width:250px;
+	
+}
+.leads_orig_hdr{
+	font-size:16px;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+
+#leads_orig_info{
+	margin-bottom:20px;
+	margin-left:10px;
+}
+
+#leads_orig_info p{
+	margin-bottom:1px;
+	margin-top:3px;
+	
+}
+#identical{
+	background:#FFFFFF;
+	border:#0000FF solid 1px;
+	width:500px; 
+	position:absolute; 
+	display:none;
+}
+.iden_hdr{
+	background:#0000FF;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding:1px;
+	
+}
+
+.iden_hdr span{
+	float:right;
+	cursor:pointer;
+}
+#identical input{
+	margin-left:20px;
+	margin-bottom:5px;
+}
+
+#bttn_div input{
+	text-transform:capitalize !important;
+	font-size:12px;
+	font-family:"Microsoft Sans Serif",Arial,Helvetica,sans-serif;
+	padding:4px;
+}
+
+#leads_new_info textarea{
+	font:11px tahoma;
+	width:250px;
+	height:50px;
+}
+
+#leads_new_info input.put{
+	font:11px tahoma;
+	width:250px;
+	
+}
+
+.shadow{
+	background:#CCCCCC; 
+	filter:alpha(opacity=30);
+	 -moz-opacity:0.3;
+	 -khtml-opacity: 0.3;
+	 opacity: 0.3;
+}
+
+#per_info{
+	
+	border-bottom:2px solid #8ca722;
+}
+#per_info h2{
+	height:31px;
+	width:250px; 
+	line-height:31px; 
+	 
+	padding-left:5px;  
+	background:#fff url(../images/hire-a-staff-tab.jpg) top left no-repeat; 
+	font-size:15px; 
+	border:0; 
+	padding-bottom:0;
+	margin:0;
+	float:left;
+	
+}
+
+#per_info h2 a{
+	color:#fff;
+	text-decoration:none;
+	height:31px;
+	width:200px;
+	display:block; 
+	
+}
+
+
+#per_info h2:hover{
+	background:#fff url(../images/hire-a-staff-tab-green.jpg) top left no-repeat;
+}
+
+
+#per_info h2.inf_select{
+	background:#fff url(../images/hire-a-staff-tab-green.jpg) top left no-repeat;
+	cursor:auto;
+}
+
+
+.comment_div{
+	background:url(../images/nav_logo14.png) repeat scroll center bottom transparent;
+	border-color:#CCCCCC #999999 #999999 #CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	
+	display:block; 
+	background:#FFFFFF; 
+	width:600px; 
+
+}
+.lsb {
+background:url(../images/nav_logo14.png) repeat scroll center bottom transparent;
+border-color:#CCCCCC #999999 #999999 #CCCCCC;
+border-style:solid;
+border-width:1px;
+height:30px;
+
+color:#000000;
+cursor:pointer;
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+height:30px;
+margin:0;
+padding-left:1px;
+padding-right:1px;
+outline:0 none;
+}
+
+.lsb2 {
+background:url(../images/nav_logo14.png) repeat scroll center bottom transparent;
+border-color:#CCCCCC #999999 #999999 #CCCCCC;
+border-style:solid;
+border-width:1px;
+
+color:#000000;
+cursor:pointer;
+height:30px;
+font:10px tahoma;
+
+outline:0 none;
+}
+
+.lsb2:hover {
+	border:#999999 solid 1px;
+}
+
+.lsb:hover {
+	border:#999999 solid 1px;
+}
+.la_box{
+	border:#333333 solid 1px;
+}
+.la_hdr{
+	background:#333333;
+	color:#FFFFFF;
+	padding:2px;
+	font-weight:bold;
+}
+.la_content{
+	height:250px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	display:block;
+	
+	
+}
+.la_content td{
+	font:11px tahoma;
+}
+
+.la_content a{
+	text-decoration:none;
+	
+}
+.submit{
+	width:80px;
+	font-size:16px;
+	padding:5px;
+}	
+
+.history_edit_div{
+	display:none;
+}
+.inactive{
+	color:#CCCCCC;
+}
+.act_tb_hdr{
+	background:#333333;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.act_tr{
+	background:#E1E1E1;
+}
+.act_tr2{
+	background:#FFFFFF;
+}
+
+.act_td{
+	
+}
+
+
+#comment_div2{
+	display:none;
+	background:#FFFFFF;
+	position:absolute;
+}
+
+#comment_div{
+	display:none;
+	background:#FFFFFF;
+	position:absolute;
+}
+
+
+.td_note{
+	cursor:pointer;
+	height:40px;
+	color:#0000FF;
+	text-decoration:underline;
+}
+
+#recruitment-order , #emails_sent , #interview-order , #phone-order {
+	background:#CCCCCC;
+}
+#order td , #emails_sent td{
+	line-height:18px;
+
+}
+
+
+#phone-order li{
+	line-height:25px;
+}
+
+.toggle-btn{
+	float:right;
+	color:#fff;
+	cursor:pointer;
+	font-size:9px;
+	margin-top:15px;
+	padding:2px;
+	background:#2c66a5;
+	border-bottom:#2c66a5 solid 2px;
+	
+}
+
+#navigation_form{
+	display:none;
+	height:300px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+#navigation_form a{
+	text-decoration:none;
+}
+
+#navigation_form tr:hover{
+	background:#2c66a5;
+	cursor:pointer;
+}
+.slect{
+	color:#FFFFFF;
+	font-weight:bold;
+	cursor:auto;
+}
+
+
+
+
+
+h1 {
+	border-bottom:2px solid #DDDDDD;
+	color:#173D6A;
+	font-size:18px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:30px;
+	padding-bottom:10px;
+
+}
+
+.leads_id{
+	color:#C0C0C0;
+}
+
+h2{
+	height:31px; line-height:31px; color:#fff; padding-left:5px;  background:#fff url(../images/hire-a-staff-tab.jpg) top left no-repeat; font-size:15px; border:0; padding-bottom:0; margin:0; border-bottom:2px solid #2c66a5;
+}
+
+.hiresteps{ border-bottom:1px dashed #2c66a5; margin-bottom:10px; padding-bottom:5px; background:#FFFFFF;}
+
+
+#lid{
+	border:#24578e  1px;
+}
+
+.action_div{
+	margin-bottom:10px;
+	margin-top:10px;
+	background:#D8D8D8;
+	border:border:#666666 ridge 2px;
+	padding-top:5px;
+	padding-bottom:1px;
+	font-weight:bold;
+	
+}
+
+.action_box{
+	margin-top:5px;
+	height:200px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border-top: border:#666666 ridge 2px;
+	background:#FFFFFF;
+	border:#24578e solid 1px;
+	font-weight:normal;
+}
+
+#action_history span{
+	font-weight:bold;
+	color:#333333;
+}
+
+.img_box {
+	float:left;
+	margin-left:10px;
+	display:block;
+	width:50px;
+}
+
+.mess{
+	border-left:#999999 solid 1px;
+	padding-left:5px;
+	
+}
+.mess_box{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.from{
+	color:#666666;
+	margin-top:10px;
+}
+
+
+.mess_sent{background:#FFFF00; font-weight:bold; padding:5px; margin-bottom:5px;margin-top:5px;}
+h3{ 
+	font-size:12px; 
+	color:#265a94; 
+	border-bottom:1px dotted #ccc;  
+	margin-top:10px;
+	margin-bottom:0px; 
+	text-transform:uppercase;
+	background:#90ac24;
+	color:#FFFFFF;
+	padding:3px;
+	 
+}
+
+.td_info{ border-bottom:1px dotted #ccc; height:18px;  }
+
+.td_la{ color:#999999 ; font-weight:bold;}
+/*
+#leads_info tr:hover {background-color: #FFFFCC;}
+*/
+.btn{
+	font:10px tahoma;
+	height:25px;
+	line-height:30px;
+	padding-left:2px;
+	padding-right:2px;
+	
+}
+
+.btns{
+	font:10px tahoma;
+}
+
+.btn-holder{
+	float:right;
+	cursor:pointer;
+	background:#90ac24;
+	display:block;
+	padding:2px;
+	color:#FFFFFF;
+}
+
+#steps_taken{
+	border:#fff solid 1px;
+	padding:5px;
+	line-height:18px;
+	height:250px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+
+.attache{
+	border:#ccc solid 1px;
+	padding:5px;
+	line-height:18px;
+	height:130px;
+	overflow-y:scroll;
+}
+.attache ol{
+	padding-top:0px;
+	margin-top:0px;
+}
+
+.attache ul{
+	padding-top:1px;
+	margin-top:1px;
+	margin-left:0px;
+	padding-left:15px;
+}
+
+#action-options{
+	border:#ccc solid 1px;
+	padding:5px;
+	line-height:20px;
+}
+#action_record{
+	margin-top:10px;
+}
+.ui-widget{
+	font-size:12px!important;
+}

@@ -1,0 +1,316 @@
+.csv_btn{
+	float:right;
+	
+}
+.csv_btn input{
+	font:11px tahoma;
+}
+
+.invoice_section_wrapper{
+	margin-top:10px;
+	background: url(media/images/staffbox-hdr-bg.png) repeat-x scroll left top transparent;
+	
+	color:#FFFFFF;
+}
+
+.invoice_list_title {
+	float:left;
+	font-weight:bold;
+	padding-left:10px;
+	line-height:20px;
+    
+}
+
+
+#paid_div{
+	display:none; 
+	position:absolute; 
+	color:#000000;
+	background:#FFFFFF;
+	border:#CCCCCC solid 5px; 
+	margin-bottom:5px; 
+	width:400px;
+}
+
+#post_div{
+	padding:10px; 
+	display:none; 
+	background:#62A4D5; 
+	color:#FFFFFF; 
+	border:#000000 solid 1px; 
+	margin-bottom:5px;
+}
+
+.btn{
+	font:10px tahoma;
+}
+#right_panel{
+    padding-left:5px;
+	padding-right:5px;
+}
+
+
+
+
+div.scroll {
+margin:0px;
+height: 200px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+}
+div.scroll_all {
+margin:0px;
+height: 400px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+}
+
+div.scroll_all2 {
+margin:0px;
+height: 200px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+overflow-y: scroll !important;
+overflow-x: hidden !important;
+}
+
+#invoice_form p{
+	margin-bottom:5px;
+	margin-top:3px;
+	padding:3px;
+}
+
+
+#invoice_form label{
+float:left;
+display:block;
+width:150px;
+}
+
+#client_invoice{
+	padding:2px; 
+	margin:2px; 
+	border:#003300 solid 1px; 
+	font: 11px Arial; 
+	width:690PX;
+}
+
+#client_invoice p{
+	margin-bottom:5px;
+	margin-top:3px;
+	padding:1px;
+	
+}
+
+#client_invoice label{
+	float:left;
+	display:block;
+	width:170px;
+	font-weight:bold;
+}
+
+
+
+.invoice_title_wrrapper_hdr{
+	background:#9FFFB8; 
+	height:32PX; 
+	border:#000000 solid 1px; 
+	font:bold 10px tahoma;
+}
+.invoice_data_wrrapper{
+	
+	height:inherit;
+	background:#FFFFFF; 
+	border:#000000 solid 1px; 
+
+}
+.invoice_data_start_end_date {
+	padding-bottom:5px;
+	padding-top:5px;
+	float:left;
+	width:130px;
+	padding:1px;
+	display:block;
+	text-align:center;
+}
+
+.invoice_data_offshore_staff{
+	float:left;
+	width:255px;
+	padding:1px;
+	display:block;
+	border-left:#000000 solid 1px;
+	border-right:#000000 solid 1px;
+	height:auto;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.invoice_data_working_days{
+	float:left;
+	width:35px;
+	padding:1px;
+	display:block;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:5px;
+	
+}
+.invoice_data_rate{
+	float:left;
+	width:60px;
+	padding:1px;
+	display:block;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:5px;
+	border-left:#000000 1px;
+	border-right:#000000 solid 1px;
+	height:inherit;
+	
+}
+
+.invoice_data_rate2{
+	float:left;
+	width:60px;
+	padding:1px;
+	display:block;
+	text-align:center;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.invoice_data_amount{
+	float:left;
+	width:60px;
+	padding:1px;
+	display:block;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.invoice_data_button{
+	float:left;
+		
+}
+
+
+.invoice_start_end_date{
+	float:left; 
+	height:28px; 
+	width:132px;  
+	padding-top:5px; 
+	text-align:center;
+}
+
+.invoice_offshore_staff{
+	float:left; 
+	height:28px; 
+	width:255px;  
+	padding-top:5px; 
+	text-align:center; 
+	border-left:#000000 solid 1px; 
+	border-right:#000000 solid 1px;
+}
+
+.invoice_working_days{
+	float:left; 
+	height:28px; 
+	width:35px;  
+	padding-top:5px; 
+	text-align:center;
+}
+
+.invoice_rate{
+	float:left; 
+	height:28px; 
+	width:60px;  
+	padding-top:5px; 
+	text-align:center; 
+	border-left:#000000  1px; 
+
+}
+.invoice_rate2{
+	float:left; 
+	height:28px; 
+	width:60px;  
+	padding-top:5px; 
+	text-align:center; 
+	border-left:#000000 solid 1px; 
+	
+}
+
+.invoice_amount{
+	float:left; 
+	height:28px; 
+	width:80px;  
+	padding-top:5px; 
+	text-align:center;
+	border-left:#000000 solid 1px; 
+}
+
+.invoice_wrapper{
+	padding:3px; 
+	border-bottom:#000000 solid 1px;
+	font:11px tahoma;
+}
+
+#edit_div{
+	display:none; 
+	position:absolute; 
+	width:430px; 
+	border:#0000FF solid 1px; 
+	background:#FFFFFF;
+	box-shadow: 3px 3px 5px #B8C6D1;
+	
+}
+
+#edit_div p{
+	margin-bottom:5px;
+	margin-top:3px;
+}
+
+#edit_div label{
+	float:left;
+	display:block;
+	width:80px;
+}
+.cal_button{
+	cursor:pointer;
+	color:#666666;
+	font:9px tahoma;
+	margin-left:10PX;
+	
+}
+
+#search_box{
+	padding:2px;
+	background:#FFFFFF;
+	border:#333333 solid 1px;
+	margin-bottom:5px;
+	padding-bottom:10px;
+	
+}
+
+#search_box input{
+	font:11px tahoma;
+	
+}
+#search_box p{
+margin-bottom:5px;
+margin-top:5px;
+}
+#search_box label{
+float:left;
+display:block;
+width:85px;
+}
+
+.butt{
+width:30px;
+font:11px tahoma;
+}
+.invoice_button{
+ 
+}

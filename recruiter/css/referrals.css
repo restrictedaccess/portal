@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+.referral-sheet-container, .referral-sheet-search{
+	margin-left:20px;
+}
+#pager td{
+	color:#fff;
+}
+.referral-sheet-search dl{
+	overflow:hidden;
+} 
+.referral-sheet-search dl dt, .referral-sheet-search dl dd{
+	float:left;
+	padding:0;
+}
+.referral-sheet-search dl dd{
+	-webkit-margin-start:0;
+}
+.referral-sheet-search dl dt{
+	clear:both;
+	width:50px;
+}
+#referral-sheet .ui-state-highlight a{
+	color:#000;
+}
+#text-search{
+	width:600px;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+	border:1px solid #AAA;
+	background:#FCF0BA;
+	color:#000;
+}

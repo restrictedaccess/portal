@@ -1,0 +1,39 @@
+
+<div ng-controller="FilesQuoteController as fsq" class="wrapper wrapper-content">
+
+  <div class="wrapper wrapper-content">
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="wrapper wrapper-content animated fadeInRight">
+            <div>
+
+              <div class="ibox-content p-xl">
+
+                <div class="row" ng-include="'views/common/files/quote/rs-log.html'"></div>
+                <p>&nbsp;</p>
+                <div class="row" ng-include="'views/common/files/quote/quote.html'"></div>
+                
+                <div class="row" ng-if="quote.status !== 'accepted'">
+                  <div class="col-lg-12 col-md-12">
+                    <!--<center><input ng-click="acceptQuote()" ladda="loading10"  type="button" class="btn btn-primary" value="Accept and Submit" style="width: 50%;height: 40px;font-size: 20px;"><center>-->
+                  </div>
+                </div>
+
+                <p class="border-bottom">&nbsp;</p>
+
+                <div class="row text-muted text-center">
+                <!--Quotes are best guess indication and may vary depending on the offshore labor market conditions in any given month.-->
+                <!--Quotes are valid for only one month.<br>-->
+                <!--By paying our invoice(s) you acknowledge& agree to our Service Agreement & Terms & Conditions found on the website:<br>-->
+                <a href="http://www.remotestaff.com.au">www.remotestaff.com.au</a>&nbsp;|&nbsp;<a href="http://www.remotestaff.co.uk">www.remotestaff.co.uk</a>&nbsp;|&nbsp;<a href="http://www.remotestaff.com">www.remotestaff.com</a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

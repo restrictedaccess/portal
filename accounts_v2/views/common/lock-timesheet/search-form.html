@@ -1,0 +1,86 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Advanced Search</h5>
+			<div class="btn-group pull-right">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top: -3%;">
+					Lock/Unlock Options <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><button ladda="lockAllSCTimesheetsLoading"
+						   ng-disabled="lts.selected_sc === null"
+						   ng-click="lockAllSCTimesheets()"
+						   class="ladda-button
+						   ladda-button-demo btn btn-success"
+						   data-style="expand-left"
+						   style="width: 100%;">
+								<i class="fa fa-lock"></i> Lock All Timesheets SC
+								<i class="fa fa-user"></i>
+								{{ lts.selected_sc.admin_fname }} {{ lts.selected_sc.admin_lname }}
+					</button></li>
+					<li><button ladda="unlockAllSCTimesheetsLoading"
+							ng-disabled="lts.selected_sc === null"
+							ng-click="unlockAllSCTimesheets()"
+							class="ladda-button ladda-button-demo btn btn-success"
+							data-style="expand-left"
+							style="width: 100%;">
+								<i class="fa fa-unlock"></i> Unlock All Timesheets SC
+								<i class="fa fa-user"></i>
+								{{ lts.selected_sc.admin_fname }} {{ lts.selected_sc.admin_lname }}
+					</button></li>
+					<li><button ladda="lockAllTimesheetsLoading"
+								ng-click="lockAllTimesheets()"
+								class="ladda-button ladda-button-demo btn btn-warning"
+								data-style="expand-left"
+								style="width: 100%;">
+									<i class="fa fa-lock"></i> Lock All Timesheets
+					</button></li>
+					<li><button ladda="unlockAllTimesheetsLoading"
+								ng-click="unlockAllTimesheets()"
+								class="ladda-button ladda-button-demo btn btn-warning"
+								data-style="expand-left"
+								style="width: 100%;">
+									<i class="fa fa-unlock"></i> Unlock All Timesheets
+					</button></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ibox-content">
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="searchClients()" data-placeHolder="Choose Staffing Consultant" chosen id="staffing_consultants" class="chosen-select" style="width:100%;" ng-model="lts.selected_staffing_consultant" ng-options="staffing_consultant as (staffing_consultant.admin_fname + ' ' + staffing_consultant.admin_lname) for staffing_consultant in staffing_consultants"></select>
+					</div>
+					<div class="form-group col-lg-3">
+						<select id="week" ng-change="setDefaultDateRangeValue()" data-placeHolder="Choose Week" chosen id="week" class="chosen-select" style="width:100%;" ng-model="lts.selected_week" ng-options="w as ('Week #'+ w.week +' [ '+w.start_date+' - '+w.end_date+' ]') for w in weeks"></select>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<input type="checkbox" ng-model="lts.exlude_inactive_clients" ng-change="refreshClients()"/> Exclude Inactive Clients
+						<select ng-change="searchStaff(lts)" data-placeHolder="Choose Client" id="leads_id" chosen="" chosen id="leads_id" class="chosen-select" style="width:100%;" ng-model="lts.client" ng-options="client as (client.fname + ' ' + client.lname + ' [ '+ client.email + ' ]') for client in client_options track by client.leads_id"></select>
+
+					</div>
+
+					<div class="form-group col-lg-3">
+						<input  min="'2012-01-01'" type="text" ng-model="lts.selected_date_range" readonly="" date-range-picker placeholder="Select Dates" class="form-control">
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="getClientSc(lts.subcon)"  data-placeHolder="Choose Staff" id="userid" chosen="" chosen id="userid" class="chosen-select" style="width:100%;" ng-model="lts.subcon" ng-options="staff.id as (staff.fname + ' ' + staff.lname + ' [ #' + staff.id + ' ] ') for staff in staffs"></select>
+
+					</div>
+
+					<div class="form-group col-lg-6">						
+						<button ladda="loadingDemo" ng-click="searchWeek()" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left"><i class="fa fa-calendar"></i> Search Days</button>						
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

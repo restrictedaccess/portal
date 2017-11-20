@@ -1,0 +1,148 @@
+<div ng-controller="PrintInvoiceController as print_invoice_controller">	
+	<div ng-if="order_id !== null" >	
+	    <div class="white-bg">
+            <div class="ibox-content p-xl" style="padding-top: 0px !important;">
+               <div class="row">
+               		
+               		<div class="table-responsive">
+                    	<table class="table invoice-table">
+                    		<tr>
+                    			<td valign="top" width="50%" style="border-top: none !important;">
+                    				<img height="76" width="267" src="http://remotestaff.com.au/images/remote_staff_logo.png">
+                    			</td>
+                    			<td valign="bottom" width="50%" style="border-top: none !important;">
+                    				<div ng-repeat="phone in rs_numbers">
+                    					<div ng-if="phone.type ==='company number'">
+                    					 <div ng-if="phone.site !=='uk'">
+                    					 	<strong style="text-transform: uppercase;">{{ phone.site }}</strong>{{ phone.contact_no }}
+                    					 </div>	
+                    					</div>
+                    				</div>
+									accounts@remotestaff.com.au
+                    			</td>
+                    		</tr>
+                        </table>
+                    </div>            	
+               		
+                    
+                </div>
+                <hr>    
+                                                
+                <div class="row">
+                	
+                	<div class="table-responsive m-t">
+                    	<table class="table invoice-table">
+                    		<tr>
+                    			<td valign="top" width="50%" style="border-top: none !important;">
+                    				<h4>To:</h4>
+			                        <address>
+			                            <strong>{{ client_basic_info.fname }} {{ client_basic_info.lname }}</strong><br>
+			                            {{ client_basic_info.company_address }}<br>
+			                            <abbr title="Phone">P:</abbr> 
+			                            {{ client_basic_info.officenumber }} {{ client_basic_info.mobile }}
+			                        </address>
+                    			</td>
+                    			<td valign="top" width="50%" style="border-top: none !important;">
+                    				<h4>Invoice No.</h4>
+			                        <h4 class="text-navy">{{ order_id }}</h4>
+			                        <h4 style="text-transform: capitalize;">Invoice Status : {{ invoice.status }}</h4>
+			                        
+			                        <p>
+			                            <span><strong>Invoice Date:</strong> {{ invoice.added_on | date:'MMM dd, yyyy'  }}</span><br/>
+			                            <span><strong>Due Date:</strong> {{ invoice.pay_before_date | date:'MMM dd, yyyy' }}</span><br>
+			                        	<span ng-show="invoice.date_paid"><strong>Date Paid:</strong> {{ invoice.date_paid | date:'MMM dd, yyyy'  }}</span>
+			                        </p>
+                    			</td>
+                    		</tr>
+                        </table>
+                    </div>
+                    
+                	<!--
+                    <div class="col-sm-6">
+                        <h5>To:</h5>
+                        <address>
+                            <strong>{{ client_basic_info.fname }} {{ client_basic_info.lname }}</strong><br>
+                            {{ client_basic_info.company_address }}<br>
+                            <abbr title="Phone">P:</abbr> 
+                            {{ client_basic_info.officenumber }} {{ client_basic_info.mobile }}
+                        </address>
+                    </div>
+
+                    <div class="col-sm-6 text-right">
+                        <h4>Invoice No.</h4>
+                        <h4 class="text-navy">{{ order_id }}</h4>
+                        
+                        <p>
+                            <span><strong>Invoice Date:</strong> {{ invoice.added_on | date:'MMM dd, yyyy'  }}</span><br/>
+                            <span><strong>Due Date:</strong> {{ invoice.pay_before_date | date:'MMM dd, yyyy' }}</span><br>
+                        	<span ng-show="invoice.date_paid"><strong>Date Paid:</strong> {{ invoice.date_paid | date:'MMM dd, yyyy'  }}</span>
+                        </p>
+                    </div>
+                   -->
+                </div>
+                
+                
+                <div class="table-responsive m-t">
+                    <table class="table table-bordered table-striped">
+            		<thead>
+            			<tr>
+            				<th width="6%">Item No.</th>
+            				<th width="17%" class="text-center">Date</th>
+            				<th>Description</th>            				
+            				           				
+            				<th class="text-right">Quantity</th>
+            				<th width="12%" class="text-right">Unit Price</th>
+            				<th width="12%" class="text-right">Amount</th>
+            			</tr>
+            		</thead>
+            		<tbody>
+            			<tr ng-repeat="item in invoice.items">
+            				<td>{{ item.item_id }}</td>
+            				<td class="text-center">{{ item.start_date | date:'MMM dd, yyyy' }} -  {{ item.end_date | date:'MMM dd, yyyy' }}</td>
+            				<td>
+            					<div>{{ item.description }}</div>
+            					<div ng-show="item.commission_id">Commission #{{ item.commission_id }}</div>	
+            				</td>            				
+            				            				
+            				<td class="text-right">{{ item.qty }}</td>
+            				<td class="text-right"><i ng-if="invoice.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.currency ==='GBP'" class="fa fa-gbp"></i>{{ item.unit_price | number:2}}</td>
+            				<td class="text-right"><i ng-if="invoice.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.currency ==='GBP'" class="fa fa-gbp"></i>{{ item.amount | number:2 }}</td>
+            			</tr>
+            		</tbody>
+            	</table>
+                </div><!-- /table-responsive -->
+
+                <table class="table invoice-total">
+                    <tbody>
+                    <tr>
+                        <td><strong>Sub Total :</strong></td>
+                        <td><i ng-if="invoice.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.currency ==='GBP'" class="fa fa-gbp"></i>{{ invoice.sub_total | number: 2 }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GST :</strong></td>
+                        <td><i ng-if="invoice.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.currency ==='GBP'" class="fa fa-gbp"></i>{{ invoice.gst_amount | number: 2 }}</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL :</strong></td>
+                        <td><i ng-if="invoice.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.currency ==='GBP'" class="fa fa-gbp"></i>{{ invoice.total_amount | number: 2 }}
+                        	<input type="hidden" id="total_amount" ng-model="print_invoice_controller.total_amount" />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>   
+                <p>&nbsp;</p>
+                
+                <hr>
+                
+                <div class="row">
+                	<h4 align="center">
+						Think Innovations Pty. Ltd. - Trading as Remote Staff | ABN Number 37 094 364 511 <br>
+						104 / 529 Old South Head Road, Rose Bay, NSW 2029
+					</h4>
+                </div>
+                 
+           </div>
+    	</div>	
+	</div>	
+	<toaster-container></toaster-container>
+</div>

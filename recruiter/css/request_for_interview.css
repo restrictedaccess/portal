@@ -1,0 +1,97 @@
+@CHARSET "ISO-8859-1";
+
+.notes-container {
+	margin-bottom: 4px;
+	word-wrap: break-word;
+	width: 195px;
+}
+
+.notebox {
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap
+}
+
+.notebox li {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 2px;
+}
+
+.notebox strong {
+	width: 90px;
+	display: inline-block;
+}
+
+.notebox input[type=text],.notebox select {
+	font-size: 10px;
+	width: 100px;
+	vertical-align: middle;
+}
+
+.notebox input[type=checkbox] {
+	vertical-align: middle;
+}
+
+.contract_sent-label input[type=text] {
+	margin-left: 0;
+	width: 60px
+}
+
+.startdate-label input[type=text] {
+	width: 76px;
+}
+
+.notebox img {
+	margin-right: 3px;
+}
+
+.notebox .designation-label,.notebox .invoice-label,.notebox .schedule-label,.notebox .staffrate-label,.notebox .chargeout-label
+	{
+	display: inline-block;
+	width: 100px;
+	white-space: normal;
+	vertical-align: middle;
+}
+
+.cancel-panel {
+	border: 1px dashed #000;
+	background-color: #fff;
+	font: 12px Arial;
+	width:150px;
+}
+.cancel-panel form{
+	padding: 10px;
+}
+.cancel-panel .title{
+	padding:5px;
+	text-align:right;
+	background-color:#999;
+}
+.cancel-panel .title a, .cancel-panel .title a:visited{
+	color:#fff;
+}
+
+.cancel-panel button {
+	border: 1px solid #006;
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	BACKGROUND-IMAGE: URL(/portal/images/bgbutton1.gif);
+	PADDING-BOTTOM: 2px;
+	FONT: bold 8pt Verdana;
+	COLOR: #000000;
+	PADDING-TOP: 2px
+}
+
+.notes_wrapper {
+    height: 130px;
+}
+.notes_wrapper {
+    overflow: hidden;
+}
+.view-more-minimize{
+	float:right;
+}
+.view_feedback:hover{
+	text-decoration:underline!important;	
+}

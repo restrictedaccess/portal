@@ -1,0 +1,52 @@
+.congrats{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:47px;
+	font-weight:bold;
+	letter-spacing:-1pt;
+	line-height:129%;
+	color:rgb(77,77,193);
+	text-align:center;
+	margin-top:22px;
+	margin-bottom:15px;
+	text-rendering: optimizelegibility;
+}
+.p{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:125%;
+	color:rgb(70,70,70);
+	text-align:center;
+	margin-left:145px;
+	margin-right:145px;
+	text-rendering: optimizelegibility;
+}
+.one_step{
+	margin-bottom:35px;
+}
+.contact_us{
+	font-weight:bold;
+	margin-left:108px;
+	margin-right:108px;
+	padding-bottom:20px;
+	border-bottom:1px solid #E9E9E9;
+	margin-bottom:16px;
+}
+.emailed{
+	margin-bottom:28px;
+}
+.button{
+	padding:17px 13px;
+	display:inline-block;
+	background-color:#6F6FD0;
+	color:#fff;
+	font-size:21px;
+	font-family:Helvetica, Arial, sans-serif;
+	font-weight:bold;
+	line-height:90%;
+	color:rgb(235,235,235);
+	text-align:center;
+	border-radius: 5px;
+}
+.button:hover{
+	color:#fff;
+}

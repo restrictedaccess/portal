@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title><?php echo $this->escape($this->pageTitle);?></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+	<link rel="stylesheet" type="text/css" href="/portal/aclog/css/screen3.css" media="screen" />
+    <!--<link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />-->
+	
+	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script-->
+	<script type="text/javascript" src="/portal/js/jquery.js"></script>
+	<script type="text/javascript" src="/portal/aclog/js/index.js"></script>
+	<!--<script type="text/javascript" src="/portal/payroll/index.php?item=daterange"></script>-->
+	<script type="text/javascript" src="/portal/ticketmgmt/js/jqModal.js"></script>
+	<style type="text/css">
+	#tasktypes {
+		top: 150px;
+		left: 60%;
+		/*margin:0 auto;*/
+		margin-left: -100px;
+		width: 210px;
+		height:270px;
+	}
+	
+	#tasktypes {
+		display: none;
+		position: fixed;
+		background-color: #EEE;
+		color: #333;
+		border: 1px solid black;
+		padding: 12px;
+	}
+	
+	.jqmOverlay { background-color: #000; }
+	
+	* html #tasktypes {
+		 position: absolute;
+		 top: expression((document.documentElement.scrollTop || document.body.scrollTop) + Math.round(17 * (document.documentElement.offsetHeight || document.body.clientHeight) / 100) + 'px');
+	}
+</style>
+</head>
+<body>
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;height:10px;' src='javascript:false;'></iframe>
+<div id="header">
+	<!--<div style='float:left;margin:100px 0 0;'>
+	<h1>Ac-Lo</h1>
+	<h3 style="padding:0 15px;float:left;"><i>Remotestaff Activity Logger</i></h3>
+	</div>-->
+	<div class='acloheader'><a href='/portal/aclog/'><div id='imghead'></div><div id='aclo-rs'></div></a></div>
+	
+	<!--<ul>
+		<li><a href="">test<span>newline</span></a></li>
+	</ul>-->
+	<div id="layoutdims">
+		<?php echo $this->layout()->topnav;?>
+	</div>
+</div>
+<div id='tasktypes'>Please wait...</div>

@@ -1,0 +1,41 @@
+
+<div ng-show=" client_setting !== null">
+	<div class="form-group">
+		<label class="col-lg-2 control-label">Client Currency</label>
+	    <div class="col-lg-3">
+			<input ng-model="formData.currency" type="text" disabled class="form-control" value="{{ client_setting.currency }}" />
+	    </div>
+		<label class="col-lg-3 control-label" style="width: 18%;">Apply GST</label>
+
+		<div class="col-lg-3">
+			<div ng-show="client_setting.apply_gst ==='Y' || client_setting.apply_gst ==='Yes'">
+				<input ng-model="formData.apply_gst" type="text" disabled class="form-control" value="Yes" />
+			</div>
+		  	<div ng-show="client_setting.apply_gst ==='N' || client_setting.apply_gst ==='No'">
+				<input ng-model="formData.apply_gst" type="text" disabled class="form-control" value="No" />
+			</div>
+	  </div>
+	</div>
+
+</div>
+<div ng-show="client_setting === null">
+	<div class="form-group">
+		<label class="col-lg-2 control-label">Client Currency</label>
+	    <div class="col-lg-3">
+	    	<select ng-change="salaryChange()" class="form-control" ng-model="formData.currency">
+	    		<option value="AUD">AUD</option>
+	    		<option value="GBP">GBP</option>
+	    		<option value="USD">USD</option>
+			</select>
+	    </div>
+		<label class="col-lg-3 control-label" style="width: 18%;">Apply GST</label>
+
+
+				  <div class="col-lg-3">
+	  	<select class="form-control" ng-model="formData.apply_gst">
+	    	<option value="Yes">YES</option>
+	    	<option value="No">NO</option>
+		</select>
+	  </div>
+	</div>
+</div>

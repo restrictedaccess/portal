@@ -1,0 +1,52 @@
+
+<div class="col-lg-12">
+    <div>
+        <div>
+
+            <h3>Created Service Agreements</h3>
+
+            <br>
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th class="text-center">Status</th>
+                    <th>Id</th>
+                    <th>Created By</th>
+                    <th>Date Created</th>
+                    <th>Date Posted</th>
+                </tr>
+                </thead>
+                <tbody>
+                <div ng-show="quote === null">
+                    Loading ...
+                </div>
+                <div ng-show="quote !== null">
+                    <tr ng-repeat="q in sa | startFrom:(currentPage -1 ) * maxSize | limitTo:maxSize">
+
+                        <td class="text-center">
+                            <span class="label label-warning" ng-show="q.status ==='draft'">{{ q.status }}</span>
+                            <span class="label label-warning" ng-show="q.status ===''">draft</span>
+                            <span class="label label-info" ng-show="q.status ==='new'">{{ q.status }}</span>
+                            <span class="label label-primary" ng-show="q.status ==='posted'">{{ q.status }}</span>
+                            <span class="label label-danger" ng-show="q.status ==='deleted'">{{ q.status }}</span>
+                        </td>
+
+                        <td><a href="/portal/sc_v2/#/quote/service_agreement_info/{{quote_id}}/{{q.id}}">{{q.id}}</a></td>
+                        <td>{{ q.created_by.admin_fname }} {{ q.created_by.admin_lname }}</td>
+                        <td>{{ formatDate(q.date_created) }}</td>
+                        <td ng-if="q.date_posted">{{ formatDate(q.date_posted) }}</td>
+                        <td ng-if="!q.date_posted"></td>
+                    </tr>
+                </div>
+                </tbody>
+            </table>
+            <center><pagination
+                    ng-model="currentPage"
+                    total-items="sa.length"
+                    max-size="maxSize"
+                    boundary-links="true">
+            </pagination></center>
+
+        </div>
+    </div>
+</div>

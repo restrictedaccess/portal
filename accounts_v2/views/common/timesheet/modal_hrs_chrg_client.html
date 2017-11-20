@@ -1,0 +1,21 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Adjust Timesheet Hrs Chrg Client </h4>        
+        <span class="font-bold">Reference Date {{ reference_date }}</span>
+    </div>
+    <div class="modal-body">
+    	
+	    <div class="row">
+	      <label class="col-xs-5 col-sm-5 col-md-5 text-muted text-right">Hours Charge to Client:</label>
+	      <div class="col-xs-5 col-sm-5 col-md-5">
+	        	<input type="text" class="form-control" ng-model="hrs_charged_to_client"> 
+	      </div>
+	    </div>
+	    
+    </div>
+    
+    <div class="modal-footer">
+        <button type="button" class="btn btn-white" ng-click="close_hrs_chrg_client()">Close</button>
+        <button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="update_timesheet_hrs_charge_to_client()" ladda="loading5"><span class="ladda-label">Update</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+    </div>
+</div>

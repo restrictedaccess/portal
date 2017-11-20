@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title>Reports</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+    <link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="/portal/aclog/css/screen3.css" media="screen" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script>
+
+	<script type="text/javascript" src="reports.js"></script>
+	<script type="text/javascript" src="/portal/js/jscal2.js"></script>
+	<script type="text/javascript" src="/portal/js/lang/en.js"></script>
+	<link rel="stylesheet" type="text/css" href="/portal/css/jscal2.css" />
+</head>
+<body>
+<span id='loading'>LOADING...</span>
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;' src='javascript:false;'></iframe>
+<div id="header">
+	<a href='/portal/adminHome.php'><div id='imgheader'></a></div>
+<div style = "float:right; padding-right:15px;">
+	<form action="/portal/recruiter_search/recruiter_search.php" method="GET">
+		<input type="text" class="form-control" id="full-text-search" placeholder="Search Candidate, Job Order, Leads" name="q" style="border: 1px solid #c4c4c4; height: 20px; 
+    margin-top: 4px;
+    width: 275px; 
+    font-size: 13px;  
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    box-shadow: 0px 0px 8px #d9d9d9; 
+    -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 8px #d9d9d9;">	
+		<button type="submit" id="full-text-search-button" style="margin-top:-5px;height:23px;">
+			Search
+		</button>
+	</form>
+	</div>
+<?php 
+$api_url = "";
+if(TEST){
+	$api_url = "http://test.remotestaff.com.au/portal/recruiter_search/recruiter_search.php";
+}else{
+	$api_url = "http://remotestaff.com.au/portal/recruiter_search/recruiter_search.php";	
+} 
+?>
+<input type="hidden" id="api_url" value="<?php echo $api_url ?>"/>	
+	<div style='float:left;width:100%;padding:4px;'>
+		<!--<div style='float:left;font-weight:bold;font-size:1.9em;'>TITLE</div>
+		<div style="float:right;width:200px;vertical-align:bottom;margin:13px 0 0;"><?php echo '#'.$this->admin_id.' '.$this->name;?></div>
+	</div>-->
+	<!--div class='acloheader'><a href='/portal/aclog/'><div id='imghead'></div><div id='aclo-rs'></div></a></div-->
+
+	<div id="layoutdims">
+		<div style='float:left;padding-left:12px'>#</div>
+		<div>
+			<ul>
+				<li><a href="#">Reports</a>
+					<div class='submenu'>
+						<a href='?method=improper_finish_work'>Improper Finish Work</a>
+						<a href='?method=low_bandwidth'>Low Bandwidth</a>
+						<a href='?method=intermittent'>Intermittent Connections</a>
+						<a href='?method=over_quick_break'>Over Quick Breaks</a>
+						<a href='?method=over_lunch_break'>Over Lunch Breaks</a>
+						<a href='?method=multiple_quick_breaks'>Multiple Quick Breaks</a>
+					</div>
+				</li>
+				<!--<li><a href="#">Time Sheets</a>
+					<div class='submenu'>
+						<a href='/portal/scm_tab/CreateTimeSheet/CreateTimeSheet.html' target="_blank">Create</a>
+						<a href='/portal/scm_tab/LockUnlockTimeSheet/LockUnlockTimeSheet.html' target="_blank">Lock / Unlock</a>
+						<a href='/portal/scm_tab/UpdateTimeSheet/UpdateTimeSheet.html' target="_blank">Update</a>
+					</div>
+				</li>-->
+				<li><a href='/portal/AdminRsscDashBoard/AdminRsscDashBoard.html' target="_blank">Dashboard</a></li>
+				<li><a href='/portal/AdminScreenShotViewer/AdminScreenShotViewer.html' target="_blank">Screenshots</a></li>
+				<li><a href='/portal/AdminRsscReports/AdminRsscReports.html' target="_blank">RSSC Reports</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<span id='loading'>LOADING...</span>
+
+<div class="colmask fullpage">
+
+	<div class="col1">
+			
+		<form id='filter_form' action='?item=report' method='get'>
+			<div style='float:right;padding:40px 10px 0;width:917px;'>
+					<input type='hidden' name='report_method'/>
+					<input type='hidden' name='report_id'/>
+					<span id='show_count'>Date from:</span>
+					<input type="text" id="from_date" name="from_date" value="" class="inputbox2" readonly style="width:100px;"/>
+					&nbsp;&nbsp;
+					<span id='show_count'>Date to:</span>
+					<input type="text" id="to_date" name="to_date" value="" class="inputbox2" readonly style="width:100px;"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					<span>CSRO:</span>
+					<span id='query'>
+						<select name='csro' class='inputbox2' style='height:23px;'>
+							<option value=''> ALL </option>
+						</select>
+					<!--<input type='text' name='search' id='search' class='inputbox2' style='width:150px;padding-right:10px;'/>-->
+					</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<!--<span id='cat'>ACTIVE:</span>
+					<select name='category' id='category' style='height:23px'>
+						<option value=''>All</option>
+					</select>-->
+					&nbsp;&nbsp;
+					
+					<input type='button' id="filter" value='Show List' title="Filter"/>
+			</div>
+			
+			<div id='report-title' class='staffname'></div>
+			<div class='date_range'><span id='repcnt'></span> record/s found for CSRO '<span id='repcsro'></span>'&nbsp;&nbsp;  From <span id='datefrom'></span> to <span id='dateto'></span></div>
+			<div class="container" style='white-space:nowrap;'>
+				
+				<div id='content' style='width:100%;'>	
+				
+				</div>
+			</div>
+		</form>
+	</div>
+
+</div>
+
+<style type='text/css'>
+	#imgheader {
+	background:url(/portal/images/remote-staff-logo2.jpg) no-repeat left;
+	width:700px;
+	height:89px;
+	padding:5px;
+}
+	</style>
+<div id="footer">
+	<p>&reg; 2014 Remotestaff Inc. <a href="">www.remotestaff.com.au</a></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import url(headstone.css);
+@import url(mainbody.css);
+
+
+body {
+  /* position:relative; */
+  margin:  0px;
+  padding: 0px;
+  background-color:white;
+  font-family:Arial;
+}
+
+.searchhelp
+{
+  cursor: pointer;
+  color:#107F30;
+  text-decoration:underline;
+  font-size:90%;
+}

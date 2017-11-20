@@ -1,0 +1,169 @@
+@charset "utf-8";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin:0;
+	/*background:#F5F5F5;*/
+}
+
+footer{
+	background-image: url("/portal/images/overlay-bg.png");
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+	color:#999;
+}
+
+.navbar-brand > img {
+    height: 25px;
+}
+
+
+#commissions_summary_count li{
+	text-transform:capitalize;
+}
+
+#commissions_summary_count a{
+	text-transform:capitalize;
+}
+
+.search_commissions{
+	text-transform:capitalize;
+}
+
+.commission-table{
+	font-family:tahoma;
+	margin:auto;
+	width:100%;
+}
+
+.commission-table th{
+	font-size:13px;
+	background:#999;
+	color:#000;
+	text-align:center;
+	vertical-align:middle !important;
+	padding: 3px !important;
+}
+
+.commission-table tbody td{
+	font-size:12px;
+}
+
+.commission-table tbody td span.subcon{
+	font-size:11px;
+	font-weight:normal;
+	margin:1px;
+}
+
+.tab-pane {
+
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+.form_search p{
+	color:#333;
+	font-family:tahoma;
+	font-size:12px;
+}
+.form_search small{
+	font-size:10px;
+	color:#999;
+}
+
+.cal-img{
+	cursor:pointer;
+}
+
+.cal-input{
+	width:100px !important;
+	text-align:center;
+}
+
+.m_left{
+	margin-left:20px;
+}
+
+.form-control-adjust{
+	font-size: 12px !important;
+    height: 26px !important;
+    padding: 1px !important;
+}
+
+.search_btn, .export{
+	font-size: 12px;
+    padding: 4px 12px;
+}
+
+.num_or_records{
+	text-align:center;
+	padding:5px;
+}
+
+.nav-active{
+	margin-bottom: 0;
+	background:#FFF;
+}
+
+.client_container{
+	width:50%;
+	margin:auto;
+}
+
+#client-table td{
+	font-family:tahoma;
+	font-size:12px;
+}
+
+#search-txt{
+	background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.more-condensed td{
+	padding:0 !important;
+}
+.subcon-list{
+	text-align:left !important;
+	margin:0; 
+	padding:0;
+}
+
+.total_no_of_staff{
+	padding:6px;
+}
+
+.borderless td {
+    border: none !important;
+}
+
+#status, #payment-status{
+	text-transform:capitalize;
+}
+
+.input-focus{
+	border-color: rgba(82,168,236,.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: 0 0 8px rgba(82,168,236,.6);
+	box-shadow: 0 0 8px rgba(82,168,236,.6);
+}

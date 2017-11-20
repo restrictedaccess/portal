@@ -1,0 +1,33 @@
+/* CSS Document */
+
+#sa_holder{
+	margin:auto;
+	width:75%;
+	background:#FFFFFF;
+	border:#333333 solid 1px;
+	-moz-box-shadow: 3px 5px 15px #333333;
+    -webkit-box-shadow: 3px 5px 15px #333333;
+    box-shadow: 3px 5px 15px #333333;
+	margin-top:5px !important;
+	margin-bottom:5px !important;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+#sa_holder td{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
+
+.sa_par {
+   margin-bottom:30px;
+}
+.sa_par p{
+    margin-bottom:3px;
+	margin-top:3px;
+}
+
+.sa_par li {
+   margin-bottom:15px;
+}

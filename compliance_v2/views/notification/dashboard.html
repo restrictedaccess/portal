@@ -1,0 +1,40 @@
+<div ng-controller="DashboardController as dashboard_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Dashboard Page</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">	
+		<!--
+		<div class="row" ng-include="'views/common/quote/client/info.html'"></div>
+		<div class="row" ng-include="'views/common/quote/client/result.html'"></div>
+		-->
+		<!--
+		<p>Notifications</p>
+		<ol>
+			<li ng-repeat="notification in notifications" | orderBy:'-date_sent'">{{ notification }}</li>
+		</ol>
+		-->
+		<div id="vertical-timeline" class="vertical-container dark-timeline">
+            
+            <div ng-repeat="notification in notifications | orderBy:'-date_sent'" class="vertical-timeline-block">            	
+                <div class="vertical-timeline-icon navy-bg">
+                    <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="vertical-timeline-content">
+                    <h2>{{ notification.subject }}</h2>
+                    <p>{{ notification.message }}
+                    </p>
+                    <a href="{{ notification.action.url }}" class="btn btn-sm btn-primary">{{ notification.action.label }}</a>
+                        
+                </div>
+            </div>
+
+            
+        </div>
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

@@ -1,0 +1,106 @@
+#div_add_update_form {
+    padding: 10px;
+    width: 550px;
+    margin: auto;
+}
+#div_add_update_form p {
+    margin-bottom: 7px;
+    margin-top: 5px;
+	color:#999;
+}
+#div_add_update_form label {
+    float: left;
+    margin-right: 6px;
+    text-align: right;
+    width: 232px;
+}
+.yesno {
+    width: 55px !important;
+}
+.hid {
+    display: none;
+}
+
+#inhouse_details{
+	float:left;
+	position:absolute;
+}
+
+.history{
+	cursor:pointer;
+	color:#0000FF;
+	margin-bottom:7px !important;
+}
+
+.history:hover{
+	color:#FF0000;
+}
+
+
+.history_details{
+	display:none;
+	margin-top:7px;
+	margin-bottom:10px;
+	color:#666;
+}
+
+#admin_list{
+	width:100%;
+	margin:auto;
+	font-size:11px !important;
+}
+
+
+div.admin_box ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+div.admin_box li{
+	float:left;
+	height:45px;
+}
+
+
+div.admin_box li.counter{
+	width:3%;
+	text-align:center;
+	margin-left:10px;
+	line-height:45px;
+}
+
+div.admin_box li.name{
+	width:15%;
+	text-align:center;
+	line-height:45px;
+}
+
+div.admin_box li.status{
+	width:10%;
+	text-align:center;
+	line-height:45px;
+}
+
+div.admin_box li.yn{
+	width:5%;
+	text-align:center;
+}
+
+.hdr{
+	background:#ccc;
+	border:#ccc outset 1px;
+	word-wrap:break-word;
+}
+.adj{
+	line-height:45px;
+}
+
+.adj2{
+	line-height:11px;
+}
+
+
+#tb_admin td{
+	font:10px tahoma !important;
+	color:#666;
+}

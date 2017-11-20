@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<!--<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+    <link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/portal/js/jquery.js"><\/script>')</script>
+
+	<!--<script type="text/javascript" src="/portal/payroll/index.php?item=daterange"></script>-->
+	<script type="text/javascript" src="js/report_edit.js"></script>
+</head>
+<body>
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;height:10px;' src='javascript:false;'></iframe>
+
+<div style='float:left;width:100%'><div style="float:left;position:absolute;top:10px">Run Date: <?php echo $this->rundate;?></div>
+	<!--<div style='float:right'><button id='summaryreport'>Generate Summary</button></div>-->
+</div>
+<!--<script type="text/javascript" src="/portal/aclog/js/report.js"></script>-->
+
+	<div id="staff" style="float:left;width:100%;padding-right:0px;">
+		<?php if( count($this->results) > 0 ):
+		foreach( $this->results as $uid => $reports ):
+			$logs = !empty($reports['logs']) ? $reports['logs'] : array();
+		?>
+		
+		<div class='staffname'><?php echo $reports['fname'].' '.($reports['lname']!='..'?$reports['lname']:'');?></div>
+		<div class='date_range'><?php echo $this->from_date.' to '.$this->to_date.', '.count($logs).' activities found';?></div>
+		<form action='#' method='post' id='taskform'>
+		<div id="tabular">
+			
+			<table summary="ActivityListing" id="myactivity">
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				
+				<th scope="col" style='width:10%'>Start Time</th>
+				<th scope="col" style='width:10%'>Time Ended</th>
+				<th scope="col" style='width:10%'>Elapsed Time</th>
+				<th scope="col" style="width:53%;">Activity</th>
+				<th scope="col" style='width:7%'>Type</th>
+				<th scope="col" style='width:5%'>Pct.</th>
+			</tr>
+			
+			<?php
+				if( count($logs) > 0 ):
+					$total_sec = 0;
+					foreach( $logs as $log ):
+						$dt = new DateTime($log['activity_date']);
+						$date = $dt->format('Y-m-d');
+						//$total_sec += $result['time_sec'];
+						sscanf($log['time_diff'], "%d:%d:%d", $hrs, $min, $sec);
+						$time_sec = isset($sec) ? $hrs * 3600 + $min * 60 + $sec : $hrs * 60 + $min;
+						
+						if( $this->elapsed_daily[ $log['userid'].$date] )
+							$pct_task = ($time_sec / $this->elapsed_daily[ $log['userid'].$date]) * 100;
+						else $pct_task = 0;
+						
+						$total_sec += $time_sec;
+						
+						//$activity_date = $result['time_started'];
+						$time_ended = $log['activity_status']=='paused'?$log['activity_status'] .' <span class="paused">(count:'.$log['pausecnt'].')</span>':($log['activity_status']=='finished'?$log['time_ended']:$log['activity_status']);
+						
+					?>
+					<tr>
+						<td class="number"><?php echo $date;?></td>
+						<td><?php echo $log['time_started'];?></td>
+						<td id='endtime<?php echo $log['id'];?>'><?php echo $time_ended;?>
+						</td>
+						<td id='cell<?php echo $log['id'];?>' <?php if($time_sec>10800) echo "style='background:#f00'";?>>
+						<input type='text' name='tdinp<?php echo $log['id'];?>' id='tdinp<?php echo $log['id'];?>' value='<?php echo $log['time_diff'];?>'/>
+						</td>
+						<td class='details'><?php echo $log['activity_details'];
+						if( $log['activity_status']=='ongoing' )
+							//&& $now != date('Y-m-d', strtotime($result['activity_date']))
+							echo "<span class='asterisk'>**</span>";
+						elseif( $log['activity_status']=='paused' )
+							echo "<span class='asterisk'>*</span>";?></td>
+						<td><?php echo ucfirst($log['category']);?></td>
+						<td title='<?php echo round($pct_task, 4);?>'><?php echo round($pct_task, 2);?>%</td>
+					</tr>
+			<?php endforeach;
+			
+				$hrs = floor($total_sec/3600);
+				$min_sec = $total_sec % 3600;
+				$min = floor($min_sec/60);
+				$sec = $min_sec % 60;
+			?>
+				<tr><td colspan='3'></td><td><?php printf("%02d:%02d:%02d", $hrs, $min, $sec);?></td></tr>
+			<?php else:?>
+				<td colspan='7'>No Records found!</td>	
+			<?php endif;?>
+			
+			</tbody>
+             
+            </table>
+			
+		</div>
+		</form>
+		<?php
+		endforeach;
+		else:?>
+			<div class='staffname' style='width:100%;'>No Records found!</div>
+		<?php endif;?>
+		<div style="float:left;width:80px"><span style='color:#ff0000'>*</span> paused <br><span style='color:#ff0000'>**</span> unfinished</div>
+    </div>
+<script type='text/javascript'>
+</script>
+</body>
+</html>

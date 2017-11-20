@@ -1,0 +1,65 @@
+/*CSS for ads */
+p, li, div{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#000;
+	line-height:1.6em;
+}
+body{
+	background:url(/portal/convert_ads/images/ads-background.png);
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+ul{
+	margin-bottom:20px;
+}
+
+.ads-body{
+	border: 1px solid #fff;
+	background-color: #FFF;
+	margin-top:60px;
+	text-align:left;
+	padding-top:25px;
+	padding-bottom:25px;
+	margin-bottom:30px;
+}
+.header-body{
+	text-align:center;
+}
+#heading-content{
+	word-wrap:break-word;
+	overflow-x:auto;
+	text-align: justify; 
+	margin-top:20px;
+}
+.ads-header{
+	font-size:30px;
+	font-weight:bold;
+	color:#01B0DD;
+	margin-top:25px;
+}
+.req-res-attr{
+	margin-top:20px;
+	margin-left:15px;
+}
+.req-res-attr-header{
+	color:#B3D236;
+	font-size:20px;	
+	font-weight:bold;
+}
+.must-good-attr-header{
+	color:#B3D236;
+	font-size:18px;	
+	font-weight:bold;
+	margin-top:20px;
+	margin-left:15px;
+}
+.logo-sub-header{
+	font-size:19px;
+	margin-left:93px;
+	color: #B0B0B0;
+}
+.footer-body{
+	margin-top:50px;
+}

@@ -1,0 +1,27 @@
+<link rel=stylesheet type="text/css" href="/portal/bubblehelp/pullmenu.css" />
+<link rel=stylesheet type="text/css" href="/portal/ticketmgmt/css/overlay.css" />
+<iframe id='ajaxframe' name='ajaxframe' style='display:none;' src='javascript:false;'></iframe>
+<div id='boxdiv' class='overlay'><span id='task-status'></span>
+  <div class='content' style='width:390px;padding:3px;border:1px solid #011a39;'>
+	<div class='title'>Edit Help Content - <span id='blink'></span></div>
+		
+		<form name='regform' method='POST' target='ajaxframe' action='/portal/bubblehelp/bhelp.php?/set_data/' style='padding:0;margin:0;'>
+			<input type='hidden' name='link_id' id='link_id' />
+            <input type='hidden' name='item' id='item' value='new'/>
+			<table width="100%" border='0' cellpadding="2" cellspacing="2" class="list">
+			<!--<tr><td class='form1'>Subject:</td>
+				<td class='form2'><input type="text" id="email_subject" name="email_subject" value="Remotestaff: Client-Staff Support" class="inputbox2"/></td>
+			</tr>-->
+			  
+			  <tr><td class='form2'>Enter text here:</td></tr>
+			<tr><td class='form2'><textarea id="help_content" name='help_content' class='text' rows='5' style='width:95%;float:left;'></textarea></td></tr>
+			   
+			 <tr>
+			<td colspan="2" align='center'>
+			<input type='submit' class='button' id='createbutton' value='Edit'> <input type='button' class='button' value='Cancel' onClick="document.getElementById('boxdiv').style.display='none';">
+			</tr>
+		  </table>
+		</form>
+	</div>
+	
+</div>

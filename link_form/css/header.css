@@ -1,0 +1,37 @@
+/* GLOBAL STYLESHEETS */
+.ribbon {display: block;}
+.job-spec-container{margin-top:40px;}
+.job-spec-logo{height: 80px;}
+.job-spec-img-title{text-align: center; color: #777; margin: 5px 20px 0px 7px; font-size: 20px;}
+/* MOBILE STYLESHEETS */
+@media (min-width: 320px) and (max-width:736px){
+	 .desktop-view-header{
+    	display:none;
+    }
+    .mobile-view-header{
+    	display:block;
+     }
+}
+
+/*IPAD STYLESHEETS */
+@media (min-width: 737px) and (max-width:1032px){
+	 .desktop-view-header{
+    	display:none;
+    }
+     .mobile-view-header{
+   		display:block;
+    }
+}
+
+
+/*DESKTOP STYLESHEETS */
+@media (min-width: 1033px) and (max-width:1900px){
+	
+	
+	 .mobile-view-header{
+    	display:none;
+    }
+     .desktop-view-header{
+   		display:block;
+    }
+}

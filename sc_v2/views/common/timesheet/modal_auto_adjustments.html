@@ -1,0 +1,34 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Timesheet Auto <br>Adjust Hours</h4>
+        
+    </div>
+    <div class="modal-body">
+    		<div class="form-group">
+                <label>Selected Date</label>                
+                <input type="text" readonly class="text-center form-control" ng-model="adj_hrs_selected_date_range" style="padding: 1px !important;" >              
+            </div>
+    		
+    		<div class="form-group">
+                <label>Select Field to Adjust</label>
+                <select ng-model="selected_adjusted_field" name="selected_adjusted_field"  class="form-control" required>
+	        		<option value="adj_hrs">Adjusted Hours</option>
+	        		<option value="hrs_charged_to_client">Hours Charge to Client</option>
+	        		<option value="hrs_to_be_subcon">Hours Pay to Subcon</option>
+	        	</select>
+            </div>
+            
+            <div class="form-group">
+                <label>Select Basis</label>
+                <select ng-model="selected_basis" name="selected_basis" class="form-control" required>
+		     		<option value="regular_rostered">Regular Rostered Hours</option>       		
+	        		<option value="total_hrs">Total Hours</option>
+		        </select>
+            </div>
+            
+    		<div class="form-group">
+            	<button type="button" class="btn btn-white" ng-click="close_auto_adj_hrs()">Close</button>
+                <button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="auto_adjustments()" ladda="loading5"><span class="ladda-label">Update</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+            </div>
+    </div>
+</div>

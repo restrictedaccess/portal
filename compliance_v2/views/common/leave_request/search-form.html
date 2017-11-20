@@ -1,0 +1,55 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Advanced Search</h5>
+		</div>
+		<div class="ibox-content">
+			
+			
+			<form role="form">
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="searchLRClients()" data-placeHolder="Choose Staffing Consultant" chosen id="staffing_consultants" class="chosen-select" style="width:100%;" ng-model="lr.selected_staffing_consultant" ng-options="staffing_consultant.admin_id as (staffing_consultant.admin_fname + ' ' + staffing_consultant.admin_lname) for staffing_consultant in staffing_consultants"></select>
+					</div>
+					<div class="form-group col-lg-3">
+						<input type="checkbox" ng-model="lr.exlude_inactive_clients" ng-change="refreshClients()"/> Exclude Inactive Clients
+					</div>
+
+				</div>
+				
+				
+				
+				
+				<div class="row">
+					
+					
+					<div class="form-group col-lg-5">
+						
+						<select ng-change="searchLRStaff()" data-placeHolder="Choose Client" id="leads_id" chosen="" chosen id="leads_id" class="chosen-select" style="width:100%;" ng-model="lr.client" ng-options="client as (client.fname + ' ' + client.lname + ' [ '+ client.email + ' ]') for client in client_options track by client.leads_id"></select>
+						
+					</div>
+					
+					<div class="form-group col-lg-3">			            
+						<input  min="'2012-01-01'" type="text" ng-model="lr.selected_date_range" readonly="" date-range-picker placeholder="Select Dates" class="form-control">
+					</div>
+
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-lg-5">
+						<select ng-change="showAddLeave(lr.subcon)" data-placeHolder="Choose Staff" id="userid" chosen="" chosen id="userid" class="chosen-select" ng-init="" style="width:100%;" ng-model="lr.subcon" ng-options="staff as (staff.fname + ' ' + staff.lname +' [ #' + staff.id +' - '+staff.status+ ' ]') for staff in staffs"></select>
+						
+					</div>
+					
+					<div class="form-group col-lg-5">						
+						<button ladda="loadingDemo" ng-click="searchLeaveRequest(true)" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left">Search Leave Request</button>
+						<button class="btn btn-warning" ng-disabled="show_add_leave_btn === false" ng-click="openModalAddLeaveForm()">Add Leave</button>								
+					</div>
+
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+</div>	

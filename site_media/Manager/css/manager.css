@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	color:#333;
+	margin:0;
+}
+
+#nav{
+	background:url(/portal/images/remote-staff-nav-bg2.jpg); height:40px;
+}
+
+#nav ul{
+	background:url(/portal/images/remote-staff-nav-bg.jpg) top left repeat-x; height:36px; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-bottom:4px;
+	list-style:none;
+}
+
+#nav ul li{  float:left;  }
+#nav ul li a:link, #nav ul li a:visited{  display:block; padding:14px 12px 10px 8px; text-decoration:none; color:#fff; }
+#nav ul li a:hover{ background:url(/portal/images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+#nav ul li.spacer{ width:30px; }
+
+a#homenav{ background:url(/portal/images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+
+#footer{
+	text-align:center;
+	color:#CCC;
+}
+
+h1{
+	text-align:center;
+	font-size:24px;
+}
+
+#content{
+	float:left;
+	border-left:#CCC solid 1px;
+	padding:10px;
+	width:77%;
+}
+
+.personal_info label{
+	float:left;
+	width:100px;
+	text-align:right;
+	margin-right:10px;
+}
+
+.text_box{
+	width:300px;
+}
+
+
+
+
+
+#paragraph{
+	padding:10px;
+}
+
+.row1 {
+    background: #FFFFCC;
+}
+
+.row2 {
+    background: #EEEEFF;
+}

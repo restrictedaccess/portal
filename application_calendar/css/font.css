@@ -1,0 +1,604 @@
+A.link 
+{
+    FONT: 7.5pt verdana;
+    COLOR: #cccccc;
+    TEXT-DECORATION: none
+}
+A.link:hover
+{
+    COLOR: #ffffff
+}
+.grey 
+{
+    FONT: 7.5pt verdana;
+    COLOR: #cccccc;
+    TEXT-DECORATION: none
+}
+A.grey2 
+{
+    FONT: bold 8pt verdana;
+    COLOR: #666666;
+    TEXT-DECORATION: none
+}
+A.t1 
+{
+    FONT: bold 8pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+A.t1:hover
+{
+    COLOR: #fe0000
+}
+A.t3
+{
+    FONT: bold 8pt verdana;
+    COLOR: #000099;
+}
+TD
+{
+    FONT: 8pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+.tb1
+{
+    FONT: bold 8pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+A.link2
+{
+    FONT: 8pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+A.link2:hover
+{
+    COLOR: #ff0000
+}
+A.link5
+{
+    FONT: 8pt verdana;
+    COLOR: #333399;
+    TEXT-DECORATION: none
+}
+A.link5:hover
+{
+    TEXT-DECORATION: underline
+}
+A.link10
+{
+    FONT: bold 7.5pt verdana;
+    COLOR: #676767;
+    TEXT-DECORATION: none
+}
+A.link10:hover
+{
+    COLOR: #000000
+}
+A.link12
+{
+    FONT: 7.5pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+A.link12:hover
+{
+    TEXT-DECORATION: underline
+}
+A.link12b
+{
+    FONT: 8pt verdana;
+    COLOR: #006699;
+  TEXT-DECORATION: none
+}
+A.link12b:hover
+{
+    TEXT-DECORATION: underline;
+  background:#FFFFCC;
+  font-weight:bold;
+}
+A.link13 
+{
+    FONT: bold 8pt verdana;
+    COLOR: #ffffff;
+    TEXT-DECORATION: underline
+}
+A.link13:hover
+{
+    COLOR: #304596
+}
+
+a.link14
+{
+  font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+  color:#ffffff; 
+  text-decoration:none; 
+  font-size:11px; 
+  font-weight:bold;
+}
+a.link14:hover 
+{
+  font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+  color:#FFBC0D;
+  text-decoration:none; 
+  font-size:11px; 
+  font-weight:bold;
+}
+A.link15
+{
+  font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+  color:#1e6f87; 
+  text-decoration:none; 
+  font-size:11px; 
+  font-weight:bold;
+}
+A.link16
+{
+  FONT: bold 7.5pt verdana;
+    COLOR: #234f7e;
+    TEXT-DECORATION: none
+}
+A.link16:hover
+{
+    TEXT-DECORATION: underline
+}
+A.link17
+{
+  FONT: bold 7.5pt verdana;
+    COLOR: #234f7e;
+    TEXT-DECORATION: underline
+}
+A.link18
+{
+  FONT: bold 8pt verdana;
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+A.link18:hover
+{
+  color: #000000;
+    TEXT-DECORATION: none
+}
+A.link19
+{
+  FONT: bold 8pt verdana;
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+A.link19:hover
+{
+  color: #ffffff;
+    TEXT-DECORATION: none
+}
+A.link20
+{
+  FONT: bold 8pt verdana;
+    COLOR:#FF6600;
+    TEXT-DECORATION: none
+}
+A.link20:hover
+{
+  color:#FF9900;
+    TEXT-DECORATION: none
+}
+.text
+{
+    BORDER-RIGHT: #1c5180 1px solid;
+    BORDER-TOP: #1c5180 1px solid;
+    BORDER-LEFT: #1c5180 1px solid;
+    BORDER-BOTTOM: #1c5180 1px solid;
+    FONT: 8pt verdana
+}
+.text1
+{
+    BORDER-RIGHT: 0px solid;
+    BORDER-TOP: 0px solid;
+    BORDER-LEFT: 0px solid;
+    BORDER-BOTTOM: 0px solid;
+    FONT: 8pt verdana;
+    FONT-WEIGHT: bold;
+}
+TEXTAREA.text
+{
+    FONT: 8pt verdana
+}
+TD.error
+{
+    COLOR: red;
+    FONT: bold 8pt verdana;
+    BACKGROUND-COLOR: #f5f5f5
+}
+.AA TD
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 10px;
+//    PADDING-BOTTOM: 8px;
+    BORDER-TOP: #eeeeee 1px solid  
+}
+.BB TD
+{
+    PADDING-RIGHT: 1px;
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 3px;
+//    PADDING-TOP: 3px;
+    FONT: 8pt verdana;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+.tip
+{
+    FONT: 7.5pt verdana;
+    COLOR: #666666
+}
+
+
+.button
+{
+  border: 1px solid #006;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+  BACKGROUND-IMAGE: URL(/portal/images/bgbutton1.gif);
+    PADDING-BOTTOM: 2px;
+    FONT: bold 8pt Verdana;
+    COLOR: #000000;
+    PADDING-TOP: 2px
+}
+
+.button2
+{
+  border: 1px solid #006;
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+  background:#CCCCCC;
+  PADDING-BOTTOM: 2px;
+    FONT:bold 8pt Tahoma;
+    COLOR:#333333;
+    PADDING-TOP: 2px
+}
+
+
+
+TD.msg
+{ 
+    BACKGROUND-COLOR: #eeeeee;
+    PADDING-RIGHT: 4px; 
+    PADDING-LEFT: 4px; 
+    PADDING-BOTTOM: 4px; 
+//    PADDING-TOP: 4px; 
+    BORDER:solid #cccccc 0.5pt
+}
+
+DIV.toggle 
+{
+  DISPLAY: NONE
+} 
+
+DIV.toggleshow 
+{
+  COLOR: #000; 
+  DISPLAY: BLOCK
+} 
+
+.mousetip
+{
+    position: absolute; 
+    background: #ffff99;
+    border: #ff9900 1px solid;
+    padding: 8px;
+    font: 8pt verdana;
+} 
+
+td.header1
+{
+  text-align: center;
+  padding: 0px;
+  background-color: #0c509e;
+  background-repeat: no-repeat;
+  height: 28px;
+  font-family:verdana;
+  font-size:10px;
+  color: #4c6270;
+  font-weight: bold;
+}
+
+td.header2
+{
+  text-align: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 21px;
+  vertical-align: bottom;
+  padding-bottom: 3px;
+}
+
+a.header1
+{
+  font-family:verdana;
+  font-size:10px;
+  color: #4c6270;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.header1:hover 
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000000;
+}
+a.header2
+{
+  font-family:verdana;
+  font-size:10px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.header2:hover 
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000000;
+}
+
+a.selHeader1
+{
+  font-family:verdana;
+  font-size:10px;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.selHeader1:hover 
+{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000000;
+}
+
+a.header3
+{
+  font-weight: bold; 
+  font-size: 12px; 
+  color: #000000; 
+  font-family: Arial, Tahoma, Verdana, Helvetica, Sans-serif; 
+  text-decoration: none;
+}
+
+a.header3:hover 
+{
+  font-weight: bold; 
+  font-size: 12px; 
+  color: #255a88; 
+  font-family: Arial, Tahoma, Verdana, Helvetica, Sans-serif; 
+  text-decoration: none;
+}
+
+.jobLine{
+    padding-bottom:10px;
+}
+.jobInfo{
+    color: #636363; 
+    text-decoration:none;
+    font-size:7.5pt;
+}
+.jobIndustrySpe
+{
+  font-family:Arial,verdana;
+    font-size:7.5pt;
+}
+.jobIndustrySpe a{
+  color: #339900;
+  font-family:Verdana, Arial;
+    text-decoration:none;
+    font-size:7.5pt;
+}
+.jobIndustrySpe a:hover{
+  border-bottom:1px #339900 dotted;
+  text-decoration:none;
+}
+A.jobCompanyName{
+  FONT: 8pt verdana;
+    COLOR: #333399;
+    text-decoration: none;
+}
+A.jobCompanyName:hover
+{
+  color:#FF0000;
+    TEXT-DECORATION: none;
+}
+A.jobPosition
+{
+    FONT: bold 8.0pt verdana;
+    COLOR: #333399;
+    text-decoration: underline;
+}
+A.jobPosition:hover
+{
+    TEXT-DECORATION: underline;
+    color:#FF0000;
+}
+.specSelected{
+  background:#BCD5EB;
+}
+.specFont{
+  FONT: 7.5pt verdana;
+}
+/**************************************/
+#theform
+{
+font-family: Trebuchet MS, sans-serif, Arial, Helvetica;
+font-size: 14px;
+line-height: 1.2em;
+color: #444;
+width: 600px;
+margin: 0 0 0 300px;
+
+}
+
+#theform fieldset
+{
+background:#FFF;
+border: 1px dashed #AAA;
+}
+
+#theform legend
+{
+background:#DDD;
+border: 2px solid #CCC;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: 25px;
+font-weight: bold;
+font-size: 16px;
+}
+
+#theform p
+{
+margin-bottom: 4px;
+margin-top: 4px;
+}
+
+
+#theform label
+{
+display: block;
+width: 300px;
+float: left;
+text-align:right;
+padding-right: 10px;
+font-size:12px;
+
+}
+
+#theform p span em
+{
+display: block;
+width: 120px;
+float: left;
+text-align: right;
+padding-right: 10px;
+font-style: normal;
+}
+
+#theform p span input
+{
+vertical-align: middle;
+border: none;
+background: none;
+}
+
+#theform strong
+{
+margin-left: 150px;
+}
+
+#theform strong input
+{
+background: #0066FF;
+border: 1px solid #444;
+font-weight: bold;
+color: #FFFFFF;
+margin-top: 10px;
+}
+.style1 {
+  color: #FF0000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.comment {
+  color: #0000;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:10px;
+  
+}
+.select{width:200px; font-family:Tahoma, Verdana; font-size:12px; border: 1px solid #444;}
+
+.control{position:relative;z-index:3;}
+
+
+#work
+{
+font-family: Trebuchet MS, sans-serif, Arial, Helvetica;
+font-size: 14px;
+line-height: 1.2em;
+color: #444;
+width: 100%;
+margin: 0 0 0 0px;
+
+}
+
+#work fieldset
+{
+background:#FFF;
+border: 1px dashed #AAA;
+}
+
+#work legend
+{
+background:#DDD;
+border: 2px solid #CCC;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: 25px;
+font-weight: bold;
+font-size: 16px;
+}
+
+#work p
+{
+margin-bottom: 4px;
+margin-top: 4px;
+}
+
+
+#work label
+{
+display: block;
+width: 200px;
+float: left;
+text-align:right;
+padding-right: 10px;
+font-size:12px;
+
+}
+
+#work p span em
+{
+display: block;
+width: 120px;
+float: left;
+text-align: right;
+padding-right: 10px;
+font-style: normal;
+}
+
+#work p span input
+{
+vertical-align: middle;
+border: none;
+background: none;
+}
+
+#work strong
+{
+margin-left: 150px;
+}
+
+#work strong input
+{
+background: #0066FF;
+border: 1px solid #444;
+font-weight: bold;
+color: #FFFFFF;
+margin-top: 10px;
+}

@@ -1,0 +1,17 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Invoice #{{ order_id }} History</h4>
+    </div>
+    <div class="modal-body">
+        <ol>
+        	<li ng-repeat="h in history | orderBy:'-timestamp'" style="margin-bottom: 20px;">
+        		<div class="font-bold" >{{ h.timestamp | date:'MMM dd, yyyy hh:mm a' }} {{ h.by }}</div>        		
+        		<div ng-bind-html="h.changes" style="word-wrap: break-word;"></div>
+        	</li>
+        </ol>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-white" ng-click="close_invoice_history()">Close</button>        
+    </div>
+
+</div>

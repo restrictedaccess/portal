@@ -1,0 +1,677 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:tahoma;
+	font-size:13px; 
+	color:#333;
+	margin:0;
+	padding:0;
+	background:#FFF;
+}
+
+
+input, select, textarea{
+	font-family:tahoma;
+	font-size:13px; 
+	color:#333;
+}
+
+#content{
+	margin:0;
+	padding:0;
+}
+
+#content h1{
+	text-transform:capitalize !important;
+	color:#000 !important;
+}
+#logo{
+	background:#FFF;
+}
+#contract{
+	width:80%;
+	margin:auto;
+}
+
+table#staff_list{
+	background:#CCC;
+	width:100%;
+}
+
+table#staff_list td{
+	font-family:tahoma;
+	font-size:11px;
+	text-align:center;
+}
+
+table#staff_list tr.staff_list_hdr{
+	color:#FFF;
+	background:#333;
+}
+
+table#staff_list tr.staff_list_hdr td{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+table#staff_list tr.staff_list_results{
+	background:#FFF;
+	
+}
+
+table#staff_list tr.staff_list_results td{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.page_title{
+	text-transform:uppercase;
+}
+
+.client_names, .staff_names{
+	text-transform:capitalize;
+}
+.invoice_set_up_status{
+	color:#F00;
+}
+
+.path_links{
+	margin-left:10px;
+}
+
+.send_invoice_staff_list{
+	width:60%;
+	margin:auto;
+}
+
+
+
+
+
+/* staff contract */
+
+.contract_box{
+	background:#F5F5F5;
+	border-radius: 12px;
+	border:#88a0b2 solid 1px;
+	box-shadow: 3px 3px 5px #b8c6d1;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+.highlight_price{
+	background:#090;
+	color:#FFF !important;
+	padding:1px;
+}
+.staff_name{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+	font-weight:bold;
+	color:#000 !important;
+	padding:0;
+	margin:0;
+	text-transform:capitalize;
+}
+#staff_profile{
+	padding-left:10px;
+}
+
+#staff_profile p{
+	margin-top:2px;
+	margin-bottom:7px;
+	color:#999 ;
+}
+
+#staff_profile label{
+	float: left;
+    margin-right: 5px;
+    text-align: left;
+    width: 150px;
+}
+
+#staff_profile input{
+	width:60%;
+}
+
+#contract_summary label{
+	color:#999 !important;
+}
+
+
+#job_designations p, #staff_rate p, #client_box p, #client_staff_rates p, #staff_skype_ids p, #staff_profile p , #admin_notes_div p, #contract_cancellation_div p{
+	margin-top:2px;
+	margin-bottom:7px;
+	line-height:28px;
+}
+#job_designations label, #client_box label, #staff_rate label, #staff_schedule label, #client_staff_rates label, #staff_skype_ids label{
+	float: left;
+    margin-right: 5px;
+    text-align: left;
+    width: 19%;
+	color:#666;
+}
+
+#admin_notes_div label{
+	float: left;
+    margin-right: 5px;
+    text-align: left;
+    width: 14%;
+	color:#666;
+}
+
+#job_designations input{
+	width:30%;
+}
+
+/*
+#client_staff_rates{
+	background:#FFB871;
+}
+
+#staff_box{
+    background:#FF9;
+}
+#client_box{
+	background:#D9FFD9;
+}
+*/
+
+#client_box span{
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px !important;
+	text-transform:capitalize !important;
+}
+
+
+#hourly_rate{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:24px;
+	float:right;
+}
+#starting_date, #end_date{
+	cursor:pointer;
+	width:75px;
+}
+
+#client_price_effective_date{
+	width:75px;
+}
+
+#staff_working_schedules select{
+	width:105px !important;
+}
+
+
+#staff_working_schedules_result_value, #currency_settings_result{
+	display:none;
+}
+
+
+#client_price, #php_monthly{
+	width: 61px !important; 
+}
+
+
+#client_price_str, #php_monthly_str{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+	float:right;
+}
+
+#client_price_str span, #php_monthly_str span{
+	padding:1px;
+	color:#FFF;
+	border:#000 solid 1px;
+	margin-left:1px;
+	text-align:center;
+	font-size:11px;
+}
+
+#client_price_str span.y, #php_monthly_str span.y{
+	background:#06C;	
+}
+
+#client_price_str span.m, #php_monthly_str span.m{
+	background:#069;
+}
+
+#client_price_str span.w, #php_monthly_str span.w{
+	background:#066;
+}
+
+#client_price_str span.d, #php_monthly_str span.d{
+	background:#063;
+}
+
+#client_price_str span.h, #php_monthly_str span.h{
+	background:#060;
+}
+
+
+
+#staff_houry_rate_msg{
+	float:right;
+	width:60%;
+	text-align:center;
+	background:#F00;
+	color:#FFF;
+	padding:5px;
+}
+#staff_houry_rate_msg strong{
+	font-family:"Courier New", Courier, monospace !important;
+	text-decoration:underline;
+}
+
+
+#history_div{
+	font-family:"Courier New", Courier, monospace;
+}
+.hist{
+	cursor:pointer;
+	color:#00F;
+	
+}
+.hist:hover{
+	text-decoration:underline;
+}
+.hist_details{
+	display:none;
+}
+
+#admin_notes{
+	width:90%;
+	height:70px;
+}
+
+#button_div{
+	margin-top:20px;	
+}
+
+#staff_currency_id, #currency{
+	width:190px;
+}
+
+#overtime{
+	width:80px;
+}
+
+.contract_status span{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#current_rate{
+	width:20px;
+}
+
+span.changes_status{
+	margin-left:10px;
+	color:#000;
+	font-weight:bold;
+	display:none;
+}
+
+#revenue{
+	float:right;
+}
+
+#revenue td{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+
+.modified_field{
+	background:#ffa07a;
+}
+
+#contract_cancellation_div{
+	margin:auto;
+	width:75%;
+	border:#CCC solid 1px;
+	padding:5px;
+}
+
+#contract_cancellation_div label{
+	float:left;
+	width:15%;
+	text-align:left;
+}
+
+#scheduled_contract_cancellation_div{
+	padding:5px;
+	border:#666 dashed 1px;
+	background:#FF0;
+}
+
+.already_scheduled{
+	float:right;
+	background:#FF0;
+	padding:5px;
+	border:#666 dashed 1px;
+}
+
+#prepaid_str{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.total_working_hours_details{
+	font-family:"Courier New", Courier, monospace;
+	font-weight:bold;
+}
+
+.total_working_hours_details span{
+	color:#F00;
+	text-decoration:underline;
+}
+/* staff contract ends here*/
+
+
+
+
+
+
+
+
+/* contract list*/
+.c_rate_start_date{
+	float:left; 
+	width:70px;
+}
+.c_rate{
+	float:right;
+	margin-left:5px;
+}
+
+
+
+#include_changes_in input{
+	margin:0 !important;
+	margin-right:5px !important;
+}
+
+#include_changes_in span{
+	margin-right:5px !important;
+}
+
+#contract_list{
+}
+
+#contract_list th {
+	background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+	font-size:11px !important;
+	margin:0;
+	color:#FFF;
+}
+
+#contract_list tr{
+	background:#FFF;
+}
+
+/*
+.tr_subcon:hover{
+	background:#1FA9F4 !important;
+}
+
+.tr_subcon:hover a{
+	color:#FFF;
+}
+
+.tr_subcon:hover td{
+	color:#FFF !important;
+}
+*/
+
+
+#contract_list td{
+	/*color:#666699;*/
+	color:#666;
+	font:11px tahoma;
+	margin:0;
+	border-bottom:#3CF solid 1px;
+	border-right:#3CF solid 1px;
+}
+
+#contract_list span.temp_new{
+	text-transform:uppercase;
+	color:#F00 !important;
+	font-weight:bold;
+}
+
+.first_column{
+	border-left:#3CF solid 1px;
+}
+.left_corner{
+    -webkit-border-top-left-radius: 18px;
+	-khtml-border-radius-topleft: 18px;	
+	-moz-border-radius-topleft: 18px;
+	border-top-left-radius: 18px;
+}
+
+.right_corner{
+	-webkit-border-top-right-radius: 18px;
+	-khtml-border-radius-topright: 18px;	
+	-moz-border-radius-topright: 18px;
+	border-top-right-radius: 18px;
+}
+
+/* end contract list*/
+
+
+
+/* start subconlist */
+
+#subconlist_search_form{
+	text-align:center;
+	font:11px tahoma;
+	line-height:25px;
+	margin:auto;
+	width:55%;
+}
+
+#subconlist_search_form legend{
+	font-weight:bold;
+	font-size:12px !important;
+}
+
+#subconlist_search_form select, input{
+	/*
+	margin-left:5px;
+	margin-right:20px;
+	font:11px tahoma;
+	*/
+}
+
+#subcon_list{
+	background:#ccc ;
+}
+
+#subcon_list thead{
+	background:#8EAD24;
+	font-size:12px;
+	color:#333;
+}
+#subcon_list td{
+	font:11px tahoma;
+    margin:0;
+	color:#666;
+}
+
+#subcon_list img.staff_image{
+	float:left;
+	margin-right:10px;
+}
+
+#subcon_list div.subcon_name{
+	font-weight:bold;
+	text-transform:capitalize;
+	color:#000;
+}
+
+#subcon_list div.status{
+	text-transform:capitalize;
+}
+
+#subcon_list div.client_name{
+	text-transform:capitalize;
+	font-weight:bold;
+}
+
+/* end subconlist */
+
+
+
+
+
+#path_links {
+	
+    background-color: #FBFBFB;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #F5F5F5);
+    background-repeat: repeat-x;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+    list-style: none outside none;
+    margin: 0 0 18px;
+    padding: 7px 14px;
+}
+#path_links li {
+    display: inline-block;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+#path_links .divider {
+    color: #999999;
+    padding: 0 5px;
+}
+
+#path_links a {
+    color: #0088CC;
+    text-decoration: none;
+}
+#path_links a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+#path_links .active a {
+    color: #333333 !important;
+}
+
+
+/* top menu */
+#links_trail{
+	padding-left:10px;
+}
+#links_trail ul{
+	margin: 0;
+    padding: 0;
+}
+
+#links_trail li {
+    list-style: none;
+    float:left;
+	margin-right:10px;
+	
+}
+
+#links_trail li a {
+	text-decoration:none;
+}
+
+#links_trail li a:hover {
+	text-decoration:underline;
+}
+
+.wrapper {
+    width: 100%;
+    height: 30px;
+	/*
+    background : #464646;
+    background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+	*/
+	
+    border-bottom: 3px solid #8ead24;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper ul.menu {
+    height: 30px;
+    border-left: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(255,255,255,0.3);
+    float:left;
+}
+
+.wrapper ul.menu li {
+    list-style: none;
+    float:left;
+    height: 30px;
+    text-align: center;
+	
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+	
+}
+
+.wrapper ul li a {
+	font-family:tahoma !important;
+    color:#fff !important;
+	text-decoration:none;
+	font-weight:normal;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    display: block;
+    padding: 0 10px;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 30px;
+	/*
+    background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+    background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-property: background;
+    -moz-transition-duration: 700ms;
+	*/
+}
+
+.wrapper ul li a:hover {
+
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(159,194,40)), to(rgb(142,173,36)));
+    background : -moz-linear-gradient(top, rgb(159,194,40), rgb(142,173,36));
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-property: background;
+    -moz-transition-duration: 700ms;
+}
+
+.wrapper ul li.active a{
+	color:#fff !important;
+    background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+    background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+}
+
+.wrapper_selected{
+	background : -webkit-gradient(linear, left top, left bottom, from(rgb(159,194,40)), to(rgb(142,173,36)));
+    background : -moz-linear-gradient(top, rgb(159,194,40), rgb(142,173,36));
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-property: background;
+    -moz-transition-duration: 700ms;
+}
+
+#table_payment_details th {
+
+	color: #000;
+	background-color:#999;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}

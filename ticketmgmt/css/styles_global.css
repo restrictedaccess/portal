@@ -1,0 +1,184 @@
+
+/* $Id: styles_global.css 2011-12-16 $ */
+
+
+/* POPUP BOXES FOR SMOOTHBOX */
+html, body {
+min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	font-family: Verdana,Geneva,sans-serif; /*Arial, Helvetica, sans-serif;*/;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	margin-right:0px;
+	margin-bottom:0px;
+}
+body, td, div {
+	color: #333333;
+}
+div, td {
+	font-family: Verdana,Geneva,sans-serif;
+	padding-bottom:0px;
+	font-size:11px;
+}
+
+#task-status {
+  position:fixed;
+  width:300px;
+  height: auto;
+  top:0;
+  margin-left:-150px; /*200px;*/
+  z-index: 999;
+  font-size:12px;
+  font-weight:bold;
+  background:#ffff00;/*e3e0ac;*/
+  padding-left:5px;
+  text-align:center;
+  display:none;
+  left:50%;
+}
+#task-status span { color:#ff0000;}
+
+/* IE6 
+* html #TB_iframeContent{
+	margin-bottom:1px;
+}*/
+
+
+
+/* TOOL TIPS */
+.tip {
+	color: #000;
+	width: 220px;
+	z-index: 13000;
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	background: #fffeeb;
+	text-align: left;
+	font-size: 11px;
+	padding: 4px 8px 8px;
+}
+.tip-text {
+	display: none;
+}
+.tip-top {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+	color: #9FD4FF;
+	padding: 8px 8px 4px;
+}
+ 
+.tip-bottom {
+
+}
+
+.Tips1 {
+	vertical-align: middle;
+}
+
+td.form1 {
+	/*vertical-align:baseline;*/
+	text-align: right;
+	font-size: 8pt;
+	padding: 6px 4px 4px 4px;
+}
+
+td.form2 {
+	padding: 4px;text-align:left;
+}
+
+table.list {
+	width: 100%;
+	/*border: 1px solid #CCCCCC;*/
+}
+
+.inputbox {
+	background-color: #FFFFAA;
+	border: 1px solid #104383;
+	padding: 2px;
+	color: #011a39;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.inputbox2, .inputbtn {
+	border: 1px solid #104383;
+	padding: 2px;
+	margin:0;
+	color: #011a39;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+.inputbox2 {width:210px;background-color: #FFF;height:19px;}
+.inputbtn {background-color: #FFFFAA;}
+
+/*table.list td {
+	color:#333;
+}*/
+
+/*table.list td span{
+	color:#ff0000;
+}*/
+
+table.list td.right{
+	text-align:right;
+}
+
+table.stats {
+	border: 1px solid #CCCCCC;
+}
+
+div.error {
+	color: #FF0000;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+span.error {
+	background: #FFF3F3;
+	/*padding: 5px 7px 5px 7px;*/
+	color: #FF0000;
+}
+
+div.seminar_date {
+	width: 90%;
+	background: #FFF3F3;
+	font-size:13px;
+	padding-left:25px;
+}
+div.seminar_date div.time {font-size:12px;font-style:italic; padding-left:40px; padding-top:3px; }
+div.success {
+	color: #00CC33;
+	margin-bottom: 12px;
+	font-weight: bold;
+}
+
+.hover_boxinfo1 {
+position:absolute;
+display:none;
+width:auto;
+height:auto;
+padding:2px;
+background-color: #ff9900;
+border:1px solid #ffffcb;
+z-index:999;
+float:left;
+}
+
+/*td:hover {
+    cursor:pointer;
+}*/
+.hover_box {
+	display:none;
+    border-width:1px;
+    border-color:#000000;
+    border-style:solid;
+    background-color:#FFFF99;
+	padding:5px;
+}
+
+div.popup-header {padding:10px 0 4px 15px;font-size:20px;font-weight:bold;color:#9ad700;}
+
+#box-text {font-size:11px;text-align:left;line-height:15px;padding-bottom:9px;margin:12px 12px 0px 12px;}
+
+#btns-holder {padding-left:20px;float:left;padding-bottom:12px;}

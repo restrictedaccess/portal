@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	color:#333;
+	margin:0;
+}
+
+
+h1{
+	text-align:center;
+}
+
+
+#content{
+	width:70%;
+	margin:auto;
+}
+
+
+.inhouse_list li {
+	line-height:20px;
+	border-bottom:#ccc solid 1px;
+}
+
+.staff_name{
+	float:left;
+	width:330px;
+	text-transform:capitalize;
+}
+
+.staff_name a{
+	text-decoration:none;
+}
+
+.staff_pay_type{
+	float:left;
+	width:180px;
+	color:#999;
+	text-transform:capitalize;
+}
+
+.staff_paying_company{
+	float:left;
+	width:180px;
+	color:#999;
+	text-transform:capitalize;
+}
+
+#inhouse_details {
+    float: left;
+    position: absolute;
+}
+
+.staff_team{
+	float:left;
+	width:180px;
+	color:#999;
+}
+
+.staff_team a{
+	font-size:9px;
+	font-family:tahoma;
+	text-decoration:none;
+}
+
+.inhouse_staff_hdr{
+	font-weight:bold !important;
+	margin-top:20px;
+}
+
+.no_settings{
+	font-size:9px;
+	font-family:tahoma;
+	color:#F00 !important;
+}
+
+#forms{
+	width: 70%;
+    margin: auto;
+}
+
+
+#forms p{
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+#forms label{
+	float:left;
+	width: 30%;
+    margin-right: 10px;
+	text-align:right;
+}

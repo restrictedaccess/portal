@@ -1,0 +1,28 @@
+
+html {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+body {
+    height: 100%;
+    min-height: 100%;
+}
+.footer a {
+    color: #ffffff;
+}
+.footer {
+    background-color: #1277a1;
+    bottom: 0;
+    color: #ffffff;
+    height: auto;
+    min-height: 380px;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 1200px) {
+.footer {
+    min-height: 145px;
+}
+}

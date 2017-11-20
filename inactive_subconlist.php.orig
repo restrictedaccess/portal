@@ -1,0 +1,322 @@
+<?php
+include './conf/zend_smarty_conf.php';
+include './admin_subcon/subcon_function.php';
+header("Expires: Mon, 26 Jul 1997 05:00:00GMT");
+header("Cache-Control: no-cache");
+header('Content-type: text/html; charset=utf-8');
+header("Pragma: no-cache");
+$smarty = new Smarty;
+
+
+
+if($_SESSION['admin_id']=="")
+{
+	header("location:index.php");
+}
+
+//day of the week and determines the staff working hours based on the day of the week per column field of subcontractors table.
+$weekday_str = strtolower(date('D'))."_start";
+$weekday_str_finish = strtolower(date('D'))."_finish";
+
+
+$admin_id = $_SESSION['admin_id'];
+$admin_status=$_SESSION['status'];
+if($admin_status == 'HR'){
+	$resume_page = "recruiter/staff_information.php";
+}else{
+	$resume_page = "application_apply_action.php";
+}
+$site = $_SERVER['HTTP_HOST'];
+
+
+//// USE FOR PAGING ///
+// how many rows to show per page
+$rowsPerPage = $_REQUEST['rowsPerPage'];
+//echo $rowsPerPage;
+
+if($rowsPerPage == ""){
+	$rowsPerPage = 20;
+}
+// by default we show first page
+$pageNum = 1;
+// if $_GET['page'] defined, use it as page number
+if(isset($_GET['page']))
+{
+	$pageNum = $_GET['page'];
+}
+// counting the offset
+//echo $pageNum ;
+
+$offset = 0;
+if($pageNum!=NULL){
+	$offset = ($pageNum - 1) * $rowsPerPage;
+	//echo "offset2 ( ".$offset2." )<br>";
+}
+
+
+$limit = " LIMIT $offset, $rowsPerPage ";
+
+// get all subcon
+$sql = "SELECT DISTINCT(s.userid), fname, lname , email FROM personal u JOIN subcontractors s ON s.userid = u.userid WHERE s.status !='ACTIVE' AND s.status !='suspended'  ORDER BY fname ASC;";
+$result = $db->fetchAll($sql);
+foreach($result as $row){
+	$usernameOptions .="<option value=".$row['userid'].">".$row['fname']." ".$row['lname']." [".$row['email']."]</option>";
+}
+
+
+//use in paging
+$numrows = count($result);
+$maxPage = ceil($numrows/$rowsPerPage);
+// print the link to access each page
+$self = "./".basename($_SERVER['SCRIPT_FILENAME']);
+$nav = '';
+for($page = 1; $page <= $maxPage; $page++)
+{
+	if ($page == $pageNum)
+	{
+		if($agent_id == $agents_id) {
+			$nav .= " <li><a class='currentpage' href=\"$self?page=$page\">$page</a></li> ";
+		}else{
+			$nav .= " <li><a class='' href=\"$self?page=$page\">$page</a></li> ";
+		}
+	}
+	else
+	{
+		$nav .= " <li><a href=\"$self?page=$page\">$page</a></li> ";
+	}
+}
+
+if ($pageNum > 1){
+
+	$page = $pageNum - 1;
+	$prev = " <li><a href=\"$self?page=$page\">Prev</a></li> ";
+	$first = "<li><a href=\"$self?page=1\">First Page</a></li>";
+	
+}
+else{
+
+	$prev  = '&nbsp;'; // we're on page one, don't print previous link
+	$first = '&nbsp;'; // nor the first page link
+}
+
+if ($pageNum < $maxPage){
+
+	$page = $pageNum + 1;
+	$next = " <li><a href=\"$self?page=$page\">Next</a></li>";
+	$last = " <li><a href=\"$self?page=$maxPage\">Last Page</a></li> ";
+}else{
+
+	$next = '&nbsp;'; // we're on the last page, don't print next link
+	$last = '&nbsp;'; // nor the last page link
+}
+//echo $first . $prev . $nav. $next . $last;
+$paging =  $first . $prev . $next . $last;
+
+$search_flag = False;
+$keyword_search ="";
+if (array_key_exists('_submit_check', $_POST)) {
+	
+	$userid = $_POST['userid'];
+	$keyword = $_POST['keyword'];
+	
+	if($userid){
+		$conditions = " AND s.userid = $userid ";
+	}
+	
+	if($_POST['leads_id']){
+	    $conditions .= " AND s.leads_id = '".$_POST['leads_id']. "'";
+	}
+	
+	if($_POST['work_status']){
+	    //echo $_POST['work_status'];
+		$conditions .= " AND s.work_status = '".$_POST['work_status']. "'";
+	}
+	
+	if($keyword!=NULL){
+	
+			$search_text = $keyword;
+			$search_text=ltrim($search_text);
+			$search_text=rtrim($search_text);
+			
+			$kt=explode(" ",$search_text);//Breaking the string to array of words
+			// Now let us generate the sql 
+			while(list($key,$val)=each($kt)){
+				if($val<>" " and strlen($val) > 0){
+					
+					$queries .= " s.userid like '%$val%' or p.fname like '%$val%' or p.lname like '%$val%' or p.email like '%$val%' or p.skype_id like '%$val%' or s.job_designation like '%$val%' or";
+				}
+			}// end of while
+			
+			$queries=substr($queries,0,(strlen($queries)-3));
+			// this will remove the last or from the string. 
+			$keyword_search =  " AND ( ".$queries." ) ";
+			//echo $keyword_search;exit;
+			$search_flag = True;
+	}
+	
+	$limit = "";
+	$search_flag = True;
+}
+
+
+
+
+$query="SELECT s.userid , p.fname, p.lname ,p.image , p.email ,p.handphone_no, p.skype_id ,p.tel_area_code, p.tel_no , p.image ,p.registered_email FROM subcontractors s LEFT JOIN personal p ON p.userid = s.userid WHERE s.status !='ACTIVE' AND s.status !='suspended'  $conditions  $keyword_search  GROUP BY s.userid  ORDER BY s.id DESC $limit;";
+
+//echo $query;
+$staff = $db->fetchAll($query);
+$ctr = $offset;
+$counters = array();
+foreach($staff as $staff){
+	$ctr++;
+	
+	if($bgcolor=="#EEEEEE"){
+		$bgcolor="#CCFFCC";
+	}else{
+		$bgcolor="#EEEEEE";
+	}
+	
+	
+	if($staff['image']!=""){
+		$image = "<img src='http://www.remotestaff.com.au/portal/tools/staff_image.php?w=48&id=".$staff['userid']."' border='0' align='texttop'  />";
+	}else{
+		$image = "<img src='images/ava002.jpg' border='0' align='texttop' width='48'  />";
+	}
+	
+	//<div style='float:right; display:block;font-weight:bold;color:red;'>".$staff['status']."</div>
+	
+	$resultOptions .="<tr bgcolor='$bgcolor' class='staff_name'>";	
+	$resultOptions .="<td valign='top'>".$ctr."</td>";
+	$resultOptions .="<td valign='top'><a href=".$resume_page."?userid=".$staff['userid']." target='_blank'>".$image."</a><div style='float:left; display:block;'><small>USERID : ".$staff['userid']."</small><br> <a href=".$resume_page."?userid=".$staff['userid']." target='_blank'><b>".$staff['fname']." ".$staff['lname']."</b></a><br>Staff Email : ".$staff['email']."<br>Personal Email : ".$staff['registered_email']."<br>".$staff['skype_id']."<br>".$staff['tel_area_code'].$staff['tel_no']."</div></td>";
+	$resultOptions .="<td valign='top'>";	
+		
+		$sql = "SELECT s.id ,s.userid, s.status ,leads_id , CONCAT(l.fname,' ',l.lname)AS client_name , contract_updated , l.company_address , s.starting_date , s.job_designation ,(l.status)AS leads_status, s.work_status, s.staff_working_timezone, ($weekday_str)AS work_hour, ($weekday_str_finish)AS work_hour_finish, date_terminated, resignation_date, flexi  FROM subcontractors s LEFT JOIN leads l ON l.id = s.leads_id WHERE s.status !='ACTIVE' AND s.status !='suspended'  AND s.userid = ".$staff['userid']."  ORDER BY s.status ASC;";
+		$clients = $db->fetchAll($sql);
+		foreach($clients as $client){
+		    $work_schedule ="";
+			$det = new DateTime($client['starting_date']);
+			$starting_date = $det->format("F j, Y");
+			$starting_date_str = $det->format("Y-m-d");
+			
+			$contract_updated = $client['contract_updated'];
+			if($contract_updated == 'n'){ //this contract need to be updated
+				//$warning = "<img src='images/warning.png' title='Staff ".$row['staff_name']." contract to Client ".$row2['client_name']." needs to be updated'>";
+				$warning_str = "staff contract needs update";
+			}else{
+				//$warning = "<img src='images/9.gif' title='Staff ".$row['staff_name']." contract to Client ".$row2['client_name']." is updated'>";
+				$warning_str ="";
+			}
+		     
+			if($client['work_hour']){
+	            $date = new DateTime($client['work_hour']);
+	            $staff_start_work_hour = $date->format('H:i');
+	            $staff_start_work_hour_str = $date->format('h:i a');
+	        }
+			
+			if($client['work_hour_finish']){
+	            $date = new DateTime($client['work_hour_finish']);
+	            $staff_finish_work_hour = $date->format('H:i');
+	            $staff_finish_work_hour_str = $date->format('h:i a');
+	        }
+			
+			if($client['status'] == 'resigned'){
+			    $date = new DateTime($client['resignation_date']);
+	            $staff_contract_finish_date = $date->format('F j, Y');
+				$staff_contract_finish_date_str = $date->format('Y-m-d');
+			} 
+			
+			if($client['status'] == 'terminated'){
+			    $date = new DateTime($client['date_terminated']);
+	            $staff_contract_finish_date = $date->format('F j, Y');
+				$staff_contract_finish_date_str = $date->format('Y-m-d');
+			}
+			 
+			if($client['flexi'] == 'no'){
+			    $work_schedule = sprintf('%s to %s %s', $staff_start_work_hour_str, $staff_finish_work_hour_str, $client['staff_working_timezone']);
+			}else{
+			    $work_schedule = 'Flexi';
+			} 
+			if($starting_date_str <= $staff_contract_finish_date_str){
+			    $duration = sprintf("<small style='color:green;font-weight:bold;'>%s</small>", dateDiff($staff_contract_finish_date_str,$starting_date_str));
+			}else{
+			    $duration = sprintf("<small style='color:green;font-weight:bold;'>%s</small>", 'Not yet started');
+			}	
+			//$resultOptions.= "<div><input type='radio' align='absmiddle' name='userid' onclick=javascript:location.href='contractForm.php?userid=".$staff['userid']."&sid=".$client['id']."&lid=".$client['leads_id']."' /> <a href='leads_information.php?id=".$client['leads_id']."&lead_status=".$client['leads_status']."' target='_blank'><b>".$client['client_name']."</b></a><span style='color:red;float:right;'>".$warning_str."</span></div><div style='margin-left:25px;'>Status : <span style='color:red;font-weight:bold;'>".$client['status']."</span><br>Starting Date : ".$starting_date."<br><small>".$client['company_address']."</small><br>Job Designation : <b>".$client['job_designation']."</b></div>";
+			$resultOptions.= "<span style='float:right;'>".$working_status."</span><div><input type='radio' align='absmiddle' name='userid' onclick=javascript:location.href='contractForm.php?userid=".$staff['userid']."&sid=".$client['id']."&lid=".$client['leads_id']."' /> <a href='leads_information.php?id=".$client['leads_id']."&lead_status=".$client['leads_status']."' target='_blank'><b>".$client['client_name']."</b></a></div><div style='margin-left:25px;'>Contract Status : <span style='color:red;font-weight:bold;'>".$client['status']."</span><br>Work Status : ".$client['work_status']." <br>Starting Date : ".$starting_date." to ".$staff_contract_finish_date."<br>Contract Length : ".$duration."<br>Job Designation : <b>".$client['job_designation']."</b><br />Work Schedule : ".$work_schedule."</div>";
+
+		}
+		
+		
+	$resultOptions .="</td>";	
+	$resultOptions .="</tr>";	
+	array_push($counters,$ctr);
+	
+}
+//print_r($counters);exit;
+//echo $pageNum ." | ". $maxPage;
+if($offset == 0){
+	$staff_num = 1;
+	$offset = $rowsPerPage;
+}else{
+	
+	
+	
+	if($pageNum < $maxPage){
+		//$staff_num = (($ctr + 1) - $rowsPerPage);
+		//$offset = $offset + $rowsPerPage;
+		$staff_num = (($ctr + 1) - $rowsPerPage);
+		$offset = $ctr;
+	}else{
+		$staff_num = min($counters);
+		$offset = max($counters);
+	
+	}
+	
+}
+
+$row_results = $staff_num." - ".$offset." of ".$numrows;
+
+
+//get all clients with active staff
+$sql = "SELECT COUNT(s.id)AS no_staff, s.leads_id , l.fname, l.lname FROM subcontractors s JOIN leads l ON l.id = s.leads_id WHERE s.status !='ACTIVE' AND s.status !='suspended'  GROUP BY s.leads_id ORDER BY l.fname;";
+$active_clients = $db->fetchAll($sql);
+foreach($active_clients as $client){
+    if($_POST['leads_id'] == $client['leads_id']){
+	    $active_client_Options .="<option selected value='".$client['leads_id']."'>(".$client['no_staff'].") ".$client['fname']." ".$client['lname']."</option>";
+	}else{
+	    $active_client_Options .="<option value='".$client['leads_id']."'>(".$client['no_staff'].") ".$client['fname']." ".$client['lname']."</option>";
+	}
+}
+
+$work_status_array = array('Full-Time','Part-Time');
+for($i=0; $i<count($work_status_array); $i++){
+    if($_POST['work_status'] == $work_status_array[$i]){
+        $work_status_Options .="<option selected value='".$work_status_array[$i]."'>".$work_status_array[$i]."</option>";
+	}else{
+	    $work_status_Options .="<option value='".$work_status_array[$i]."'>".$work_status_array[$i]."</option>";
+	}
+}
+
+//$login_status_Options .="<option selected value=''>Not Applicable</option>";
+//
+$smarty->assign('login_status_Options',$login_status_Options);
+$smarty->assign('work_status_Options', $work_status_Options);
+$smarty->assign('active_clients_num',count($active_clients));
+$smarty->assign('active_client_Options',$active_client_Options);
+$smarty->assign('admin_status',$_SESSION['status']);
+$smarty->assign('script_filename',basename($_SERVER['SCRIPT_FILENAME']));
+$smarty->assign('page_status','INACTIVE');
+$smarty->assign('row_results',$row_results);
+$smarty->assign('ctr',$ctr);
+$smarty->assign('numrows',$numrows);
+$smarty->assign('offset',$offset);
+
+$smarty->assign('resultOptions',$resultOptions);
+$smarty->assign('staff',$staff);
+$smarty->assign('search_flag',$search_flag);
+$smarty->assign('paging',$paging);
+$smarty->assign('row_results',$row_results);
+$smarty->assign('keyword',$keyword);
+$smarty->assign('usernameOptions',$usernameOptions);
+$smarty->display('subconlist.tpl');
+?>

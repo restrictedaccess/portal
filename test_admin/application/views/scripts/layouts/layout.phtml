@@ -1,0 +1,48 @@
+<?php
+        include "header.phtml";
+?>
+<span id='loading'>LOADING...</span>
+<div class="colmask leftmenu">
+	<div class="colright">
+		<div class="col1wrap">
+			<div class="col1">
+				<!-- Column 1 start -->
+				
+                
+                <?php // view contents goes here.
+                        echo $this->layout()->content;
+                ?>
+				
+				
+				
+				<!-- Column 1 end -->
+			</div>
+		</div>
+		<div class="col2">
+			<!-- Column 2 start -->
+			<?php //echo $this->layout()->sidebar;?>
+			
+			<div id="ads"></div>
+						
+		<h3>Test Category</h3>
+				<div class='category' id='catlist'>
+				<ul>
+				<?php foreach($this->categories as $cnt => $cat):?>
+				<li><a href="#<?php echo $cat['assessment_category'];?>"><?php echo $cat['assessment_category'];?></a></li>
+				<?php endforeach;?>
+				
+				</ul>
+			</div>
+
+			<!--<p></p>-->
+			<!-- Column 2 end -->
+		</div>
+	</div>
+</div>
+
+
+
+<?php
+// footer goes here.
+        include "footer.phtml"
+?>

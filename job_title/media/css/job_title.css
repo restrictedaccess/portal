@@ -1,0 +1,115 @@
+/* CSS Document */
+#job_title_list_history{
+	display:block;
+	height:200px;
+	overflow-y:scroll;
+	line-height:19px;
+}
+#job_title_list_history ol{
+	margin-top:0px;
+}
+#job_title_list_history span{
+	margin-left:10px;
+	color:#999999;
+	font-style:italic;
+}
+.his-hdr{
+	background:#CCCCCC; padding:5px; font-weight:bold; border:#333333 solid 1px;
+}
+.his-info{
+	margin-left:20px;
+	font-style:italic;
+}
+.td_add{
+	background:#333333; color:#FFFFFF; font-weight:bold; padding:5px; margin-top:10px;
+}
+
+#edit_jr_name{
+	display:none;
+	
+}
+.edit-spn{
+	margin-left:10px;
+	cursor:pointer;
+	color:#0033FF;
+}
+
+.jr_name{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.jr_currency{
+	background:#333333; color:#FFFFFF; font-weight:bold; padding:5px; margin-top:10px;
+}
+.tb_prc{
+	background:#333333;
+}
+.tr_w{
+	background:#FFFFFF;
+}
+
+.controls{
+	padding:1px;
+	background:#CCCCCC;
+	border:#999999 outset 1px;
+}
+.hdr_list{
+	padding:5px;
+	background:#CCCCCC;
+	font-weight:bold;
+	text-align:center;
+	border:#999999 outset 1px;
+}
+
+#right_pane{
+	padding:10px;
+}
+
+#right_pane h3{
+	margin:0;
+}
+
+#job_title_list ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#job_title_list li a{
+	display: block;
+	padding-left: 10px;
+	text-decoration: none;
+	height:20px;
+	line-height:20px;
+	border-bottom:#CCCCCC solid 1px;
+}
+
+#job_title_list li a:visited, #job_title_list ul li a:active{
+	color: #00014e;
+	background:#ffffcb;
+}
+
+
+#job_title_list li a:hover{
+	color: black;
+	background:#FFFFCC;
+	font-weight:bold;
+}
+
+#job_title_listli a:active{
+	background:#ffffcb;
+	font-weight:bold;
+}
+#job_title_list li a:focus{
+	color: black;
+	background:#ffffcb;
+	font-weight:bold;
+}
+
+* html #job_title_listli a{ /*IE only. Actual menu width minus left padding of LINK (20px) */
+	margin-bottom:0px;
+	margin-top:0px;
+}
+
+

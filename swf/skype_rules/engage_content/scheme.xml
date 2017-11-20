@@ -1,0 +1,51 @@
+<scheme name="(default)">
+
+<!-- #1 -->	<bg>0x99CCFF</bg>
+
+<!-- #2 -->	<topbuttons>0x7AA2DF</topbuttons>
+<!-- #2 -->	<topbuttonsb>0x4C67A2</topbuttonsb>
+<!-- #2 -->	<tophover>0xAFC1EB</tophover>
+<!-- #2 -->	<tophoverb>0x686DB0</tophoverb>
+
+<!-- #3 -->	<navbutton>0x7AA2DF</navbutton>
+<!-- #3 -->	<navbuttonb>0x4C67A2</navbuttonb>
+<!-- #3 -->	<navhover>0xAFC1EB</navhover>
+<!-- #3 -->	<navhoverb>0x686DB0</navhoverb>
+
+<!-- #4 -->	<activenavbutton>0x006600</activenavbutton>
+<!-- #4 -->	<activenavbuttonb>0x99CC00</activenavbuttonb>
+
+
+<!-- Changing the items above will have the most impact. Usually there's no need to change the following colors. -->	
+
+<!-- #5 -->	<headerbar>0x000000</headerbar>
+
+<!-- #6 -->	<contentbg>0xF4F4F4</contentbg>
+
+<!-- #7 -->	<footerbar>0xF4F4F4</footerbar>
+
+<!-- #8 -->	<fonta>0xFFFFFF</fonta>
+
+<!-- #9 -->	<fontb>0x000000</fontb>
+
+<!-- #10 -->	<tt_bg>0xffffe1</tt_bg>
+<!-- #10 -->	<tt_border>0x676767</tt_border>
+<!-- #10 -->	<tt_text>0x000000</tt_text>
+
+<!-- #11 -->	<calloutbg>0xFFFFFF</calloutbg>
+<!-- #12 -->	<callouttext>0x000000</callouttext>
+
+<!-- #13 -->	<listselect>0x64A800</listselect>
+<!-- #14 -->	<listhover>0x98CCFC</listhover>
+
+<!-- #15 -->	<timeline_tooltip_hover>0xE7F7FF</timeline_tooltip_hover>
+<!-- #16 -->	<timeline_period_text>0x000000</timeline_period_text>
+<!-- #17 -->	<timeline_selected_period_text>0xffffff</timeline_selected_period_text>
+
+<!-- #18 -->	<lblgrf_calloutbg>0xE4E4E4</lblgrf_calloutbg>
+
+<!-- #19 -->	<tab_contentbg>0xCCCCCC</tab_contentbg>
+<!-- #20 -->	<tab_textbg>0xffffff</tab_textbg>
+
+
+</scheme>

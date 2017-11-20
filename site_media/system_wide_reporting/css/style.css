@@ -1,0 +1,138 @@
+@charset "utf-8";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin:0;
+}
+
+footer{
+	background-image: url("/portal/images/overlay-bg.png");
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+	color:#999;
+}
+
+legend{
+	font-size:18px !important;
+}
+
+hr{
+	margin:5px !important;
+}
+
+.container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+#nav ul li{
+	line-height:30px;
+}
+
+@media (max-width: 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+#contract_list{
+	border-collapse: inherit !important;
+	border-spacing:1px !important;
+	background:#666;
+}
+#contract_list th {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	letter-spacing:0px;
+	line-height: 12px;
+	color: #000;
+	background-color:#999;
+	text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+#contract_list td{
+	color:#666;
+	font-size:11px;
+	font-family:tahoma;
+	line-height:15px;
+}
+
+#contract_list td img{
+	float:left;
+	margin-right:10px;
+}
+
+#contract_list td pre{
+	background:#FFC;
+	margin: 1px;
+	padding:5px;
+	font-family:tahoma !important;
+	font-size:11px !important;
+}
+
+.staff_name, .client_name{
+
+	font-weight:bold;
+}
+
+.subcons_status{
+	text-transform:capitalize;
+}
+
+#search_form{
+	width:98%;
+	margin:auto;
+	font-family:tahoma;
+	font-size:12px;
+}
+
+#search_form ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#search_form ul li{
+	float:left;
+	margin: 5px;
+    width: 120px;
+}
+#search_form select, #keyword{
+	width:115px;
+	font-family:tahoma;
+	font-size:12px;
+	padding:0px !important;
+	height:20px !important;
+}
+
+.contract_id{
+	font-size:12px;
+	text-decoration:underline;
+	color:#00F;
+}
+.status_box{
+	text-transform:capitalize;
+}
+.reason_link{
+	font-weight:bold;
+}
+/*
+#flexi{
+	width:60px !important;
+}
+
+#work_status{
+	width:80px !important;
+}
+*/

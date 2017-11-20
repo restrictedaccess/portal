@@ -1,0 +1,89 @@
+<!-- rate display -->
+	<strong>HOLIDAYS: </strong> <a href='#' class='jqmClose' style='float:right'>Close</a><hr>
+				
+		
+	<div id="staff-timesheet" style="float:left;width:100%;height:470px;padding:4px;overflow-x:hidden;overflow-y:scroll;">
+		<div class="tabular">
+			<form id='rateform' method='post' target='ajaxframe' action='/portal/payroll/index.php?item=saverate'>
+			<table summary="Timesheet">
+				
+			<tbody>
+           	<tr>
+				<th scope="col">Day of Week</th>
+				<th scope="col">Date</th>
+				<th scope="col">Holiday Name</th>
+				<th scope="col">Holiday Type</th>
+			</tr>
+			<?php
+			if( count($this->holidays) ):
+				foreach($this->holidays as $idx => $staff):
+			?>
+			<tr>
+				<td><input type='text' name='rate<?php echo $staff['userid'];?>' autocomplete='off' value='<?php echo $staff['hourly_rate'];?>'/>
+				<input type='hidden' name='edit<?php echo $staff['userid'];?>' value='false'/></td>
+			</tr>
+				
+			
+			<?php
+				endforeach;
+			endif;?>
+			
+			  </tbody>
+                    
+            </table>
+			</form>
+		</div>
+    </div>
+	
+	<div style='float:right;padding-top:4px'><button name='submit' id='update'>Update</button></div>
+	
+	<script type='text/javascript'>
+	(function($){
+		misc = (function(){
+			return {}
+		}());
+		
+		$(document).ready(function(){
+			$("input[type=text]").keydown(function(event) {
+				var num = false;
+				//backspace, delete, tab, escape, and enter
+				if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || event.keyCode == 13 || 
+					 //Ctrl+A
+					(event.keyCode == 65 && event.ctrlKey === true) || 
+					 //home, end, left, right
+					(event.keyCode >= 35 && event.keyCode <= 39) ) {
+					return;
+				} else {
+					if (!event.shiftKey && (event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105 )) {
+						num = true;
+						//event.preventDefault();						
+					}
+					if(!num && (event.keyCode != 190 && event.keyCode != 110) ) {
+						//alert(event.keyCode+' '+alpha);
+						event.preventDefault();
+					}
+				}
+			});
+			$('form#rateform input[type=text]').keydown(function(){
+				var inp = $(this);
+				inp.data( inp.attr('name') , inp.val() );
+			});
+			
+			$('form#rateform input[type=text]').keyup(function(){
+				var inp = $(this);
+				var currentval = inp.val();
+				var rateval = inp.data( inp.attr('name') );
+				if(currentval != rateval) {
+					var uid = inp.attr('name').split('rate')[1];
+					$("input[name=edit"+uid+"]").val(true);
+				}
+			});
+			
+			$('button#update').click(function(){
+				$(this).attr('disabled', true);
+				$('#loading').show();
+				$('form#rateform').submit();
+			});
+		});
+	})(jQuery);
+	</script>

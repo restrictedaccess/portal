@@ -1,0 +1,29 @@
+<div ng-controller="CurrencyAdjustmentControllerRegular as ca">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<h3>Currency Adjustment Regular Invoicing</h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight" ng-show="admin_allowed ==='N'">
+		
+		<div class="row" >
+			<div class="col-lg-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-content">
+						<div class="alert alert-danger">{{ admin_allowed_msg }}</div>
+					</div>	
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight" ng-show="admin_allowed ==='Y'">
+		<div class="row" ng-include="'views/common/currency-adjustment/add-form-regular.html'"></div>		
+		<div class="row" ng-include="'views/common/currency-adjustment/search-form-regular.html'"></div>
+		<div class="row" ng-include="'views/common/currency-adjustment/table-result-regular.html'"></div>
+		
+	</div>	
+	
+	<toaster-container></toaster-container>
+</div>

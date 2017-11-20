@@ -1,0 +1,7 @@
+@CHARSET "ISO-8859-1";
+.referral-list table th{
+	font-weight:bold;
+}
+.referral-list table td{
+	text-align:center;
+}

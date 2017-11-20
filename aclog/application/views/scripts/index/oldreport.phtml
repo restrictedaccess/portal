@@ -1,0 +1,76 @@
+<script type="text/javascript" src="/portal/aclog/js/report.js"></script>
+<script type="text/javascript" src="/portal/js/jscal2.js"></script>
+<script type="text/javascript" src="/portal/js/lang/en.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/css/jscal2.css" />
+
+<link rel="stylesheet" type="text/css" href="/portal/seatbooking/css/simpleAutoComplete.css" />
+<script type="text/javascript" src="/portal/ticketmgmt/js/simpleAutoComplete.js"></script>
+<link rel="stylesheet" type="text/css" href="/portal/aclog/css/styles.css" />
+	<div style='float:right;width:60%;padding:10px;'>
+		<form id='filter_form' action='?item=oldreport' method='post' style='float:left;'>
+			<input type='hidden' name='userid'/>
+			<span id='query'>
+				<select name='users'>
+					<option value=''> select user </option>
+					<?php foreach( $this->users as $user ):?>
+					<option <?php if($this->userid==$user['userid']) echo "selected='selected' ";?>value='<?php echo $user['userid'];?>'><?php echo $user['fname'].' '.$user['lname'];?></option>
+					<?php endforeach;?>
+				</select>
+			<!--<input type='text' name='search' id='search' class='inputbox2' style='width:150px;padding-right:10px;'/>-->
+			</span>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<span id='show_count'>Date from:</span>
+			<input type="text" id="from_date" name="from_date" value="" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;
+			<span id='show_count'>Date to:</span>
+			<input type="text" id="to_date" name="to_date" value="2013-11-26" class="inputbox2" readonly style="width:100px;"/>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type='submit' id="filter" value='Filter' title="Submit Filter"/> &nbsp;&nbsp;
+			<!--<input type='button' id="reset" value='Reset' title="Reset filter"/>
+			<a href='javascript:void(0);' onclick='class_seat.daycount(1);'>1 day</a>
+			<input type='button' class='button' value="Filter Date" name='submit' id='filterdate'/>-->
+		</form>
+	</div>
+	<br/>
+		
+	<div id="staff" style="float:left;width:100%;padding-right:20px;">
+		<div class='staffname'><?php echo $this->results[0]['fname'].' '.$this->results[0]['lname'];?> (note: this report is using old data format)</div>
+		<div class='date_range'><?php echo $this->from_date.' to '.$this->to_date;?></div>
+		
+		<div id="tabular">
+			<table summary="ActivityListing" id="myactivity">
+			<tbody>
+           	<tr>
+				<th scope="col" class="data">
+				<span class="hidden">Data Name</span>
+				</th>
+				
+				<th scope="col" style='width:10%'>Start Time</th>
+				<th scope="col" style='width:10%'>Time Ended</th>
+				<th scope="col" style='width:10%'>Elapsed Time</th>
+				<th scope="col" style="width:52%;">Activity</th>
+				<th scope="col" style='width:5%'>M/R/A/O</th>
+			</tr>
+			
+			<?php
+				if( count($this->results) > 0 ):
+					foreach( $this->results as $result ): ?>
+					<tr>
+						<td class="number"><?php echo $result['activity_date'];?></td>
+						<td><?php echo $result['time_started'];?></td>
+						<td><?php echo $result['time_ended'];?></td>
+						<td><?php echo $result['time_diff'];?></td>
+						<td class='details'><?php echo $result['activity_details'];?></td>
+						<td><?php echo ucfirst(substr($result['category'], 0, 1));?></td>
+					</tr>
+			<?php endforeach;
+			else:?>
+				<td colspan='7'>No Records found!</td>	
+			<?php endif;?>
+			
+			</tbody>
+                    
+            </table>
+		</div>
+    </div>

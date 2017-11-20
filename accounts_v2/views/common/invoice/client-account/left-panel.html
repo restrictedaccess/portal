@@ -1,0 +1,102 @@
+<div class="ibox float-e-margins">
+	<div class="ibox-title border-bottom">
+		
+		<div class="row">
+            <div class="col-xs-6">
+            	<h3>{{ total_no_awaiting_invoices }} Invoices Awaiting Payment</h3>
+            </div>
+            <div class="col-xs-6 text-right">
+            	<!--
+            	<p>THEY OWE 
+            		<span style="font-size:22px; font-weight:bold; margin-left:10px">
+            			<i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i><i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i>{{ they_owe_us | number:2 }}
+            		</span>
+            	</p>
+            	-->&nbsp;
+            </div>
+        </div>
+	</div>
+			
+	<div class="ibox-content">			
+		<table class="table table-bordered table-striped tab">
+			<thead>
+				<tr>
+					<th width="12%">Status</th>
+					<th>Invoice Number</th>
+					<th>Date Created</th>
+					<th>Due Date</th>
+					<th class="text-right">Total Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="invoice in awaiting_invoices" >
+					<td>{{ invoice.status }}</td>
+					<td><a href="/portal/accounts_v2/#/invoice/details/{{ invoice.order_id }}">{{ invoice.order_id }}</a></td>
+					<td>{{ invoice.added_on | date:'MMM dd, yyyy hh:mm a' }}</td>
+					<td>{{ invoice.pay_before_date | date:'MMM dd, yyyy' }}</td>
+					<td class="text-right"><i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i><i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i>{{ invoice.total_amount | number:2 }}</td>
+				</tr>
+				<tr>
+					<td colspan="5" align="right">
+						<span style="font-size:18px; font-weight:bold;">
+						<i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i><i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i>{{ they_owe_us | number:2 }}
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>	
+	</div>
+</div>
+
+
+<div class="ibox float-e-margins">
+	<div class="ibox-title border-bottom">
+		<h3>All Invoices</h3>
+		
+	</div>
+			
+	<div class="ibox-content" style=" height: 800px; overflow-y: auto;">			
+		<table class="table table-bordered table-striped tab">
+			<thead>
+				<tr>					
+					<th>Invoice Number</th>
+					<th>Date Created</th>
+					<th>Due Date</th>
+					<th width="10%" class="text-center">Status</th>
+					<th class="text-right">Total Amount</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="invoice in all_invoices" >					
+					<td><a href="/portal/accounts_v2/#/invoice/details/{{ invoice.order_id }}" >{{ invoice.order_id }}</a></td>
+					<td>{{ invoice.added_on | date:'MMM dd, yyyy hh:mm a' }}</td>
+					<td>{{ invoice.pay_before_date | date:'MMM dd, yyyy' }}</td>
+					<td class="text-center">
+						<span ng-if="invoice.status ==='new'" class="label label-warning">{{ invoice.status }}</span>
+						<span ng-if="invoice.status ==='paid'" class="label label-info">{{ invoice.status }}</span>
+						<span ng-if="invoice.status ==='cancelled'" class="label label-danger">{{ invoice.status }}</span>
+					</td>
+					<td class="text-right"><i ng-if="client_settings.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="client_settings.currency ==='USD'" class="fa fa-usd"></i><i ng-if="client_settings.currency ==='GBP'" class="fa fa-gbp"></i> {{ invoice.total_amount | number:2 }}</td>
+				</tr>
+			</tbody>
+		</table>	
+	</div>
+</div>
+
+<div class="ibox float-e-margins">
+	<div class="ibox-title border-bottom">
+		<button class="btn btn-info btn-sm pull-right" ng-click="openModalAddNotes(client_account_controller)">Add Note</button>
+		<h3>Comments / Notes</h3>
+		
+	</div>
+			
+	<div class="ibox-content" >			
+		<ol>
+			<li ng-repeat="note in notes | orderBy:'-date_created' " style="margin-bottom: 20px;">
+				<strong>{{ note.date_created  | date:'MMM dd, yyyy hh:mm a'  }} - {{ note.admin }}</strong><br>
+				<em>{{ note.note }}</em> 
+				
+			</li>
+		</ol>	
+	</div>
+</div>

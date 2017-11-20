@@ -1,0 +1,295 @@
+// JavaScript Document
+var PATH = 'register/';
+
+
+function CheckStep1Form(){
+	
+	var fname = $('fname').value;
+	var lname = $('lname').value;
+	
+	var bmonth = $('bmonth').value;
+	var bday = $('bday').value;
+	var byear = $('byear').value;
+	
+	var marital_status = $('marital_status').value;
+	//
+	
+	var handphone_country_code = $('handphone_country_code').value;
+	var handphone_no = $('handphone_no').value;
+	
+	var tel_area_code = $('tel_area_code').value;
+	var tel_no = $('tel_no').value;
+	
+	var address1 = $('address1').value;
+	var postcode = $('postcode').value;
+	var state = $('state').value;
+	var country_id = $('country_id').value;
+	var city = $('city').value;
+	
+	if(fname == ""){
+		alert("Please enter your first name");
+		return false;
+	}
+	
+	if(lname == ""){
+		alert("Please enter your first name");
+		return false;
+	}
+	
+	if(bmonth == "" || bday == "" || byear == ""){
+		alert("Please enter your Date of Birth");
+		return false;
+	}
+	
+	if(marital_status == ""){
+		alert("Please select your marital status");
+		return false;
+	}
+	if($('form_id').value == ""){
+		var password = $('password').value;
+		if(password == ""){
+			alert("Please enter your password");
+			return false;
+		}
+	}
+	
+	if(handphone_no == "" && tel_no =="" ){
+		alert("Please specify your contact number");
+		return false;
+	}
+	
+	if(isNaN(handphone_no) || isNaN(tel_no)){
+		alert("Invalid contact number");
+		return false;
+	}
+	
+	if(address1 == ""){
+		alert("Please enter your address");
+		return false;
+	}
+	if(state == ""){
+		alert("Please enter your state");
+		return false;
+	}
+	if(city == ""){
+		alert("Please enter your City");
+		return false;
+	}
+	if(postcode == ""){
+		alert("Please enter your Postal Code");
+		return false;
+	}
+	if(country_id == ""){
+		alert("Please enter your Country");
+		return false;
+	}
+	return true;
+}
+
+
+
+
+function ValidateEmail(){
+	var email = $('email').value;
+	var code = $('code').value
+	emailReg = "^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[a-zA-Z]$"
+	var regex = new RegExp(emailReg);
+	
+	if(email == ""){
+		alert("Please enter your email address");
+		return false;
+	}
+	
+	if(regex.test(email) == false){
+		alert('Please enter a valid email address and try again!');
+		return false;
+	}
+	
+	if(code == ""){
+		alert("Please enter the code that was sent to your email");
+		return false;
+	}
+	
+	if(isNaN(code)){
+		alert("Invalid code");
+		return false;
+	}
+	
+	return true;
+}
+function SendCode(){
+	var email = $('email').value;
+	
+	emailReg = "^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[a-zA-Z]$"
+	var regex = new RegExp(emailReg);
+	
+	if(email == ""){
+		alert("Please enter your email address");
+		return false;
+	}
+	
+	if(regex.test(email) == false){
+		alert('Please enter a valid email address and try again!');
+		return false;
+	}
+	
+	$("send-btn").innerHTML = "<img src='images/ajax-loader.gif'> Processing...";
+	
+	var query = queryString({'email' : email });
+	
+	var result = doXHR(PATH + 'SendCode.php', {method:'POST', sendContent: query, headers: {"Content-Type":"application/x-www-form-urlencoded"}});
+	result.addCallbacks(OnSuccessSendCode, OnFailSendCode);
+
+}
+
+function OnSuccessSendCode(e){
+	
+	if((e.responseText) == '01'){
+		alert("Invalid Email Address");
+		$("send-btn").innerHTML ='';
+	}else if((e.responseText) == '02'){
+		alert("Email Exist . Please try to enter different email address!");
+		$("send-btn").innerHTML ='';
+	}else{
+		toggle('code-form');
+		$("send-btn").innerHTML = e.responseText;
+	}
+}
+
+function OnFailSendCode(e){
+	alert("Failed to send the code to your email");
+}
+
+function RegisterApplicant(){
+	//alert("Hello World");
+	
+	var staff_fname = $('staff_fname').value;
+	var staff_lname = $('staff_lname').value;
+	var staff_email = $('staff_email').value;
+	/*
+	var bmonth = $('bmonth').value;
+	var bday = $('bday').value;
+	var byear = $('byear').value;
+	
+	var identification = $('identification').value;
+	var identification_number = $('identification_number').value;
+	var gender = getGender();
+	
+	var nationality = $('nationality').value;
+	var permanent_residence = $('permanent_residence').value;
+	*/
+	emailReg = "^[\\w-_\.]*[\\w-_\.]\@[\\w]\.+[\\w]+[a-zA-Z]$"
+	var regex = new RegExp(emailReg);
+	
+	var rv = $("rv").value;
+	var pass2 = $("pass2").value;
+	//alert(gender);
+
+	if(staff_fname == ""){
+		alert("Please enter your first name");
+		return false;
+	}
+	
+	if(staff_lname == ""){
+		alert("Please enter your last name");
+		return false;
+	}
+	
+	if(staff_email == ""){
+		alert("Please enter your email address");
+		return false;
+	}
+	
+	if(regex.test(staff_email) == false){
+		alert('Please enter a valid email address and try again!');
+		return false;
+	}	
+	
+	/*
+	if(gender == ""){
+		alert("Please choose your gender");
+		return false;
+	}
+	*/
+	if(pass2==""){
+		alert("Please type the code that you see in the image");
+		return false;
+	}
+	
+	$('application_result').innerHTML= "";
+	$("reg_btn").innerHTML = "<img src='images/ajax-loader.gif'> Processing...";
+	
+	/*var query = queryString({'staff_fname' : staff_fname , 'staff_lname' : staff_lname , 'staff_email' : staff_email , 'bmonth' : bmonth , 'bday' : bday , 'byear' : byear , 'identification' : identification , 'identification_number' : identification_number , 'gender' : gender , 'nationality' : nationality , 'permanent_residence' : permanent_residence , 'rv' : rv, 'pass2' : pass2 });*/
+	
+	var query = queryString({'staff_fname' : staff_fname , 'staff_lname' : staff_lname , 'staff_email' : staff_email , 'rv' : rv, 'pass2' : pass2 });
+	
+	
+	//alert(query);
+	var result = doXHR(PATH + 'RegisterApplicant.php', {method:'POST', sendContent: query, headers: {"Content-Type":"application/x-www-form-urlencoded"}});
+	result.addCallbacks(OnSuccessRegisterApplicant, OnFailRegisterApplicant);
+	
+	
+		function OnSuccessRegisterApplicant(e){
+			if((e.responseText) == '0'){
+				alert("Code is not correct!");
+				$('application_result').innerHTML= "Code is not correct!";
+				$("reg_btn").innerHTML ='<img src="images/btn-clicknext.png" onclick="RegisterApplicant()" style="cursor:pointer;" />';
+			}else if((e.responseText) == '01'){
+				alert("Invalid Email Address");
+				$('application_result').innerHTML= "Invalid Email Address!";
+				$("reg_btn").innerHTML ='<img src="images/btn-clicknext.png" onclick="RegisterApplicant()" style="cursor:pointer;" />';
+			}else if((e.responseText) == '02'){
+				alert("Email Exist . Please try to enter different email address!");
+				$('application_result').innerHTML= "Email Exist . Please try to enter a different email address!";
+				$("reg_btn").innerHTML ='<img src="images/btn-clicknext.png" onclick="RegisterApplicant()" style="cursor:pointer;" />';
+			}else{
+				
+				$('application_result').innerHTML=e.responseText;
+				alert(e.responseText);
+				var url="registernow-step1-personal-details.php";
+				url=url+"?email="+staff_email;
+				url=url+"&fname="+staff_fname;
+				url=url+"&lname="+staff_lname;
+				/*url=url+"&bmonth="+bmonth;
+				url=url+"&bday="+bday;
+				url=url+"&byear="+byear;
+				url=url+"&identification="+identification;
+				url=url+"&identification_number="+identification_number;
+				url=url+"&gender="+gender;
+				url=url+"&nationality="+nationality;
+				url=url+"&permanent_residence="+permanent_residence;*/
+			
+			
+				location.href= url;
+				
+				//$('application_result').innerHTML=e.responseText;
+				//$("reg_btn").innerHTML ='<img src="images/btn-clicknext.png" onclick="RegisterApplicant()" style="cursor:pointer;" />';
+			}
+			
+		}
+		function OnFailRegisterApplicant(e){
+			alert("Failed to process applicants registration");
+		}
+	
+	
+}
+
+
+
+
+
+
+
+function getGender(){
+	var radio_bttn = document.getElementsByName('gender');
+	var radio_bttn_value;
+	var i;
+	for(i=0;i<radio_bttn.length;i++)
+	{
+		if(radio_bttn[i].checked==true) {
+			radio_bttn_value = radio_bttn[i].value;
+			return radio_bttn_value;
+			break;
+		}
+	}
+}

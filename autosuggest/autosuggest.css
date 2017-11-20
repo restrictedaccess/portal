@@ -1,0 +1,53 @@
+/* CSS Document */
+/*
+#country{
+	padding:3px;
+	border:1px #CCC solid;
+	font-size:17px;
+}*/
+.suggestionsBox {
+	position: absolute;
+	left: 0px;
+	top:40px;
+	margin: 26px 0px 0px 0px;
+	width: 200px;
+	padding:0px;
+	background-color: #000;
+	border-top: 3px solid #000;
+	color: #fff;
+}
+.suggestionList {
+	margin: 0px;
+	padding: 0px;
+}
+
+.suggestionList ul {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	padding:0;
+	margin:0;
+
+}
+.suggestionList ul li {
+	list-style:none;
+	margin: 0px;
+	padding: 6px;
+	border-bottom:1px dotted #666;
+	cursor: pointer;
+}
+.suggestionList ul li:hover {
+	background-color: #FC3;
+	color:#000;
+}
+
+.load{
+background-image:url(loader.gif);
+background-position:right;
+background-repeat:no-repeat;
+}
+
+#suggest {
+	position:relative;
+}
+

@@ -1,0 +1,168 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+
+		<div class="ibox-content">
+			<form>
+				<div class="row">
+					<div class="form-group col-md-3">
+						<label for="dueDate">Client</label>
+						<br/>
+						<select ng-disabled="invoice.selected_from_params" ng-change="invoice.getTaxInvoiceNo()" data-placeHolder="Choose Client" id="leads_id" chosen="" chosen id="leads_id" class="chosen-select" style="width:100%;" ng-model="invoice.client" ng-options="client as (client.fname + ' ' + client.lname + ' [ '+ client.email + ' ]') for client in clients"></select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="dueDate">Invoice Date</label>
+
+						<div class="input-group date">
+							<input type="datetime" class="form-control" date-time ng-model="invoice.invoice_date" view="date" auto-close="true" min-view="date" format="YYYY-MM-DD">
+							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+						</div>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="dueDate">Due Date</label>
+
+						<div class="input-group date">
+							<input id="due_date" type="datetime" class="form-control" date-time ng-model="invoice.due_date" view="date" auto-close="true" min-view="date" format="YYYY-MM-DD">
+							<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+						</div>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="dueDate">Tax Invoice No.</label>
+						<br/>
+						<input type="text" class="form-control" id="tax_invoice_no" placeholder="Tax Invoice No." readonly="true" ng-model="invoice.tax_invoice_no">
+					</div>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+
+							<th width="3%">#</th>
+							<th width="30%">Description</th>
+							<th width="12%">Item Type</th>
+							<th width="10%">Date</th>
+							<th width="10%"  ng-if="commissions.length > 0">Comm. ID</th>
+							<th width="10%">Qty</th>
+							<th width="10%">Unit Price</th>
+							<th width="5%">Amount</th>
+							<th width="8%">Action</th>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in invoice.items">
+							<td>{{item.item_no}}</td>
+							<td><textarea style="max-width:100%" class="form-control" rows="4" ng-model="item.description"></textarea></td>
+							<td><select style="font-size:0.8em" data-placeHolder="Item Type" class="form-control"  ng-model="item.item_type" ng-options="item_type for item_type in item_types"></select></td>
+							<td>
+							<input  min="'2012-01-01'" style="font-size:0.8em" type="text" ng-model="item.selected_date" readonly="" date-range-picker placeholder="Select Dates" class="form-control">
+							</td>
+							<td ng-if="commissions.length > 0">
+							<select ng-if="commissions.length > 0" ng-change="update_commission_item(item, commission)" style="font-size:0.8em" chosen="" data-placeHolder="Active Commission" class="form-control commissions"  ng-model="item.commission_id" ng-options="commission.commission_id as commission.commission_title for commission in commissions"></select>
+							</td>
+							<td>
+							<input ng-model="item.quantity" class="form-control" type="number">
+							</td>
+							<td>
+								<div class="input-group">
+									<span class="input-group-addon" id="basic-addon1" ng-if="invoice.client.currency ==='AUD' || invoice.client.currency ==='USD'">$</span>
+									<span class="input-group-addon" id="basic-addon1" ng-if="invoice.client.currency ==='GBP'">&pound;</span>
+									<input type="number" class="form-control" ng-model="item.unit_price" aria-describedby="basic-addon1">
+								</div>
+							</td>
+							<td>
+								<i ng-if="invoice.client.currency ==='AUD'" class="fa fa-dollar"></i>
+								<i ng-if="invoice.client.currency ==='USD'" class="fa fa-usd"></i>
+								<i ng-if="invoice.client.currency ==='GBP'" class="fa fa-gbp"></i>
+								<span ng-bind="item.getAmount() | number:2"></span>
+							</td>
+							<td>
+								<button class="btn btn-danger btn-xs" ng-click="item.remove()">
+									<i class="fa fa fa-close"></i> Delete
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<button class="btn btn-default btn-sm" ng-click="invoice.addBlankItem()">
+						Add Item
+					</button>
+					<button class="btn btn-default btn-sm" ng-click="addItemFromStaffList()">
+						Add Items from Client Staff's List
+					</button>
+					<button class="btn btn-default btn-sm" ng-click="addItemsFromTimesheet()">
+						Add Items from Timesheet (-30 days group)
+					</button>
+					<button class="btn btn-default btn-sm" ng-click="addItemsCurrencyAdjustment()">
+						Add Currency Adjustment Items
+					</button>
+					
+
+				</div>
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-12 summary">
+							<div class="row">
+								<div class="col-lg-6" align="right">
+									<h3>Sub Total</h3></label>
+								</div>
+								<div class="col-lg-6">
+									<h3><i ng-if="invoice.client.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.client.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.client.currency ==='GBP'" class="fa fa-gbp"></i> <span ng-bind="invoice.getSubtotal() | number:2"></span></h3>
+								</div>
+							</div>
+							<div class="row" style="border-bottom:2px solid #000000">
+								<div class="col-lg-6" align="right">
+									<h3>GST Amount</h3>
+								</div>
+								<div class="col-lg-6">
+									<h3><i ng-if="invoice.client.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.client.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.client.currency ==='GBP'" class="fa fa-gbp"></i> <span ng-bind="invoice.getGST() | number:2"></span></h3>
+								</div>
+							</div>
+							<div class="row alert alert-warning" style="border-bottom:2px solid #000000">
+								<div class="col-lg-6" align="right">
+									<h2><strong>Total</strong></h2>
+								</div>
+								<div class="col-lg-6">
+									<h2><i ng-if="invoice.client.currency ==='AUD'" class="fa fa-dollar"></i><i ng-if="invoice.client.currency ==='USD'" class="fa fa-usd"></i><i ng-if="invoice.client.currency ==='GBP'" class="fa fa-gbp"></i> <span ng-bind="invoice.getTotal() | number:2"></span></h2>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="ibox float-e-margins" ng-show="invoice.getInvoiceTypes().length != 0">
+		<div class="ibox-title">
+			<h5>Invoice Type</h5>
+
+		</div>
+
+		<div class="ibox-content">
+			<p>
+				<span class="badge badge-info" ng-repeat="type in invoice.getInvoiceTypes()">{{type}}</span>			
+			</p>
+		</div>
+	</div>
+
+	<div class="ibox float-e-margins" style="margin-bottom:3em">
+		<div class="ibox-content">
+			<button class="btn btn-primary" ng-click="invoice.sync()">Save Invoice</button>
+			<button class="btn btn-primary" ng-click="invoice.cancel()">Cancel</button>
+		
+		</div>
+	</div>
+
+</div>

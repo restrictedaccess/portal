@@ -1,0 +1,51 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h3>Details</h3>
+		</div>
+		<div class="ibox-content">
+			<table class="table table-stripped">
+				<tr>
+					<td width="12%" align="right">ID </td>
+					<td> : {{ leave_request.leave_request_id }} </td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Staff </td>
+					<td> : {{ leave_request.staff }} </td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Client </td>
+					<td> : {{ leave_request.client }}</td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Staffing Consultant </td>
+					<td> : {{ leave_request.staffing_consultant }}</td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Date Requested </td>
+					<td> : {{ leave_request.date_requested | date:'MMM dd, yyyy hh:mm a' }}</td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Leave Type </td>
+					<td> : {{ leave_request.leave_type }}</td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Leave Duration </td>
+					<td> : {{ leave_request.leave_duration }}</td>
+				</tr>
+				
+				<tr>
+					<td width="12%" align="right">Reason </td>
+					<td> : {{ leave_request.reason_for_leave }}</td>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+</div>			

@@ -1,0 +1,64 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Add Leave Request</h4>
+        <img src="http://www.remotestaff.com.au/portal/tools/staff_image.php?w=100&id={{ selected_staff.userid }}" class="img-circle" alt="User Image">
+    </div>
+    <div class="modal-body">
+    	<form role="form" name="form" method="post" novalidate ng-submit="addLeaveRequest()">
+    		
+    		<div class="form-group">
+    			Staff : <input type="text" class="form-control" disabled value="{{ selected_staff.fname }} {{ selected_staff.lname }}" />				
+    		</div>
+    		<div class="form-group">
+    			Client : 
+    			<input type="text" class="form-control" disabled value="{{ selected_client.fname }} {{ selected_client.lname }}" />                                
+            </div>
+            
+            <div class="form-group">
+            	Date of Leave or Absence : 
+                <input  min="'2012-01-01'" type="text" ng-model="selected_date_range" readonly="" date-range-picker placeholder="Select Dates" class="form-control">            
+            </div>
+            
+            <div class="form-group">
+    			Leave Type : 
+    			<select class="form-control" ng-model="leave_type">    				
+					<option value="Absent">Absent</option>
+					<option value="Sick Leave">Sick Leave</option>
+					<option value="Vacation Leave">Vacation Leave</option>
+					<option value="Personal Leave">Personal Leave</option>
+					<option value="Client Public Holiday">Client Public Holiday</option>
+					<option value="Staff Public Holiday">Staff Public Holiday</option>
+					<option value="Paid Personal Leave">Paid Personal Leave</option>
+					<option value="Paid Vacation Leave">Paid Vacation Leave</option>
+					<option value="Paid Client Public Holiday">Paid Client Public Holiday</option>
+					<option value="Paid Sick Leave">Paid Sick Leave</option>
+					<option value="Paid Staff Public Holiday">Paid Staff Public Holiday</option>
+    			</select>                                
+            </div>
+            
+            <div class="form-group">
+    			Leave Duration : 
+    			<select class="form-control" ng-model="leave_duration" name="leave_duration" id="leave_duration">
+					<option value="Whole Day">Whole Day</option>
+					<option value="Half Day">Half Day</option>
+				</select>                                
+            </div>
+            
+            <div class="form-group">
+    			Reason For Leave : 
+    			<textarea ng-model="reason_for_leave" class="form-control"></textarea>                               
+            </div>
+            
+            
+            
+    		<div class="form-group">
+    			<div class="alert alert-danger" ng-if="selected_staff.status == 'terminated' || selected_staff.status == 'resigned'">
+    				Staff contract status to client is {{ selected_staff.status }}.
+    			</div>
+    			<button ng-disabled="selected_staff.status == 'terminated' || selected_staff.status == 'resigned'" data-style="zoom-in" class="ladda-button btn btn-primary" type="submit" ladda="loadingEmailCustom"><strong>Save</strong></button>
+            	<button type="button" class="btn btn-white" ng-click="close_add_leave_form()">Close</button>  
+            	              
+            </div>
+    	</form>	
+    </div>
+</div>

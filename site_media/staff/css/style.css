@@ -1,0 +1,105 @@
+@charset "utf-8";
+body{
+	background:#FCFCFC;
+	color:#333 !important;
+}
+footer{
+	/*background-image: url("/portal/images/overlay-bg.png");*/
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+	font-weight:bold;
+	background:#3399F3;
+    	
+	background-image: linear-gradient(#3399F3, #3399F3 50%, #3399F3);
+    background-repeat: no-repeat;
+    border: 1px solid #D5D5D5;
+    filter: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+.navbar a{
+	color:#000;
+	/*background:#FFF !important;*/
+}
+
+.logo_box{
+	/*
+	background:#333 !important;
+	padding:0;
+	width:220px;
+	text-align:center;
+	*/
+	padding-top:0;
+	padding-bottom:0
+}
+.rs_logo{
+	/*
+	position: fixed;
+    top: 3px;
+	left:0px;
+	*/
+	height:40px;
+}
+
+.space_right{
+	margin-left:30px;
+}
+
+.skin-blue .navbar {
+	background-image: -webkit-linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+	background-image: linear-gradient(#ffffff, #eeeeee 50%, #e4e4e4);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe4e4e4', GradientType=0);
+	filter: none;
+	
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.skin-blue .logo {
+	background:#1e4774;
+	
+}
+
+body > .header .navbar .sidebar-toggle .icon-bar {
+  background: #000;
+}
+body > .header .navbar .sidebar-toggle:hover .icon-bar {
+  background: #000;
+}
+
+.right-side > .content-header > h1 {
+  font-size: 20px;
+}
+.right-side > .content-header {
+  padding: 10px 10px 10px 20px;
+}
+
+#bank_acct_details{
+	border-collapse: inherit;
+    border-spacing: 7px;
+}
+
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 49px;
+  height: 49px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #000;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}

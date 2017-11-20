@@ -1,0 +1,91 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		
+		<div class="ibox-title">
+			<h3>Date Of Leave</h3>
+		</div>
+		
+		<div class="ibox-content">
+			
+			<table class="table table-bordered table-striped table-stripped">
+                <thead>
+	                <tr>
+	                	<th width="5%"><input  type="checkbox" ng-model="lrd.master_select" ng-checked="false" ng-click="select_all()" ng-disabled="update_process === true"></th>
+						<th width="5%">ID</th>
+	                    <th width="20%">Date Of Leave</th>
+						<th>Status</th>
+	                </tr>
+                </thead>
+                
+                <tbody>
+                	<tr ng-repeat="d in date_items"  >
+                		<td>
+                			
+
+                			<div ng-if="d.status ==='pending'">
+								<input type="checkbox" ng-model="d.selected" ng-checked="d.selected" ng-disabled="update_process === true">										
+							</div>
+							
+							<div ng-if="d.status ==='approved'">
+								<input type="checkbox" ng-model="d.selected" ng-checked="d.selected" ng-disabled="update_process === true">										
+							</div>
+						
+							<div ng-if="d.status ==='denied'">
+								<input  type="checkbox" disabled >									
+							</div>
+							
+							<div ng-if="d.status ==='cancelled'">
+								<input  type="checkbox" disabled >									
+							</div>
+							<div ng-if="d.status ==='absent'">
+								<input  type="checkbox" disabled >									
+							</div>
+									                			 
+                				   
+                			           			
+                		</td>
+                		<td>                			                 			
+                			{{ d.id }}
+                		</td>
+                		<td>{{ d.date_of_leave_str }}</td>
+                		<td>
+                			
+                			<div ng-if="d.status ==='pending'" class="label label-warning text-capitalize">
+										{{ d.status }}										
+							</div>
+							
+							<div ng-if="d.status ==='approved'" class="label label-primary text-capitalize">
+								{{ d.status }}										
+							</div>
+							
+							<div ng-if="d.status ==='denied'" class="label label-danger text-capitalize">
+								{{ d.status }}										
+							</div>
+							
+							<div ng-if="d.status ==='cancelled'" class="label text-capitalize">
+								{{ d.status }}										
+							</div>
+							<div ng-if="d.status ==='absent'" class="label label-success text-capitalize">
+								{{ d.status }}										
+							</div>
+                			
+                		</td>
+                	</tr>		
+	            </tbody>    	
+            </table>
+            
+            <div ng-if="update_process === true" class="alert alert-warning">Update in progress...</div>
+            
+        	<button class="btn btn-primary" ng-click="updateLeaveRequestStaus('approved');" ng-disabled="update_process === true" >Approve</button>
+        	<button class="btn btn-danger" ng-click="updateLeaveRequestStaus('denied');" ng-disabled="update_process === true">Deny</button>
+        	<button class="btn" ng-click="updateLeaveRequestStaus('cancelled');" ng-disabled="update_process === true">Cancel</button>	
+        
+            
+            
+                        	
+            
+            
+            	
+		</div>
+	</div>
+</div>

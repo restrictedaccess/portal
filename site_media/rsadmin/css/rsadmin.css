@@ -1,0 +1,111 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body, input, select{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+	color:#333;
+	margin:0;
+}
+
+#content{
+	width:80%;
+	margin:auto;
+}
+
+.admin_list li {
+	line-height:20px;
+	border-bottom:#ccc solid 1px;
+}
+
+.admin_name{
+	float:left;
+	width:330px;
+}
+
+.admin_name a{
+	text-decoration:none;
+}
+
+.admin_email{
+	float:left;
+	width:320px;
+	color:#999;
+}
+
+.admin_status{
+	float:left;
+	width:100px;
+	color:#999;
+}
+
+#inhouse_details {
+    float: right;
+    position: absolute;
+}
+
+#forms p{
+	margin-bottom:10px;
+	margin-top:5px;
+}
+
+#forms label{
+	float:left;
+	width: 30%;
+    margin-right: 10px;
+	text-align:right;
+	color:#999;
+}
+
+.text_box{
+	width:200px;
+}
+
+#admin_signature{
+	width:90%;
+	margin:auto;
+	
+}
+
+#admin_signature  input{
+	width:99%;
+}
+
+#admin_signature  textarea{
+	width:99%;
+}
+
+
+#history li{
+	border-bottom:none;
+}
+
+.history{
+	cursor:pointer;
+}
+
+.history:hover{
+	color:blue;
+}
+.history_details{
+	display:none;
+}
+#history_btn{
+	cursor:pointer;
+}
+
+.settings_border{
+	margin-top:20px;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	padding-top:10px;
+}
+
+.settings_border legend{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.admin_contact_info input{
+	width:300px;
+}

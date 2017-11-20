@@ -1,0 +1,97 @@
+<div class="col-lg-12">
+    <div class="ibox float-e-margins">
+        <div class=" ibox-content" style="margin: 0 !important;padding: 7px;">
+
+
+            <div ng-show="dataSummary3 === null" class="ibox-content">
+
+                Please wait...
+
+            </div>
+
+            <div ng-show="dataSummary3.length <= 0" class="ibox-content">
+
+                No result found.
+
+            </div>
+
+
+            <div ng-show="dataSummary3.length > 0">
+                <!--<button data-style="zoom-in" class="ladda-button btn btn-primary btn-sm pull-right" ladda="loading100" ng-click="export()" ng-disabled="dataSummary3 <= 0"><strong>Export Data</strong></button>-->
+                <table class="table table-responsive table-bordered table-striped">
+
+                    <thead>
+                    <tr>
+                        <th class="text-center" style="width: 10%;">Client</th>
+                        <th class="text-center">Invoice Number</th>
+                        <th class="text-center" ng-click="sortFunc3('days_before_suspension')">Suspension Days&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center">Currency</th>
+                        <th class="text-center">Covered Dates</th>
+                        <th class="text-center" ng-click="sortFunc3('order_date')">Order Date&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center" ng-click="sortFunc3('due_date')">Due Date&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center" ng-click="sortFunc3('total_amount')">Invoice Amount <i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center" ng-click="sortFunc3('status')">Status&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center" ng-click="sortFunc3('available_balance')">Available Balance&nbsp;<i style="cursor:pointer;" class="fa fa-fw fa-sort"/></th>
+                        <th class="text-center" ng-click="sortFunc3('remarks_eval')">Remarks <i style="cursor:pointer;" class="fa fa-fw fa-sort"></i></th>
+                        <th class="text-center">Payment Advise</th>
+                        <th class="text-center">Notes</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="data in dataSummary3 | filter: query | orderBy:sort3" ng-if="$index < dataSummary.limit">
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/client-account/{{data.client_id}}">{{ data.client_fname }} {{ data.client_lname }}</a></td>
+                        <td class="text-center"><a href="/portal/accounts_v2/#/invoice/details/{{data.order_id}}">{{data.order_id}}</a></td>
+                        <td class="text-center">{{ data.days_before_suspension}}</td>
+                        <td class="text-center">{{ data.currency }}</td>
+                        <td class="text-center"><div ng-show="data.items.start_date">{{formatDate(data.items.start_date)}} to {{formatDate(data.items.end_date)}}</div></td>
+                        <td class="text-center">{{formatDate(data.order_date)}}</td>
+                        <td class="text-center" ng-show="!data.due_date"></td>
+                        <td class="text-center" ng-show="data.due_date">{{formatDate(data.due_date)}}</td>
+                        <td class="text-center">{{data.currency == "AUD" ? "$" : data.currency == "GBP" ? "&pound;" : "$"}} {{getDecimal(data.total_amount)}}</td>
+                        <td class="text-center">{{data.status}}</td>
+                        <td class="text-center">{{data.currency == "AUD" ? "$" : data.currency == "GBP" ? "&pound;" : "$"}} {{getDecimal(data.available_balance)}}</td>
+                        <td class="text-center" ng-if="admin_id == 325 || admin_id == 165 || admin_id == 340 || admin_id == 380" ng-show="data.status !== 'cancelled'" ><input icheck ng-init="initiCheck(data.index)" ng-model="formData.remarks[data.index]" type="checkbox" ng-change="remarksCheck(data.index)"/></td>
+                        <td class="text-center" ng-if="admin_id == 325 || admin_id == 165 || admin_id == 340 || admin_id == 380" ng-show="data.status == 'cancelled'" >-</td>
+                        <!--<td class="text-center" ng-if="admin_id == 325 || admin_id == 165 || admin_id == 340" ng-show="data.status !== 'new'"></td>-->
+                        <td class="text-center" ng-if="admin_id == 325 || admin_id == 165 || admin_id == 340 || admin_id == 380" ng-show="data.history < 0"></td>
+                        <td class="text-center" ng-if="data.payment_advice === true">Yes </td>
+                        <td class="text-center" ng-if="data.payment_advice === false">No</td>
+                        <td class="text-center" ng-if="data.payment_advice != false && data.payment_advice  != true">-</td>
+
+                        <td class="text-center">
+                            <div style="position:relative;">
+                                <span ng-show="data.ready_for_release_notes.length > 0" style="position: absolute;top:-5px;z-index: 999;margin-left:1em;" class="label label-warning pull-right">{{ data.ready_for_release_notes.length}}</span>
+                                <span ng-click="openModalForNotesReadyForRelease(data)" class="text-success" style="cursor: pointer;"><i class="fa fa-file"></i></span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+                <pagination
+                        ng-model="pagination.currentPage"
+                        max-size="pagination.maxSize"
+                        items-per-page="limitSize"
+                        total-items="TotalNumberofDocs3"
+                        boundary-links="true"
+                        direction-links="true"
+                        ng-change="loadNextPage(pagination.currentPage)">
+                </pagination>
+
+                <!--<div class="text-center" ng-show="dataSummary3.length > limitSize">-->
+                    <!--<button ng-click="loadMore()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary3.limit < dataSummary3.length">Load More</button>-->
+                    <!--<button ng-click="loadLess()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary3.limit  >= TotalNumberofDocs3">Load Less</button>-->
+                <!--</div>-->
+
+                <!--<div class="text-center" ng-show="dataSummary3.length > limitSize">-->
+                    <!--<button ng-click="loadMore()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary3.limit < TotalNumberofDocs3">Load More</button>-->
+                    <!--<button ng-click="loadLess()" type="button" class="btn btn-w-m btn-success" style="width:30%;" ng-show="dataSummary3.limit  >= TotalNumberofDocs3">Load Less</button>-->
+                <!--</div>-->
+
+            </div>
+
+        </div>
+    </div>
+</div>

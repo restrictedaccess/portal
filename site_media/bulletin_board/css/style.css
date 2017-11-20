@@ -1,0 +1,100 @@
+@charset "utf-8";
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	margin:0;
+}
+
+footer{
+	background-image: url("/portal/images/overlay-bg.png");
+	bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+	color:#999;
+}
+
+legend{
+	font-size:18px !important;
+}
+
+hr{
+	margin:5px !important;
+}
+
+.container-fluid {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+}
+
+#nav ul li{
+	line-height:30px;
+}
+
+@media (max-width: 980px) {
+	/* Enable use of floated navbar text */
+	.navbar-text.pull-right {
+		float: none;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+
+.history_popover {
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+  margin-bottom:20px;
+  /*
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  */		  
+}
+
+.history_popover h3{
+	padding: 8px 14px;
+	margin: 0;
+	font-size: 14px !important;
+	font-weight: normal;
+	line-height: 18px;
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.history_popover h3 a{
+	cursor:default !important;
+}
+
+.history_date_created{
+	float:right;
+}
+
+.history_popover li{
+	list-style:none;
+	text-transform:capitalize;
+}
+
+.history_content{
+	padding: 9px 18px;
+	font-size:small !important;
+}

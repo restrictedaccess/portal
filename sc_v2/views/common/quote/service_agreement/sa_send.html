@@ -1,0 +1,25 @@
+<div class="ibox border-bottom">
+
+    <div class="ibox-content">
+        <div class="row info-sa-send">
+            <p class="pull-right">
+                <button class='btn btn-success btn-send-sa' ladda="loading5" ng-click="sendSAModal()">Send Email to Client</button>
+            </p>
+
+
+
+            <p>
+                <strong class="sa_info_label">Service Agreement Id :</strong>&nbsp;<label class="sa_info_sublabel">{{sa_id}}</label><br>
+                <strong class="sa_info_label">Reference Quote Id :</strong>&nbsp;<a href="/portal/sc_v2/#/quote/details/?quote_id={{quote_id}}" class="sa_info_sublabel">{{quote_id}}</a><br>
+                <!--<strong class="sa_info_label">Leads Name :</strong>&nbsp;<label class="sa_info_sublabel">{{quote.client.fname}} {{quote.client.lname}}</label><br>-->
+                <strong class="sa_info_label">Status : </strong>&nbsp;<label class="sa_info_sublabel">{{SA.status}}</label><br>
+                <strong class="sa_info_label">Client Accepted :</strong>&nbsp;<label class="sa_info_sublabel">{{SA.accepted}}</label><br>
+                <!--<strong class="sa_info_label">Date Created :</strong>&nbsp;<label class="sa_info_sublabel">{{formatDate(SA.date_created)}}</label><br>-->
+                <strong class="sa_info_label">Created by:</strong>&nbsp;<label class="sa_info_sublabel">{{SA.created_by.admin_fname}} {{SA.created_by.admin_lname}}</label><br>
+
+
+            </p>
+        </div>
+    </div>
+</div>
+<div ng-include="'views/common/quote/service_agreement/sa_info.html'"></div>

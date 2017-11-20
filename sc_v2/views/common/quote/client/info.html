@@ -1,0 +1,24 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<h3>Client Information</h3>
+			<div ng-show="quotes.leads ===null">
+				Loading ...
+			</div>
+			<div ng-show="quotes.leads !==null">
+				<p>
+					<label class="text-muted">Id : </label> {{ leads_id }}<br>
+					<label class="text-muted">Name : </label>
+					<a href="/portal/leads_information.php?id={{ leads_id }}">
+						{{ quotes.leads.fname }} {{ quotes.leads.lname }}
+					</a>
+					<br>
+
+					<label class="text-muted">Email : </label> {{ quotes.leads.email }}<br>
+					<label class="text-muted">Status : </label> {{ quotes.leads.status }}
+
+				</p>
+			</div>
+		</div>
+	</div>
+</div>

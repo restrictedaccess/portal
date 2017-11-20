@@ -1,0 +1,46 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-title">
+			<h5>Add New Rate</h5>
+		</div>
+		<div class="ibox-content">
+			<div class="row">
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Currency</label>
+		        	<select class="form-control" ng-model="ca.reference_currency" data-placeHolder="Choose Currency">
+			    		<option ng-repeat="currency in currencies" value="{{ currency.code }}">{{ currency.code }}</option> 	
+			    	</select>
+		      	</div>			    
+			    
+			    <div class="col-xs-2 col-sm-2 col-md-2">
+					<label class="text-muted">New Rate</label>
+					<div class="input-group">
+						<span class="input-group-addon">&#8369;</span>
+						<input type="text" class="form-control" ng-model="ca.reference_currency_rate" />
+					</div>
+		      	</div>
+		      	
+		      	<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Effective Month</label>
+			    	<select class="form-control" ng-model="ca.effective_month" data-placeHolder="Choose Month">
+			    		<option ng-repeat="month in month_options" value="{{ month.num }}">{{ month.name }}</option> 	
+			    	</select>       
+		      	</div>
+		      	
+		      	<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<label class="text-muted">Effective Year</label>
+			    	<select class="form-control" ng-model="ca.effective_year" data-placeHolder="Choose Year">
+			    		<option ng-repeat="year in year_options" value="{{ year }}">{{ year }}</option> 	
+			    	</select>       
+		      	</div>
+		      	
+			</div>
+			<br clear="all" />
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2">
+			    	<button data-style="zoom-in" class="ladda-button btn btn-primary" ng-click="add_new_currency_rate_regular()" ladda="loading5"><span class="ladda-label">Save Changes</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+		      	</div>
+			</div>
+		</div>
+	</div>
+</div>	

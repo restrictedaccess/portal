@@ -1,0 +1,1 @@
+<div style="margin:20px;"><strong>{$jr_name}</strong> has been removed from the list!</div>

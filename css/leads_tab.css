@@ -1,0 +1,60 @@
+/* CSS Document */
+
+#legend_form{
+padding: 5px; margin:5px; font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; color: #2d2b2b;
+}
+
+#legend_form p {
+margin-top:5px;margin-bottom:5px;
+}
+
+#legend_form label {
+float:left; display:block; width:50px; text-align:right; margin-right:10px;
+}
+
+#legend_form  input{
+
+ BORDER-RIGHT: #1c5180 1px solid;
+    BORDER-TOP: #1c5180 1px solid;
+    BORDER-LEFT: #1c5180 1px solid;
+    BORDER-BOTTOM: #1c5180 1px solid;
+	color:#333300;
+	width:100px;
+    font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; 
+}
+
+
+
+.leads_label{
+ font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; 
+    COLOR: #000000;
+    TEXT-DECORATION: none
+}
+
+#leads_search_form{
+padding: 5px; margin:5px; font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; color: #2d2b2b;
+}
+
+
+#leads_search_form p {
+margin-top:5px;margin-bottom:5px;
+}
+
+#leads_search_form label {
+float:left; display:block; width:150px; text-align:right; margin-right:10px;
+}
+
+#leads_search_form input{
+
+ BORDER-RIGHT: #1c5180 1px solid;
+    BORDER-TOP: #1c5180 1px solid;
+    BORDER-LEFT: #1c5180 1px solid;
+    BORDER-BOTTOM: #1c5180 1px solid;
+	color:#333300;
+	width:100px;
+    font: 11px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; 
+}
+
+.search{
+ font: 13px 'Lucida Grande', 'Trebuchet MS', Verdana, Helvetica, sans-serif; 
+}

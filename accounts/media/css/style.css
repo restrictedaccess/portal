@@ -1,0 +1,4 @@
+#start_date, #end_date{
+  cursor: pointer !important;
+  width: 100px;
+}

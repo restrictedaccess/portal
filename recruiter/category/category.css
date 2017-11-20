@@ -1,0 +1,130 @@
+#create_category_form{
+	background:#FFFFFF; 
+	border:#CCCCCC outset 2px; 
+	float:left; 
+	position:absolute; 
+	z-index:20; 
+	display:none;
+	left: 203px;
+	width:500px;
+	font:12px Arial;
+}
+
+#create_category_form p {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+
+#create_category_form label{
+	float:left;
+	display:block;
+	width:100px;
+}
+
+#category_list{
+	display:block;
+	padding:2px;
+	margin-bottom:20px;
+	
+}
+#category_applicants{
+	display:block;
+	
+}
+
+
+div.scroll {
+height: 150px;
+overflow: auto;
+border: 1px solid #666;
+background-color: #FFFFFF;
+margin-bottom:5px;
+}
+
+
+/***
+this section page usage by resume3.php
+***/
+
+.ctrl_btn{
+	cursor:pointer;
+}
+
+.ctrl_btn:hover{
+	color:#FF0000;
+}
+
+
+#ctrl{
+	font:12px Arial;
+	padding:10px;
+	background:#E9E9E9; 
+	margin-top:10px; 
+	display:none;
+	border:#000000 ridge 1px;
+}
+
+#ctrl p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#ctrl label{
+	float:left;
+	display:block;
+	width:200px;
+	font-weight:bold;
+	
+}
+
+#full_time_div{
+	margin-top:5px; 
+	margin-bottom:10px; 
+	border:#CCCCCC solid 1px;
+	font:12px Arial;
+	background:#E9E9E9;
+	padding:10px;
+	
+}
+#part_time_div{
+	margin-top:5px; 
+	margin-bottom:10px; 
+	border:#CCCCCC solid 1px;
+	font:12px Arial;
+	background:#E9E9E9;
+	padding:10px;
+}
+
+#freelancer_div{
+	margin-top:5px; 
+	margin-bottom:10px; 
+	border:#CCCCCC solid 1px;
+	font:12px Arial;
+	background:#E9E9E9;
+	padding:10px;
+}
+#evaluation_comments_list{
+	margin-top:5px; 
+	margin-bottom:10px; 
+	font:12px Arial;
+	padding:10px;
+}
+
+#fulltime_schedule_list{
+	padding:5px;
+	font:12px Arial;
+	
+}
+
+.refresh_btn{
+	float:left; 
+	width:60px; 
+	display:block;
+	font: 12px Arial; 
+	border:#CCCCCC outset 1px; 
+	background:#E9E9E9; 
+	text-align:center; 
+	color:#666666; 
+	cursor:pointer;
+}

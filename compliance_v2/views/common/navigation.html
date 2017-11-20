@@ -1,0 +1,65 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+			
+                <div class="dropdown profile-element" dropdown>
+                    <img alt="image" class="img-circle" src="//api.remotestaff.com.au/files/render-files-gridfs/?candidate_id={{admin_userid}}&type=image" width="48" height="48"/>
+                    <a class="dropdown-toggle" dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{admin_name}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">{{admin_position}} <b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a ui-sref="profile">Profile</a></li>
+                        <li><a ui-sref="contacts">Contacts</a></li>
+                        <li><a ui-sref="inbox">Mailbox</a></li>
+                        <li class="divider"></li>
+                        <li><a href="../login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                   	RS
+                </div>
+            </li>
+            
+            <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/adminHome.php"><i class="fa fa-home"></i> <span class="nav-label">{{ 'Home' | translate }}</span></a>
+            </li>
+            
+           <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/accounts_v2/#/invoice/clients"><i class="fa fa-dollar"></i> <span class="nav-label">{{ 'Client Invoice Management' | translate }}</span></a>
+            </li>
+            
+            <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/accounts_v2/#/invoice/invoice-reporting"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">{{ 'Client Invoice Reporting' | translate }}</span></a>
+            </li>
+            
+            <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/accounts_v2/#/accounts/timesheet"><i class="fa fa-calendar"></i> <span class="nav-label">{{ 'Time Sheet Management' | translate }}</span></a>
+            </li>
+            
+            <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/django/commission/"><i class="fa fa-folder"></i> <span class="nav-label">{{ 'Manage Commission' | translate }}</span></a>
+            </li>
+            
+            <li ng-class="{active: $state.includes('reports')}">
+            	<a href="/portal/django/subcontractors/subcons/active"><i class="fa fa-group"></i> <span class="nav-label">{{ 'List of Subcontractors' | translate }}</span></a>
+            </li>
+            
+             <li ng-class="{active: $state.includes('reports')}">
+                <a href="index.html"><i class="fa fa-calendar-o"></i> <span class="nav-label">{{ 'Leave Request Management' | translate }}</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('dashboards')}">
+                    <li ui-sref-active="active"><a ui-sref="leave-request.dashboard">{{ 'Dashboard' | translate }}</a></li>
+                    <li ui-sref-active="active"><a ui-sref="leave-request.search">{{ 'Search and Add Leave Request' | translate }}</a></li>
+                </ul>
+            </li>
+            
+            
+        </ul>
+
+    </div>
+</nav>

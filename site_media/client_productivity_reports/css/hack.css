@@ -1,0 +1,10 @@
+.carousel-indicators li{
+	border:1px solid #333;
+}
+.pager{
+	text-align:left;
+}
+.time-control{
+	width:100px;
+	margin-right:10px;
+}

@@ -1,0 +1,78 @@
+<div class="inmodal">
+	<div class="modal-header">
+		<h4 class="modal-title">Add Currency Adjustment Items</h4>
+		<small class="font-bold">Select month and year.</small>
+	</div>
+	<div class="modal-body">
+
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Select Timesheet Date</h3>
+			</div>
+			<div class="panel-body">
+				<div class="form-group col-md-12">
+					<select class="form-control" ng-model="selected_timesheet_date" ng-change="loadCurrencyAdjustmentItems()" ng-options="month as month.label for month in months"></select>
+				</div>
+
+			</div>
+		</div>
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title">Resulting Items</h3>
+			</div>
+			<div class="panel-body">
+				<div class="table-responsive">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th width="6%"></th>
+								<th width="15%">Dates</th>
+								<th width="40%">Description</th>
+								<th width="15%">Quantity</th>
+								<th width="10%">Unit Price</th>
+								<th width="10%">Amount</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="item in items">
+								<td><input ng-model="item.selected" type="checkbox"></td>
+								<td>{{item.selected_date.startDate.toISODate()}} {{item.selected_date.endDate.toISODate()}}</td>
+								<td>{{item.description}}</td>
+								<td>{{item.quantity | number:2}}</td>
+								<td>
+									<i ng-if="currency ==='AUD'" class="fa fa-dollar"></i>
+									<i ng-if="currency ==='USD'" class="fa fa-usd"></i>
+									<i ng-if="currency ==='GBP'" class="fa fa-gbp"></i>
+									{{item.unit_price | number:4}}
+								</td>
+								<td>
+									<i ng-if="currency ==='AUD'" class="fa fa-dollar"></i>
+									<i ng-if="currency ==='USD'" class="fa fa-usd"></i>
+									<i ng-if="currency ==='GBP'" class="fa fa-gbp"></i>
+									{{item.getAmount() | number:2}}
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			<div class="panel-footer">
+				<button type="button" class="btn btn-default" ng-click="select_all()">
+					Select All
+				</button>
+				<button type="button" class="btn btn-default" ng-click="deselect_all()">
+					Deselect All
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-white" ng-click="cancel()">
+			Close
+		</button>
+		<button type="button" class="btn btn-primary" ng-click="add_items()">
+			Add
+		</button>
+	</div>
+</div>

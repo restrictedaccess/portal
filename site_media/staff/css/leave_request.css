@@ -1,0 +1,184 @@
+@charset "utf-8";
+.add_leave_request_btn{
+	float:right;
+	font-size:11px;
+}
+#leave_request_result{
+	padding:10px;
+}
+#staff_leave_request_container{
+	font-size:14px;
+}
+
+.status_hdr{
+	background:#eee;
+	font-weight:bold;
+}
+
+.status_box {
+	display: block;
+	height: 156px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border:#EEE solid 1px;
+	padding-left:5px;
+	
+}
+.status_box ol{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+.status_box ol li a{
+	font-size:13px;
+}
+
+
+#staff_calendat_container{
+	padding-bottom:5%;
+}
+#calendar_tb{
+	color: #424242;
+    font-size: 12px;
+}
+
+#calendar_tb td{
+	padding:5px !important;
+	margin-bottom:5px;
+}
+.yearname{
+	display:none;
+}
+.month{
+	/*border:#CCC solid 1px;*/
+	background:#eee;
+}
+.month td{
+	text-align:center;
+	/*border:#eee solid 1px;*/
+}
+
+.monthname{
+	font-family:Verdana, Geneva, sans-serif;
+	border:#D5D5D5 solid 1px;
+	text-align:center;
+	background:#D5D5D5;
+	color:#000;
+	text-transform:capitalize !important;
+}
+.dayname{
+	background:#999;
+	border:#999 solid 1px;
+	color:#FFF;
+	font-size:10px;
+	width:11px;
+}
+
+.today{
+	background:#999;
+}
+
+.today a{
+	color:#FFF;
+}
+.saturday, .sunday, .monthday{
+	background:#FFF;
+	border:#eee solid 1px;
+	font-family:"Courier New", Courier, monospace;
+}
+
+
+time.icon {
+    background-color: #FFFFFF;
+    border-radius: 0.6em;
+    box-shadow: 0 1px 0 #BDBDBD, 0 2px 0 #FFFFFF, 0 3px 0 #BDBDBD, 0 4px 0 #FFFFFF, 0 5px 0 #BDBDBD, 0 0 0 1px #BDBDBD;
+    display: block;
+    font-size: 1em;
+    height: 9em;
+    overflow: hidden;
+    position: relative;
+    transform-origin: 50% 10% 0;
+    width: 8em;
+	float: left;
+    margin: 1em;
+	
+}
+time.icon * {
+    display: block;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+time.icon strong {
+    
+    color: #FFFFFF;
+    padding: 0.4em 0;
+    position: absolute;
+    top: 0;
+}
+
+/*
+time.icon strong input{
+	float: right !important;
+    width: 0;
+    position: relative;
+}
+*/
+
+time.icon em {
+    bottom: 0.9em;
+    color: #333;
+    position: absolute;
+}
+
+time.icon small {
+    bottom: -0.9em;
+    color: #CCCCCC;
+    position: absolute;
+    font-size: 0.9em;
+    font-family: tahoma;
+	font-weight:normal !important;
+}
+
+time.icon span {
+    color: #2F2F2F;
+    font-size: 2.8em;
+    letter-spacing: -0.05em;
+    padding-top: 46px;
+    width: 100%;
+}
+
+
+.status_approved{
+	background-color: #009900;
+    box-shadow: 0 2px 0 #009900;
+	
+}
+
+.status_pending{
+	background-color: #FFFF00;
+    box-shadow: 0 2px 0 #FFFF00;
+	color:#000 !important;
+}
+
+.status_absent{
+	background-color: #0000FF;
+    box-shadow: 0 2px 0 #0000FF;
+}
+
+.status_denied{
+	background-color: #FF0000;
+    box-shadow: 0 2px 0 #FF0000;
+}
+
+.status_cancelled{
+	background-color: #999999;
+    box-shadow: 0 2px 0 #999999;
+}
+
+#leave_request_add_form td{
+	padding:5px !important;
+}

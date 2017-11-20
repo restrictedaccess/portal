@@ -1,0 +1,18 @@
+@charset "utf-8";
+#results ol{
+	width:50% !important; 
+    margin:auto;
+}
+
+#results ol li {
+    padding-bottom:5px;
+    margin-bottom:10px;
+    padding-bottom: 5px;
+    line-height:30px;
+    border-bottom:#eee solid 1px;
+    
+}
+
+#results ol li button{
+    float:right;
+}

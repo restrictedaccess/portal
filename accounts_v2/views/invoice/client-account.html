@@ -1,0 +1,29 @@
+<div style="overflow: hidden; padding-bottom: 20px;" ng-controller="ClientAccountController as client_account_controller">
+	<div class="row  border-bottom white-bg dashboard-header">
+	    <div class="col-sm-12">
+	    	<a href="{{ API_URL }}/invoices/export-clients-invoices/?client_id={{ client.client_id }}" style="margin-left: 10px;" class="btn btn-primary pull-right" target="_blank" >Export All Invoices</a>
+	    	<a href="/portal/AdminRunningBalance/RunningBalance.html?client_id={{ client.client_id }}" style="margin-left: 10px;" class="btn btn-primary pull-right" >Running Balance Sheet</a>
+	    	<a href="/portal/accounts_v2/#/accounts/new-invoice?client_id={{ client.client_id }}" class="btn btn-primary pull-right">Create New Invoice</a>
+	    	<h3>Client Account Details {{ client.fname }} {{ client.lname }} </h3>
+	    </div>
+	</div>
+	
+	<div class="wrapper wrapper-content animated fadeInRight">
+		
+		<div ng-if="client_id === null" class="alert alert-danger" >
+        	<p>Client id is Missing</p>
+		</div>
+		
+		<div ng-if="client_id !== null" class="col-lg-12">			
+			<div class="row">
+	        	<div style="margin-right :10px " class="row col-xs-13 col-md-9" ng-include="'views/common/invoice/client-account/left-panel.html'"></div>
+	        	<div class="row col-xs-5 col-md-3" ng-include="'views/common/invoice/client-account/right-panel.html'"></div>
+	        </div>				
+        </div>
+	</div>
+	
+	
+		
+	
+	<toaster-container></toaster-container>
+</div>

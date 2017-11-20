@@ -1,0 +1,112 @@
+/* CSS Document */
+#close_link{
+    float:right; 
+	color:#FFFFFF; 
+	font-size:10px; 
+	font-family:tahoma; 
+	line-height:13px; 
+	padding-right:5px;
+	cursor:pointer;
+}
+.invoice_number{
+    color:#0033FF;
+	cursor:pointer;
+}
+
+div#invoice_form{
+    background:#FFFFFF !important;
+	margin: 80px auto !important;
+}
+
+div#invoice_details{
+    margin:0px !important;
+	width:100% !important;
+    height:350px !important;
+	display:block !important;
+	overflow-y:scroll !important;
+	background-color:#FFFFFF !important;
+	border:none !important;
+	text-align:left!important;
+	
+}
+
+div#invoice_details li{
+	margin-bottom:2px;
+	padding:3px; 
+}
+
+div#invoice_details li span{
+    font-size:10px;
+}
+
+div#invoice_details li span input{
+    font-size:10px;
+	cursor:pointer !important;
+	width:70px;
+}
+
+img.s_i{
+    float:left;
+	margin-right:10px;
+}
+
+img.c_i{
+    cursor:pointer;
+	top:-10px;
+}
+
+div#invoice_form h3{
+    background:#7A9512 !important;
+	color:#000000;
+}
+
+
+#prepaid td{
+    font-family:tahoma !important;
+	font-size:11px !important;
+}
+#prepaid ol li{
+    margin-bottom:10px;
+	text-transform:capitalize;
+	font-size:9px;
+	color:#999999;
+}
+
+#prepaid ol li ol{
+    margin-top:10px;
+}
+
+#prepaid ol li ol li{
+    margin-bottom:5px !important;
+	color:#999999;
+	text-transform:capitalize;
+	font-style:italic;
+	font-size:11px !important;
+} 
+
+#prepaid legend{
+    font-weight:bold;
+	font-size:14px !important;
+	text-transform:uppercase;
+}
+.client{
+    cursor:pointer;
+	font-size:12px !important;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#333333 !important;
+}
+
+.client:hover{
+    text-decoration:underline;
+	color:#0000FF;
+}
+
+.client_list{
+    display:block;
+	height:600px;
+	margin:0;
+	overflow-y:scroll;
+}
+
+
+

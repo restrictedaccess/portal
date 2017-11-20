@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+/* Main Styling Sheet */
+
+/* resetting layout values */
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, img, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, label { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; 	vertical-align: baseline; background: transparent; } 
+
+body{ width:100%; background:#fff url(../images/sub-bg2.jpg) top left repeat-x; font-family:Arial, Helvetica, sans-serif; font-size:14px; }
+
+body#homex a#homenav, body#aboutusx a#aboutnav, body#registernow a#registernownav, body#jobopen a#jobopennav, body#howwork a#hownav,  body#showstaff a#showcasenav, body#testimonial a#testimonialnav, body#qanda a#qnanav, body#qualities a#qualitiesnav, body#loginx a#loginnav { background:url(../images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+body#articlem5 a#mtopic5, body#articlem4 a#mtopic4, body#articlem3 a#mtopic3, body#articlem2 a#mtopic2, body#articlem1 a#mtopic1, body#articles2 a#stopic2, body#articles1 a#stopic1{ background:#f7f7f7;}
+body#agreement1 a#agree1, body#agreement2 a#agree2, body#agreement3 a#agree3, body#agreement4 a#agree4{ background:#f7f7f7;}
+body#videox1 a#video1, body#videox2 a#video2, body#videox3 a#video3, body#videox4 a#video4{ background:#f7f7f7;}
+
+.sub-bg{ background:url(../images/sub-bg2.jpg) top left repeat-x; }
+
+h1, h2, h3, h4, p{  margin:0px 20px 12px 20px;  }
+h1{ font-size:24px; line-height:30px; color:#173d6a; border-bottom:2px solid #ddd; padding-bottom:10px;}
+h2{ font-size:18px; color:#165394; line-height:24px; }
+h3{ font-size:18px; color:#828282; line-height:24px; }
+.bigfont{ font-size:30px; }
+p{ font-size:14px; color:#000; line-height:20px;  }
+.homereason{ padding-left:37px; }
+.greytextryt{ color:#999; text-align:right; font-size:12px; font-weight:bold; line-height:14px; }
+.greytextryt a:link, .greytextryt a:visited{ color:#999 !important; text-decoration:none; }
+.greytextryt a:hover{ color:#000 !important; text-decoration:underline; }
+.linebelow{ line-height:20px; border-bottom:1px solid #ccc; } 
+
+.smalltext{ font-size:11px; color:#666; }
+
+.smalltext a:link, .smalltext a:visited{ text-decoration:none; color:#666; }
+.smalltext a:hover{ text-decoration:underline; color:#000; }
+
+#container{ width:920px; margin:auto; }
+
+#header{ height:89px; width:920px; }
+#headerleft{ width:700px; float:left; }
+#headerright{ width:220px; float:right; text-align:right}
+#headerright p { margin:0; color:#55707e; font-weight:bold; }
+#headspacer{ height:#20px; line-height:20px; clear:both;}
+
+#nav{ background:url(images/remote-staff-nav-bg.jpg) top left repeat-x; }
+#nav ul{ list-style:none;  }
+#nav ul li{  float:left;  }
+#nav ul li a:link, #nav ul li a:visited{  display:block; padding:14px 11px 10px 11px; text-decoration:none; color:#fff; }
+#nav ul li a:hover{ background:url(../images/remote-staff-nav-bg2.jpg) top left repeat-x;}
+#nav ul li.spacer{ width:30px; }
+
+#main-image{ clear:both; }
+
+#content-left{ width:170px; float:left; }
+#content-left p a:link, #content-left p a:visited{text-decoration:none; color:#000;}
+#content-left p a:hover{ color:#999; text-decoration:underline; }
+
+#content-main{ width:480px; float:left; }
+#content-main p a:link, #content-main p a:visited{ color:#333; text-decoration:none; }
+#content-main p a:hover{ color:#173d6a; text-decoration:underline; }
+
+#content-right{ width:265px; float:right; }
+
+
+div#formbox{ width:265px; margin:auto; background:#d9e4e9; padding-bottom:15px; margin-bottom:20px; }
+div#formbox h1{ height:55px;  background:url(../images/bg-title2.jpg) top left repeat-x; font-size:18px; color:#fff; font-weight:normal; text-align:center;  padding:0; line-height:24px; margin:0;  }
+div#formbox h2{ font-size:14px; color:#55707e; text-align:center;  }
+div#formbox p{ color:#55707e;  font-size:12px; margin-bottom:5px; line-height:22px;}
+div#formbox p.fhalf{ width:120px; float:left; margin:0; }
+div#formbox input{ width:220px; height:16px; font-size:12px; padding:0; }
+div#formbox textarea{ width:220px; height:50px; font-size:12px; padding:0; }
+div#formbox input.ihalf{ width:100px; }
+
+div#rightblurb{ width: 265px; margin-bottom:20px;  }
+div#rightblurb h1{ height:41px; background:url(../images/bg-title.jpg) top left repeat-x; line-height:41px; font-size:14px; color:#fff; text-align:center;  margin:0; }
+div#rightblurb h2{ font-size:12px; color:#333; text-align:center;  margin:0; padding-top:10px; }
+div#rightblurb p{ color:#000;  font-size:11px; line-height:16px;}
+div#rightblurb img.tv{padding:5px 15px 0px 20px; float:left;  }
+
+/* about us  */
+#teamlist{ width:350px; float:left; margin-bottom:30px;  }
+div#team{ margin-bottom:30px;   }
+div#team img{ margin-right:15px;float:left; border:1px solid #ccc; }
+div#team p{ border-bottom:1px solid #EEEEEE; clear:both; display:block !important;font-size:12px;padding:0 0 10px; }
+div#team p .tname{ font-size:14px !important; font-weight:bold; color:#3075c2; }
+div#team h2{ height:24px; line-height:24px; background:#EEEEEE; color:#333333; font-size:14px;  padding-left:15px; margin-top:0px; margin-bottom:20px; }
+#aboutus{ width:570px; float:left;  }
+#aboutus .img-caption{ font-size:12px; font-weight:bold; color:#000; text-align:center; }
+#aboutus a:link, #aboutus a:visited{ color:#000; text-decoration:none;  }
+#aboutus a:hover{ color:#6699CC; text-decoration:underline;  }
+/* showcasing staff */
+
+div#staffbox{ width:340px; height:185px; border:1px #ccc solid; float:left; margin:10px 0px 10px 30px; }
+div#staffbox p{ font-size:11px !important; line-height:14px; margin:0; padding-left:10px; padding-right:10px;}
+div#staffbox div#staffimage{  width:100px; height:185px; float:left; text-align:center; }
+div#staffbox div#staffimage img{ margin:10px 0px 10px 0px;  }
+div#staffbox div#staffdesc{  width:240px; height:185px; float:right;   }
+div#staffbox div#staffdesc h3{ font-size:14px; color:#114cb2; padding:2px 10px 0px 10px; margin:0; }
+div#staffbox div#staffdesc div#desc{ height:140px; overflow:auto; margin-right:10px; font-size:11px !important;}
+
+
+/* available staff ver 2 */
+table#astaff { border-collapse:collapse; width:700px; margin-left:10px;  }
+table#astaff td img{ margin-bottom:5px; }
+table#astaff td p{ font-size:11px; line-height:13px; border-bottom:1px dotted #ccc; margin:0px 10px 5px 10px;  text-align:left;}
+table#astaff td h3{ font-size:12px; line-height:13px; text-align:left; color:#173d6a; margin:10px 10px 0px 10px; padding:0;}
+table#astaff td p a:link, table#astaff td p a:visited{ text-decoration:none; padding:0px 3px 0px 5px !important; color:#000;}
+table#astaff td p.statuses{font-size:10px;}
+table#astaff td p a:hover{ text-decoration:none;  background:#eee;  }
+table#astaff td.boxheader{ width:344px; height:28px; background:url(../images/avail-staff-box-header.jpg) top right no-repeat; line-height:28px; font-size:12px; color:#fff; }
+.stfname{ text-align:center !important; font-size:12px; font-weight:bold; background:#3366CC; color:#fff; border:0px;}
+table#astaff td.boxfooter{ width:342px; height:28px; background:url(../images/avail-staff-box-footer.jpg) top right no-repeat; font-size:12px; color:#fff;}
+table#astaff td.boxcontent{ width:342px; height:200px; background:#f7f7f7; font-size:12px; color:#fff; border:1px solid #0d609a; border-collapse:collapse;}
+.selectstaff{ font-size:11px; text-align:right; color:#000;  }
+div#staffdescbox{ height:180px; overflow:auto; margin-right:10px; font-size:11px !important; margin-top:5px; color:#000; font-size:11px; line-height:14px;}
+div#staffdescbox p{line-height:14px; font-size:11px !important; margin:0; padding-top:10px;}
+
+#availstaff{ height:391px; background:url(../images/img-availstaff-bg.jpg) top left repeat-x; clear:both; }
+#availstaff div{ width:230px; text-align:center; font-size:14px; color:#fff; float:left; height:391px;  }
+#availstaff div p{ line-height:25px; color:#fff;  margin:0px 15px 0px 15px; }
+#availstaff div p a:link, #availstaff div p a:visited{ text-decoration:none; display:block; color:#fff; }
+#availstaff div p a:hover{ background:#87b4ec; color:#036; text-decoration:none; display:block; }
+
+div#astaffleft{ width:180px; float:left; text-align:center}
+div#staffclass{ margin-top:30px; }
+/* div#staffclass h4{ height:30px; background:url(../images/avail-staff-left-title-expanded.jpg) top left no-repeat; line-height:30px; font-size:16px; padding-left:30px; padding-right:15px; margin:0; margin-bottom:10px; text-align:right; color:#fff;} */
+div#staffclass h4{ height:30px; line-height:30px; font-size:16px; margin:0; margin-bottom:10px; text-align:right; color:#fff;}
+
+div#staffclass h4 img{ cursor:pointer; }
+
+div#staffclass h3{ height:20px; line-height:20px; font-size:14px; margin:0; text-align:right; color:#000;}
+div#staffclass ul{ list-style:none; margin:5px 0px 10px 0px; border-bottom:1px solid #ccc; padding-bottom:10px;}
+div#staffclass ul li{ text-align:right; font-size:12px; line-height:20px; color:#666; font-weight:bold; }
+div#staffclass ul li a:link, div#staffclass ul li a:visited{ display:block; text-decoration:none;  color:#666; }
+div#staffclass ul li a:hover{background:#f7f7f7; text-decoration:none; color:#333;}
+
+div#astaffright{ width:720px; float:right; }
+div#astaffright div#topstaff{ width:360px; float:left; }
+div#astaffright div#astaff-list{ width:720px; clear:both; margin-top:20px; }
+table#staffsel{ width:356px; margin-top:50px;    }
+table#staffsel td.staffselheader{ width:356px; height:35px; background:url(../images/avail-staff-selected-headerr.jpg) top left no-repeat; }
+td.staffselfooter1{ width:207px; height:35px; background:url(../images/avail-staff-selected-footer1.jpg) top left no-repeat; }
+td.staffselfooter2{ width:149px; height:35px; background:url(../images/avail-staff-selected-footer2.jpg) top left no-repeat; }
+td.staffselcontent{ width:356px; height:120px; background:#eee; }
+td.staffselcontent div{ height:120px; overflow:auto; margin-top:5px;}
+td.staffselcontent table td.stname{ width:180px; height:25px; padding-top:4px; border-bottom:1px dotted #ccc; font-size:11px; color:#000;}
+td.staffselcontent table td.stskill{ width:120px; height:25px; padding-top:4px; border-bottom:1px dotted #ccc; font-size:11px; color:#000; }
+td.staffselcontent table td.staction{ width:20px; height:25px; padding-top:4px; border-bottom:1px dotted #ccc; font-size:11px; color:#000; }
+
+
+
+
+div#staffbox2{ width:340px; height:230px; border:1px #ccc solid; float:left; margin:10px 0px 10px 30px; }
+div#staffbox2 div#hleft{ width:320px; height:25px; float:left;  background:#e5e5e5; }
+div#staffbox2 div#hryt{ width:20px; height:25px; float:right;  background:#e5e5e5; line-height:25px; } 
+div#staffbox2 h2{ height:25px; line-height:25px; color:#1857b8; margin:0; font-size:14px; padding-left:10px; padding-right:10px;}
+div#staffbox2 p{ font-size:11px !important; line-height:14px; margin:0; padding-left:10px; padding-right:10px;}
+div#staffbox2 div#staffimage2{  width:100px; height:150px; float:left; text-align:center; margin-top:10px; }
+div#staffbox2 div#staffimage2 img{ margin:auto;  }
+div#staffbox2 div#staffdesc2{  width:225px; height:150px; float:right; margin-top:10px; overflow:auto; margin-right:15px  }
+
+div#staffbox2 div#hleft2{ width:200px; height:20px; line-height:20px; float:left; font-size:11px;  background:#aac2e8;  }
+div#staffbox2 div#hryt2{ width:140px; height:20px; line-height:20px; background:#aac2e8; line-height:20px; float:left; font-size:11px;  } 
+
+
+
+#footer{  background:#8ead24 url(../images/remote-staff-footer-bg.jpg) top left repeat-x; clear:both}
+#footer div#footerbox{ width:920px; margin:auto;  }
+#footer div#footerbox p{ font-size:11px; border-top:2px solid #fbf2db;  margin:0; }
+#footer div#footerbox div#sublinks{ margin:20px 20px 0px 20px;  padding-top:15px; padding-bottom:5px; }
+#footer div#footerbox div#sublinks dl{ padding-left:15px; padding-right:15px; float:left; font-size:11px;   }
+#footer div#footerbox div#sublinks dl dt{ font-weight:bold; border-bottom:1px solid #fbf2db; margin-bottom:5px; }
+#footer div#footerbox div#sublinks dl dd{ padding-left:10px; height:15px; line-height:15px; }
+#footer div#footerbox div#sublinks dl dd a:link, #footer div#footerbox div#sublinks dl dd a:visited{ text-decoration:none; color:#000; }
+#footer div#footerbox div#sublinks dl dd a:hover{ text-decoration:underline; color:#666; }
+
+
+/* client services */
+
+#clientservices{ width:920px;  padding-bottom:20px; clear:both; }
+div#clientpoints{ width:305px; float:left;  }
+div#clientpoints p{ margin:0;  padding:10px; }
+div#clientpoints div#points{ width:270px; margin:auto; padding-bottom:20px; margin-bottom: 20px;}
+div#clientpoints div#points h2{ font-size:18px; line-height:24px; padding:20px 20px 40px 20px; color:#000; font-weight:normal; margin:0;   }
+div#clientpoints div#points ul{ list-style:none; margin:10px;   }
+div#clientpoints div#points ul li{ padding:0px 10px 15px 30px; background:url(../images/bullet-check.jpg) top left no-repeat; line-height:18px; }
+div#clienthow{ width:430px; float:left;}
+div#clienthow h1{ font-size:20px; color:#fff; background:url(../images/headtitle.jpg) top left  no-repeat; height:54px; line-height:54px; margin:0; padding-left:15px; border:0;}
+div#clienthow h2{ font-size:18px; color:#205089;  line-height:24px; margin:0; padding-left:15px;}
+div#clienthow ul{ list-style:none; margin:10px;   }
+div#clienthow ul li{ padding:0px 10px 15px 30px; background:url(../images/bullet-arrow.jpg) top left no-repeat; line-height:18px; }
+
+/* client testimonials */
+div#clientpoints div#cases{ width:300px; height:350px; margin:auto; padding-bottom:20px; margin-bottom: 20px; border:1px solid #ccc;}
+div#clientpoints div#cases p{ margin:0; padding:10px 20px 10px 20px; }
+div#clientpoints div#cases h2{ font-size:14px; line-height:24px; padding:0px 20px 0px 30px; color:#0b4fa4; margin:10px 20px 0px 10px;   }
+.case1{background:url(../images/btn-pointer1.png) top left no-repeat;}
+.case2{background:url(../images/btn-pointer2.png) top left no-repeat;}
+.case3{background:url(../images/btn-pointer3.png) top left no-repeat;}
+
+div#clienttestibox{ width:429px; float:left;}
+div#clienttestibox p{ margin:0; padding:10px 20px; font-size:14px;  }
+div#clienttestibox div#testi1{ background:#eff4db; }
+div#clienttestibox div#testi1b{ background:#fff url(../images/cloud1.png) top left no-repeat; margin-bottom:15px;}
+div#clienttestibox div#testi1b p{ margin:0; padding:10px 20px 10px 30px; font-size:12px; line-height:16px;  font-style:normal; }
+div#clienttestibox div#testi2{ background:#e0e8f6; }
+div#clienttestibox div#testi2b{ background:#fff url(../images/cloud2.png) top left no-repeat; margin-bottom:15px;}
+div#clienttestibox div#testi2b p{ margin:0; padding:10px 20px 10px 250px; font-size:12px; line-height:16px; font-style:normal; }
+
+/*  Referral */
+
+div#referral{ width:920px; padding-bottom:20px; }
+div#referral div#refcols{ width:430px; float:left; }
+div#referral div#refcols ul{ list-style:none; padding:0px 20px 20px 20px; margin:0;  }
+div#referral div#refcols ul li{ padding:10px 0px 20px 65px; background:url(../images/icon-folder.png) left no-repeat;  margin:0; text-align:left; list-style-type:none; text-indent:0;  }
+div#referral div#refcols ul li .hfolder{ font-size:18px; font-weight:bold; color:#1f4d83; }
+
+div#referral div#refcols table#refform{ width:420px; background:#e5eff5;  }
+div#referral div#refcols table#refform td{ padding:5px 15px 5px 15px;  }
+div#referral div#refcols table#refform td.refheader{ background:#fff url(../images/img-ref-tab-header.jpg) top left no-repeat; height:51px; line-height:51px; padding:0px; }
+div#referral div#refcols table#refform td div.refheader2{ color:#1e4a87; font-weight:bold; border-bottom:1px solid #ccc; lihe-height:30px; }
+.refsmall{ font-size:12px; color:#000; }
+
+
+
+/*  Q and A  | Terms and Conditions | */
+
+div#qna{ width:920px; padding-bottom:20px;  }
+div#qna div#qacols{ width:430px; float:left;   }
+div#qna div#qacols a:link, div#qna div#qacols a:visited{ color:#333; text-decoration:none; }
+div#qna div#qacols a:hover{ color:#173d6a; text-decoration:underline; }
+
+
+div#qna div#qacols h3{ font-size:18px; color:#173d6a; margin:0; padding-top:10px;}
+div#qna div#qacols p{ margin:0; padding-bottom:10px; }
+div#qna div#qacols ul{ list-style:disc;  margin:10px 20px 10px 20px; }
+div#qna div#qacols ul li{ margin:0px 20px 10px 10px; }
+
+
+
+/*  hire-a-staff */
+
+h4{ font-size:16px; color:#000; text-align:right }
+p.greytext{ color:#ccc; }
+
+.bluehi{ font-size:16px; font-weight:bold; color:#173d6a; }  
+h5{ background:url(../images/hire-header-bg.jpg) top left repeat-x;  height:48px; line-height:48px; margin-bottom:20px; color:#fff; font-size:18px;  padding-left:20px; }
+
+
+
+
+/* login */
+#logindiv{ width:903px; margin:auto; }
+#logindiv h2{ font-size:18px; line-height:30px; color:#000; text-align:center;  padding-top:110px; }
+table#login{ width:250px; border:1px solid #ccc; background:#f5f5f5;  margin:auto; }
+table#login td{ padding:5px 10px 5px 10px; color:#333; font-size:12px ; }
+table#login td.htitle{ height:25px; background:#1e4774; font-size:18px; font-weight:normal !important; color:#fff; line-height:25px;  }
+#logindiv div#rs{ width:300px; background:url(../images/bigicon-rs.png) top center no-repeat; border-right:1px solid #ccc; float:left; }
+#logindiv div#client{ width:300px; background:url(../images/bigicon-client.png) top center no-repeat;  float:right}
+#logindiv div#staff{ width:300px; background:url(../images/bigicon-staff.png) top center no-repeat; float:left; border-right:1px solid #ccc; float:left;}
+.refsmall2{ font-size:11px; color:#000; }
+
+/* Articles and  Agreement */
+div#topics{ width:350px; float:left;}
+div#topics p{color:#000; /* background:url(../images/icon-article.png) top left no-repeat; */ margin:0; text-align:right;}
+div#topics p a:link, div#topics p a:visited{ text-decoration:none; color:#666; display:block; padding:10px; }
+div#topics p a:hover{ text-decoration:none; color:#000; }
+div#article{width:570px; float:right; }
+div#article ul{ margin:10px 40px 10px 40px; list-style:disc;}
+div#article ul li{ padding:5px 10px 5px 5px; line-height:18px;}
+div#article ul li#checkmark{ background:url(../images/bullet-check.jpg) top left no-repeat !important; list-style-type:none; padding-left:30px;   }
+div#article ol{ margin:10px 40px 10px 40px; }
+div#article ol li{ padding:5px 10px 5px 5px; line-height:18px; }
+
+/* View Price Range   */
+table#vprcab{ width:650px; border-collapse:collapse; border:1px solid #fff }
+table#vprcab td{ padding:5px; border:1px solid #fff; border-collapse:collapse; font-size:12px; background:#f7f7f7; }
+table#vprcab td.cell2{ padding:5px; border:1px solid #fff; border-collapse:collapse; font-size:12px; background:#ddd; }
+table#vprcab td.vprtitle{ background:#b8c73b; text-align:center; color:#000; font-weight:bold; width:150px; }
+table#vprcab td.vprheader{ background:#24578e; text-align:left; color:#fff; font-weight:bold;  font-size:14px; }
+table#vprcab td.whitespacer{ background:#fff; width:200px; }
+
+/* Booking Page */
+
+table#staffbooking{ width:720px;   }
+table#staffbooking td p{ padding:5px 10px; font-size:12px;  }
+table#staffbooking td.sbcell2{ background:#dedede; }
+table#staffbooking td.bookheader{ height:30px; line-height:30px; padding-left:10px; padding-right:10px; color:#fff; background:url(../images/bg-header2.jpg) top left repeat-x; font-weight:bold; }
+table#staffbooking-details{ width:710px; background:#f7f7f7; margin:auto; font-size:11px; border-collapse:collapse;}
+table#staffbooking-details td{ padding:5px; border:1px solid #fff; border-collapse:collapse;  }
+table#staffbooking select, table#staffbooking textarea, table#staffbooking input{ font-size:11px; font-family:Arial, Helvetica, sans-serif; }
+table#staffbooking-details td.booktitle{ background:#b8c73b; font-size:12px; font-weight:bold; color:#000;  }
+.booktotal{ font-size:16px; font-weight:bold; color:#CC0000; }
+td.misc{ border:0px !important; background:#cedfeb;  }
+
+
+/* Latest Hot Jobs */
+
+div#latestjobs{ font-size:12px; color:#000; background:#f7f7f7; margin-bottom:20px;}
+div#latestjobs p{ font-size:12px; margin:0px;  line-height:30px;  border-bottom:1px dotted #ddd; }
+div#latestjobs p a:link, div#latestjobs p a:visited{ color:#000; padding-left:15px; padding-right:15px; text-decoration:none; display:block;  }
+div#latestjobs p a:hover{ color:#fff; padding-left:15px; padding-right:15px; text-decoration:none; display:block;  background:#aac73a;}
+
+
+/* Apply Now PH-TAB */
+
+#applynow{ width:720px; float:right;  }
+#applynow h2{ background:url(../images/applynow-tab.png) top left no-repeat; height:31px; line-height:31px; padding-left:20px; color:#fff; font-size:16px; margin:0; border-bottom:#2b63a0 2px solid;} 
+#applynow-left{width:180px; float:left; margin:0; text-align:right;}
+#applynow-left h2{ font-size:16px; color:#173d6a; text-align:right; margin:0; padding:0px 0px 10px 0px; border-bottom:#ccc solid 2px;}
+#applynow-left h3{ font-size:12px; color:#333; text-align:right; margin:0; padding:0px 0px 10px 0px; border-bottom:#ccc solid 2px; line-height:18px; }
+#applynow-left ul{ margin:10px 0px 0px 0px; padding:0;  }
+#applynow-left ul li{font-size:12px; font-weight:bold; color:#000; border-bottom:1px dotted #fff; list-style-type:none; }
+#applynow-left ul li a:link, #applynow-left ul li a:visited{ padding-left:30px; padding-right:10px; padding-top:10px; padding-bottom:10px; text-decoration:none; color:#000; display:block; background:#eee; }
+#applynow-left ul li a:hover{ background:#538cca; padding-left:30px; padding-right:10px; padding-top:10px; padding-bottom:10px;  text-decoration:none; color:#fff; display:block; }
+.stepdone{background:#538cca url(../images/applycheck.png) top left no-repeat !important; text-decoration:none; color:#fff; display:block;}
+.stepcurrent{background:#ccc !important;}
+#applynow div#fieldcontents{ width:680px; margin:10px auto;  }
+#applynow div#fieldcontents table#applyform{ width:500px; margin:auto;  }
+#applynow div#fieldcontents table#applyform td{ padding:5px; font-size:12px; border-bottom:1px #ccc dotted}
+
+/*  Job Openings TAB */
+#jobopenings{ width:720px; float:right; }
+#jobopenings .jobheader{ height:30px; background:url(../images/bg-header2.jpg) top left repeat-x; line-height:30px; font-size:16px; color:#fff; font-weight:bold;   }
+#jobopenings .jobdesc{  margin:auto; padding-top:5px; padding-bottom:15px;   clear:both; font-size:14px; color:#000;}
+#jobopenings h4{ font-size:16px; color:#23558b; text-align:left; line-height:18px; }
+#jobopenings ul{ margin:0px  20px 10px 20px; }
+#jobopenings ul li{ list-style-type:square; margin:0px 10px 10px 20px;}
+#jobopenings div#jobheader div#jobheaderbtn img{ cursor:pointer;}
+.showhide{ cursor:pointer;}
+
+.heading p{
+	margin-top:0px;
+	margin-bottom:5px;
+	
+}
+.heading ul , ol{
+	margin-left:50px;
+}
+
+/* Qualities */
+div#qualitiesbox{ width:429px; float:left;}
+div#qualitiesbox p{ margin:0; padding:0px 20px 10px 20px; font-size:14px;  }
+div#qualitiesbox h2{ margin:0; padding:5px 20px 0px 20px; font-size:18px;  color:#29619c; }
+div#qualitiesbox div#testi1{ background:#eff4db url(../images/quality-chk.png) top left no-repeat; margin-bottom:20px; padding-left:15px; }
+div#qualitiesbox div#testi2{ background:#e0e8f6 url(../images/quality-chk.png) top left no-repeat; margin-bottom:20px; padding-left:15px; }
+
+/*  HOW WE WORK  */
+
+div#howwework{width:650px; margin:auto; } 
+div#howwework p{ padding:10px 20px 10px 40px; background:#eef5f9 url(../images/icon-work.png) top left no-repeat; margin:0; border-bottom:1px dotted #036; }
+div#howwework p.altline{ background:#d4e5f1 url(../images/icon-work.png) top left no-repeat; }
+.headtxt{ font-size:18px; color:#0b4fa4; }
+
+
+
+
+
+
+/* =============  for videos  ============== */
+#vid{ margin:20px 0px 20px 0px;  border-bottom:1px dotted #ccc; }
+#vid p{ font-size:12px; line-height:18px; padding:0px; margin:0px 0px 10px 0px;  }
+a.myPlayer { display:block; text-align:center; margin:0 0px 5px 0;  border:1px solid #999; } 
+.myPlayer2 { display:block; text-align:center; margin:0 10px 5px 20px;  border:1px solid #999; float:left } 
+/* play button */ 
+a.myPlayer img { margin-top:70px; border:0px; } 
+/* when container is hovered we alter the border color */ 
+a.myPlayer:hover { border:1px solid #000; }
+
+
+
+
+/* css by Charlotte */
+.align-center{text-align: center;}
+.clear{ clear: both; }
+
+/* Clearing and Units */
+
+.unit{float:left;_zoom:1}
+.line, .lastUnit{overflow:hidden;_overflow:visible;_zoom:1}
+.cursorPointer{cursor: pointer;}
+.zoom {_overflow:visible;_zoom:1}
+.clear{ clear: both; }
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

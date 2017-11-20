@@ -1,0 +1,43 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+
+			<div class="row">
+                <div class="col-sm-6">
+                    <h4>Client:</h4>
+                    <p>
+                    	Id : {{ quote.client.id }}<br>
+                    	Name : <a href="/portal/leads_information.php?leads_id={{ quote.client.id }}">{{ quote.client.fname }} {{ quote.client.lname }}</a><br>
+                    	Email : {{ quote.client.email }}
+                    </p>
+                </div>
+
+                <div class="col-sm-6 text-right">
+                   
+                    <p>
+                    	<span class="font-bold text-navy">{{ quote.id }}</span> : Quote Id<br>
+                    	<span class="label label-warning" ng-show="quote.status ==='draft'">{{ quote.status }}</span>
+							<span class="label label-info" ng-show="quote.status ==='new'">{{ quote.status }}</span>
+							<span class="label label-primary" ng-show="quote.status ==='posted'">{{ quote.status }}</span> 
+						: Status <br>
+						{{ quote.quoted_by.fname }} {{ quote.quoted_by.lname }} : Created By<br>
+						{{ quote.date_quoted }} : Date Created<br>
+						<span ng-show="quote.date_posted !==null">{{ quote.date_posted}} : Date Posted</span>
+                    </p>
+                   
+                </div>
+            </div>
+			
+			<hr>
+			<p class="text-right">
+				<button class="btn btn-primary btn-sm" ng-click="openModalQuoteDetails()">Add Details</button>
+			</p>
+				
+			
+			
+			
+			
+					
+		</div>
+	</div>
+</div>

@@ -1,0 +1,59 @@
+.show_concern {
+	/*margin-left:-35%;*/ /*-300px;*/
+	width:75%;/*600px;*/
+	height:550px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.list_concern {
+	margin-left:-45%; /*-300px;*/
+	width:90%;/*600px;*/
+	height:92%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.new_concern {
+/*	margin-left: -300px;*/
+	width: 75%;/*600px;*/
+	height:300px;
+}
+
+.show_addconcern {
+	margin-left: -300px;
+	width: 400px;
+	height:130px;
+}
+.show_helpwin {
+	margin-left: -300px;
+	width: 450px;
+	height:170px;
+}
+
+.show_addquestion {
+	margin-left: -150px;
+	width: 300px;
+	height:150px;
+}
+.new_concern, .show_concern {
+	margin-left: -38%;
+}
+
+.new_concern, .show_concern, .show_addconcern,
+.show_addquestion, .list_concern, .show_helpwin{
+	top: 70px;
+	left: 50%;
+	display: none;
+	position: fixed;
+	background-color: #EEE;
+	color: #333;
+	border: 1px solid black;
+	padding: 12px;
+}
+.show_addconcern, .show_helpwin {
+	top: 100px;
+	left: 60%;
+}
+.content_here {display: none;}
+.jqmOverlay { background-color: #000; }

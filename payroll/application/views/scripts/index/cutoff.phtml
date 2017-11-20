@@ -1,0 +1,30 @@
+	<strong>Cut Off Dates: </strong> <a href='#' class='jqmClose' style='float:right'>x</a><hr>
+				
+		
+	<div id="cutoff-dates" style="float:left;width:100%;padding:4px;">
+		<div class="tabular">
+			<form id='rateform' method='post' target='ajaxframe' action='/portal/payroll/index.php?item=saverate'>
+			<table summary="Cutoffdate">
+				
+			<tbody>
+           	<tr>
+				<th scope="col">Date</th>			  
+			</tr>
+			<?php foreach($this->dates as $idx => $date):?>
+			<tr>
+				<td><input type='text' name='cutoffdate[]' autocomplete='off' value='<?php echo $date;?>'/>
+				</td>
+			</tr>
+				
+			
+			<?php
+			endforeach;?>
+			
+			  </tbody>
+                    
+            </table>
+			</form>
+		</div>
+    </div>
+	
+	<div style='float:right;padding-top:4px'><button name='submit' id='update'>Update</button></div>

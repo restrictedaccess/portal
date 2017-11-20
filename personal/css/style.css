@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+#update-button{
+	background:url(/portal/images/button.png) repeat-x transparent;
+	height:38px;
+	text-align:center;
+	color:#fff;
+	border-radius:10px;
+	border:none;
+	cursor:pointer;
+	width:150px;
+	font-weight:bold;
+}
+.success{
+	
+}

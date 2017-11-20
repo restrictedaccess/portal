@@ -1,0 +1,153 @@
+.lsb {
+background:url(../images/nav_logo14.png) repeat scroll center bottom transparent;
+border-color:#CCCCCC #999999 #999999 #CCCCCC;
+border-style:solid;
+border-width:1px;
+height:30px;
+
+color:#000000;
+cursor:pointer;
+font-size:14px;
+font-family:Arial, Helvetica, sans-serif;
+height:30px;
+margin:0;
+outline:0 none;
+}
+
+.lsb:hover {
+	border:#999999 solid 1px;
+}
+
+
+.holder{
+	margin-bottom:10px;
+	border-bottom:#2c66a5 solid 1px;
+}
+
+.skill-list{
+	display:block;
+	margin-bottom:5px; 
+	border-bottom:#CCCCCC dashed 1px;
+}
+
+.skill-list img{
+	float:left;
+	display:block;
+}
+
+.skill-details{
+	float:left;
+	margin-left:10px;
+	border:#fff solid 1px;
+	display:block;
+	width:850px;
+}
+
+#info{
+	display:block;
+	float:right;
+	margin-right:10px;
+	margin-top:10px;
+	border:#fff solid 1px;
+	width:490px;
+	font-size:12px;
+}
+
+#info td{
+	border-bottom:#999999 dashed 1px;
+	line-height:22px;
+	
+}
+#ratings{
+	float:left;
+	margin-top:10px;
+	font-size:12px;
+	display:block;
+	width:400px;
+}
+
+#ratings ol{
+	margin-top:0px;
+}
+
+#ratings li{
+	line-height:18px;
+}
+
+#job-spec{
+	padding:10px;
+}
+.skills-box{
+	border:#2c66a5 solid 1px;
+	background:#FFFFFF;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+.skills-box-hdr{
+	border:#2c66a5 solid 1px;
+	background:#2c66a5;
+	color:#FFFFFF;
+	font-weight:800;
+	line-height:20px;
+}
+
+
+.list_box{
+	height:150px;
+	overflow:auto;
+}
+
+.skill_desc_long{
+	float:left;
+	display:block;
+	border-right:#000000 solid 1px;
+	width:810px;
+	line-height:25px;
+}
+
+.skill_desc_short{
+	float:left;
+	display:block;
+	border-right:#000000 solid 1px;
+	width:370px;
+	line-height:25px;
+}
+
+.del{
+	float:right;
+	text-align:center;
+	
+}
+.skill_list {
+	-x-system-font:none;
+	border-bottom:1px solid #000;
+	line-height:20px;
+	padding-left:1px;
+}
+.skill_rating{
+	float:left;
+	display:block;
+	padding-left:5px;
+	text-align:center;
+	
+}
+
+#editJobPositionForm2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 5px solid #2C66A5;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+
+}
+#editJobPositionForm2 select {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    width: 250px;
+}
+#div_edit_job_position_form2 {
+    display: none;
+}

@@ -1,0 +1,29 @@
+/* CSS Document */
+#send-btn{ margin-bottom:10px; margin-top:10px; }
+#code-form {border:#666666 solid 4px; margin-top:5px; background:#FFFFFF; display:none;}
+.code-form-note{background:#FFFFCC; padding:3px;}
+.code-form-img{margin-top:15px; margin-bottom:20px; text-align:center;}
+
+.error_msg{text-align:center; font:11px Arial; text-transform:uppercase; padding:5px; margin-bottom:10px;}
+
+.shodow_out{
+	position:absolute;
+	width:720px !important; 
+	background:#fff; 
+	filter:alpha(opacity=50);
+	 -moz-opacity:0.5;
+	 -khtml-opacity: 0.5;
+	 opacity: 0.7;
+	 
+}
+.responder_message{margin:5px; padding:5px;}
+
+.fadePage{display:none;z-index:98;position:fixed;height:100%;width:100%;background:#000000;opacity:.6;filter:alpha(opacity=60);margin:0px;padding:0px;top:0;left:0;} 
+.login_container{margin:auto;z-index:99;display:none;margin:auto;top:30%;left:35%;position:fixed;}
+.sprite-closebutton{background:url(images/sprite2.png) no-repeat top left;background-position:0 0;width:26px;height:26px;float:right;}
+.login_popup{width:350px;height:225px;overflow:hidden;position:absolute;left:23px;top:30px;} 
+.login{background:url('images/popupbg.png');width:400px;height:290px;}
+.formNotes{font-style:italic;font-size:10px;}
+.buttonLeft{background:url(images/sprite4.png) no-repeat left;background-position:0 -63px;width:8px;height:28px;float:left;margin-top:1px;}
+.buttonRight{background:url(images/sprite4.png) no-repeat left;background-position:0 -92px;width:8px;height:28px;float:left;margin-top:1px;}
+.buttonContent{float:left;background:url(images/button.png) repeat-x;text-align:center;margin-top:1px;font-weight:bold;padding-top:8px;width:90px;height:28px;color:#ffffff;cursor:pointer;}

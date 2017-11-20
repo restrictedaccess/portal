@@ -1,0 +1,53 @@
+/* 
+CSS Document 
+Use in subcon homepage
+Created Aug 20 , 2009 by Normaneil Macutay
+*/
+
+.style2 {color: #FF0000}
+.style3 {color: #FF0000}
+
+.subcon_profile{
+	border:#E3E0AC solid 2px;
+	padding:10px;
+	width:300px;
+	display:block;
+	float:left;
+	background:#FFFFFF;
+	
+}
+#subcon_notes{
+	border:#E3E0AC solid 2px;
+	margin-left:2px;
+	padding:10px;
+	display:block;
+	
+	
+}
+#reminders{
+	padding:10px;
+	font:12px Arial;
+
+	
+}
+
+#reminders h2{
+	margin-top:1px;
+	margin-bottom:2px;
+}
+#reminders p {
+	margin-bottom:5px;
+	margin-top:0px;
+	
+}
+
+#reminders label {
+	float:left;
+	display:block;
+	width:180px;
+	font-weight:bold;
+}
+
+#reminders li{
+	text-align:justify;
+}

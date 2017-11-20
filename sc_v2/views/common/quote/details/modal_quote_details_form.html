@@ -1,0 +1,223 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Quote Details</h4>
+    </div>
+    <form class="form-horizontal" role="form" method="post" novalidate ng-submit="add_details()">
+    	<div class="modal-body" >
+
+    		<input type="hidden" ng-model="formData.quote_id" value="{{quote_id}}">
+    		<div class="form-group">
+    			<label class="col-lg-2 control-label"><span style="color:red;">*</span>Job Orders</label>
+                <div class="col-lg-10">
+                	<select ng-change="getJobtitle()" id="job_order_option" ng-model="formData.tracking_code" ng-disabled="jobOrder === null" class="form-control" required>
+                		<option ng-repeat="option in jobOrder" value="{{option.tracking_code}}_{{option.job_title}}">{{option.job_title}} - {{option.tracking_code}}</option>
+	    			</select>
+                </div>
+            </div>
+
+    		<div class="form-group">
+    			<label class="col-lg-2 control-label"><span style="color:red;">*</span>Candidate</label>
+                <div class="col-lg-10">
+
+                	<select ng-change="checkStaffPrice()"  ng-options="option.userid as option.fullname for option in hired" ng-model="formData.userid" ng-disabled="hired === null" class="form-control" required>
+
+	    			</select>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+    			<label class="col-lg-2 control-label">Job Title</label>
+                <div class="col-lg-10">
+                	<input type="text" ng-model="formData.work_position" placeholder="Job Position" class="form-control">
+                </div>
+            </div>
+
+
+
+			<div class="form-group">
+    			<label class="col-lg-2 control-label"><span style="color:red;">*</span>Work Status</label>
+                <div class="col-lg-10">
+                	<select ng-change="salaryChange()" class="form-control chosen-select" ng-model="formData.work_status" ng-options="workstat.value as workstat.display for workstat in workStatusVal " required>
+                		<!-- <option ng-repeat="workstat in workStatusVal" value="{{workstat.value}}">{{workstat.display}}</option> -->
+	    			      </select>
+                </div>
+
+     </div>
+
+
+
+     <div ng-show="formData.work_status == 6">
+
+
+       <div class="form-group" >
+        	<label class="col-lg-2 control-label"></label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="formData.specialArrangement" placeholder="Special Arrangement Description" class="form-control" required>
+            </div>
+        </div>
+
+        <div class="form-group" >
+          <label class="col-lg-2 control-label"></label>
+          <div class="col-lg-4">
+            <select ng-change="salaryChange()" class="form-control" ng-model="formData.work_status_special" required>
+              <option value="Full-Time">Full-Time</option>
+              <option value="Part-Time">Part-Time</option>
+            </select>
+          </div>
+
+          <div class="col-lg-3">
+            <input ng-disabled="!formData.work_status_special" type="text" ng-model="formData.specialArrangement_workingDays" placeholder="Required Working Days" class="form-control" only-num required>
+          </div>
+
+          <div class="col-lg-3">
+            <input ng-disabled="!formData.work_status_special" type="text" ng-blur="salaryChange()" ng-model="formData.specialArrangement_requiredHours" placeholder="Required Hours" class="form-control" only-num required>
+          </div>
+        </div>
+
+
+        <div class="form-group" >
+          <label class="col-lg-2 control-label">Approval from Director</label>
+            <div class="col-lg-10">
+              <input type="text" ng-model="formData.lanceApproval" placeholder="input some text..." class="form-control" required>
+            </div>
+
+        </div>
+
+     </div>
+
+
+     <div class="form-group" >
+       <label class="col-lg-2 control-label"><span style="color:red;">*</span>Select start date : </label>
+         <div class="col-lg-10">
+           <input class="form-control" type="text" ng-model="date" jqdatepicker required/>
+         </div>
+
+     </div>
+
+
+
+    <div class="form-group">
+    			<label class="col-lg-2 control-label">Client Timezone</label>
+                <div class="col-lg-3">
+
+                    <select  class="form-control"  ng-options="time_zone.timezone as time_zone.timezone for time_zone in timezone " ng-model="formData.client_timezone">
+
+                    </select>
+                </div>
+
+                  <label class="col-lg-3 control-label" style="text-align: left ! important; width: 18%;"><span style="color:red;">*</span>Client Working Hours</label>
+
+				  <div class="col-lg-2">
+
+                          <select  ng-change="workStartChange()" ng-model="formData.work_start" chosen class="form-control chosen-select" ng-options="time.count as time.display for time in timeArray" required>
+				                		<!-- <option ng-repeat="time in timeArray" value="{{time.value}}-{{time.count}}">{{time.display}}</option> -->
+					    			</select>
+
+
+				                </div>
+
+				 <label class="col-lg-3 control-label" style="text-align: left ! important; width: 1%;">To</label>
+				<div class="col-lg-2">
+				  <input type="text" ng-model="formData.work_finish" disabled class="form-control" value="{{workfinish}}"/>
+				</div>
+
+            </div>
+
+
+
+         <div class="form-group">
+    			<label class="col-lg-2 control-label">Staff Timezone</label>
+              	<div class="col-lg-3">
+            	<select ng-model="formData.staff_timezone" class="form-control" ng-options="time_zone.timezone as time_zone.timezone for time_zone in timezone">
+    			</select>
+               </div>
+
+                  <label class="col-lg-3 control-label" style="text-align: left ! important; width: 18%;"><span style="color:red;">*</span>Staff Working Hours</label>
+
+				  <div class="col-lg-2">
+				                	<select ng-change="workStartChangeStaff()" ng-model="formData.work_start_staff"  chosen class="form-control chosen-select" ng-options="time.count as time.display for time in timeArray">
+				                		<!-- <option ng-repeat="time in timeArray" value="{{time.value}}-{{time.count}}">{{time.display}}</option> -->
+					    			</select>
+
+
+				                </div>
+
+				 <label class="col-lg-3 control-label" style="text-align: left ! important; width: 1%;">To</label>
+				<div class="col-lg-2">
+				  <input type="text" ng-model="formData.work_finish_staff" disabled class="form-control" value="{{workfinish_staff}}"/>
+				</div>
+
+            </div>
+
+
+
+            <div class="form-group">
+    			<label class="col-lg-2 control-label">Staff Currency</label>
+                <div class="col-lg-3">
+                	<select chosen class="form-control chosen-select" ng-model="formData.staff_currency">
+                		<option selected value="PHP">Philippine Pesos</option>
+	    			</select>
+                </div>
+
+  				<label class="col-lg-3 control-label" style="text-align: left ! important; width: 18%;">Staff Monthly Salary</label>
+
+			  <div class="col-lg-3">
+            	<input type="text" placeholder="0.00" value="0" class="form-control" ng-model="formData.salary" ng-blur="salaryChange()" only-num >
+               </div>
+            </div>
+
+
+
+            <div ng-include="'views/common/quote/details/different-currencies-calculation.html'"></div>
+            <div ng-include="'views/common/quote/details/currency-gst.html'"></div>
+
+
+
+
+            <div class="form-group">
+    			<label class="col-lg-2 control-label">Client Price</label>
+                <div class="col-lg-3">
+                	<input type="text" placeholder="0.00" class="form-control" ng-model="formData.quoted_price" only-num>
+                </div>
+                <label class="col-lg-3 control-label" style="width: 18%;">Service Fee</label>
+                <div class="col-lg-3">
+                	<input type="text" placeholder="0.00" class="form-control" ng-model="formData.service_fee" ng-disabled="formData.margin != 3" ng-blur="salaryChange()" only-num>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+    			<label class="col-lg-2 control-label">Office Fee</label>
+                <div class="col-lg-3">
+                	<input type="text" placeholder="0.00" value="0" class="form-control" ng-model="formData.office_fee" only-num>
+                </div>
+
+                <label class="col-lg-3 control-label" style="width: 18%;">Currency Fluctuation</label>
+                <div class="col-lg-3">
+                	<input type="text" placeholder="0.00" value="0" class="form-control" ng-model="formData.currency_adjustment" only-num disabled>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+    			<label class="col-lg-2 control-label">Additional equipment funded by client</label>
+                <div class="col-lg-3">
+
+                  <input type="text" placeholder="0.00" class="form-control" ng-model="formData.others_amount"  ng-change="othersChange()" only-num><br>
+                  <input  type="text" placeholder="Description" class="form-control" ng-model="formData.others_description"  ng-if="formData.others_amount != null">
+                </div>
+
+                <label class="col-lg-3 control-label" style="width: 50%;" ng-show="currency">**Remote Staff Currency Fluctuation is 1{{currency}} = {{currentRate}} PHP and foreign exchange market rate as of {{formatDate(effective_date)}} is 1{{currency}} = {{forexRate}}PHP</label>
+                <label class="col-lg-3 control-label" style="width: 50%;" ng-show="!currency">**Remote Staff Currency Fluctuation is 1AUD= {{currentRate}} PHP and foreign exchange market rate as of {{formatDate(effective_date)}} is 1AUD = {{forexRate}}PHP</label>
+            </div>
+
+    	</div>
+
+    	<div class="modal-footer">
+    		<button data-style="zoom-in" class="ladda-button btn btn-primary" ladda="loading5" type="submit" ng-disabled="((jobOrder === null))"><strong>Save</strong></button>
+			<button type="button" class="btn btn-white" ng-click="close_quote_details()">Close</button>
+		</div>
+	</form>
+</div>

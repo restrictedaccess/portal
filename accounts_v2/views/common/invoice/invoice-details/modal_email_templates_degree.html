@@ -1,0 +1,29 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">{{ template_header }}</h4>
+    </div>
+    <div class="modal-body">
+        
+        <div class="form-group">
+			<label>Send To</label>
+			
+			<ui-select multiple tagging="true" theme="bootstrap" on-select="onSelected($item)" on-remove="onRemove($item)" tagging-label="false" ng-model="multiple_emails"  style="width: 100%; border: #ccc solid 1px; background: #ccc"  title="Type in email address">
+			    <ui-select-match placeholder="Select email...">{{$item}}</ui-select-match>
+			    <ui-select-choices repeat="email in multiple_emails | filter:$select.search">
+			      <span>{{email}} | {{$select.search}} </span>
+			    </ui-select-choices>
+			</ui-select>
+			
+		</div>
+    		
+        <div class="form-group">               
+        	<div summernote class="summernote" config="options"  ng-model="email_template_degree_content" ></div>
+        </div>
+        
+    </div>
+    <div class="modal-footer">
+    	<button data-style="zoom-in" class="ladda-button btn btn-primary" type="button" ng-click="send_email_degree_template()"  ladda="loadingEmailDegree"><strong>Send</strong></button>                
+        <button type="button" class="btn btn-white" ng-click="close_email_degree_template()">Close</button>
+    </div>
+</div>
+

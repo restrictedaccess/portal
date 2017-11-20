@@ -1,0 +1,31 @@
+
+<!--<div ng-controller="SAController as sa_controller" class="wrapper wrapper-content">-->
+    <!--<div class="row  border-bottom white-bg dashboard-header">-->
+        <!--<div class="col-sm-12">-->
+            <!--<h3>Service Agreement Management</h3>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="wrapper wrapper-content animated fadeInRight">-->
+
+
+        <!--<div ng-include="'views/common/quote/service_agreement/quote_info.html'"></div>-->
+    <!--</div>-->
+    <!--<toaster-container></toaster-container>-->
+<!--</div>-->
+
+<div ng-controller="ServiceAgreementList as sa_list_controller">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <div class="col-sm-12">
+            <h3>Client Quote</h3>
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row" ng-include="'views/common/quote/service_agreement/sa_info_list.html'"></div>
+        <div class="row" ng-include="'views/common/quote/service_agreement/sa_info_list_result.html'"></div>
+
+    </div>
+
+    <toaster-container></toaster-container>
+</div>

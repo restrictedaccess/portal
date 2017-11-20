@@ -1,0 +1,175 @@
+/* CSS Document */
+#search_div{
+	margin-bottom:10px;
+	background:#333333; 
+	color:#FFFFFF; 
+	padding:5px;
+}
+
+
+#quote_details{
+	background:#F0F0F0;
+}
+.quote_det_wrapper{
+	border:#333333 solid 1px; 
+	padding:5px; 
+	margin-bottom:10px; 
+	background:#FFFFFF; 
+}
+.quote_details_hdr{
+	background:#D2FFD2 ;
+	border:#D2FFD2 outset 1px; 
+	padding:5px; 
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+#quote_status{
+	padding:5px; 
+	color:#FFFFFF; 
+	font:bold 12px Arial; 
+	text-align:center;
+	position:absolute;
+	background:#333333;
+	width:680px;
+	display:none;
+	margin-left:20px;
+	
+}
+#template{
+	
+	border:#CCCCCC solid 1px;
+	width:690px;
+	background:#FFFFFF;
+	
+}
+
+.btn{
+	font:11px Tahoma;
+}
+
+div.scroll {
+	margin:0px;
+	height: 400px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #FFFFFF;
+}
+.hdr{
+	background:#CCCCCC; 
+	border:#CCCCCC outset 1px; 
+	padding:3px;
+	font:12px Arial;
+}
+
+.hdr_q{
+	background:#CCCCCC; 
+	border:#CCCCCC outset 1px; 
+	padding:3px;
+	text-align:center;
+	font:12px Arial;
+	color:#666666;
+}
+
+
+.hdr_quoted{
+	background:#333333; 
+	border:#CCCCCC outset 1px; 
+	padding:3px;
+	font:12px Arial;
+	margin-top:20px;
+	color:#FFFFFF;
+}
+#quote_form{
+	border:#CCCCCC solid 1px; 
+	padding:5px;
+	font:12px Arial;
+	background:#FFFFFF;
+}
+
+#quote_form p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+#quote_form label{
+	float:left;
+	display:block;
+	width:130px;
+}
+
+.box{
+	float:left;
+	display:block;
+	width:170px;
+	height:150px;
+	margin-left:2px;
+	border:#CCCCCC solid 1px;
+}
+
+.box_margin{
+	float:left;
+	display:block;
+	width:170px;
+	margin-left:2px;
+	padding-left:5px;
+	padding-top:5px;
+	line-height:20px;
+	text-align:left;
+}
+
+.rate{
+	
+	height:130px;
+	display:block;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+}
+#quote_list{
+	font:11px tahoma;
+}
+#right_panel{
+	font:12px Arial;
+	padding-left:20px;
+	padding-top:10px;
+	
+	
+	
+}
+#right_panel p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#right_panel label{
+	float:left;
+	display:block;
+	width:100px;
+}
+
+#right_panel hr{
+	margin-bottom:1px;
+	margin-top:1px;
+}
+
+
+#right_panel_quote{
+	font:12px Arial;
+	border:#999999 solid 1px;
+	padding-left:2px;
+	padding-right:2px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+
+#right_panel_quote p{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+#right_panel_quote label{
+	float:left;
+	display:block;
+	width:70px;
+}
+
+

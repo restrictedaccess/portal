@@ -1,0 +1,88 @@
+<div class="col-lg-12">
+<div class="ibox float-e-margins">
+    <div class="ibox-title border-bottom">
+
+        <div class="row">
+            <div class="col-xs-6">
+                <h3>Invoice(s) ready for release</h3>
+            </div>
+            <div class="col-xs-6">
+                <button type="button" ladda="send_loading" class="ladda-button ladda-button-demo btn btn-primary" ng-click="sendAll()" style="float:right;margin-right:10px;">
+                    <span class="ladda-label">Send</span><span class="ladda-spinner"></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ibox-content">
+        <div ng-show="track_data === null">
+            <div ng-if="noData">
+                No record(s) found.
+            </div>
+            <div ng-if="!noData">
+                Please wait...
+            </div>
+        </div>
+
+
+        <div ng-show="track_data !== null">
+            <table class="table table-bordered table-striped tab">
+                <thead>
+                <tr>
+
+                    <th class="text-center">#</th>
+                    <th class="text-center" style="width:20%">Client</th>
+                    <th class="text-center">Invoice Number</th>
+                    <th class="text-center">Date Created</th>
+                    <th class="text-center">Due Date</th>
+                    <th class="text-center" style="width:10%">Invoice Amount</th>
+                    <th class="text-center">Invoice Status</th>
+                    <th class="text-center">Email Sending Status</th>
+                    <th class="text-center" style="width:10%;">Send&nbsp;<input type="checkbox" ng-model="formData.check_all" ng-change="checkAll()" style="margin-left:5px;"></th>
+                    <th class="text-center">Comments</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="data in track_data | limitTo:limit" ng-init="checkStatus(data)" style="color:#fff;background-color:{{data.color}};">
+                    <td class="text-center" style="vertical-align:middle;">{{$index+1}}</td>
+                    <td class="text-center" style="vertical-align:middle;"><a style="text-decoration:underline;color:#fff;" href="/portal/accounts_v2/#/invoice/client-account/{{data.client_id}}">{{data.client_fname}} {{data.client_lname}}</a></td>
+                    <td class="text-center" ng-if="data.order_id == ''" style="vertical-align:middle;">-</td>
+                    <td class="text-center" ng-if="data.order_id !== ''" style="vertical-align:middle;"><a style="text-decoration:underline;color:#fff;" href="/portal/accounts_v2/#/invoice/details/{{data.order_id}}">{{ data.order_id }}</a></td>
+                    <td class="text-center" style="vertical-align:middle;">{{ data.date_created | date:'MMM dd, yyyy' }}</td>
+                    <td class="text-center" style="vertical-align:middle;">{{ data.due_date | date:'MMM dd, yyyy' }}</td>
+                    <td class="text-center" style="vertical-align:middle;">{{checkCurrency(data)}}</td>
+                    <td class="text-center" style="vertical-align:middle;">{{ data.invoice_status }}</td>
+                    <td class="text-center" style="vertical-align:middle;">{{ data.queue }}</td>
+                    <td class="text-center" style="text-align: center;vertical-align:middle;" ng-if="data.queue !== 'sent'"><input icheck ng-change="storeInvoice(data)" ng-model="formData.ready_to_send[data.order_id]" type="checkbox"/></td>
+                    <td class="text-center" style="text-align: center;vertical-align:middle;" ng-if="data.queue == 'sent'">
+                        <button type="button" ladda="loading[{{data.client_id}}]" class="ladda-button ladda-button-demo btn btn-primary" ng-click="re_sendEmail(data)" style="height: 28px;font-size:12px;">
+                            <span class="ladda-label">Resend</span><span class="ladda-spinner"></span>
+                        </button>
+                    </td>
+                    <td class="text-center">
+                        <div style="position:relative;">
+                            <span ng-show="data.hasNotes > 0" style="position: absolute;top:-5px;z-index: 999;margin-left:1em;" class="label label-warning pull-right">{{ data.hasNotes}}</span>
+                            <a href="/portal/accounts_v2/#/invoice/details/{{data.order_id}}" class="text-success" style="cursor: pointer;"><i class="fa fa-file"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <center>
+                <pagination
+                        ng-model="pagination.currentPage"
+                        max-size="pagination.maxSize"
+                        items-per-page="numPerPage"
+                        total-items="totalPages"
+                        boundary-links="true"
+                        direction-links="true"
+                        ng-change="pageChanged(pagination.currentPage)">
+                </pagination>
+            </center>
+        </div>
+    </div>
+</div>
+</div>

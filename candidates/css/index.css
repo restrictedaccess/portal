@@ -1,0 +1,10 @@
+.gender input[type=radio]{
+	vertical-align:middle;
+}
+.jobseeker-header{
+	font-size:20px!important;
+	margin-top:10px;
+}
+img{
+	max-width:none;
+}

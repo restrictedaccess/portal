@@ -1,0 +1,32 @@
+<div class="inmodal">
+    <div class="modal-header">
+        <h4 class="modal-title">Timesheet Notes</h4>
+        <small class="font-bold" >Reference Date {{ notes_selected_reference_date }}</small>
+    </div>
+    <div class="modal-body">
+    	<table width="100%" class="table table-bordered">
+    		<tr ng-repeat="n in notes">
+    			<td>{{ n.user }} {{ n.fname }}</td>
+    			<td>{{ n.note }}</td>
+    			<td>{{ n.date_str }}</td>
+    		</tr>
+    	</table>
+    	<!--
+        <div ng-repeat="n in notes ">
+    		{{ n.note }}
+    	</div>
+    	-->
+    </div>
+    <div class="modal-footer">
+		<div class="row">
+		    <div class="col-xs-12 col-sm-5 col-md-7 text-left">
+		    	<textarea ng-model="reference_date_note" style="width:117%; height: 70px;"></textarea>
+		    </div>
+		    <div class="col-xs-7 col-md-5">
+		    	<!--<button ladda="loadingDemo" class="ladda-button ladda-button-demo btn btn-primary"  data-style="expand-left" type="button" ng-click="add_timesheet_notes()">Save changes</button>-->
+		    	<button data-style="zoom-in" class="ladda-button btn btn-warning" ng-click="add_timesheet_notes()" ladda="loading5"><span class="ladda-label">Add Note</span><span class="ladda-spinner"></span><div class="ladda-progress" style="width: 0px;"></div></button>
+				<button type="button" class="btn btn-white" ng-click="close_notes()">Close</button>
+		    </div>
+	  	</div>  	
+	</div>
+</div>

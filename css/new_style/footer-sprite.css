@@ -1,0 +1,46 @@
+.sprite-flag {
+    background-image: url('/portal/images/new_images/footer-flag-spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.sprite-au_flag {
+    width: 42px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+.sprite-ph_flag {
+    width: 42px;
+    height: 22px;
+    background-position: -5px -37px;
+}
+.sprite-uk_flag { 
+    width: 42px;
+    height: 22px;
+    background-position: -57px -5px;
+}
+.sprite-us_flag {
+    width: 42px;
+    height: 22px;
+    background-position: -57px -37px;
+}
+
+.sprite-social-media {
+    background-image: url('/portal/images/new_images/footer-social-media-spritesheet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.sprite-chat {
+    width: 44px;
+    height: 44px;
+    background-position: -5px -5px;
+}
+.sprite-facebook {
+    width: 140px;
+    height: 33px;
+    background-position: -5px -59px;
+}
+.sprite-skype {
+    width: 44px;
+    height: 44px;
+    background-position: -59px -5px;
+}

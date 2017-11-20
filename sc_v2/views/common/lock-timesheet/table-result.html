@@ -1,0 +1,53 @@
+<div class="col-lg-12">
+	<div class="ibox float-e-margins">
+		<div class="ibox-content">
+			<div class="alert alert-danger text-center" ng-show"background_process_msg" ng-hide="!background_process_msg">{{ background_process_msg }}</div>
+			<table class="table table-bordered table-striped">
+				
+				<tr ng-show="ts_day_records">
+					<td colspan="4">
+						<div  >
+							<input type="checkbox" ng-model="lts.master_select" ng-checked="true" ng-click="select_all()"> Select All
+						</div>
+					</td>
+				</tr>
+				
+				<tr ng-repeat="record in ts_day_records">
+					<td width="5%">
+						<span ng-show="background_process_msg">
+							<input type="checkbox" disabled >
+						</span>
+						
+						<span ng-show="!background_process_msg">
+							<input type="checkbox" ng-model="record.selected" ng-checked="record.selected" value="{{ record.timesheet_details_id }}">
+						</span>
+						
+					</td>
+					<td width="7%">
+						<span class="label label-warning" ng-show="record.status ==='locked'">{{ record.status }}</span>
+						<span class="label label-success" ng-show="record.status ==='open'">{{ record.status }}</span>
+					</td>
+					<td width="10%">
+						{{ record.reference_dayname }}
+					</td>
+					<td>
+						{{ record.reference_date_str }}
+					</td>
+
+				</tr>
+			</table>
+			<!-- Initial load of Page all buttons are disabled -->
+	       	<div ng-show="ts_day_records == null" class="row text-center">
+	       		<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Lock Selected Dates</button>
+				<button class="btn btn-primary btn-sm" disabled style="margin-right: 10px;">Unlock Selected Dates</button>
+	       	</div>
+			<div ng-show="ts_day_records"  class="row text-center">
+				
+				<button ladda="lockLoadingDemo" ng-click="lockSelectedDates()" class="ladda-button ladda-button-demo btn btn-primary btn-sm"  data-style="expand-left" style="margin-right: 10px;"><i class="fa fa-lock"></i> Lock Selected Dates</button>
+				<button ladda="unlockLoadingDemo" ng-click="unlockSelectedDates()" class="ladda-button ladda-button-demo btn btn-primary btn-sm"  data-style="expand-left" style="margin-right: 10px;"><i class="fa fa-unlock"></i> Unlock Selected Dates</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+

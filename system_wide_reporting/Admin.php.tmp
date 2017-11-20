@@ -1,0 +1,115 @@
+<?php
+include('../conf/zend_smarty_conf.php');
+header('Content-type: text/html; charset=utf-8');
+header("Expires: Mon, 26 Jul 1997 05:00:00GMT");
+header("Cache-Control: no-cache");
+header("Pragma: no-cache");
+$smarty = new Smarty;
+
+if(!$_SESSION['admin_id']){
+	die("Session Expires. Please re-login");
+}
+
+//months
+$monthFullName=array(
+	1 => 'January',
+	2 => 'February',
+	3 => 'March',
+	4 => 'April',
+	5 => 'May',
+	6 => 'June',
+	7 => 'July',
+	8 => 'August',
+	9 => 'September',
+	10 => 'October',
+	11 => 'November',
+	12 => 'December' 
+);
+for ($i =1; $i <= count($monthFullName); $i++) {
+	//$det = new DateTime($i);
+	//$month = $det->format("m");
+			
+	if($i == date("m")){
+		$monthOptions .= "<option selected value='".$i."'>".$monthFullName[$i]."</option>\n";
+	}else{
+		$monthOptions .= "<option value='".$i."'>".$monthFullName[$i]."</option>\n";
+	}
+}
+
+//year
+for ($i = date("Y"); $i >=2008; $i--){
+	$yearoptions .= "<option value=\"$i\">$i</option>\n";
+}
+
+
+//CSRO
+$sql = $db->select()
+	->from('admin' , Array('admin_id', 'admin_fname', 'admin_lname'))
+	->where('status =?' , 'FULL-CONTROL')
+	->where('csro =?', 'Y')
+	->order('admin_fname ASC');
+//echo $sql;exit;	
+$csro =  $db->fetchAll($sql);
+
+//CSRO
+$sql = $db->select()
+	->from('admin' , Array('admin_id', 'admin_fname', 'admin_lname'))
+	->where('status =?' , 'HR')
+	->order('admin_fname ASC');
+//echo $sql;exit;	
+$hr =  $db->fetchAll($sql);	
+
+
+
+
+
+
+//COMLIANCE QUICK VIEW
+//Get the no.of staff working today
+//include 'StaffWorking.php';
+
+//total no. of leave request
+$sql = $db->select()
+	->from('leave_request')
+	->where('leave_type !=?' , 'Absent');
+$leave_requests = $db->fetchAll($sql);	
+foreach($leave_requests as $leave_request){
+	$det = new DateTime($leave_request['date_requested']);
+	$timestamp = $det->format("Y-m-d");
+	if($timestamp == date('Y-m-d')){
+		$received_today++;
+	}
+}
+
+$smarty->assign('received_today',$received_today);
+$smarty->assign('leave_requests_count',count($leave_requests));
+
+
+
+//$smarty->assign('active_staff_monthly_result_count',count($active_staff_monthly_result));
+//$smarty->assign('non_active_staff_monthly_result_count',count($non_active_staff_monthly_result));
+//$smarty->assign('active_staff_year_count',count($active_staff_year));
+//$smarty->assign('non_active_staff_year_count',count($non_active_staff_year));
+//$smarty->assign('active_staff_first_six_months_count',count($active_staff_first_six_months));
+//$smarty->assign('non_active_staff_first_six_months_count',count($non_active_staff_first_six_months));
+//$smarty->assign('active_staff_second_six_months_count',count($active_staff_second_six_months));
+//$smarty->assign('non_active_staff_second_six_months_count',count($non_active_staff_second_six_months));
+
+//echo date("b");
+//$smarty->assign('month',date("m"));
+//$smarty->assign('month_str',$monthFullName[date("n")]);
+//$smarty->assign('year',$year);
+//$smarty->assign('hr',$hr);
+
+$date = new DateTime();
+$start_date_ref = $date->format('Y-m-01');
+$end_date_ref = $date->format('Y-m-t');
+
+$smarty->assign('csro',$csro);
+$smarty->assign('yearoptions',$yearoptions);
+$smarty->assign('monthOptions',$monthOptions);
+$smarty->assign('start_date_ref',$start_date_ref);
+$smarty->assign('end_date_ref',$end_date_ref);
+$smarty->assign('today_date' , date("F j, Y"));
+$smarty->display('Admin.tpl');
+?>
